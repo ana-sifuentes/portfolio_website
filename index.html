@@ -47,7 +47,7 @@
 
 
   /**********************************************************************/
-  /*GENERAL SETUP FOR THE ARTICLE*/
+  /*GENERAL SETUP */
 
   	/*wrapper for each section*/
   	.section_wrapper{
@@ -95,6 +95,14 @@
   		height: 30px;
   	}
 
+
+    .button{
+      background-color: #D695C0;
+      font-family: 'Mont-Heavy';
+      padding:10px;
+      width:30%;
+      margin:auto;
+    }
 
 /***************************************/
   .section_wrapper.introduction{
@@ -147,7 +155,7 @@
 
 
 <!--WRAPPER-->
-<div class="section_wrapper introduction" id ="section_welcome">
+<div class="section_wrapper introduction current" id ="section_welcome">
 
 
   <!--- circles --->
@@ -260,17 +268,17 @@
 
 
          
-          //switching between 'screens'
-        	$('.button').click(function(){
-
-            var clicked = $(this).attr('id');
-            $('.section_wrapper.current').removeClass('current');
-
-            $('#section_'+clicked).addClass('current');
 
 
-            
-          });
+    });
+
+    //switching between 'screens'
+    $('.button').click(function(){
+
+      var clicked = $(this).attr('id');
+      $('.current').removeClass('current');
+
+      $('#section_'+clicked).addClass('current');
 
     });
 
