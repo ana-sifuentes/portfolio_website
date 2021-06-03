@@ -108,6 +108,7 @@
           text-align: center;
           cursor: pointer;
           max-width: 200px;
+          color:#442856;
     }
 
     .button:hover{
@@ -249,10 +250,12 @@
 
 
 <h2> PEDIR </h2>
-
-
-
 <p>¿Qué necesitas? </p>
+
+<div style="background-color:#E34D99; height:30px; padding:10px; color:#442856; margin: 1vh auto; width:80%;">
+  <img src="images/circle_inner.svg"> <h3> PRODUCTOS BEBES </h3>
+</div>  
+
     
 </div>
 </div>
@@ -301,6 +304,9 @@
 
     });
 
+
+    let previous_section ='welcome';
+    
     //switching between 'screens'
     $('.button').click(function(){
 
@@ -308,6 +314,8 @@
       $('.current').removeClass('current');
 
       $('#section_'+clicked).addClass('current');
+      previous_section = clicked;
+      
 
     });
 
