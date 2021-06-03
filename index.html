@@ -33,7 +33,6 @@
     scroll-snap-type: y proximity;
     float:left;
     height: auto;
-    background-color:#442856;
     width:100%;
   }
 
@@ -46,27 +45,67 @@
 	html {scroll-behavior: smooth;}
 
 
+  
+  /**********************************************************************/
+  /*GENERAL SETUP FOR THE ARTICLE*/
+
+  	/*wrapper for each section*/
+  	.section_wrapper{
+      height: auto;
+      padding: 4vh 0px 5vh 0px;
+      width: 100%;
+      background-color: white;
+  		float:left;
+  		scroll-snap-align: start;
+  		overflow: auto;
+  		min-height: 91vh;
+  	}
+
+  	/*wrapper for the section content, this makes the margins */
+  	.content_wrapper {
+      	max-width: 1250px;
+      	width: 95%;
+      	margin:auto;
+  	}
 
 
+  	/*main layout class */
+  	.column  {
+  		float:left;
+  		margin:1% 1%;
+  		padding: 0px;
+  	}
 
-  .circle {
-    height: 100px;
-    width: 100px;
-    background-color: #785089;
-    border-radius: 50%;
-    float:left;
-    display: inline-block;
+  	/* 100% */
+  	.full_size { width:98%; }
+  	/* 33% */
+  	.third_size { width: 31.33%; }
+  	/* 66% */
+  	.two_third_size { width: 64.6%; }
+
+
+  	.clear{
+  		clear:both;
+  		height: 30px;
+  	}
+
+
+/***************************************/
+  .section_wrapper.introduction{
+    background-color:#442856;
   }
 
-
-  .circle_b {
-    height: 100px;
-    width: 100px;
-    border: 10px solid #785089;
-    border-radius: 50%;
-    float:left;
-    display: inline-block;
-  }
+.circle_a{
+  background-image: url('images/circle_inner.svg')
+  float:left;
+  position: absolute;
+}
+  
+.circle_b{
+  background-image: url('images/circle_outline.svg')
+  float:left;
+  position: absolute;
+}
 
 </style>
 
@@ -77,18 +116,23 @@
 
 
 <!--WRAPPER-->
-<div class="" style="height:80vh; width:80vh; margin:auto; text-align:center; padding: 10vh;">
+<div class="section_wrapper introduction"> 
 
 
-<div class="circle"></div>
+
+<div class="circle_a" ></div>
 
 
 <div class="circle_b"></div>
-<!---TEXT-->
-<div class="">
-  <h1> ALACENA SOLIDARIA </h1>
-</div>
 
+
+
+  <!---TEXT-->
+  <div class="">
+    <h1> ALACENA SOLIDARIA </h1>
+  </div>
+
+</div>
 
 </body>
 
