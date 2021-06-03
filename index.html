@@ -294,7 +294,7 @@
 
   <div class="menu">
     
-  <div class="side">  </div>
+  <div class="side back">  < volver </div>
 
   <div class="title "><h2> ALACENA SOLIDARIA </h2> </div>
     
@@ -501,9 +501,18 @@
 
     //go back to previous screen
     $('.back').click(function(){      
-      
+
+      var go_to='';
       $('.current').removeClass('current');
-      var go_to = previous_section[previous_section.length - 2];
+
+      if(previous_section[previous_section.length-1] == 'perfil'){
+
+        go_to= 'start';
+      }
+      else{
+        go_to = previous_section[previous_section.length - 2];
+      }
+      
       $('#section_'+go_to).addClass('current');
       
       previous_section.push(go_to);
@@ -517,6 +526,8 @@
           //go to user profile
           $('.current').removeClass('current');
           $('#perfil').addClass('current');
+          previous_section = 'perfil';
+          
     });
 
     
