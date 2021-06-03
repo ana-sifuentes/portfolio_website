@@ -497,14 +497,6 @@
 
     //go to user profile
     $('.profile').click(function(){   
-
-          //save where we return to
-          var return_to = $('.current').attr('id');
-
-          return_to = return_to.substring( return_to.indexOf('_')+1 , return_to.length);
-          previous_section.push(return_to);
-          console.log(return_to);
-          
           //go to user profile
           $('.current').removeClass('current');
           $('#perfil').addClass('current');
