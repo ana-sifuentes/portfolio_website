@@ -122,7 +122,41 @@
        display: flex; 
     }
 
+
+    .product_button{
+      height: 50px;
+      padding:10px;
+      color:#442856;
+      margin: 1vh auto;
+      width:80%;
+    }
+    .product_button:hover{
+      background-color: #785089; 
+    }
+
     
+    .product_button.bebes{
+      background-color:#E34D99;
+    }
+
+    .product_button.canasta{
+      background-color:#76BF60;
+    }
+    .product_button.higiene{
+      background-color:#489B91;
+    }
+    
+    .product_button.especial{
+      background-color:#EC8231;
+    }
+
+    .icon_button{
+      width: 50px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    }
+        
 /***************************************/
   .section_wrapper.introduction{
     padding-top: 20vh;
@@ -256,8 +290,22 @@
 <h2> PEDIR </h2>
 <p>¿Qué necesitas? </p>
 
-<div style="background-color:#E34D99; height:30px; padding:10px; color:#442856; margin: 1vh auto; width:80%;">
-  <img src="images/circle_inner.svg"> <h3> PRODUCTOS BEBES </h3>
+
+
+<div class="product_button bebes" id="bebe">
+  <img class="icon_button" src="images/circle_inner.svg">  PRODUCTOS BEBES 
+</div>  
+
+<div class="product_button canasta" id="canasta">
+  <img class="icon_button" src="images/circle_inner.svg">  CANASTA BASICA
+</div>  
+
+<div class="product_button higiene" id="higiene">
+  <img class="icon_button" src="images/circle_inner.svg">  HIGIENE PERSONAL
+</div>  
+
+<div class="product_button especial" id="especial">
+  <img class="icon_button" src="images/circle_inner.svg">  ALIMENTOS ESPECIALES
 </div>  
 
     
