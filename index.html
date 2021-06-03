@@ -431,12 +431,13 @@
     });
 
     //go back to previous screen
-        $('.back').click(function(){
-          
-            $('.current').removeClass('current');
-            var go_to = previous_section[-2];
-            $('#section_'+go_to).addClass('current');
-        });
+    $('.back').click(function(){      
+      
+      $('.current').removeClass('current');
+      var go_to = previous_section[previous_section.length - 2];
+      $('#section_'+go_to).addClass('current');
+      
+    });
 
   </script>
 
