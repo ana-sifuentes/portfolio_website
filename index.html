@@ -501,7 +501,7 @@
           //save where we return to
           var return_to = $('.current').attr('id');
 
-          return_to = return_to.substring( clicked.indexOf('_')+1 , return_to.length);
+          return_to = return_to.substring( return_to.indexOf('_')+1 , return_to.length);
           previous_section.push(return_to);
           console.log(return_to);
           
