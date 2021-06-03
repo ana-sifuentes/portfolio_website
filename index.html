@@ -97,7 +97,7 @@
   }
 
 .circle_a{
-      background-image: url(images/circle_inner.svg);
+      background-image: url('images/circle_inner.svg');
       position: absolute;
       width: 100%;
       height: 140px;
@@ -107,7 +107,7 @@
 }
   
 .circle_b{
-  background-image: url(images/circle_outline.svg);
+  background-image: url('images/circle_outline.svg');
   position: absolute;
   width: 100%;
   height: 144px;
@@ -137,11 +137,9 @@
 <div class="section_wrapper introduction"> 
 
 
-
-<div class="circle_a" ></div>
-
-
-<div class="circle_b"></div>
+  <!--- circles --->
+  <div class="circle_a"></div>
+  <div class="circle_b"></div>
 
 
 
@@ -162,6 +160,11 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<script>
+
+  $(function(){  // $(document).ready shorthand
+      $('.circle_a').hide().fadeIn('slow');
+      $('.circle_b').hide().fadeIn('slow');
+    });
 
   </script>
 
