@@ -499,15 +499,44 @@
       console.log(clicked);
     });
 
+
+
     //go back to previous screen
     $('.back').click(function(){      
 
-      $('.current').removeClass('current');
-      var go_to = previous_section[previous_section.length - 2];
-      $('#section_'+go_to).addClass('current');
+
+      var x =   $('.current').attr('id');
+      let y='';
       
-      previous_section.push(go_to);
-      console.log(go_to);
+      $('.current').removeClass('current');
+
+      switch(x){
+
+        case 'section_donate': 
+        case 'section_request': 
+          y = 'section_start';
+        break;
+
+        case 'perfil':
+          if( previous_section[previous_section.length - 1] == 'register'){
+            y = 'section_welcome';
+          }
+          else{
+            y = 'section_start';
+          }
+        break;
+
+        case 'section_start': 
+        case 'section_register':
+        default:
+          y = 'section_welcome';
+        break;
+      }
+
+
+      $('#'+y).addClass('current');
+      
+
       
     });
 
@@ -518,10 +547,11 @@
           $('.current').removeClass('current');
           $('#perfil').addClass('current');
 
+          /*
           var return_to = previous_section[previous_section.length - 1];
           previous_section.push(return_to);
           console.log(return_to);
-          
+          */
     });
 
     
