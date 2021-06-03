@@ -60,6 +60,7 @@
   		overflow: auto;
   		min-height: 91vh;
       display: none;
+      background-color:#442856;
   	}
 
 
@@ -71,7 +72,8 @@
   	.content_wrapper {
       	max-width: 1250px;
       	width: 95%;
-      	margin:auto;
+      	margin:0px 2.5%;
+        float:left;
   	}
 
 
@@ -99,14 +101,17 @@
     .button{
       background-color: #D695C0;
       font-family: 'Mont-Heavy';
-      padding:10px;
-      width:30%;
-      margin:auto;
+      padding: 10px;
+      width: 30%;
+      margin: auto;
+      float: left;
+      height: 20px;
+      text-align: center;
+
     }
 
 /***************************************/
   .section_wrapper.introduction{
-    background-color:#442856;
     padding-top: 30vh;
   }
 
@@ -163,12 +168,12 @@
   <div class="circle_b"></div>
 
 
-<div class="content_wrapper">
+<div class="content_wrapper" style="margin-top:80px;">
   <!---TEXT-->
   <div class="intro_text">
     <h1> ALACENA SOLIDARIA </h1>
   </div>
-</div>
+
 
 <div class="button" id="start">
     INICIO
@@ -180,7 +185,7 @@
 </div>  
 
 
-
+</div>
 </div>
 
 
@@ -256,7 +261,7 @@
            '-moz-opacity': '100',          // Firefox and Mozilla browsers 
            '-webkit-opacity': '100',       // WebKit browser e.g. Safari */
            'filter': 'alpha(opacity=100)'  // For IE8 and earlier */
-         }, 3000, 'linear');
+         }, 2500, 'linear');
 
          $('.circle_b').animate({
            'background-position-x': '50%',
@@ -264,10 +269,7 @@
            '-moz-opacity': '100',          // Firefox and Mozilla browsers 
            '-webkit-opacity': '100',       // WebKit browser e.g. Safari */
            'filter': 'alpha(opacity=100)'  // For IE8 and earlier */
-         }, 3000, 'linear');
-
-
-         
+         }, 2500, 'linear');
 
 
     });
