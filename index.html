@@ -127,25 +127,20 @@
       height: 50px;
       padding:10px;
       color:#442856;
-      margin: 1vh auto;
+      margin: 2vh auto;
       width:80%;
-      max-width: 300px;
+      max-width: 315px;
       cursor: pointer;
       background-color: #785089; 
     }
 
 
     .product_button > h3{
-      padding: 15px 0px 0px 80px;
+      padding: 15px 0px 0px 70px;
       text-align: left;
     }
 
-    
-    .product_button:hover{
-      background-color: #785089; 
-    }
-
-    
+      
     .product_button.bebes{
       background-color:#E34D99;
     }
@@ -161,11 +156,17 @@
       background-color:#EC8231;
     }
 
+    .product_button.bebes:hover, .product_button.canasta:hover,
+    .product_button.higiene:hover,.product_button.especial:hover{
+      background-color: #785089; 
+    }
+
+    
     .icon_button{
       width: 50px;
-    float: left;
-    padding: 0px;
-    margin: 0px;
+      float: left;
+      padding: 0px;
+      margin: 0px;
     }
         
 /***************************************/
@@ -398,8 +399,8 @@
 
       $('#section_'+clicked).addClass('current');
       previous_section = clicked;
-      
 
+      console.log(clicked);
     });
 
   </script>
