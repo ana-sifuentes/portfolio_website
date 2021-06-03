@@ -52,27 +52,27 @@
   	/*wrapper for each section*/
   	.section_wrapper{
       height: auto;
-      padding: 4vh 0px 5vh 0px;
+      padding: 10vh 0px 0vh 0px;
       width: 100%;
       background-color: white;
   		float:left;
   		scroll-snap-align: start;
   		overflow: auto;
-  		min-height: 91vh;
+  		min-height: 90vh;
       display: none;
       background-color:#442856;
   	}
 
-
-    	.section_wrapper.current{
+    .section_wrapper.current{
           display: block;
-      }
+    }
 
   	/*wrapper for the section content, this makes the margins */
   	.content_wrapper {
       max-width: 1250px;
       width: 95%;
       margin: auto;
+      text-align: center;
   	}
 
 
@@ -98,24 +98,34 @@
 
 
     .button{
-      background-color: #D695C0;
-      font-family: 'Mont-Heavy';
-      padding: 10px;
-      width: 30%;
-      margin: auto;
-      float: left;
-      height: 20px;
-      text-align: center;
-      cursor: pointer;
+          background-color: #D695C0;
+          font-family: 'Mont-Heavy';
+          padding: 10px;
+          width: 30%;
+          margin: auto;
+          float: left;
+          height: 20px;
+          text-align: center;
+          cursor: pointer;
+          max-width: 200px;
 
     }
 
+
+    .button_wrapper{
+      width: 100%; 
+      margin: auto;
+       display: flex; 
+       max-width: 700px;
+    }
+
+    
 /***************************************/
   .section_wrapper.introduction{
-    padding-top: 30vh;
+    padding-top: 20vh;
   }
 
-.circle_a{
+  .circle_a{
       background-image: url('images/circle_inner.svg');
       position: absolute;
       width: 100%;
@@ -126,25 +136,25 @@
       -moz-opacity: 0; /* Firefox and Mozilla browsers */
       -webkit-opacity: 0; /* WebKit browser e.g. Safari */
       filter: alpha(opacity=0); /* For IE8 and earlier */
-}
+  }
 
-.circle_b{
-  background-image: url('images/circle_outline.svg');
-  position: absolute;
-  width: 100%;
-  height: 244px;
-  background-position-x: 70%;
-  background-repeat: no-repeat;
-  opacity:0%;
-  -moz-opacity: 0; /* Firefox and Mozilla browsers */
-  -webkit-opacity: 0; /* WebKit browser e.g. Safari */
-  filter: alpha(opacity=0); /* For IE8 and earlier */
-}
+  .circle_b{
+    background-image: url('images/circle_outline.svg');
+    position: absolute;
+    width: 100%;
+    height: 244px;
+    background-position-x: 70%;
+    background-repeat: no-repeat;
+    opacity:0%;
+    -moz-opacity: 0; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 0; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+  }
 
 
 .intro_text{
   clear: both;
-  margin-top: 28vh;
+  padding: 10px 0px;
   text-align: center;
 }
 
@@ -168,14 +178,14 @@
   <div class="circle_b"></div>
 
 
-<div class="content_wrapper" style="margin-top:80px;">
+<div class="content_wrapper" style="margin-top:250px;">
   <!---TEXT-->
   <div class="intro_text">
     <h1> ALACENA SOLIDARIA </h1>
   </div>
 
 
-<div class="button_wrapper" style="width:100%; float:left;">
+<div class="button_wrapper">
 <div class="button" id="start">
     INICIO
 </div>  
