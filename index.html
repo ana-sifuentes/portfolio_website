@@ -275,7 +275,7 @@
 
   <div class="title "><h2> REGISTRO </h2> </div>
     
-  <div class="side profile"> <h4> usuario  </h4> </div>
+  <div class="side"> </div>
 
   </div>
   
@@ -517,14 +517,21 @@
           y = 'section_start';
         break;
 
+
+
         case 'perfil':
-          if( previous_section[previous_section.length - 1] == 'register'){
-            y = 'section_welcome';
+          if( previous_section[previous_section.length - 1] == 'donate'){
+            y = 'section_donate';
+          }
+          else if( previous_section[previous_section.length - 1] == 'request'){
+            y = 'section_request';
           }
           else{
             y = 'section_start';
           }
         break;
+
+        
 
         case 'section_start': 
         case 'section_register':
@@ -547,11 +554,7 @@
           $('.current').removeClass('current');
           $('#perfil').addClass('current');
 
-          /*
-          var return_to = previous_section[previous_section.length - 1];
-          previous_section.push(return_to);
-          console.log(return_to);
-          */
+
     });
 
     
