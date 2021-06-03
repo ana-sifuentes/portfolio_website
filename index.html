@@ -174,7 +174,7 @@
       width:100%;margin-bottom:2vh; height:50px;
     }
 
-    .menu > .side{width:20%;float:left;}
+    .menu > .side{width:20%;float:left; cursor: pointer}
 
     .menu > .title{width:60%;float:left;}
     
@@ -436,6 +436,9 @@
       $('.current').removeClass('current');
       var go_to = previous_section[previous_section.length - 2];
       $('#section_'+go_to).addClass('current');
+      
+      previous_section.push(go_to);
+      console.log(go_to);
       
     });
 
