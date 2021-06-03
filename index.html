@@ -168,6 +168,16 @@
       padding: 0px;
       margin: 0px;
     }
+
+
+    .menu{
+      width:100%;margin-bottom:2vh; height:50px;
+    }
+
+    .menu > .side{width:20%;float:left;}
+
+    .menu > .title{width:60%;float:left;}
+    
         
 /***************************************/
   .section_wrapper.introduction{
@@ -301,14 +311,13 @@
 <div class="content_wrapper">
 
 
-
-<div class="menu" style="width:100%;margin-bottom:2vh; height:50px;">
+<div class="menu">
   
-<div class="back"  id="request_back" style="width:20%;float:left;"> <h4> B  </h4> </div>
+<div class="side back"> <h4> B  </h4> </div>
 
-<div class="" style="width:60%;float:left;"><h2> PEDIR </h2> </div>
+<div class="title "><h2> PEDIR </h2> </div>
   
-<div class="perfil"  id="request_back" style="width:20%;float:left;"> <h4> P  </h4> </div>
+<div class="side profile"> <h4> P  </h4> </div>
 
 </div>
 
@@ -319,19 +328,19 @@
 
 
 
-<div class="product_button bebes" id="bebe">
+<div class="product_button bebes" id="pedir_bebe">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>PRODUCTOS BEBES </h3>
 </div>  
 
-<div class="product_button canasta" id="canasta">
+<div class="product_button canasta" id="pedir_canasta">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>CANASTA BASICA</h3>
 </div>  
 
-<div class="product_button higiene" id="higiene">
+<div class="product_button higiene" id="pedir_higiene">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>HIGIENE PERSONAL</h3>
 </div>  
 
-<div class="product_button especial" id="especial">
+<div class="product_button especial" id="pedir_especial">
   <img class="icon_button" src="images/circle_inner.svg"> <h3> ALIMENTOS ESPECIALES</h3>
 </div>  
 
@@ -347,19 +356,19 @@
 <p>¿Qué quieres donar? </p>    
 
 
-<div class="product_button bebes" id="bebe">
+<div class="product_button bebes" id="donar_bebe">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>PRODUCTOS BEBES </h3>
 </div>  
 
-<div class="product_button canasta" id="canasta">
+<div class="product_button canasta" id="donar_canasta">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>CANASTA BASICA</h3>
 </div>  
 
-<div class="product_button higiene" id="higiene">
+<div class="product_button higiene" id="donar_higiene">
   <img class="icon_button" src="images/circle_inner.svg">  <h3>HIGIENE PERSONAL</h3>
 </div>  
 
-<div class="product_button especial" id="especial">
+<div class="product_button especial" id="donar_especial">
   <img class="icon_button" src="images/circle_inner.svg"> <h3> ALIMENTOS ESPECIALES</h3>
 </div>  
 
@@ -404,7 +413,10 @@
     });
 
 
-    let previous_section ='welcome';
+    //store where the user was
+    var previous_section =[];
+    previous_section.push('welcome');
+    
     
     //switching between 'screens'
     $('.button').click(function(){
@@ -413,10 +425,18 @@
       $('.current').removeClass('current');
 
       $('#section_'+clicked).addClass('current');
-      previous_section = clicked;
+      previous_section.push(clicked);
 
       console.log(clicked);
     });
+
+    //go back to previous screen
+        $('.back').click(function(){
+          
+            $('.current').removeClass('current');
+            var go_to = previous_section[-2];
+            $('#section_'+go_to).addClass('current');
+        });
 
   </script>
 
