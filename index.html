@@ -502,17 +502,8 @@
     //go back to previous screen
     $('.back').click(function(){      
 
-      var go_to='';
       $('.current').removeClass('current');
-
-      if(previous_section[previous_section.length-1] === 'perfil'){
-
-        go_to = 'start';
-      }
-      else{
-        go_to = previous_section[previous_section.length - 2];
-      }
-      
+      var go_to = previous_section[previous_section.length - 2];
       $('#section_'+go_to).addClass('current');
       
       previous_section.push(go_to);
@@ -526,7 +517,10 @@
           //go to user profile
           $('.current').removeClass('current');
           $('#perfil').addClass('current');
-          previous_section = 'perfil';
+
+          var return_to = previous_section[previous_section.length - 1];
+          previous_section.push(return_to);
+          console.log(return_to);
           
     });
 
