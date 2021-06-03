@@ -505,9 +505,9 @@
       var go_to='';
       $('.current').removeClass('current');
 
-      if(previous_section[previous_section.length-1] == 'perfil'){
+      if(previous_section[previous_section.length-1] === 'perfil'){
 
-        go_to= 'start';
+        go_to = 'start';
       }
       else{
         go_to = previous_section[previous_section.length - 2];
