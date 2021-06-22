@@ -34,11 +34,13 @@
 /**********************************************************************/
 /* TAGS */
 
-	body{ margin:0px; scroll-snap-type: y proximity; float:left;height: auto;}
+	body{ margin:0px; scroll-snap-type: y proximity; float:left;height: auto;
+        height: 100%;  width: 100%; display: table-cell; position: absolute;  
+      }
 
 	p{font-family: 'Roboto-Thin';  font-size: 1.4em; color:#442856;}
 
-	h1, h2, h3, h4, h5, h6{ font-family: 'Exo-Black'; margin:0px; padding:0px; color:#442856}
+	h1, h2, h3, h4, h5, h6{ font-family: 'Exo-Black'; margin:0px; padding:0px; color:#442856; text-align: center;}
 
   h2{font-size: 2.5em; font-weight: 900;}
 
@@ -48,7 +50,7 @@
 
 	img {width:100%;}
 
-	html {scroll-behavior: smooth;}
+	html {scroll-behavior: smooth; width:100%; height: 100%; }
 
 
 
@@ -72,6 +74,12 @@
     .section_wrapper.purple{
       background-color:#442856;
     }
+
+    .section_wrapper.purple > h2,
+    .section_wrapper.purple > p{
+      color:white;
+    }
+      
 
     /*wrapper for the section content, this makes the margins */
   	.content_wrapper {
@@ -123,86 +131,12 @@
           cursor: pointer;
           max-width: 200px;
           color:#442856;
+          border-radius: 30%;
     }
 
     .button:hover{
       background-color: #785089;
     }
-
-
-    .button_wrapper{
-      width: 100%;
-      margin: 2vh auto;
-       display: flex;
-    }
-
-
-    .product_button{
-      height: 50px;
-      padding:10px;
-      color:#442856;
-      margin: 2vh auto;
-      width:90%;
-      max-width: 315px;
-      cursor: pointer;
-      background-color: #785089;
-    }
-
-
-    .product_button > h3{
-      padding: 15px 0px 0px 70px;
-      text-align: left;
-    }
-
-
-    .product_button.bebes{
-      background-color:#E34D99;
-    }
-
-    .product_button.canasta{
-      background-color:#76BF60;
-    }
-    .product_button.higiene{
-      background-color:#489B91;
-    }
-
-    .product_button.especial{
-      background-color:#EC8231;
-    }
-
-    .product_button.bebes:hover, .product_button.canasta:hover,
-    .product_button.higiene:hover,.product_button.especial:hover{
-      background-color: #785089;
-    }
-
-
-    .icon_button{
-      width: 50px;
-      float: left;
-      padding: 0px;
-      margin: 0px;
-    }
-
-
-    .menu{
-      width:100%;margin-bottom:2vh; height:50px;
-    }
-
-    .menu > .side{width:20%;float:left; cursor: pointer}
-
-    .menu > .title{width:60%;float:left;}
-
-
-
-
-
-@media only screen and (max-width: 450px) {
-  .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
-  .section_wrapper{padding-top:5vh;}
-  .product_button > h3 {   font-size: 101%;}
-}
-
-
 
 
 
@@ -212,18 +146,14 @@
     .support_size{width: 15%;}
     .center_size{ width:68%;}
 
-    /********/
-
 		.full_size, .third_size, .two_third_size { width: 98%; }
 		.option{width:24%; font-size: 15px;}
-
-
+    
 	}
 
 
 	@media only screen and (max-width: 700px) {
-
-
+    
     ol li{font-size: 12px;}
 
     .support_size, .center_size{ width:98%;}
@@ -251,7 +181,19 @@
 
     <div class="columnn support_size"></div>
     <div class="column center_size">
+
+
+      <img src="https://via.placeholder.com/150">
+        
       <h1> ALACENA SOLIDARIA </h1>
+      <p>
+        Todos merecemos vivir de una forma digna.
+        <br><br> 
+        Con Alacena Solidaria,  podemos conseguirlo en comunidad.
+        Si te sobra un poco, compartelo con tu comunidad  
+        y si te falta algo, apóyate en los demás para cubrir ese huequito. 
+      </p>
+      
     </div>
     <div class="column support_size"></div>
 
@@ -358,6 +300,14 @@
         solicitar ayudas y colocar donativos. 
       </P>
 
+
+      <div class="button">
+        <a href="https://ana-sifuentes.github.io/alacena_solidaria/demo">
+          APP  
+        </a>
+      </div>
+
+
       <img src="https://via.placeholder.com/150">
       
     </div>
@@ -383,6 +333,11 @@
         Esta fácil guía te ayudará paso a paso a montar el sistema de Alacena Solidaria.
       </P>
 
+      
+      <div class="button">
+        <a href="">GUIA PDF </a>
+      </div>
+      
       <img src="https://via.placeholder.com/150">
       
     </div>
@@ -438,5 +393,9 @@
 </div>
 
 </div>
+
+
+</body>
+
 
 </html>
