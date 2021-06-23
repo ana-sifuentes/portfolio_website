@@ -3,32 +3,33 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1800 600" style="enable-background:new 0 0 1800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#BEA3CC;}
-	.st1{fill:#442856;}
-	.st2{fill:#D695C0;}
-	.st3{fill:#785089;}
-	.st4{fill:none;stroke:#442856;stroke-width:15;stroke-miterlimit:10;}
-	.st5{fill:#E34D99;}
-	.st6{fill:#EC8231;}
-	.st7{fill:#76BF60;}
-	.st8{fill:#489B91;}
-	.st9{fill:none;stroke:#BEA3CC;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:12,21;}
-	.st10{clip-path:url(#SVGID_2_);}
-	.st11{fill:none;stroke:#D695C0;stroke-width:16;stroke-miterlimit:10;}
-	.st12{fill:none;stroke:#785089;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;}
-	.st13{fill:#C7E2C0;}
-	.st14{fill:#9BD2CA;}
-	.st15{fill:#FBC089;}
-	.st16{fill:#E9A6C9;}
-	.st17{fill:#F0CEE2;}
-	.st18{fill:none;stroke:#442856;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;}
+	.st0{fill:#D695C0;}
+	.st1{fill:#E34D99;}
+	.st2{fill:#76BF60;}
+	.st3{fill:#EC8231;}
+	.st4{fill:#489B91;}
+	.st5{fill:none;stroke:#442856;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:#BEA3CC;}
+	.st7{fill:#442856;}
+	.st8{fill:#785089;}
+	.st9{fill:none;stroke:#442856;stroke-width:15;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#BEA3CC;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:12,21;}
+	.st11{clip-path:url(#SVGID_2_);}
+	.st12{fill:none;stroke:#D695C0;stroke-width:16;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#785089;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:#C7E2C0;}
+	.st15{fill:#9BD2CA;}
+	.st16{fill:#FBC089;}
+	.st17{fill:#E9A6C9;}
+	.st18{fill:#F0CEE2;}
+	.st19{fill:none;stroke:#442856;stroke-width:15;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <g id="Layer_1">
-	<path class="st2" d="M900,558.2c-69,0-133.8-26.9-182.6-75.6S641.8,369,641.8,300s26.9-133.8,75.6-182.6S831,41.8,900,41.8
+	<path class="st0" d="M900,558.2c-69,0-133.8-26.9-182.6-75.6S641.8,369,641.8,300s26.9-133.8,75.6-182.6S831,41.8,900,41.8
 		s133.8,26.9,182.6,75.6s75.6,113.6,75.6,182.6s-26.9,133.8-75.6,182.6S969,558.2,900,558.2z M900,56.8c-65,0-126,25.3-172,71.2
 		c-45.9,45.9-71.2,107-71.2,172s25.3,126,71.2,172c45.9,45.9,107,71.2,172,71.2s126-25.3,172-71.2c45.9-45.9,71.2-107,71.2-172
 		s-25.3-126-71.2-172C1026,82.1,965,56.8,900,56.8z"/>
-	<circle class="st2" cx="900" cy="300" r="185.6"/>
+	<circle class="st0" cx="900" cy="300" r="185.6"/>
 </g>
 <g id="Layer_2">
 </g>
