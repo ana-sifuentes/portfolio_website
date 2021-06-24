@@ -380,7 +380,7 @@
 
   <style>
   .product_select{display: none;}
-  .product_select.current{display: block;}
+  .product_select.actual{display: block;}
   </style>
 
 
@@ -401,7 +401,7 @@
 
 
 <p>¿Cómo te apoyamos? </p>
-<div class="product_select current">
+<div class="product_select actualt">
 
   
 <div class="product_button catalogo" id="catalogo_apoyos">
@@ -533,7 +533,7 @@
 
 <p>¿Con qué quieres apoyar? </p>
 
-<div class="product_select current">
+<div class="product_select actual">
   
 <div class="product_button catalogo" id="catalogo_pedidos">
   <img class="icon_button" src="images/blanco_para_bebes.svg">  <h3>VER CATALOGO </h3>
@@ -736,9 +736,9 @@
     $('.product_button').click(function(){
 
       var clicked_b = $(this).attr('id');
-      $('.product_button.current').removeClass('current');
+      $('.product_button.actual').removeClass('actual');
 
-      $('#s_'+clicked_b).addClass('current');
+      $('#s_'+clicked_b).addClass('actual');
         
     });
 
