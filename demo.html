@@ -76,20 +76,6 @@
   	}
 
 
-  	/*main layout class */
-  	.column  {
-  		float:left;
-  		margin:1% 1%;
-  		padding: 0px;
-  	}
-
-  	/* 100% */
-  	.full_size { width:98%; }
-  	/* 33% */
-  	.third_size { width: 31.33%; }
-  	/* 66% */
-  	.two_third_size { width: 64.6%; }
-
 
   	.clear{
   		clear:both;
@@ -254,7 +240,7 @@
 
   <img src="images/ilustraciones_logo.svg">
   <img src="images/ilustraciones_introduccion.svg">
-  
+
   <div class="intro_text">
     <h1> ALACENA SOLIDARIA </h1>
   </div>
@@ -314,24 +300,41 @@
 
 
 
+<style>
+
+.half_size{
+
+  width: 40%;
+    float: left;
+    padding: 5%;
+    margin: auto;
+}
+
+
+.half_size> .button{
+  width:85%;
+}
+
+</style>
+
 <div style="width:100%; float:left;">
 
-    <div style="width:50%; float:left;">
+    <div class="half_size">
       <img src="images/app_pedir.svg">
-    <div class="button" id="request">    
+    <div class="button" id="request">
         PEDIR
     </div>
   </div>
 
 
-  <div style="width:50%; float:left;">
+  <div class="half_size">
     <img src="images/app_donar.svg">
     <div class="button" id="donate">
         DONAR
     </div>
   </div>
 
-  
+
 </div>
 
 
