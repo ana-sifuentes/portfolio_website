@@ -166,7 +166,7 @@
 
 
     .menu{
-      width:100%;margin-bottom:2vh; height:50px;
+      width:100%; margin: 5vh 0px;height:50px;
     }
 
     .menu > .side{width:20%;float:left; cursor: pointer}
@@ -438,7 +438,7 @@
 
   <div class="side back"> <h4> < volver  </h4> </div>
 
-  <div class="title "><h2> DONAR </h2> </div>
+  <div class="title "><h2> APOYAR </h2> </div>
 
   <div class="side profile"> <h4> usuario  </h4> </div>
 
@@ -455,6 +455,13 @@
 <p>¿Con qué quieres apoyar? </p>
 
 
+<style>
+.product_select_donate{display: none;}
+.product_select_donate.current{display: block;}
+</style>
+
+
+<div class="product_select_donate current">
 <div class="product_button bebes" id="donar_bebe">
   <img class="icon_button" src="images/blanco_para_bebes.svg">  <h3>PRODUCTOS BEBES </h3>
 </div>
@@ -470,8 +477,82 @@
 <div class="product_button especial" id="donar_especial">
   <img class="icon_button" src="images/blanco_alimentos_especiales.svg"> <h3> ALIMENTOS ESPECIALES</h3>
 </div>
+</div>
 
 
+<div class="product_select_donate" id="s_donar_bebe">
+<div style="width:100%; float:left;">
+
+   <h3>PRODUCTOS BEBES </h3>
+    <div class="half_size">
+      <img src="images/blanco_para_bebes.svg"> 
+      <img src="images/blanco_para_bebes.svg"> 
+      <img src="images/blanco_para_bebes.svg"> 
+    </div> 
+
+    <div class="half_size">
+      <img src="images/blanco_para_bebes.svg"> 
+      <img src="images/blanco_para_bebes.svg"> 
+      <img src="images/blanco_para_bebes.svg"> 
+    </div>        
+</div>      
+</div> 
+
+
+<div class="product_select_donate" id="s_donar_canasta">
+<div style="width:100%; float:left;">
+
+   <h3>CANASTA BASICA </h3>
+    <div class="half_size">
+      <img src="images/blanco_canasta_basica.svg">
+      <img src="images/blanco_canasta_basica.svg">
+      <img src="images/blanco_canasta_basica.svg">
+    </div> 
+
+    <div class="half_size">
+      <img src="images/blanco_canasta_basica.svg">
+      <img src="images/blanco_canasta_basica.svg">
+      <img src="images/blanco_canasta_basica.svg">
+    </div>        
+</div>      
+</div> 
+
+
+<div class="product_select_donate" id="s_donar_higiene">
+<div style="width:100%; float:left;">
+
+   <h3>HIGIENE PERSONAL </h3>
+    <div class="half_size">
+      <img src="images/blanco_higiene_personal.svg">
+      <img src="images/blanco_higiene_personal.svg">
+      <img src="images/blanco_higiene_personal.svg">
+    </div> 
+
+    <div class="half_size">
+      <img src="images/blanco_higiene_personal.svg">
+      <img src="images/blanco_higiene_personal.svg">
+      <img src="images/blanco_higiene_personal.svg">
+    </div>        
+</div>      
+</div> 
+
+<div class="product_select_donate" id="s_donar_especial">
+<div style="width:100%; float:left;">
+
+   <h3>HIGIENE PERSONAL </h3>
+    <div class="half_size">
+      <img src="images/blanco_alimentos_especiales.svg">
+      <img src="images/blanco_alimentos_especiales.svg">
+      <img src="images/blanco_alimentos_especiales.svg">
+    </div> 
+
+    <div class="half_size">
+      <img src="images/blanco_alimentos_especiales.svg">
+      <img src="images/blanco_alimentos_especiales.svg">
+      <img src="images/blanco_alimentos_especiales.svg">
+    </div>        
+</div>      
+</div> 
 
 </div>
 </div>
@@ -508,6 +589,15 @@
 
 </div>
 </div>
+
+
+
+<!---------------------------------------------------------------------------------------------->
+
+
+
+
+
 
 
 
@@ -557,12 +647,21 @@
       var clicked = $(this).attr('id');
       $('.current').removeClass('current');
 
-      $('#section_'+clicked).addClass('current');
+      
       previous_section.push(clicked);
 
       console.log(clicked);
     });
 
+
+    $('.product_button').click(function(){
+
+      var clicked_b = $(this).attr('id');
+      $('.product_button.current').removeClass('current');
+
+      $('#s_'+clicked).addClass('current');
+        
+    });
 
 
     //go back to previous screen
