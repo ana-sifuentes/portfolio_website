@@ -245,7 +245,7 @@
 }
 
 
-.half_size> .button{
+.half_size > .button{
   width:85%;
 }
 
@@ -376,6 +376,15 @@
 
 <!---------------------------------------------------------------------------------------------->
 
+
+
+  <style>
+  .product_select{display: none;}
+  .product_select.current{display: block;}
+  </style>
+
+
+
 <div class="section_wrapper" id="section_request">
 <div class="content_wrapper">
 
@@ -392,7 +401,7 @@
 
 
 <p>¿Cómo te apoyamos? </p>
-<div class="product_select_donate current">
+<div class="product_select current">
 
   
 <div class="product_button catalogo" id="catalogo_apoyos">
@@ -415,12 +424,11 @@
   <img class="icon_button" src="images/blanco_alimentos_especiales.svg"> <h3> ALIMENTOS ESPECIALES</h3>
 </div>
 
-
 </div>
 
 
 
-<div class="product_select_donate" id="s_pedir_bebe">
+<div class="product_select" id="s_pedir_bebe">
 <div style="width:100%; float:left;">
 
    <h3>PRODUCTOS BEBES </h3>
@@ -439,7 +447,7 @@
 </div> 
 
 
-<div class="product_select_donate" id="s_pedir_canasta">
+<div class="product_select" id="s_pedir_canasta">
 <div style="width:100%; float:left;">
 
    <h3>CANASTA BASICA </h3>
@@ -458,7 +466,7 @@
 </div> 
 
 
-<div class="product_select_donate" id="s_pedir_higiene">
+<div class="product_select" id="s_pedir_higiene">
 <div style="width:100%; float:left;">
 
    <h3>HIGIENE PERSONAL </h3>
@@ -476,7 +484,7 @@
 </div>      
 </div> 
 
-<div class="product_select_donate" id="s_pedir_especial">
+<div class="product_select" id="s_pedir_especial">
 <div style="width:100%; float:left;">
 
    <h3>HIGIENE PERSONAL </h3>
@@ -523,17 +531,9 @@
 
 
 
-  <style>
-  .product_select_donate{display: none;}
-  .product_select_donate.current{display: block;}
-  </style>
-
-
-
-
 <p>¿Con qué quieres apoyar? </p>
 
-<div class="product_select_donate current">
+<div class="product_select current">
   
 <div class="product_button catalogo" id="catalogo_pedidos">
   <img class="icon_button" src="images/blanco_para_bebes.svg">  <h3>VER CATALOGO </h3>
@@ -554,10 +554,11 @@
 <div class="product_button especial" id="donar_especial">
   <img class="icon_button" src="images/blanco_alimentos_especiales.svg"> <h3> ALIMENTOS ESPECIALES</h3>
 </div>
+
 </div>
 
 
-<div class="product_select_donate" id="s_donar_bebe">
+<div class="product_select" id="s_donar_bebe">
 <div style="width:100%; float:left;">
 
    <h3>PRODUCTOS BEBES </h3>
@@ -576,7 +577,7 @@
 </div> 
 
 
-<div class="product_select_donate" id="s_donar_canasta">
+<div class="product_select" id="s_donar_canasta">
 <div style="width:100%; float:left;">
 
    <h3>CANASTA BASICA </h3>
@@ -595,7 +596,7 @@
 </div> 
 
 
-<div class="product_select_donate" id="s_donar_higiene">
+<div class="product_select" id="s_donar_higiene">
 <div style="width:100%; float:left;">
 
    <h3>HIGIENE PERSONAL </h3>
@@ -613,7 +614,8 @@
 </div>      
 </div> 
 
-<div class="product_select_donate" id="s_donar_especial">
+
+<div class="product_select" id="s_donar_especial">
 <div style="width:100%; float:left;">
 
    <h3>HIGIENE PERSONAL </h3>
