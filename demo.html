@@ -234,17 +234,28 @@
 
 </style>
 
+<style>
 
-<!----------------->
+.half_size{
 
+  width: 40%;
+    float: left;
+    padding: 5%;
+    margin: auto;
+}
+
+
+.half_size> .button{
+  width:85%;
+}
+
+</style>
 <body>
 
 
 <!--WRAPPER-->
 <div class="section_wrapper introduction current" id ="section_welcome">
-
 <div class="content_wrapper">
-  <!---TEXT-->
 
   <img src="images/ilustraciones_logo.svg">
   <img src="images/ilustraciones_introduccion.svg">
@@ -269,6 +280,8 @@
 </div>
 
 
+<!----------------------------------------------------------------------------------------->
+
 
 <div class="section_wrapper" id="section_register">
 <div class="content_wrapper">
@@ -292,6 +305,9 @@
 </div>
 
 
+<!----------------------------------------------------------------------------------------->
+
+
 
 <div class="section_wrapper" id="section_start">
 <div class="content_wrapper">
@@ -308,22 +324,7 @@
 
 
 
-<style>
 
-.half_size{
-
-  width: 40%;
-    float: left;
-    padding: 5%;
-    margin: auto;
-}
-
-
-.half_size> .button{
-  width:85%;
-}
-
-</style>
 
 <div style="width:100%; float:left;">
 
@@ -374,8 +375,6 @@
 </div>
 
 <!---------------------------------------------------------------------------------------------->
-
-
 
 <div class="section_wrapper" id="section_request">
 <div class="content_wrapper">
@@ -725,7 +724,7 @@
       var clicked = $(this).attr('id');
       $('.current').removeClass('current');
 
-      
+      $('#section_'+clicked).addClass('current');
       previous_section.push(clicked);
 
       console.log(clicked);
@@ -737,7 +736,7 @@
       var clicked_b = $(this).attr('id');
       $('.product_button.current').removeClass('current');
 
-      $('#s_'+clicked).addClass('current');
+      $('#s_'+clicked_b).addClass('current');
         
     });
 
