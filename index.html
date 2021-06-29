@@ -79,10 +79,12 @@
   		min-height: 100vh;
       display:flex;
       background-color: #ffffff;
+      padding: 15vh 0px;
   	}
 
     .section_wrapper.purple{
       background-color:#442856;
+      padding:0px;
     }
 
     .section_wrapper.purple >.content_wrapper > .column.center_size > h1,
@@ -160,13 +162,16 @@
 
 
 	/*less than 1000px*/
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 1024px) {
 
-    .support_size{width: 15%;}
-    .center_size{ width:68%;}
+    .support_size{width: 10%;}
+    .center_size{ width:78%;}
+
+    .section_wrapper{display: block; min-height: auto; padding:10vh 0px; }
+    .section_wrapper.purple{display: flex;  padding: 0px;  min-height: 100vh;}
 
 		.full_size, .third_size, .two_third_size { width: 98%; }
-		.option{width:24%; font-size: 15px;}
+
 
 	}
 
@@ -424,10 +429,16 @@
 
         <img src="images/ilustraciones_resumen visual 1.svg">
 
+          <div class="clear space"></div>
+          
         <h4>
           En las [x] alacenas del barrio [barrio]
+          <br>
+          se han donado [x] ayudas.
         </h4>
 
+          <div class="clear space"></div>
+          
 
         <div class="flourish-embed flourish-chart" data-src="visualisation/6571157">
           <script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -437,12 +448,13 @@
         <div class="flourish-embed flourish-chart" data-src="visualisation/6568469">
           <script src="https://public.flourish.studio/resources/embed.js"></script></div>
           
-
+          <div class="clear space"></div>
+  
         <div class="flourish-embed flourish-hierarchy" data-src="visualisation/6581385">
           <script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
         
-
+          <div class="clear space"></div>
 
 
     </div>
