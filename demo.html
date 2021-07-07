@@ -245,17 +245,35 @@
 .product_select.actual{display: block;}
 
 
+.list_item{    
+    width: 100%;
+    color: white;
+    font-family: 'Roboto-Thin';
+    height: 40px;
+    float: left;
+    text-align: left; 
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+
+    .list_item > img{width: 20%; float: left;}
+
+    .list_item > .name {float: left; color: white; padding:10px;}
 
 @media only screen and (max-width: 450px) {
   .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
   .section_wrapper{padding-top:5vh;}
   .product_button > h3 {   font-size: 101%;}
   .menu{margin:0px;}
+  .list_item > .name {font-size:0.5em;}
 }
 
 
 
 
+
+    
 </style>
 
 
@@ -363,19 +381,7 @@
 
 
 
-<style>
-.list_item{    width: 100%;
-    color: white;
-    font-family: 'Roboto-Thin';
-    height: 40px;
-    float: left;
-    text-align: left; 
-  cursor:pointer;}
 
-    .list_item > img{width: 20%; float: left;}
-
-    .list_item > .name {float: left; color: white; padding:10px;}
-</style>
 
 
 
