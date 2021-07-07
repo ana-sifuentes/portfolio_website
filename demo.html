@@ -83,7 +83,7 @@
   	}
 
 
-    .button{
+    .button, #load_more_items{
           background-color: #D695C0;
           font-family: 'Mont-Heavy';
           padding: 10px;
@@ -261,6 +261,12 @@
 
     .list_item > .name {float: left; color: white; padding:10px;}
 
+
+.hidden_list{display: none;}
+
+.hidden_list.s{display: block;}
+
+
 @media only screen and (max-width: 450px) {
   .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
   .section_wrapper{padding-top:5vh;}
@@ -413,6 +419,23 @@
         <div class="name"> Kit canasta </div>
       </div>
 
+
+      <div class="hidden_list">
+
+        <div class="list_item"><img src="images/iconos_necesidades_C - leche tetrabrik.svg"> 
+          <div class="name"> Leche de soya</div>
+        </div>
+
+        <div class="list_item"><img src="images/iconos_necesidades_D - calcetines.svg"> 
+          <div class="name"> Calcetines</div>
+        </div>
+
+        <div class="list_item"><img src="images/iconos_necesidades_C - kit canaste basica.svg"> 
+          <div class="name"> Kit canasta </div>
+        </div>
+
+      </div>
+
     </div>
 
     <div class="half_size">
@@ -438,11 +461,36 @@
       <div class="list_item"><img src="images/iconos_ayuda_A - leche en polvo.svg"> 
         <div class="name"> Leche en polvo </div>
       </div>
+
+      <div class="hidden_list">
+
+        <div class="list_item"><img src="images/iconos_ayuda_C - aceite.svg"> 
+          <div class="name"> Aceite </div>
+        </div>
+
+        <div class="list_item"><img src="images/iconos_ayuda_B - cafe + te.svg"> 
+          <div class="name"> Café y té</div>
+        </div>
+
+        <div class="list_item"><img src="images/iconos_ayuda_A - leche en polvo.svg"> 
+          <div class="name"> Leche en polvo </div>
+        </div>
+
+      </div>
       
     </div>
 
 
+
+    <div id="load_more_items">
+        CARGAR MAS
+    </div>
+
+    
+    
 </div>
+
+
 
 
 </div>
@@ -825,6 +873,15 @@
 
       console.log(clicked);
     });
+
+    
+
+  $('#load_more_items').click(function(){
+    $('.hidden_list').addClass('s');
+  });
+
+
+
 
 
     $('.product_button').click(function(){
