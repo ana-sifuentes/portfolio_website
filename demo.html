@@ -770,6 +770,13 @@
     $('.product_button').click(function(){
 
       var clicked_b = $(this).attr('id');
+      $('.current').removeClass('current');
+
+
+      $('#section_'+clicked_b).addClass('current');
+      previous_section.push(clicked_b);
+
+      console.log(clicked_b);
 
     });
 
