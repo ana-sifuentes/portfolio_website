@@ -145,8 +145,11 @@
     }
 
     .product_button.catalogo{
-      background-color:#D695C0;
-      color:#442856;
+        background-color: #D695C0;
+          color: #442856;
+          text-align: center;
+          padding: 10px;
+          margin-bottom: 40px;
     }
 
     .product_button.bebes:hover, .product_button.canasta:hover,
@@ -170,6 +173,8 @@
     }
 
     .menu > .side{width:20%;float:left; cursor: pointer}
+
+    .menu >.side.profile img{width: 30%;}
 
     .menu > .title{width:60%;float:left;}
 
@@ -223,22 +228,7 @@
 }
 
 
-
-@media only screen and (max-width: 450px) {
-  .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
-  .section_wrapper{padding-top:5vh;}
-  .product_button > h3 {   font-size: 101%;}
-  .menu{margin:0px;}
-}
-
-
-
-</style>
-
-<style>
-
 .half_size{
-
   width: 40%;
     float: left;
     padding: 5%;
@@ -253,6 +243,19 @@
 
 .product_select{display: none;}
 .product_select.actual{display: block;}
+
+
+
+@media only screen and (max-width: 450px) {
+  .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
+  .section_wrapper{padding-top:5vh;}
+  .product_button > h3 {   font-size: 101%;}
+  .menu{margin:0px;}
+}
+
+
+
+
 </style>
 
 
@@ -367,6 +370,14 @@
     <div class="half_size">
       <h4>Pedidos</h4>
 
+      <div class="">
+        <div class="">
+
+        </div>  
+        <div class="">
+          Kit para bebés
+        </div>
+      </div>
 
     </div>
 
