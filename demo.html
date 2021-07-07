@@ -83,7 +83,7 @@
   	}
 
 
-    .button, #load_more_items{
+    .button, .load_more_items{
           background-color: #D695C0;
           font-family: 'Mont-Heavy';
           padding: 10px;
@@ -98,10 +98,20 @@
           border-radius: 10px;
     }
 
-    #load_more_items{
+    .load_more_items{
       width: 100%;
       max-width:500px;
+      margin-bottom: 50px;
     }
+
+.load_more_items::before{
+  content: 'MOSTRAR MAS';
+}
+
+.load_more_items.S::before{
+  content: 'MENOS';
+}
+
 
     .button:hover{
       background-color: #785089;
@@ -487,8 +497,7 @@
 
 
 
-    <div id="load_more_items">
-        CARGAR MAS
+    <div class="load_more_items">
     </div>
 
     
@@ -881,8 +890,9 @@
 
     
 
-  $('#load_more_items').click(function(){
-    $('.hidden_list').addClass('s');
+  $('.load_more_items').click(function(){
+    $(this).toggleClass('s');
+    $('.hidden_list').toggleClass('s');
   });
 
 
