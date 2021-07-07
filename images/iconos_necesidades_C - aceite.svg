@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1554 1554" style="enable-background:new 0 0 1554 1554;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E34D99;}
+	.st1{fill:#EC8231;}
+	.st2{fill:#76BF60;}
+	.st3{fill:#489B91;}
+	.st4{fill:#9BD2CA;}
+	.st5{fill:#E9A6C9;}
+	.st6{fill:#FBC089;}
+	.st7{fill:#C7E2C0;}
+</style>
+<g id="base_grid">
+	<circle class="st2" cx="776.4" cy="780.1" r="777"/>
+</g>
+<g id="design">
+	<g>
+		<path class="st7" d="M882,336c0-23.2-18.8-42-42-42H714c-23.2,0-42,18.8-42,42v63h210V336z"/>
+		<path class="st7" d="M777,924c42,0,63-23.3,63-70c0-46.7-42-140-63-140s-63,93.3-63,140C714,900.7,735,924,777,924z"/>
+		<path class="st7" d="M945,546h-63V441H672v105h-63c-23.2,0-42,18.8-42,42v315v315c0,23.2,18.8,42,42,42h336c23.2,0,42-18.8,42-42
+			V903V588C987,564.8,968.2,546,945,546z M903,1008H651V630h252V1008z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1554 1554" style="enable-background:new 0 0 1554 1554;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E34D99;}
+	.st1{fill:#EC8231;}
+	.st2{fill:#76BF60;}
+	.st3{fill:#489B91;}
+	.st4{fill:#9BD2CA;}
+	.st5{fill:#E9A6C9;}
+	.st6{fill:#FBC089;}
+	.st7{fill:#C7E2C0;}
+</style>
+<g id="base_grid">
+	<circle class="st2" cx="776.4" cy="780.1" r="777"/>
+</g>
+<g id="design">
+	<g>
+		<path class="st7" d="M1134,336c0-23.2-18.8-42-42-42H462c-23.2,0-42,18.8-42,42v42h714V336z"/>
+		<path class="st7" d="M1134,420H420c-63,0-84,147-84,147v651c0,23.2,18.8,42,42,42h798c23.2,0,42-18.8,42-42V567
+			C1218,567,1197,420,1134,420z M1155,1197H399V567h756V1197z"/>
+		<ellipse class="st7" cx="483" cy="693" rx="21" ry="63"/>
+		<ellipse class="st7" cx="777" cy="693" rx="21" ry="63"/>
+		<ellipse class="st7" cx="1071" cy="693" rx="21" ry="63"/>
+		<ellipse class="st7" cx="630" cy="882" rx="21" ry="63"/>
+		<ellipse class="st7" cx="924" cy="882" rx="21" ry="63"/>
+		<ellipse class="st7" cx="483" cy="1071" rx="21" ry="63"/>
+		<ellipse class="st7" cx="777" cy="1071" rx="21" ry="63"/>
+		<ellipse class="st7" cx="1071" cy="1071" rx="21" ry="63"/>
+	</g>
+</g>
+</svg>

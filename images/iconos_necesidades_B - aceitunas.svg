@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1554 1554" style="enable-background:new 0 0 1554 1554;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E34D99;}
+	.st1{fill:#EC8231;}
+	.st2{fill:#76BF60;}
+	.st3{fill:#489B91;}
+	.st4{fill:#9BD2CA;}
+	.st5{fill:#E9A6C9;}
+	.st6{fill:#FBC089;}
+	.st7{fill:#C7E2C0;}
+</style>
+<g id="base_grid">
+	<circle class="st1" cx="777.6" cy="776.6" r="777"/>
+</g>
+<g id="design">
+	<g>
+		<ellipse class="st6" cx="882" cy="924" rx="42" ry="21"/>
+		<path class="st6" d="M1050,315H504c-23.2,0-42,18.8-42,42v21h630v-21C1092,333.8,1073.2,315,1050,315z"/>
+		<ellipse class="st6" cx="882" cy="567" rx="42" ry="21"/>
+		<ellipse class="st6" cx="651" cy="756" rx="42" ry="21"/>
+		<path class="st6" d="M462,1260h630V420H462V1260z M882,525c58,0,105,61.1,105,136.5S940,798,882,798s-105-61.1-105-136.5
+			S824,525,882,525z M882,882c58,0,105,61.1,105,136.5S940,1155,882,1155s-105-61.1-105-136.5S824,882,882,882z M651,714
+			c58,0,105,61.1,105,136.5S709,987,651,987s-105-61.1-105-136.5S593,714,651,714z"/>
+	</g>
+</g>
+</svg>
