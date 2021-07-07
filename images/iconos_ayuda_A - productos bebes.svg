@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1554 1554" style="enable-background:new 0 0 1554 1554;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9A6C9;}
+	.st1{fill:#FBC089;}
+	.st2{fill:#C7E2C0;}
+	.st3{fill:#9BD2CA;}
+	.st4{fill:#489B91;}
+	.st5{fill:#E34D99;}
+	.st6{fill:#EC8231;}
+	.st7{fill:#76BF60;}
+</style>
+<g id="base_grid">
+	<circle class="st0" cx="777" cy="777" r="777"/>
+</g>
+<g id="design">
+	<path class="st5" d="M1218,672.5H924v-39.1c38.9-38.1,63-91.2,63-149.9c0-116-94-210-210-210s-210,94-210,210
+		c0,58.7,24.1,111.8,63,149.9v39.1H336c-23.2,0-42,18.8-42,42v210c0,23.2,18.8,42,42,42h126c0,174,141,315,315,315s315-141,315-315
+		h126c23.2,0,42-18.8,42-42v-210C1260,691.3,1241.2,672.5,1218,672.5z M777,1176.5c-116,0-210-94-210-210h420
+		C987,1082.4,893,1176.5,777,1176.5z"/>
+</g>
+</svg>
