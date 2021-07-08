@@ -58,9 +58,8 @@
   		float:left;
   		scroll-snap-align: start;
   		overflow: auto;
-  		min-height: 100vh;
       display: none;
-      padding-top:10vh;
+      padding-top:2vh;
   	}
 
     .section_wrapper.current{
@@ -298,7 +297,7 @@
   .section_wrapper.introduction{ padding-top: 10vh; height: auto;}
   .section_wrapper{padding-top:5vh;}
   .product_button > h3 {   font-size: 101%;}
-  .menu{margin:0px;}
+  .menu{margin:0px; margin-bottom:10px;}
   .list_item > .name {font-size:0.5em;}
 }
 
@@ -315,7 +314,7 @@
 
 
 <!--WRAPPER-->
-<div class="section_wrapper introduction current" id ="section_welcome">
+<div class="section_wrapper introduction current" id ="section_welcome" style="padding-top:10vh;">
 <div class="content_wrapper">
 
   <img src="images/ilustraciones_logo.svg">
@@ -1213,7 +1212,23 @@
 
 <!---------------------------------------------------------------------------------------------->
 
+<div class="section_wrapper" id="section_list_item">
+<div class="content_wrapper">
 
+  <div class="menu">
+
+
+
+  <div class="side back"> <img src="images/app_volver.svg"> </div>
+
+  <div class="title "><h2> SELECCION </h2> </div>
+
+  <div class="side profile"> <img src="images/app_usuario.svg"> </div>
+
+  </div>
+
+</div>
+</div>
 
 
 
@@ -1329,7 +1344,18 @@
     $('.hidden_list').toggleClass('s');
   });
 
+  
 
+  $('.list_item').click(function(){
+    var clicked_c = $(this).attr('id');
+    $('.current').removeClass('current');
+
+
+    $('#section_'+clicked_c).addClass('current');
+    previous_section.push(clicked_c);
+
+    console.log(clicked_c);
+  });
 
 
 
@@ -1364,7 +1390,6 @@
         break;
 
         case 'section_catalogo_donativos':
-      
         case 'section_pedir_bebe':
         case 'section_pedir_especial':
         case 'section_pedir_higiene':
