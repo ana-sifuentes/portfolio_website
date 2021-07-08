@@ -598,7 +598,7 @@
 
 <h4> Apoyos disponibles  </h4>
 
-<div class="list_item testing_click"><img src="images/iconos_ayuda_A - biberones.svg">
+<div class="list_item"><img src="images/iconos_ayuda_A - biberones.svg">
   <div class="name"> Biberones </div>
 </div>
 
@@ -1228,6 +1228,12 @@
 
   </div>
 
+
+  <div class="list_item append_here">
+  </div>
+
+
+  
 </div>
 </div>
 
@@ -1349,6 +1355,9 @@
 
   $('.list_item').click(function(){
 
+
+  
+    
     var clicked_c = 'list_item';
     $('.current').removeClass('current');
 
@@ -1357,6 +1366,13 @@
     previous_section.push(clicked_c);
 
     console.log(clicked_c);
+
+    $('.append_here').empty();
+      
+    var content_s = $(this).html();
+
+    $('.append_here').append(content_s);
+
   });
 
 
