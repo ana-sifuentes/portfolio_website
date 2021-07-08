@@ -82,7 +82,7 @@
   	}
 
 
-    .button, .load_more_items{
+    .button, .load_more_items, .button_dos{
           background-color: #D695C0;
           font-family: 'Mont-Heavy';
           padding: 10px;
@@ -98,7 +98,7 @@
     }
 
     .load_more_items{
-      width: 100%;
+      width: 95%;
       max-width:500px;
       margin-bottom: 50px;
     }
@@ -112,7 +112,7 @@
 }
 
 
-    .button:hover{
+    .button:hover, .button_dos{
       background-color: #785089;
     }
 
@@ -259,7 +259,7 @@
 .product_select.actual{display: block;}
 
 
-.list_item{
+.list_item, .list_item_e{
     width: 100%;
     color: white;
     font-family: 'Roboto-Thin';
@@ -274,13 +274,15 @@
 
     .list_item > img{width: 20%; float: left;}
 
-    .list_item > .name {float: left; color: white; padding:10px;}
+    .list_item > .name,
+    .list_item_e > .name {float: left; color: white; padding:10px;}
 
 
 .hidden_list{display: none;}
 
 .hidden_list.s{display: block;}
 
+#section_list_item > .content_wrapper >.list_item_e > img,
 #perfil > .content_wrapper >.list_item > img,
 #section_catalogo_donativos > .content_wrapper >.list_item > img,
 #section_pedir_bebe > .content_wrapper >.list_item > img,
@@ -355,7 +357,7 @@
   </div>
 
     <p> No necesitas registrarte para usar Alacena Solidaria <br>
-      Solo recaudamos datos para fines estadisticos y para tu perfil de usuario </p>
+      Solo recaudamos datos para fines estadísticos y para tu perfil de usuario </p>
 
 
 
@@ -1229,9 +1231,14 @@
   </div>
 
 
-  <div class="list_item append_here">
+  <p> Haz seleccionado: </p>
+
+
+  <div class="list_item_e append_here">
   </div>
 
+<img src="images/app_confirmar.svg">
+  
 
   
 </div>
@@ -1260,23 +1267,24 @@
 <H3>¡Bienvenido! </h3>
 <img src="images/app_usuario.svg" style="width:30%;">
 
-
-<h4>Pedidos </h4>
-
-<div class="list_item"><img src="images/iconos_necesidades_D - calcetines.svg">
-  <div class="name"> Calcetines</div>
-</div>
-
-<div class="list_item"><img src="images/iconos_necesidades_C - kit canaste basica.svg">
-  <div class="name"> Kit canasta </div>
-</div>
+<p> No necesitas registrarte para usar Alacena Solidaria <br>
+  Solo recaudamos datos para fines estadísticos y para tu perfil de usuario </p>
 
 
-<h4>Donativos </h4>
-<div class="list_item"><img src="images/iconos_ayuda_C - aceite.svg">
-  <div class="name"> Aceite </div>
-</div>
 
+
+  
+  <div class="button_wrapper">
+  <div class="button_dos" >
+      REGISTRARSE
+  </div>
+  </div>
+
+  <div class="button_wrapper">
+  <div class="button_dos" >
+     ENCUESTA
+  </div>
+  </div>
 
 
 
