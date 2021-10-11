@@ -28,6 +28,12 @@
 
 
 <style>
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,
+dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
+
+
 body{
   background:#000;
   color:#fff; 
@@ -35,12 +41,53 @@ body{
   height: 100%;
 }
 
+.timeline_nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+}
+
+@media (max-width: 400px){.timeline_nav{display:none}}
+@media (max-height: 555px){.timeline_nav{display:none}}
+
+.timeline_nav:before{content:"";position:absolute;z-index:0;top:0;left:29px;height:100%;bottom:0;border-left:2px solid rgba(255,255,255,0.3)}
+.timeline_nav ul{margin-top:50px;position:relative;display:block;z-index:2;padding-left:20px}
+.timeline_nav ul li{position:relative;display:block;margin:20px 0}
+@media (max-height: 600px){.timeline_nav ul li{margin:15px 0}}
+.timeline_nav ul li a:hover+span{opacity:1}
+.timeline_nav ul li.active a,.timeline_nav ul li a:hover{-moz-transform:scale(2);-ms-transform:scale(2);-webkit-transform:scale(2);transform:scale(2);background:#e53333}
+@media (max-height: 621px){.timeline_nav ul li.active a,.timeline_nav ul li a:hover{-moz-transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);transform:scale(1.5)}}
+.timeline_nav ul li a{-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;-webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;display:inline-block;width:20px;height:20px;border-radius:100%;background:#dddddd;vertical-align:middle}
+.timeline_nav ul span{-moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;background:#0e0e0e;color:rgba(255,255,255,0.7);font-size:14px;position:fixed;vertical-align:middle;margin-left:20px;margin-top:-6px;border-radius:3px;padding:2px 7px;opacity:0}
+.timeline_nav ul span.one-line{margin-top:3px}.timeline_nav ul span b{display:block;font-size:18px;line-height:1;color:white}.spacer{padding:10% 0;background:white;width:100%}.m-video.inline_video{position:relative;margin-bottom:25px}
+
+
+
 <style>
 
 
 <body>
 
 <h1> Testing! </h1>
+
+<div class="timeline_nav" id="timeline">
+  <ul>
+    <li class=""><a href="#one"></a><span class="one-line"><b>Introduction</b></span></li>
+    <li class="active"><a href="#two"></a><span><b>Good Morning Beautiful</b>Hardware and Software</span></li>
+    <li><a href="#three"></a><span><b>Walk It Off</b>Notifications, Music, Apple Pay</span></li>
+    <li><a href="#four"></a><span><b>Fashion Technology</b>Featuring Racked</span></li>
+    <li><a href="#five"></a><span><b>Lost in the Meeting Zone</b>Messaging, Siri, Digital Touch</span></li>
+    <li><a href="#six"></a><span><b>Business Time</b>Apps and Performance</span></li>
+    <li><a href="#seven"></a><span><b>Work It Out</b>Health, Fitness, Activity Tracker</span></li>
+    <li><a href="#eight"></a><span><b>Twilight of Attention</b>Featuring Eater</span></li>
+    <li><a href="#nine"></a><span><b>Back to Base</b>Battery Life, Thoughts, Feelings</span></li>
+    <li><a href="#ten"></a><span class="one-line"><b>Credits</b></span></li>
+  </ul>
+</div>
+
+
 </body>
 
 
