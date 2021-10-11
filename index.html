@@ -33,7 +33,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
 {margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
 
-
+/*page body*/
 body{
   background:#fff;
   color:#000; 
@@ -41,6 +41,22 @@ body{
   height: 100%;
 }
 
+/*tags */
+h1 {
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+    color: #338ce5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
 
 
 
@@ -56,6 +72,8 @@ body{
 @media (max-width: 400px){.timeline_nav{display:none}}
 @media (max-height: 555px){.timeline_nav{display:none}}
 
+
+/*vertical line*/
 .timeline_nav:before{
   content:"";
   position:absolute;
@@ -64,7 +82,7 @@ body{
   left:29px;
   height:100%;
   bottom:0;
-  border-left:2px solid rgba(255,255,255,0.3);
+  border-left: 2px solid rgb(0 0 0 / 80%);
 }
   
 .timeline_nav ul{
@@ -143,7 +161,7 @@ body{
 
 
 
-/* section */
+/* section wrapper*/
 
 .m-row{
   width:100%;
@@ -159,7 +177,7 @@ body{
   clear:both;
 }
 
-
+/*inner section wrapper*/
 .m-row__inner{padding-top:50px;padding-bottom:50px}
 .m-row__inner{max-width:955px;margin:10px auto;padding:0 15px}
 
@@ -168,6 +186,28 @@ body{
 }
 
 
+/*inner section divider 1/1*/
+.m-row .m-row__full {
+    width: 100%;
+}
+
+
+/* H1 titles */
+.m-row__full h1{
+  font-size:80px;
+  line-height:1.25;
+  margin-bottom:10px;
+  display:block
+}
+@media (max-width: 720px){
+  .m-row .m-row__full h1{font-size:60px}
+}
+@media (max-width: 440px){
+  .m-row .m-row__full h1{font-size:40px}
+}
+
+
+/* inner sections divider 1/3*/
 .m-row__two-third{width:calc(66.66% - ((25px * 2) / 3));float:left}
 @media (max-width: 720px){
   .m-row .m-row__two-third{float:none;width:100%}
@@ -206,6 +246,11 @@ body{
 <!--- Content -->
 
 <div class="m-row" id="two">
+
+  <div class="m-row__full">
+      <h1> Hello and welcome! </h1>
+      <h3>How is your day going?</h3>
+  </div>  
 
   <div class="m-row__two-third">
     <p>
