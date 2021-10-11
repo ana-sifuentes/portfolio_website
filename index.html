@@ -35,8 +35,8 @@ dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,
 
 
 body{
-  background:#000;
-  color:#fff; 
+  background:#fff;
+  color:#000; 
   overflow:auto;
   height: 100%;
 }
@@ -44,8 +44,8 @@ body{
 
 
 
-/*timeline*/
-.timeline_nav {
+/*timeline container*/
+.timeline_nav{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -56,28 +56,102 @@ body{
 @media (max-width: 400px){.timeline_nav{display:none}}
 @media (max-height: 555px){.timeline_nav{display:none}}
 
-.timeline_nav:before{content:"";position:absolute;z-index:0;top:0;left:29px;height:100%;bottom:0;border-left:2px solid rgba(255,255,255,0.3)}
-.timeline_nav ul{margin-top:50px;position:relative;display:block;z-index:2;padding-left:20px}
-.timeline_nav ul li{position:relative;display:block;margin:20px 0}
+.timeline_nav:before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:29px;
+  height:100%;
+  bottom:0;
+  border-left:2px solid rgba(255,255,255,0.3);
+}
+  
+.timeline_nav ul{
+  margin-top:50px;
+  position:relative;
+  display:block;
+  z-index:2;
+  padding-left:20px
+}
+
+.timeline_nav ul li{
+  position:relative;
+  display:block;
+  margin:20px 0;
+}
+  
 @media (max-height: 600px){.timeline_nav ul li{margin:15px 0}}
 .timeline_nav ul li a:hover+span{opacity:1}
-.timeline_nav ul li.active a,.timeline_nav ul li a:hover{-moz-transform:scale(2);-ms-transform:scale(2);-webkit-transform:scale(2);transform:scale(2);background:#e53333}
-@media (max-height: 621px){.timeline_nav ul li.active a,.timeline_nav ul li a:hover{-moz-transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);transform:scale(1.5)}}
-.timeline_nav ul li a{-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;-webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;display:inline-block;width:20px;height:20px;border-radius:100%;background:#dddddd;vertical-align:middle}
-.timeline_nav ul span{-moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;-webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;background:#0e0e0e;color:rgba(255,255,255,0.7);font-size:14px;position:fixed;vertical-align:middle;margin-left:20px;margin-top:-6px;border-radius:3px;padding:2px 7px;opacity:0}
-.timeline_nav ul span.one-line{margin-top:3px}.timeline_nav ul span b{display:block;font-size:18px;line-height:1;color:white}.spacer{padding:10% 0;background:white;width:100%}.m-video.inline_video{position:relative;margin-bottom:25px}
+
+.timeline_nav ul li.active a,.timeline_nav ul li a:hover{
+  -moz-transform:scale(2);
+  -ms-transform:scale(2);
+  -webkit-transform:scale(2);
+  transform:scale(2);
+  background:#338ce5;}
+  
+@media (max-height: 621px){
+  .timeline_nav ul li.active a,
+  .timeline_nav ul li a:hover{-moz-transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);transform:scale(1.5)}
+}
+
+
+/*hover text on navigation*/
+.timeline_nav ul li a{
+  -moz-transition:all 0.15s ease-in-out;
+  -o-transition:all 0.15s ease-in-out;
+  -webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;
+  display:inline-block;
+  width:20px;height:20px;
+  border-radius:100%;
+  background:#dddddd;
+  vertical-align:middle;
+}
+
+.timeline_nav ul span{
+  -moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;
+  -webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;
+  background:#0e0e0e;color:rgba(255,255,255,0.7);
+  font-size:14px;
+  position:fixed;
+  vertical-align:middle;
+  margin-left:20px;
+  margin-top:-6px;
+  border-radius:3px;
+  padding:2px 7px;
+  opacity:0;
+}
+
+.timeline_nav ul span.one-line{margin-top:3px}
+
+.timeline_nav ul span b{
+  display:block;
+  font-size:18px;
+  line-height:1;
+  color:white
+  }
+
+
+
+
+  .spacer{
+    padding:10% 0;
+    background:white;
+    width:100%;
+  }
 
 
 
 /* section */
 
-.section-row{
+.m-row{
   width:100%;
   display:block;
   margin-bottom:0;
 }
   
-.section-row:after{
+.m-row:after{
   content:"";
   display:block;
   width:100%;
@@ -85,12 +159,25 @@ body{
   clear:both;
 }
 
-.section-row.curtain {
-    padding: 20px 0;
-    z-index: 99;
+
+.m-row__inner{padding-top:50px;padding-bottom:50px}
+.m-row__inner{max-width:955px;margin:10px auto;padding:0 15px}
+
+@media (min-width: 400px) and (max-width: 1060px){
+  .m-row .m-row__inner{padding:0 25px 0 65px}
 }
 
 
+.m-row__two-third{width:calc(66.66% - ((25px * 2) / 3));float:left}
+@media (max-width: 720px){
+  .m-row .m-row__two-third{float:none;width:100%}
+}
+@media (min-width: 720px){
+  .m-row .m-row__two-third{margin-right:12.5px;margin-left:12.5px}
+  .m-row .m-row__two-third:first-child{margin-left:0}
+  .m-row .m-row__two-third:last-child,.m-row 
+  .m-row__two-third.last{margin-right:0}
+}
 
 </style>
 
@@ -102,15 +189,15 @@ body{
 <div class="timeline_nav" id="timeline">
   <ul>
     <li class="active"><a href="#one"></a><span class="one-line"><b>Introduction</b></span></li>
-    <li><a href="#two"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#three"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#four"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#five"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#six"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#seven"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#eight"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#nine"></a><span><b>Title</b>Subtitle</span></li>
-    <li><a href="#ten"></a><span class="one-line"><b>Credits</b></span></li>
+    <li><a href="#two"></a><span><b>Title 1</b>Subtitle</span></li>
+    <li><a href="#three"></a><span><b>Title 2</b>Subtitle</span></li>
+    <li><a href="#four"></a><span><b>Title 3</b>Subtitle</span></li>
+    <li><a href="#five"></a><span><b>Title 4</b>Subtitle</span></li>
+    <li><a href="#six"></a><span><b>Title 5</b>Subtitle</span></li>
+    <li><a href="#seven"></a><span><b>Title 6</b>Subtitle</span></li>
+    <li><a href="#eight"></a><span><b>Title 7</b>Subtitle</span></li>
+    <li><a href="#nine"></a><span><b>Title 8</b>Subtitle</span></li>
+    <li><a href="#ten"></a><span class="one-line"><b>Conlusion</b></span></li>
   </ul>
 </div>
 
@@ -118,9 +205,10 @@ body{
 
 <!--- Content -->
 
-<div class="section-row" id="one">
+<div class="m-row" id="two">
 
-  <p>
+  <div class="m-row__two-third">
+    <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -128,8 +216,8 @@ body{
     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
     culpa qui officia deserunt mollit anim id est laborum.
-  </p>  
-
+    </p>  
+  </div>
 
 </div>  
 
