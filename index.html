@@ -136,19 +136,21 @@
 
   /* section*/
   .section{
-    width:100%;
-    display:block;
-    margin-bottom:100px;
-    clear:both;
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+    clear: both;
     font-size: 20px;
+    float: left;
   }
 
   /*inner section wrapper*/
   .section >  .inner_wrapper {
-    padding: 50px 15px 50px 15px;
-    max-width:1020px;
-    width:95%;
-    margin:10px 5%;
+    max-width: 1020px;
+    width: 95%;
+    margin: 10px 0px 10px 5%;
+    border: 1px solid red;
+    float: left;
   }
 
   @media(max-width: 720px){
@@ -158,28 +160,29 @@
   /* COLUMNS IN SECTIONS ****************************************************************************/
   
   .section > .inner_wrapper > .full{
-    width: 99%;
+    width: 90%;
     float: left;
-    margin: 1%;
-  }
-
-  .section > .inner_wrapper > .third{
-    width: 31%;
-    float: left;
-    margin: 1%;
+    margin: 35px 5%;
   }
   
   .section > .inner_wrapper > .two_thirds{
-    width: 65%;
+    width: 56%;
     float: left;
-    margin: 1%;
+    margin: 35px 5%;
   }
-
+  
+  .section > .inner_wrapper > .third{
+    width: 24%;
+    float: left;
+    margin: 35px 5%;
+  }
+  
   @media (max-width: 720px){
+    .section > .inner_wrapper > .full,
     .section > .inner_wrapper > .third,
     .section > .inner_wrapper > .two_thirds{
         width: 100%;
-        margin: 0%;
+        margin: 20px 0%;
     }
   }
 
@@ -240,7 +243,9 @@
       font-weight: bold;
     }
 
-
+    @media(max-width: 720px){
+      .section{font-size: 16px;}
+    }
   
   /* CLASSES ****************************************************************************/
 
