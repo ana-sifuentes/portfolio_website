@@ -200,32 +200,38 @@
   .section >  .inner_wrapper {
     padding: 50px 15px 50px 15px;
     max-width:1020px;
-    width:100%;
+    width:95%;
     margin:10px 5%;
   }
 
-  @media (min-width: 400px) and (max-width: 1060px){
-    .section > .inner_wrapper{padding:0 25px 0 65px;}
+  @media(max-width: 720px){
+    .section > .inner_wrapper{margin: 10px 10%; width: 90%;}
   }
 
   /* COLUMNS IN SECTIONS ****************************************************************************/
   
   .section > .inner_wrapper > .full{
     width: 100%;
+    float: left;
   }
 
   .section > .inner_wrapper > .third{
-    width: 33%;
+    width: 31%;
+    float: left;
+    margin: 1%;
   }
   
   .section > .inner_wrapper > .two_thirds{
-    width: 66%;
+    width: 65%;
+    float: left;
+    margin: 1%;
   }
 
   @media (max-width: 720px){
     .section > .inner_wrapper > .third,
     .section > .inner_wrapper > .two_thirds{
         width: 100%;
+        margin: 0%;
     }
   }
     
