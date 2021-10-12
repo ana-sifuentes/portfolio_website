@@ -45,8 +45,12 @@
     display: block;
   }
   /*specification for mobile sizes */
-  @media (max-width: 400px){.timeline_nav{display:none}}
-  @media (max-height: 555px){.timeline_nav{display:none}}
+  @media (max-width:720px){
+    .timeline_nav{display: none;}
+  }
+  @media (max-height:555px){
+    .timeline_nav{display:none}
+  }
 
 
   /*vertical line*/
@@ -154,7 +158,7 @@
   }
 
   @media(max-width: 720px){
-    .section > .inner_wrapper{margin: 0px 0px 0px 5%; width: 95%; }
+    .section > .inner_wrapper{ margin: 0px 6% 0px 6%; width: 88%; }
   }
 
   /* COLUMNS IN SECTIONS ****************************************************************************/
@@ -215,6 +219,7 @@
     img{
       max-width:100%;
       margin-bottom:15px;
+      width: 100%;
     }
 
     /*text */
@@ -244,12 +249,9 @@
     }
 
     @media(max-width: 790px){
-      .section{font-size:18px;}
-    }
-
-    @media(max-width: 600px){
       .section{font-size:16px;}
     }
+
   
   /* CLASSES ****************************************************************************/
 
