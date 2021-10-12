@@ -180,16 +180,29 @@
     float: left;
     margin: 0px 2%;
   }
+
+
+  .section > .inner_wrapper > .third.switch_col,
+  .section > .inner_wrapper > .two_thirds.switch_col{
+    float:right;
+  }
+
   
   @media (max-width: 720px){
     .section > .inner_wrapper > .full,
     .section > .inner_wrapper > .third,
-    .section > .inner_wrapper > .two_thirds{
+    .section > .inner_wrapper > .two_thirds,
+    .section > .inner_wrapper > .third.switch_col,
+    .section > .inner_wrapper > .two_thirds.switch_col{
         width: 100%;
         margin: 0px 0%;
+        float:none;
     }
   }
 
+
+
+  
   /* TAGS **************************************************************************************/
 
     /*clean all tags (is this needed?) */
@@ -432,15 +445,9 @@
 
   <div class="inner_wrapper">
     
-    <div class="third">
-      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
 
-    <div class="two_thirds">
+
+    <div class="two_thirds switch_col">
       
       <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
       <p>
@@ -460,11 +467,46 @@
         </q>
       </p>  
     </div>
+
+    <div class="third switch_col">
+      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    
   </div>
 
 
   <div class="inner_wrapper">
-    <div class="third">
+
+
+    <div class="two_thirds switch_col">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+    </div>
+
+    <div class="third switch_col">
 
       <p class="special_quote">
         <q>
@@ -475,28 +517,7 @@
       
     </div>
 
-    <div class="two_thirds">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      
-    </div>
+    
   </div>
 </div>
 
