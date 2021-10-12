@@ -42,6 +42,7 @@
     bottom: 0;
     left: 0;
     z-index: 997;
+    display: block;
   }
   /*specification for mobile sizes */
   @media (max-width: 400px){.timeline_nav{display:none}}
@@ -138,9 +139,9 @@
   .section{
     width: 100%;
     display: block;
-    margin-bottom: 100px;
+    margin: 50px 0px;
     clear: both;
-    font-size: 20px;
+    font-size: 18px;
     float: left;
   }
 
@@ -148,8 +149,7 @@
   .section >  .inner_wrapper {
     max-width: 1020px;
     width: 95%;
-    margin: 10px 0px 10px 5%;
-    border: 1px solid red;
+    margin: 0px 0px 0px 5%;
     float: left;
   }
 
@@ -162,19 +162,19 @@
   .section > .inner_wrapper > .full{
     width: 90%;
     float: left;
-    margin: 35px 5%;
+    margin: 0px 5%;
   }
   
   .section > .inner_wrapper > .two_thirds{
     width: 56%;
     float: left;
-    margin: 35px 5%;
+    margin: 0px 5%;
   }
   
   .section > .inner_wrapper > .third{
     width: 24%;
     float: left;
-    margin: 35px 5%;
+    margin: 0px 5%;
   }
   
   @media (max-width: 720px){
@@ -182,7 +182,7 @@
     .section > .inner_wrapper > .third,
     .section > .inner_wrapper > .two_thirds{
         width: 100%;
-        margin: 20px 0%;
+        margin: 0px 0%;
     }
   }
 
@@ -243,8 +243,12 @@
       font-weight: bold;
     }
 
-    @media(max-width: 720px){
-      .section{font-size: 16px;}
+    @media(max-width: 790px){
+      .section{font-size:18px;}
+    }
+
+    @media(max-width: 600px){
+      .section{font-size:16px;}
     }
   
   /* CLASSES ****************************************************************************/
@@ -253,16 +257,20 @@
   /*quotes*/
   .special_quote{
     color:#338ce5;
-    font-size:2.5em;
+    font-size:2em;
     margin-left:25px;
     line-height:1.25em;
     font-weight: bold;
   }
 
   @media (min-width: 975px){
-    .special_quote{font-size:2em;margin-left:0;}
+    .special_quote{font-size:1.5em;margin-left:0;}
   }
 
+  .spacer{
+    float:left;
+    height: 30px;
+  }
 
 </style>
 
