@@ -1,338 +1,261 @@
-
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-<title>Obesity Project title </title>
+  <!--Setup--->
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <!--Title and description -->
+  <title> Project title </title>
+  <meta name="description" content="Project description">
 
-<meta name="description" content="This is the demo for the obesity project">
-
-<meta property="og:title" content="Obesity Project title">
-<meta property="og:image" content=""> <!--sharing image-->
-
-<meta property="fb:app_id" content="">
-<meta property="og:site_name" content="">
-<meta property="og:type" content="website">
-
-
-<meta property="og:description" content="Obesity Project title description">
-<meta property="og:url" content=""> <!--url-->
+  <!--Social media sharing -->
+  <meta property="og:title" content="Project title">
+  <meta property="og:description" content="Project description">
+  
+  <meta property="og:image" content=""> 
+  <meta property="og:type" content="website">
+  <meta property="og:url" content=""> 
 
 </head>
 
-<!-- Stylesheets link href="https://ea.vox-cdn.com/production/theverge-verge-apple-watch/stylesheets/custom-07035f10.css" rel="stylesheet" type="text/css"> -->
+
+
+
 
 
 <style>
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,
-dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
-{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
 
-/*page body*/
-body{
-  background:#fff;
-  color:#000; 
-  overflow:auto;
-  height: 100%;
-}
+/* TAGS **************************************************************************************/
 
-/*tags */
+  /*clean all tags (is this needed?) */
+  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+  acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+  sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+  caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,
+  figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+  }
 
-img{
-  max-width:100%;
-  margin-bottom:6px;
-}
-
-
-p {
-  margin-bottom: 1.25em;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-
-h1{
-  text-rendering: optimizeLegibility;
-}
-
-h3{
-  color: #338ce5;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 16px;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
-  padding-bottom: 15px;
-  margin-bottom: 35px;
-  font-style: normal;
-  font-weight: bold;
-}
-
-
-
-/*timeline container*/
-.timeline_nav{
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 997;
-}
-
-@media (max-width: 400px){.timeline_nav{display:none}}
-@media (max-height: 555px){.timeline_nav{display:none}}
-
-
-/*vertical line*/
-.timeline_nav:before{
-  content:"";
-  position:absolute;
-  z-index:0;
-  top:0;
-  left:29px;
-  height:100%;
-  bottom:0;
-  border-left: 2px solid rgb(0 0 0 / 30%);
-}
-  
-.timeline_nav ul{
-  margin-top:50px;
-  position:relative;
-  display:block;
-  z-index:2;
-  padding-left:20px
-}
-
-.timeline_nav ul li{
-  position:relative;
-  display:block;
-  margin:20px 0;
-}
-  
-@media (max-height: 600px){.timeline_nav ul li{margin:15px 0}}
-.timeline_nav ul li a:hover+span{opacity:1}
-
-.timeline_nav ul li.active a,.timeline_nav ul li a:hover{
-  -moz-transform:scale(2);
-  -ms-transform:scale(2);
-  -webkit-transform:scale(2);
-  transform:scale(2);
-  background:#338ce5;}
-  
-@media (max-height: 621px){
-  .timeline_nav ul li.active a,
-  .timeline_nav ul li a:hover{-moz-transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);transform:scale(1.5)}
-}
-
-
-/*hover text on navigation*/
-.timeline_nav ul li a{
-  -moz-transition:all 0.15s ease-in-out;
-  -o-transition:all 0.15s ease-in-out;
-  -webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;
-  display:inline-block;
-  width:20px;height:20px;
-  border-radius:100%;
-  background:#dddddd;
-  vertical-align:middle;
-}
-
-.timeline_nav ul span{
-  -moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;
-  -webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;
-  background:#0e0e0e;color:rgba(255,255,255,0.7);
-  font-size:14px;
-  position:fixed;
-  vertical-align:middle;
-  margin-left:20px;
-  margin-top:-6px;
-  border-radius:3px;
-  padding:2px 7px;
-  opacity:0;
-}
-
-.timeline_nav ul span.one-line{margin-top:3px}
-
-.timeline_nav ul span b{
-  display:block;
-  font-size:18px;
-  line-height:1;
-  color:white
+  /*page body*/
+  body{
+    background:#fff;
+    color:#000;
+    overflow:auto;
+    height: 100%;
   }
 
 
+  /*images */
+  img{
+    max-width:100%;
+    margin-bottom:15px;
+  }
 
 
-/* section wrapper*/
+  /*text */
+  p {
+    margin-bottom: 1.25em;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-.m-row{
-  width:100%;
-  display:block;
-  margin-bottom:200px;
-}
+  /*titles */
+  h1{
+    text-rendering: optimizeLegibility;
+  }
+
+  h3{
+    color: #338ce5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+
+  /* NAVIGATION **************************************************************************************/
+
+  /* !!! change this section*/
+
+  /*timeline container*/
+  .timeline_nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+  }
+  /*specification for mobile sizes */
+  @media (max-width: 400px){.timeline_nav{display:none}}
+  @media (max-height: 555px){.timeline_nav{display:none}}
+
+
+  /*vertical line*/
+  .timeline_nav:before{
+    content:"";
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:29px;
+    height:100%;
+    bottom:0;
+    border-left: 2px solid rgb(0 0 0 / 30%);
+  }
+
+  .timeline_nav ul{
+    margin-top:50px;
+    position:relative;
+    display:block;
+    z-index:2;
+    padding-left:20px
+  }
+
+  .timeline_nav ul li{
+    position:relative;
+    display:block;
+    margin:20px 0;
+  }
+  @media (max-height: 600px){.timeline_nav ul li{margin:15px 0}}
   
-.m-row:after{
-  content:"";
-  display:block;
-  width:100%;
-  height:0;
-  clear:both;
-}
+  .timeline_nav ul li a:hover+span{opacity:1}
 
-/*inner section wrapper*/
-.m-row__inner{
-  padding-top:50px;
-  padding-bottom:50px;
-  max-width:955px;
-  margin:10px 5%;
-  padding:0 15px;
-}
+  .timeline_nav ul li.active a,.timeline_nav ul li a:hover{
+    -moz-transform:scale(2);
+    -ms-transform:scale(2);
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    background:#338ce5;
+  }
+
+  @media (max-height: 621px){
+    .timeline_nav ul li.active a,
+    .timeline_nav ul li a:hover{
+      -moz-transform:scale(1.5);
+      -ms-transform:scale(1.5);
+      -webkit-transform:scale(1.5);
+      transform:scale(1.5)
+    }
+  }
+
+  /*hover text on navigation*/
+  .timeline_nav ul li a{
+    -moz-transition:all 0.15s ease-in-out;
+    -o-transition:all 0.15s ease-in-out;
+    -webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;
+    display:inline-block;
+    width:20px;height:20px;
+    border-radius:100%;
+    background:#dddddd;
+    vertical-align:middle;
+  }
+
+  .timeline_nav ul span{
+    -moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;
+    -webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;
+    background:#0e0e0e;
+    color:rgba(255,255,255,0.7);
+    font-size:14px;
+    position:fixed;
+    vertical-align:middle;
+    margin-left:20px;
+    margin-top:-6px;
+    border-radius:3px;
+    padding:2px 7px;
+    opacity:0;
+  }
+
+  .timeline_nav ul span.one-line{margin-top:3px}
+
+  .timeline_nav ul span b{
+    display:block;
+    font-size:18px;
+    line-height:1;
+    color:white
+  }
 
 
-@media (min-width: 400px) and (max-width: 1060px){
-  .m-row__inner{padding:0 25px 0 65px;}
-}
+  /* SECTIONS **************************************************************************************/
 
+  /* section*/
+  .section{
+    width:100%;
+    display:block;
+    margin-bottom:100px;
+    clear:both;
+  }
 
-/*inner section divider 1/1*/
-.m-row .m-row__full {
+  /*inner section wrapper*/
+  .section >  .inner_wrapper {
+    padding: 50px 15px 50px 15px;
+    max-width:1020px;
+    width:100%;
+    margin:10px 5%;
+  }
+
+  @media (min-width: 400px) and (max-width: 1060px){
+    .section > .inner_wrapper{padding:0 25px 0 65px;}
+  }
+
+  /* COLUMNS IN SECTIONS ****************************************************************************/
+  
+  .section > .inner_wrapper > .full{
     width: 100%;
-}
-
-
-.m-row__full h1{
-  font-size:80px;
-  line-height:1.25;
-  margin-bottom:10px;
-  display:block
-}
-@media (max-width: 720px){
-  .m-row .m-row__full h1{font-size:60px}
-}
-@media (max-width: 440px){
-  .m-row .m-row__full h1{font-size:40px}
-}
-
-
-/* inner sections divider 2/3*/
-.m-row__two-third{width:calc(66.66% - ((25px * 2) / 3));float:left}
-@media (max-width: 720px){
-  .m-row .m-row__two-third{float:none;width:100%}
-}
-@media (min-width: 720px){
-  .m-row .m-row__two-third{margin-right:12.5px;margin-left:12.5px}
-  .m-row .m-row__two-third:first-child{margin-left:0}
-  .m-row .m-row__two-third:last-child,.m-row 
-  .m-row__two-third.last{margin-right:0}
-}
-
-
-/* inner sections divider 1/3*/
-.m-row__third{
-  width:calc(32.33% - ((25px * 2) / 3));
-  float:left
-}
-
-@media (max-width: 720px){
-  .m-row .m-row__third{float:none;width:100%}
-}
-@media (max-width: 720px){.hide{display:none}}
-
-
-@media (min-width: 720px){
-  .m-row .m-row__third{margin-right:12.5px;margin-left:12.5px}
-  .m-row .m-row__third:first-child{margin-left:0}
-  .m-row .m-row__third:last-child,.m-row .m-row__third.last{margin-right:0}
-}
-
-
-
-
-/*classes*/
-
-.spacer{
-  padding:10% 0;
-  background:white;
-  width:100%;
-}
-
-
-
-/*caption*/
-
-span.caption{
-  color:#616161;
-  display:block;
-  line-height:1.4em;
-  margin-top:6px;
-  font-size:15px;
-}
-
-span.caption p{line-height:1.4em;font-size:15px;margin-bottom:0}
-span.caption strong{font-weight:bold;color:white}
-span.caption img{margin-bottom:6px}
-span.caption ul{list-style:disc}
-span.caption li{margin-top:1em;margin-left:1em}
-
-span.caption h3{
-  color:#338ce5;
-  text-transform:none;
-  letter-spacing:0;
-  font-size:23px;
-  line-height:1.2;
-  border-bottom:2px solid rgba(0,0,0,0.3);
-  padding-bottom:10px;
-  margin-bottom:10px;
-}
-
-@media (max-width: 720px){
-  span.caption h3{font-size:18px;border-color:rgba(255,255,255,0.3);}
-}
-@media (max-width: 720px){
-/*  span.caption{background:rgba(0,0,0,0.7);margin-top:0;padding:10px;}*/
-}
-
-
-/*quotes*/
-
-.pullquote{
-  font-size:1.2em;
-  margin-left:25px;
-  line-height:1.25em;
-  color:#338ce5;
-  font-weight: bold;
-}
-
-@media (min-width: 720px){
-  .pullquote{font-size:2em}
   }
-@media (min-width: 975px){
-  .pullquote{font-size:2em;margin-left:0}
-}
-.pullquote:before{
-  content:"\201C ";
-  color:rgba(255,255,255,0.3);
-  font-size:2.5em;
-  display:block;
-  float:left;
-  margin:11px 0 0 -29px;
-}
 
-@media (min-width: 975px){
-  .pullquote:before{margin:19px 0 0 -50px;}
-}
+  .section > .inner_wrapper > .third{
+    width: 33%;
+  }
+  
+  .section > .inner_wrapper > .two_thirds{
+    width: 66%;
+  }
+
+  @media (max-width: 720px){
+    .section > .inner_wrapper > .third,
+    .section > .inner_wrapper > .two_thirds{
+        width: 100%;
+    }
+  }
+    
+  /* CLASSES ****************************************************************************/
+
+
+  /*quotes*/
+  .special_quote{
+    color:#338ce5;
+    font-size:2.5em;
+    margin-left:25px;
+    line-height:1.25em;
+    font-weight: bold;
+  }
+
+  @media (min-width: 975px){
+    .special_quote{font-size:2em;margin-left:0;}
+  }
+
 
 </style>
 
 
+
+
+
+<!--- CONTENT ------------------------------------------------------------------------------------>
 <body>
 
-
-<!-- Navigation -->
+<!-- NAVIGATION ------------------------------------------------------------------>
 <div class="timeline_nav" id="timeline">
   <ul>
     <li class="active"><a href="#one"></a><span class="one-line"><b>Introduction</b></span></li>
@@ -349,244 +272,208 @@ span.caption h3{
 </div>
 
 
-
-<!--- Content -->
-
-
 <!-- SECTION 1 ------------------------------------------------------------------>
-<div class="m-row" id="one">
+<div class="section" id="one">
 
-  <div class="m-row__inner">
+  <div class="inner_wrapper">
     
-      <div class="m-row__full">
-        <h1> Hello and welcome! </h1>
-        <h3>How is your day going?</h3>
-      </div>  
+    <div class="full">
+      <h1> Hello and welcome! </h1>
+      <h3>How is your day going?</h3>
+    </div>
+    
+    <div class="two_thirds">
+      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
 
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
 
-      <div class="m-row__two-third">
-
-        <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-
-        <p class="pullquote">
-          <q>
-            This is an example quote, lorem ipsum dolor
-            sit amet consectetur adipiscing elit.
-          </q>
-        </p>
-
-        
-      </div>
+      <p class="special_quote">
+        <q>
+          This is an example quote, lorem ipsum dolor
+          sit amet consectetur adipiscing elit.
+        </q>
+      </p>
+    </div>
 
   </div>
 
-  <div class="m-row__inner">
-      <div class="m-row__two-third">
+  <div class="inner_wrapper">
+    <div class="two_thirds">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-        
-      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
 
-
+    <div class="third">
+      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>  
       
-        <div class="m-row__third last">
-          <span class="caption">
-            <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </span>
-        </div>
+  </div>
 
-        
-    </div> 
-     
 </div>
 
 
 <!-- SECTION 2 ------------------------------------------------------------------>
-<div class="m-row" id="two">
+<div class="section" id="two">
 
-  <div class="m-row__inner">
-    
-      <div class="m-row__full">
+  <div class="inner_wrapper">
 
-        <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
+    <div class="full">
+      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
+      <h1>Clear blue skies today </h1>
+      <h3>Don't forget to wear suncreen!</h3>
+    </div>
 
-          
-        <h1>Clear blue skies today </h1>
-        <h3>Don't forget to wear suncreen!</h3>
+    <div class="two_thirds">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+    </div>
 
- 
-      </div>  
-
-      <div class="m-row__two-third">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p> 
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p> 
-         
-        
-      </div>
-
-    </div> 
-     
+  </div>
+  
 </div>
 
+
 <!-- SECTION 3 ------------------------------------------------------------------>
-<div class="m-row" id="three">
+<div class="section" id="three">
 
-  <div class="m-row__inner">
+  <div class="inner_wrapper">
+
+    <div class="full">
+      <h1> What if it rains? </h1>
+      <h3>Bring an umbrella</h3>
+    </div>
     
-      <div class="m-row__full">
-        <h1> What if it rains? </h1>
-        <h3>Bring an umbrella</h3>
-      </div>  
-
-  </div>
-      
-  <div class="m-row__inner">
-
-      <div class="m-row__third">
-        <span class="caption">
-          <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </span>
-      </div>
-      
-
-      <div class="m-row__two-third last">
-
-        <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-
-        <p class="pullquote">
-          <q>
-            This is an example quote, lorem ipsum dolor
-            sit amet consectetur adipiscing elit.
-          </q>
-        </p>
-
-        
-      </div>
-
   </div>
 
-  <div class="m-row__inner">
+  <div class="inner_wrapper">
+    
+    <div class="third">
+      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
 
-
-      <div class="m-row__third"> 
-        
-        <p class="pullquote">
-          <q>
-            This is an example quote, lorem ipsum dolor
-            sit amet consectetur adipiscing elit.
-          </q>
-        </p>
-
-      </div>
+    <div class="two_thirds">
       
-      <div class="m-row__two-third last">
+      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>  
-        
-      </div>
+      <p class="special_quote">
+        <q>
+          This is an example quote, lorem ipsum dolor
+          sit amet consectetur adipiscing elit.
+        </q>
+      </p>  
+    </div>
+  </div>
 
 
+  <div class="inner_wrapper">
+    <div class="third">
+
+      <p class="special_quote">
+        <q>
+          This is an example quote, lorem ipsum dolor
+          sit amet consectetur adipiscing elit.
+        </q>
+      </p>
       
+    </div>
 
-
-        
-    </div> 
-     
+    <div class="two_thirds">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+    </div>
+  </div>
 </div>
 
 
 </body>
-
-
 
 
 
