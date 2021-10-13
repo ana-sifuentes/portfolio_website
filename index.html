@@ -749,11 +749,11 @@
   //array with the heights of the sections
   var sections_h = [
     $("#section_1").height(), //0
-    $("#section_2").height(), //1
-    $("#section_3").height(), //2
-    $("#section_4").height(), //3
-    $("#section_5").height(), //4
-    $("#section_6").height() //5
+    $("#section_1").height()+$("#section_2").height(), //1
+    $("#section_1").height()+$("#section_2").height()+$("#section_3").height(), //2
+    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_4").height(), //3
+    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_5").height(), //4
+    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_5").height()+$("#section_6").height() //5
   ];
 
 
@@ -793,7 +793,7 @@
     }  
 
     //section 6
-    if( current_h > sections_h[4] ){
+    if( current_h > sections_h[4] && current_h < sections_h[5]){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:last-child").addClass('current');
     }  
