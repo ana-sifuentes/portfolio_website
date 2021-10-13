@@ -756,14 +756,12 @@
 
   //when a menu item is clicked
   $('.navigation_menu li').click(function() {
-
-    alert('clicked on an item');
     
-    //remove previous current class
+    //remove previous selection class
     $('.navigation_menu ul li.current').removeClass('current');
     
     //append current class to selection
-  //  $(this).addClass('current');
+    $(this).addClass('current');
     
   });
 
