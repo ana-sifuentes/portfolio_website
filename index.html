@@ -33,7 +33,7 @@ $(window).scroll(function() {
        wH = $(window).height(),
        wS = $(this).scrollTop();
        
-   if (wS > (hT+hH-wH)){
+   if (wS < (hT+hH-wH)){
        alert('now on section two!');
        console.log('now on section two!');
    }
