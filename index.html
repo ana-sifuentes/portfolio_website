@@ -23,13 +23,28 @@
 
 
 
+<script>
+
+$(window).scroll(function() {
+  
+   var hT = $('#two').offset().top,
+       hH = $('#two').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+       
+   if (wS > (hT+hH-wH)){
+       alert('now on section two!');
+       console.log('now on section two!');
+   }
+   
+});
+
+
+</script>
 
 
 
 <style>
-
-
-
 
   /* NAVIGATION **************************************************************************************/
 
@@ -52,7 +67,7 @@
     left:29px;
     height:100%;
     bottom:0;
-    border-left: 2px solid #878787;
+    border-left: 2px solid #d3d3d3;
   }
 
   /* unordered list for buttons*/
@@ -133,7 +148,7 @@
       width: 100%;
       height: 30px;
       border-left: 0;
-      border-bottom: 2px solid #878787;
+      border-bottom: 2px solid #d3d3d3;
     }
 
     .navigation_menu ul{
