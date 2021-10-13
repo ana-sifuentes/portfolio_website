@@ -27,29 +27,24 @@
 <script>
 
 
-//total sections
-var total_sections = $('.section').length;
+  //total sections
+  var total_sections = $('.section').length;
 
-//height of each section
+  //height of each section
+
+  $("#two").height();
+
+  $('.navigation_menu ul li.current').removeClass('current');
 
 
-$("#two").height();
 
-$(window).scroll(function() {
-  
-   var hT = $('#two').offset().top,
-       hH = $('#two').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-       
-   if (wS > (hT+hH-wH)){
-       console.log('section other');
-   }
-   else{
-      $('.navigation_menu ul li.active').removeClass('active');
-   }
-   
-});
+  //when a menu item is clicked
+  $( ".navigation_menu ul li" ).click(function() {
+    //remove previous current class
+    $('.navigation_menu ul li.current').removeClass('current');
+    //append current class to selection
+    $(this).addClass('current');
+  });
 
 </script>
 
@@ -111,8 +106,8 @@ $(window).scroll(function() {
     vertical-align:middle;
   }
 
-  /* active button or hover button */
-  .navigation_menu ul li.active a,
+  /* current button or hover button */
+  .navigation_menu ul li.current a,
   .navigation_menu ul li a:hover {
     -moz-transform:scale(2);
     -ms-transform:scale(2);
@@ -369,18 +364,18 @@ $(window).scroll(function() {
 <!-- NAVIGATION ------------------------------------------------------------------>
 <div class="navigation_menu" id="navigation_menu">
   <ul>
-    <li class="active"><a href="#one"></a><span>Introduction</span></li>
-    <li><a href="#two"></a><span>Title 1</span></li>
-    <li><a href="#three"></a><span>Title 2</span></li>
-    <li><a href="#four"></a><span>Title 3</span></li>
-    <li><a href="#five"></a><span>Title 4</span></li>
-    <li><a href="#six"></a><span>Conlusion</span></li>
+    <li class="current"><a href="#section_1"></a><span>Introduction</span></li>
+    <li><a href="#section_2"></a><span>Title 1</span></li>
+    <li><a href="#section_3"></a><span>Title 2</span></li>
+    <li><a href="#section_4"></a><span>Title 3</span></li>
+    <li><a href="#section_5"></a><span>Title 4</span></li>
+    <li><a href="#section_6"></a><span>Conlusion</span></li>
   </ul>
 </div>
 
 
 <!-- SECTION 1 ------------------------------------------------------------------>
-<div class="section" id="one">
+<div class="section" id="section_1">
 
   <div class="inner_wrapper">
 
@@ -449,7 +444,7 @@ $(window).scroll(function() {
 
 
 <!-- SECTION 2 ------------------------------------------------------------------>
-<div class="section" id="two">
+<div class="section" id="section_2">
 
   <div class="inner_wrapper">
 
@@ -498,7 +493,7 @@ $(window).scroll(function() {
 
 
 <!-- SECTION 3 ------------------------------------------------------------------>
-<div class="section" id="three">
+<div class="section" id="section_3">
 
   <div class="inner_wrapper">
 
@@ -589,7 +584,7 @@ $(window).scroll(function() {
 
 
 <!-- SECTION 4 ------------------------------------------------------------------>
-<div class="section" id="four">
+<div class="section" id="section_4">
 
   <div class="inner_wrapper">
 
@@ -648,7 +643,7 @@ $(window).scroll(function() {
 
 
 <!-- SECTION 5 ------------------------------------------------------------------>
-<div class="section" id="five">
+<div class="section" id="section_5">
 
   <div class="inner_wrapper">
 
@@ -716,7 +711,7 @@ $(window).scroll(function() {
 </div>
 
 <!-- CONCLUSION ------------------------------------------------------------------>
-<div class="section" id="six">
+<div class="section" id="section_6">
 
   <div class="inner_wrapper">
 
