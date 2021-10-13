@@ -742,31 +742,67 @@
   
 <script>
 
-/*
+
   //total sections
   var total_sections = $('.section').length;
 
-  //height of each section
-
-  $("#two").height();
-
-  $('.navigation_menu ul li.current').removeClass('current');
-
-*/
-
-
-$(window).scroll(function() {
-  var hT = $('#section_2').offset().top,
-       hH = $('#section_2').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       console.log('user scrolled to section 2');
-   }
-});
+  //array with the heights of the sections
+  var sections_h = [
+    $("#section_1").height(),
+    $("#section_2").height(),
+    $("#section_3").height(),
+    $("#section_4").height(),
+    $("#section_5").height(),
+    $("#section_6").height()
+  ];
 
 
+  $(window).scroll(function() {
 
+    var current_h = $(window).scrollTop();
+
+    $('.navigation_menu ul li.current').removeClass('current');
+
+    //section 1 
+    if( current_h > 0  && current_h < sections_h[0] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }
+
+    //section 2
+    if( current_h > sections_h[0]  && current_h < sections_h[1] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }
+    
+    //section 3
+    if( current_h > sections_h[1]  && current_h < sections_h[2] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }  
+
+    //section 4
+    if( current_h > sections_h[2]  && current_h < sections_h[3] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }  
+
+
+    //section 5
+    if( current_h > sections_h[3]  && current_h < sections_h[4] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }  
+
+    //section 6
+    if( current_h > sections_h[4]  && current_h < sections_h[5] ){
+      $('.navigation_menu ul li.current').removeClass('current');
+      $(".navigation_menu ul li:nth-child(0)").addClass('current');
+    }  
+      
+    
+  }
+  
 
   //when a menu item is clicked
   $('.navigation_menu li').click(function() {
