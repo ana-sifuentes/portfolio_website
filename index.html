@@ -22,38 +22,6 @@
 </head>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-<script>
-
-/*
-  //total sections
-  var total_sections = $('.section').length;
-
-  //height of each section
-
-  $("#two").height();
-
-  $('.navigation_menu ul li.current').removeClass('current');
-
-*/
-
-  //when a menu item is clicked
-  $('.navigation_menu ul li a').click(function() {
-
-    alert('clicked on an item');
-    
-    //remove previous current class
-    $('.navigation_menu ul li.current').removeClass('current');
-    
-    //append current class to selection
-  //  $(this).addClass('current');
-    
-  });
-
-</script>
-
-
 
 <style>
 
@@ -768,6 +736,41 @@
 
 
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+<script>
+
+/*
+  //total sections
+  var total_sections = $('.section').length;
+
+  //height of each section
+
+  $("#two").height();
+
+  $('.navigation_menu ul li.current').removeClass('current');
+
+*/
+
+  //when a menu item is clicked
+  $('.navigation_menu li').click(function() {
+
+    alert('clicked on an item');
+    
+    //remove previous current class
+    $('.navigation_menu ul li.current').removeClass('current');
+    
+    //append current class to selection
+  //  $(this).addClass('current');
+    
+  });
+
+</script>
+
+
+
 
 
 
