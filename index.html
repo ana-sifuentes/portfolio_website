@@ -77,11 +77,11 @@
     .navigation_menu{
       width: 100%;
       height: 30px;
+      border-bottom: 2px solid #878787;
     }
 
     .navigation_menu::before{
       left:0;
-      border-bottom: 2px solid #878787;
     }
 
     .navigation_menu ul{
@@ -141,11 +141,13 @@
     display: none;
   }
 
-  .navigation_menu ul span.one-line{margin-top:3px}
-
-  .navigation_menu ul span:hover{
+  .timeline_nav ul li a:hover+span{
     display:block;
   }
+
+  .navigation_menu ul span.one-line{margin-top:3px}
+
+
 
 
   /* SECTIONS **************************************************************************************/
