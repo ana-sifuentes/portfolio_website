@@ -33,7 +33,6 @@
 
   /* NAVIGATION **************************************************************************************/
 
-
   /*navigation menu*/
   .navigation_menu{
     position: fixed;
@@ -56,8 +55,8 @@
     border-left: 2px solid #878787;
   }
 
-  /* unordered list */
-  .timeline_nav ul{
+  /* unordered list for buttons*/
+  .navigation_menu ul{
     margin-top:50px;
     position:relative;
     display:block;
@@ -65,8 +64,8 @@
     padding-left:20px
   }
 
-  /* list items */
-  .timeline_nav ul li{
+  /* list items  = buttons */
+  .navigation_menu ul li{
     position:relative;
     display:block;
     margin:20px 0;
@@ -85,38 +84,36 @@
       border-bottom: 2px solid #878787;
     }
 
-    .timeline_nav ul{
+    .navigation_menu ul{
       margin-top:21px;
       padding-left:4%;
     }
 
-    .timeline_nav ul li {
+    .navigation_menu ul li {
       float: left;
       margin: 0px 15px;
     }
   }
 
 
-/*
-  @media(max-height:555px){
-    .timeline_nav{
-      width: 100%;
-      height: 30px;
-      border-bottom: 2px solid black;
-    }
 
-    .timeline_nav ul li {
-      float: left;
-    }
+  /* button circles */
+  .navigation_menu ul li a{
+    -moz-transition:all 0.15s ease-in-out;
+    -o-transition:all 0.15s ease-in-out;
+    -webkit-transition:all 0.15s ease-in-out;
+    transition:all 0.15s ease-in-out;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    background:#dddddd;
+    vertical-align:middle;
   }
 
-
-  .timeline_nav ul li a:hover+span{opacity:1}
-*/
-
-
-  .timeline_nav ul li.active a,
-  .timeline_nav ul li a:hover{
+  /* active button or hover button */
+  .navigation_menu ul li.active a,
+  .navigation_menu ul li a:hover {
     -moz-transform:scale(2);
     -ms-transform:scale(2);
     -webkit-transform:scale(2);
@@ -124,33 +121,16 @@
     background:#338ce5;
   }
 
-  @media (max-height: 621px){
-    .timeline_nav ul li.active a,
-    .timeline_nav ul li a:hover{
-      -moz-transform:scale(1.5);
-      -ms-transform:scale(1.5);
-      -webkit-transform:scale(1.5);
-      transform:scale(1.5)
-    }
-  }
 
-  /*hover text on navigation*/
-  .timeline_nav ul li a{
-    -moz-transition:all 0.15s ease-in-out;
-    -o-transition:all 0.15s ease-in-out;
-    -webkit-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;
-    display:inline-block;
-    width:20px;height:20px;
-    border-radius:100%;
-    background:#dddddd;
-    vertical-align:middle;
-  }
 
-  .timeline_nav ul span{
-    -moz-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;
-    -webkit-transition:opacity 0.3s ease-in-out;transition:opacity 0.3s ease-in-out;
-    background:#0e0e0e;
-    color:rgba(255,255,255,0.7);
+
+  .navigation_menu ul span{
+    -moz-transition:opacity 0.3s ease-in-out;
+    -o-transition:opacity 0.3s ease-in-out;
+    -webkit-transition:opacity 0.3s ease-in-out;
+    transition:opacity 0.3s ease-in-out;
+    background:#f2f2f2;
+    color: #000000;
     font-size:14px;
     position:fixed;
     vertical-align:middle;
@@ -158,16 +138,13 @@
     margin-top:-6px;
     border-radius:3px;
     padding:2px 7px;
-    opacity:0;
+    display: none;
   }
 
-  .timeline_nav ul span.one-line{margin-top:3px}
+  .navigation_menu ul span.one-line{margin-top:3px}
 
-  .timeline_nav ul span b{
+  .navigation_menu ul span:hover{
     display:block;
-    font-size:18px;
-    line-height:1;
-    color:white
   }
 
 
@@ -331,7 +308,7 @@
 <body>
 
 <!-- NAVIGATION ------------------------------------------------------------------>
-<div class="timeline_nav" id="timeline">
+<div class="navigation_menu" id="navigation_menu">
   <ul>
     <li class="active"><a href="#one"></a><span class="one-line"><b>Introduction</b></span></li>
     <li><a href="#two"></a><span><b>Title 1</b>Subtitle</span></li>
