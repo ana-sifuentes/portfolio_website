@@ -757,10 +757,10 @@
   //get total sections in webpage
   var total_sections = $('.section').length;
 
-  //the heights of the sections
+  //store the heights of the sections
   var sections_h = [];
 
-  //add 150px for padding - change depending on window size
+  //add the padding depending on window size
   let padding_dif = 0;
 
   if( window.innerHeight > 720){
@@ -769,8 +769,9 @@
   else{
     padding_dif = 80;
   }
-
-  let sums=0; // add the previous section's height
+  
+  // add the previous section's height
+  let sums=0; 
 
   //get all the sections heights into the array
   for(i=0; i<total_sections; i++){
@@ -779,24 +780,30 @@
   }
 
 
-  //if the window is resized , calculate again the size of the sections
+
+
+  //when the user scrolls
+  $(window).scroll(function() {
+    
+    // update current section
+    place_current_section();
+    
+  });
+
+
+  //if the window is resized 
   $( window ).resize(function() {
-  /*  calculate_section_sizes();*/
-    //for now it reloads the page 
+    
+    //reload window to calculate section sizes
     location.reload();
-    place_current_class();
+    
+    //make sure the current section is updated 
+    place_current_section();
   });
   
 
-  //when the user scrolls, adjust current section
-  $(window).scroll(function() {
 
-    place_current_class();
-
-  });
-
-
-  function place_current_class(){
+  function place_current_section(){
     //get current position on the page
     var current_h = $(window).scrollTop();
 
