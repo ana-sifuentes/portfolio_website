@@ -751,7 +751,7 @@
   var sections_h = [];
 
   let sums=0; // add the previous section's height
-  let padding_dif =150; //add 150px for padding - change depending on window size
+  let padding_dif=100; //add 150px for padding - change depending on window size
 
   //get all the sections heights into the array 
   for(i=0; i<total_sections; i++){
@@ -778,7 +778,7 @@
       $(".navigation_menu ul li:last-child").addClass('current');
     }
     else{
-      let pos=1;  
+      let pos=0;  
       //find where we are on the page 
       for(x=1; x<total_sections; x++){
         if( current_h > sections_h[x]  && current_h < sections_h[x+1] ){
