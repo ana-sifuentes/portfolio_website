@@ -743,32 +743,35 @@
 
 <script>
 
+  //when a menu item is clicked
+  $('.navigation_menu li').click(function() {
+
+    //remove previous selection class
+    $('.navigation_menu ul li.current').removeClass('current');
+
+    //append current class to selection
+    $(this).addClass('current');
+
+  });
+
 
   //get total sections in webpage
   var total_sections = $('.section').length;
 
   //array with the heights of the sections
-  var sections_h = [];
+  let sections_h = [];
 
-  //add 150px for padding - change depending on window size
-  let padding_dif = 0; 
-  if( window.innerHeight > 720){
-    padding_dif = 100;
-  }
-  else{
-    padding_dif = 50;
-  }
+  //calculate the section sizes
+  calculate_section_sizes();
 
-  let sums=0; // add the previous section's height
-  
-  //get all the sections heights into the array 
-  for(i=0; i<total_sections; i++){
-    sums =  sums + $("#section_"+(i+1)).height() + padding_dif; 
-    sections_h.push(sums);    
+
+  //if the window is resized , calculate again the size of the sections 
+  $( window ).resize(function() {
+    calculate_section_sizes();
   }
 
-
-
+    
+  //when the user scrolls, adjust current section
   $(window).scroll(function() {
 
     //get current position on the page 
@@ -800,16 +803,33 @@
 
 
 
-  //when a menu item is clicked
-  $('.navigation_menu li').click(function() {
 
-    //remove previous selection class
-    $('.navigation_menu ul li.current').removeClass('current');
 
-    //append current class to selection
-    $(this).addClass('current');
 
-  });
+
+
+  
+  function calculate_section_sizes(){
+    //add 150px for padding - change depending on window size
+    let padding_dif = 0; 
+    
+    if( window.innerHeight > 720){
+      padding_dif = 100;
+    }
+    else{
+      padding_dif = 50;
+    }
+
+    let sums=0; // add the previous section's height
+
+    //get all the sections heights into the array 
+    for(i=0; i<total_sections; i++){
+      sums =  sums + $("#section_"+(i+1)).height() + padding_dif; 
+      sections_h.push(sums);    
+    }
+    
+  }
+  
 
 </script>
 
