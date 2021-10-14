@@ -63,8 +63,8 @@
     position:relative;
     display:block;
     margin:25px 0;
-  }  
-  
+  }
+
   /* button circles */
   .navigation_menu ul li a{
     -moz-transition:all 0.15s ease-in-out;
@@ -144,20 +144,20 @@
       margin-left: -11px;
       margin-top: 15px;
     }
-    
+
   }
 
   @media(max-width:575px) {
     .navigation_menu ul li {
       margin: 0px 10px;
-    }  
-  }  
+    }
+  }
 
 
   @media(max-width:475px) {
     .navigation_menu ul li {
       margin: 0px 2%;
-    }  
+    }
 
     .navigation_menu ul li a{
       width:15px;
@@ -168,7 +168,7 @@
       margin-top: 23px;
       padding-left: 3%;
     }
-  }  
+  }
 
 
   /* SECTIONS **************************************************************************************/
@@ -196,10 +196,10 @@
     .section{
       padding: 100px 0px 0px 0px;
     }
-    
-    .section > .inner_wrapper{ 
-      margin: 0px 6% 0px 6%; 
-      width: 88%; 
+
+    .section > .inner_wrapper{
+      margin: 0px 6% 0px 6%;
+      width: 88%;
     }
   }
 
@@ -425,7 +425,7 @@
       <h1>Clear blue skies today </h1>
       <h3>Don't forget to wear suncreen!</h3>
 
-      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">  
+      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
     </div>
 
     <div class="two_thirds">
@@ -563,10 +563,10 @@
   <div class="inner_wrapper">
 
     <div class="full">
-    
+
       <h1>Look, a Rainbow! </h1>
       <h3>Take a picture</h3>
-      
+
       <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
     </div>
 
@@ -609,7 +609,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-    </div> 
+    </div>
 
   </div>
 
@@ -740,29 +740,32 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+
 <script>
 
 
-  //total sections
+  //get total sections in webpage
   var total_sections = $('.section').length;
 
   //array with the heights of the sections
-  var sections_h = [
-    $("#section_1").height(), //0
-    $("#section_1").height()+$("#section_2").height(), //1
-    $("#section_1").height()+$("#section_2").height()+$("#section_3").height(), //2
-    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_4").height(), //3
-    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_4").height()+$("#section_5").height(), //4
-    $("#section_1").height()+$("#section_2").height()+$("#section_3").height()+$("#section_4").height()+$("#section_5").height()+$("#section_6").height() //5
-  ];
+  var sections_h = [];
+  
+  //get all the sections heights into the array 
+  let sums=0;
+  for(i=0; i<total_sections; i++){
+    sums =  sums + $("#section_"+(i+1)).height();
+    sections_h.push(sums);    
+  }
+
+  //print the sections lenghts 
+  console.log(sections_h[]);
 
 
   $(window).scroll(function() {
 
     var current_h = $(window).scrollTop();
 
-    //section 1 
+    //section 1
     if( current_h < sections_h[0] ){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:first-child").addClass('current');
@@ -773,47 +776,47 @@
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:nth-child(2)").addClass('current');
     }
-    
+
     //section 3
     if( current_h > sections_h[1]  && current_h < sections_h[2] ){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:nth-child(3)").addClass('current');
-    }  
+    }
 
     //section 4
     if( current_h > sections_h[2]  && current_h < sections_h[3] ){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:nth-child(4)").addClass('current');
-    }  
+    }
 
 
     //section 5
     if( current_h > sections_h[3]  && current_h < sections_h[4] ){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:nth-child(5)").addClass('current');
-    }  
+    }
 
     //section 6
     if( current_h > sections_h[4] && current_h < sections_h[5]){
       $('.navigation_menu ul li.current').removeClass('current');
       $(".navigation_menu ul li:last-child").addClass('current');
-    }  
-      
-    
+    }
+
+
   });
 
 
-  
+
 
   //when a menu item is clicked
   $('.navigation_menu li').click(function() {
-    
+
     //remove previous selection class
     $('.navigation_menu ul li.current').removeClass('current');
-    
+
     //append current class to selection
     $(this).addClass('current');
-    
+
   });
 
 </script>
