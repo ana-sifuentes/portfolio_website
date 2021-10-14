@@ -754,16 +754,14 @@
 
   });
 
-
   //get total sections in webpage
   var total_sections = $('.section').length;
 
-
   //the heights of the sections
   var sections_h = [];
-   
+
   //add 150px for padding - change depending on window size
-  let padding_dif = 0; 
+  let padding_dif = 0;
 
   if( window.innerHeight > 720){
     padding_dif = 120;
@@ -774,32 +772,40 @@
 
   let sums=0; // add the previous section's height
 
-  //get all the sections heights into the array 
+  //get all the sections heights into the array
   for(i=0; i<total_sections; i++){
-    sums =  sums + $("#section_"+(i+1)).height() + padding_dif; 
-    sections_h.push(sums);    
+    sums =  sums + $("#section_"+(i+1)).height() + padding_dif;
+    sections_h.push(sums);
   }
+
+
+  //if the window is resized , calculate again the size of the sections
+  $( window ).resize(function() {
+  /*  calculate_section_sizes();*/
+    //for now it reloads the page 
+    location.reload();
+    place_current_class();
+  });
   
 
-  //if the window is resized , calculate again the size of the sections 
-  /*
-  $( window ).resize(function() {
-    calculate_section_sizes();
-  });
-  */
-    
   //when the user scrolls, adjust current section
   $(window).scroll(function() {
 
-    //get current position on the page 
+    place_current_class();
+
+  });
+
+
+  function place_current_class(){
+    //get current position on the page
     var current_h = $(window).scrollTop();
 
-    //remove current class from the menu item 
+    //remove current class from the menu item
     $('.navigation_menu ul li.current').removeClass('current');
-    
+
 
     //check if we are in the first or last position
-    if( current_h < sections_h[0] ){    
+    if( current_h < sections_h[0] ){
       $(".navigation_menu ul li:first-child").addClass('current');
     }
     else if ( current_h > sections_h[ total_sections-1 ]) {
@@ -807,17 +813,15 @@
     }
     else{  //check for all other sections
       var pos=0;
-      for(x=0; x<total_sections; x++){ 
+      for(x=0; x<total_sections; x++){
         if( current_h > sections_h[x]  && current_h < sections_h[x+1] ){
           pos=2+x;
-        }  
+        }
       }
       $(".navigation_menu ul li:nth-child("+pos+")").addClass('current');
-    } 
-
-  });
-
-
+    }
+    
+  }
 
 
 
@@ -825,7 +829,6 @@
 
 
 
-  
 
 </script>
 
