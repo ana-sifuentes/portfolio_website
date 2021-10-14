@@ -778,14 +778,15 @@
       $(".navigation_menu ul li:last-child").addClass('current');
     }
     else{
-      let pos=0;  
+      let pos=1;  
       //find where we are on the page 
       for(x=1; x<total_sections; x++){
         if( current_h > sections_h[x]  && current_h < sections_h[x+1] ){
           pos=pos+x;
         }  
       }
-      
+
+      console.log(pos);
       $(".navigation_menu ul li:nth-child("+pos+")").addClass('current');
     } 
 
