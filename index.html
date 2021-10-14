@@ -785,15 +785,12 @@
     else if ( current_h > sections_h[ total_sections-1 ]) {
       $(".navigation_menu ul li:last-child").addClass('current');
     }
-    else{
-      let pos=2;  
-      //find where we are on the page 
-      for(x=1; x<total_sections; x++){
+    else{  //check for all other sections
+      for(x=1; x<total_sections; x++){ 
         if( current_h > sections_h[x]  && current_h < sections_h[x+1] ){
-          pos=pos+x;
+          var pos=2+x;
         }  
       }
-
       $(".navigation_menu ul li:nth-child("+pos+")").addClass('current');
     } 
 
