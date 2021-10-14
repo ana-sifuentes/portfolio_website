@@ -758,8 +758,7 @@
   //get total sections in webpage
   var total_sections = $('.section').length;
 
-  //array with the heights of the sections
-  let sections_h = [];
+
 
   //calculate the section sizes
   calculate_section_sizes();
@@ -810,14 +809,19 @@
 
   
   function calculate_section_sizes(){
+
+    //the heights of the sections
+     var sections_h = new Object();
+
+     
     //add 150px for padding - change depending on window size
     let padding_dif = 0; 
     
     if( window.innerHeight > 720){
-      padding_dif = 100;
+      padding_dif = 120;
     }
     else{
-      padding_dif = 50;
+      padding_dif = 80;
     }
 
     let sums=0; // add the previous section's height
@@ -828,6 +832,7 @@
       sections_h.push(sums);    
     }
     
+    return sections_h;
   }
   
 
