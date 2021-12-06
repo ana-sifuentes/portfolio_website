@@ -183,6 +183,12 @@
     float: left;
   }
 
+  .section.main_welcome{
+    padding: 0px;
+    height: 100vh;
+    background-color: #111740;
+  }
+
   /*inner section wrapper*/
   .section >  .inner_wrapper {
     max-width: 955px;
@@ -309,11 +315,6 @@
       line-height: 1.2em;
     }
 
-    /*specification for side sections  */
-    .section > .inner_wrapper > .third p{
-      font-family: Darker_Grotesque_Medium;
-    }
-
     /*titles */
     h1{
       color:#111740;
@@ -358,6 +359,12 @@
   }
 
 
+  /* SPECIFICATIONS ********************************************************************/
+
+
+
+  /* dark background sections */
+
 </style>
 
 
@@ -382,7 +389,7 @@
 
 
 <!-- WELCOME -------------------------------------------------------------------->
-<div class="section" id="welcome" style="background-color:#111740">
+<div class="section main_welcome" id="welcome">
 
   <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
   
@@ -522,6 +529,7 @@
       <h1>As causas da obesidade em indivíduos e populações </h1>
       <h3>subtitulo?</h3>
     </div>
+    
   </div>
 
   <div class="inner_wrapper">
@@ -557,20 +565,20 @@
         explicar e prevenir a obesidade como uma epidemia. 
       </p>
     </div>
-  </div>
 
-    <div class="switch_col third">
+    <div class="third switch_col">
       <p>Por exemplo, fatores genéticos aumentam a predisposição à obesidade 
         em indivíduos, mas a genética não muda drasticamente em poucos 
         anos ou décadas e, portanto, não poderia explicar o aumento na 
         obesidade em populações ao longo dos últimos anos.
       </p>
     </div> 
-    
   </div>
 
+  
+
   <div class="inner_wrapper">
-    <div class="switch_col two_thirds">
+    <div class="two_thirds switch_col">
       <p>
         Para identificar as causas da obesidade em populações, 
         ou seja, a influência dos fatores compartilhados pelos 
@@ -582,9 +590,7 @@
         da influência do comportamento coletivo sobre as pessoas. 
         Um bom exemplo, e para o qual há muitos dados, é o dos Estados Unidos.
       </p>
-    </div>  
-
-   
+    </div>   
   </div>
 
 
@@ -910,8 +916,8 @@
 
   //when the user scrolls
   $(window).scroll(function() {
-    
-    // update current section
+
+    // update current section on navigation 
     place_current_section();
     
   });
@@ -932,6 +938,19 @@
   function place_current_section(){
     //get current position on the page
     var current_h = $(window).scrollTop();
+
+
+    //get window height
+    var h_main_welcome = window.innerHeight;
+
+    //show or hide navigation depending on position 
+    if (current_h > h_main_welcome) {
+      $('#navigation_menu').fadeIn();
+    } else {
+      $('#navigation_menu').fadeOut();
+    }
+
+    
 
     //remove current class from the menu item
     $('.navigation_menu ul li.current').removeClass('current');
