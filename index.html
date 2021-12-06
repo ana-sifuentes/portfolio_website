@@ -256,7 +256,16 @@
     font-family: Crimson_Pro_Regular;
     src: url("fonts/Crimson_Pro/static/CrimsonPro-Regular.ttf");
   }
-  
+
+  @font-face {
+    font-family: Darker_Grotesque_SemiBold;
+    src: url("fonts/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf");
+  }  
+
+  @font-face {
+    font-family: Darker_Grotesque_Medium;
+    src: url("fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf");
+  }  
 
   /* TAGS **************************************************************************************/
 
@@ -300,6 +309,11 @@
       line-height: 1.2em;
     }
 
+    /*specification for side sections  */
+    .section > .inner_wrapper > .third p{
+      font-family: Darker_Grotesque_Medium;
+    }
+
     /*titles */
     h1{
       color:#111740;
@@ -311,7 +325,7 @@
 
     h3{
       color: #264085;
-      font-family: Crimson_Pro_Black;
+      font-family: Darker_Grotesque_Medium;
       font-size: 1em;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -331,11 +345,12 @@
 
   /*quotes*/
   .special_quote{
-    color:#338ce5;
+    font-family: Darker_Grotesque_SemiBold;
+    color:#264085;
     font-size:2em;
     margin-left:25px;
     line-height:1.25em;
-    font-weight: bold;
+    font-weight: bold;  
   }
 
   @media (min-width: 975px){
@@ -369,21 +384,14 @@
 <div class="section" id="section_1">
 
   <div class="inner_wrapper">
-
-    <div class="full">
+    <div class="two_thirds">
       <h1>Epidemia de obesidade e as DCNT</h1>
       <h3>subtitulo?</h3>
-    </div>
-
-    <div class="two_thirds">
-      <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
-
+      
       <p class="special_quote">
-        <q>
           Ao contrário de outros fatores de risco para o desenvolvimento de doenças 
           crônicas não transmissíveis (DCNT), a porcentagem da população que apresenta 
           excesso de peso ou obesidade cresce de forma preocupante e epidêmica.
-        </q>
       </p>
 
       
@@ -403,18 +411,8 @@
 
 
     </div>
-
-
-    <div class="third">
-      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
-      <p>
-        <i> “Death in old age is inevitable, but death before old age is not” 
-        (Richard Doll, 1994)(“A morte em idade avançada é inevitável, 
-        mas a morte prematura não o é”, em tradução livre) </i>
-      </p>
-    </div>
-    
   </div>
+
 
     <div class="inner_wrapper">
       <div class="two_thirds">
@@ -433,6 +431,17 @@
         </p>
 
         <img src="https://via.placeholder.com/1200X500/338CE5/FFFFFF">
+    </div>
+
+    <div class="third">
+      <img src="https://via.placeholder.com/400X300/338CE5/FFFFFF">
+      <p>
+        <i> “Death in old age is inevitable, but death before old age is not” 
+        (Richard Doll, 1994)(“A morte em idade avançada é inevitável, 
+        mas a morte prematura não o é”, em tradução livre) </i>
+      </p>
+    </div>
+    
     </div>
 
 
