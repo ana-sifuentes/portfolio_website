@@ -46,7 +46,7 @@
     left:29px;
     height:100%;
     bottom:0;
-    border-left: 2px solid #DFE7EA;
+    border-left: 2px solid #B8BEC1;
   }
 
   /* unordered list for buttons*/
@@ -75,7 +75,7 @@
     width:20px;
     height:20px;
     border-radius:100%;
-    background:#DFE7EA;
+    background:#B8BEC1;
     vertical-align:middle;
   }
 
@@ -86,7 +86,7 @@
     -ms-transform:scale(2);
     -webkit-transform:scale(2);
     transform:scale(2);
-    background: #264085;
+    background:#FCC349;
   }
 
   /*titles */
@@ -95,8 +95,8 @@
     -o-transition:opacity 0.3s ease-in-out;
     -webkit-transition:opacity 0.3s ease-in-out;
     transition:opacity 0.3s ease-in-out;
-    background:#dddddd;
-    color: #000000;
+    background:#DFE7EA;
+    color:#111740;
     font-size:14px;
     position:fixed;
     vertical-align:middle;
@@ -117,7 +117,7 @@
       width: 100%;
       height: 60px;
       position: fixed;
-      background-color: #ffffffdb;
+      /*background-color: #ffffffdb;*/
       float: left;
     }
 
@@ -175,9 +175,9 @@
 
   /*main welcome */
   .main_welcome{
-    padding: 0px;
+    padding:0px;
     height: 100vh;
-    background-color: #111740;
+    background-color #111740;
     width: 100%;
     display: block;
     clear: both;
@@ -196,9 +196,6 @@
     background-color:#DFE7EA;
   }
 
-  .section.dark_b{
-    background-color: #111740;
-  }
 
 
   /*inner section wrapper*/
@@ -371,9 +368,15 @@
   }
 
 
-  /* SPECIFICATIONS ********************************************************************/
+  /* SPECIFICATIONS FOR DARK BACKGROUND ***********************************************/
 
-
+    .section.dark_b{
+      background-color: #111740;
+    }
+    
+    .section.dark_b > p, p.section.dark_b{
+      color:#ffffff;
+    }
 
   /* dark background sections */
 
@@ -905,13 +908,13 @@
   var sections_h = [];
 
   //add the padding depending on window size
-  let padding_dif = 0;
+  let padding_dif = window.innerHeight;
 
   if( window.innerHeight > 720){
-    padding_dif = 120;
+    padding_dif += 120;
   }
   else{
-    padding_dif = 80;
+    padding_dif += 80;
   }
   
   // add the previous section's height
