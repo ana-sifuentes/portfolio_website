@@ -337,13 +337,13 @@
     h3{
       color: #264085;
       font-family: Darker_Grotesque_Medium;
-      font-size: 1em;
-      text-transform: uppercase;
+      font-size: 1.5em;
       letter-spacing: 0.1em;
-      padding-bottom: 15px;
-      margin-bottom: 30px;
+      padding-bottom: 50px;
+      margin: 20px 0px;
       font-style: normal;
       font-weight: bold;
+      line-height: 1em;
     }
 
     @media(max-width: 790px){
@@ -435,8 +435,11 @@
   
 </div>
 
+
+
+<div class="section_counter s_1 ">
 <!-- introduction ------------------------------------------------------------------>
-<div class="section window_h s_1" id="introducao">
+<div class="section window_h" id="introducao">
 
 
   <div class="inner_wrapper">
@@ -458,7 +461,7 @@
 
 
 <!-- epidemia ------------------------------------------------------------------>
-<div class="section  dark_b s_2" id="epidemia">
+<div class="section dark_b" id="epidemia">
   
   <div class="inner_wrapper">
     <div class="two_thirds">
@@ -580,8 +583,14 @@
 </div>
 
 
+</div> <!-- end s_1-->
+
+
+
+<div class="section_counter s_2" id="causas">
+  
 <!-- causas ------------------------------------------------------------------>
-<div class="section s_3" id="causas">
+<div class="section">
 
   <div class="inner_wrapper">
 
@@ -700,9 +709,12 @@
   </div>
 </div>
 
+</div> <!--end s_2-->
 
+
+<div class="section_counter s_3" id="ultraprocessados">
 <!-- ultraprocessados ------------------------------------------------------------------>
-<div class="section dark_b s_4" id="ultraprocessados">
+<div class="section dark_b">
 
   <div class="inner_wrapper">
 
@@ -789,8 +801,12 @@
 </div>
 
 
+</div><!--end s_3-->
+
+
+<div class="section_counter s_4" id="resultados">
 <!-- resultados ------------------------------------------------------------------>
-<div class="section s_5" id="resultados">
+<div class="section">
 
   <div class="inner_wrapper">
 
@@ -894,8 +910,12 @@
 </div>
 
 
+</div> <!--end section 4-->
+
+
+<div class="section_counter s_5" id="politicas">
 <!-- politicas ------------------------------------------------------------------>
-<div class="section dark_b s_6" id="politicas">
+<div class="section dark_b" >
 
   <div class="inner_wrapper">
 
@@ -1012,10 +1032,14 @@
   
 </div>
 
+</div>
 
 
+
+
+<div class="section_counter s_6" id="creditos">
 <!-- creditos ------------------------------------------------------------------>
-<div class="section s_7" id="creditos">
+<div class="section">
 
   <div class="inner_wrapper">
 
@@ -1054,7 +1078,7 @@
   </div>
 
 </div>
-
+</div>
 
 
 
@@ -1083,7 +1107,7 @@
   });
 
   //get total sections in webpage
-  var total_sections = $('.section').length;
+  var total_sections = $('.section_counter').length;
 
   //store the heights of the sections
   var sections_h = [];
