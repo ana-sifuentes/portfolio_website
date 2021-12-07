@@ -383,17 +383,17 @@
       background-color: #111740;
     }
     
-    .section.dark_b > .inner_wrapper > .full > p
-    .section.dark_b > .inner_wrapper > .two_thirds > p,
-    .section.dark_b > .inner_wrapper > .third > p,
-    .section.dark_b > .inner_wrapper > .third.switch_col > p,
-    .section.dark_b > .inner_wrapper > .two_thirds.switch_col > p,
+    .section.dark_b > .inner_wrapper > .full p
+    .section.dark_b > .inner_wrapper > .two_thirds p,
+    .section.dark_b > .inner_wrapper > .third p,
+    .section.dark_b > .inner_wrapper > .third.switch_col p,
+    .section.dark_b > .inner_wrapper > .two_thirds.switch_col p,
     .section.dark_b > .inner_wrapper > .full > h1,
     .section.dark_b > .inner_wrapper > .two_thirds > h1,
     .section.dark_b > .inner_wrapper > .third > h1,
     .section.dark_b > .inner_wrapper > .third.switch_col > h1,
     .section.dark_b > .inner_wrapper > .two_thirds.switch_col > h1{
-      color:#ffffff;
+      color:#DFE7EA;
     }
 
   /* dark background sections */
@@ -744,6 +744,7 @@
         mundial de 43,7% entre 2000 e 2013. Na América Latina, 
         esse crescimento foi de 48%.
       </p>
+      <p>
         Nos EUA, onde a participação dos alimentos ultraprocessados 
         no total calórico é de 57,5%, a prevalência de obesidade 
         já chegou a 43%. Já no Brasil, onde ainda temos uma cultura 
@@ -837,11 +838,16 @@
 
 
   <div class="inner_wrapper window_h">
+
+    <div class="two_thirds switch_col">
+        <img src="https://via.placeholder.com/1200X1000/641F40/FFFFFF">
+    </div>
+
+    
     <div class="third switch_col">
       <h3> 
         O excesso de peso e obesidade expressos em números no Brasil em 2019
       </h3>
-
 
       <p>
         Os maiores custos atribuíveis ao excesso de peso e 
@@ -853,9 +859,7 @@
 
     </div>
 
-    <div class="two_thirds switch_col">
-        <img src="https://via.placeholder.com/1200X500/641F40/FFFFFF">
-    </div>
+
   </div>  
 
   <div class="inner_wrapper window_h">
@@ -1018,13 +1022,13 @@
   var sections_h = [];
 
   //add the padding depending on window size
-  let padding_dif = window.innerHeight;
+  let padding_dif = 0;
 
   if( window.innerHeight > 720){
-    padding_dif += 120;
+    padding_dif = 120 + window.innerHeight;
   }
   else{
-    padding_dif += 80;
+    padding_dif = 80 + window.innerHeight;
   }
   
   // add the previous section's height
