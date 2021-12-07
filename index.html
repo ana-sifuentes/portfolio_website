@@ -432,7 +432,7 @@
 </div>
 
 <!-- introduction ------------------------------------------------------------------>
-<div class="section window_h" id="introducao">
+<div class="section window_h s_1" id="introducao">
 
 
   <div class="inner_wrapper">
@@ -454,7 +454,7 @@
 
 
 <!-- epidemia ------------------------------------------------------------------>
-<div class="section  dark_b" id="epidemia">
+<div class="section  dark_b s_2" id="epidemia">
   
   <div class="inner_wrapper">
     <div class="two_thirds">
@@ -577,7 +577,7 @@
 
 
 <!-- causas ------------------------------------------------------------------>
-<div class="section" id="causas">
+<div class="section s_3" id="causas">
 
   <div class="inner_wrapper">
 
@@ -694,7 +694,7 @@
 
 
 <!-- ultraprocessados ------------------------------------------------------------------>
-<div class="section dark_b" id="ultraprocessados">
+<div class="section dark_b s_4" id="ultraprocessados">
 
   <div class="inner_wrapper">
 
@@ -771,7 +771,7 @@
 
 
 <!-- resultados ------------------------------------------------------------------>
-<div class="section" id="resultados">
+<div class="section s_5" id="resultados">
 
   <div class="inner_wrapper">
 
@@ -876,7 +876,7 @@
 
 
 <!-- politicas ------------------------------------------------------------------>
-<div class="section dark_b" id="politicas">
+<div class="section dark_b s_6" id="politicas">
 
   <div class="inner_wrapper">
 
@@ -996,7 +996,7 @@
 
 
 <!-- creditos ------------------------------------------------------------------>
-<div class="section" id="creditos">
+<div class="section s_7" id="creditos">
 
   <div class="inner_wrapper">
 
@@ -1084,7 +1084,7 @@
 
   //get all the sections heights into the array
   for(i=0; i<total_sections; i++){
-    sums =  sums + $("#section_"+(i+1)).height() + padding_dif;
+    sums =  sums + $(".s_"+(i+1)).height() + padding_dif;
     sections_h.push(sums);
   }
 
