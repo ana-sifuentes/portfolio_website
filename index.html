@@ -188,6 +188,15 @@
     float: left;
   }
 
+
+  /*section counter for navigation*/
+  .section_counter{
+    width:100%;
+    float: left;
+    height: auto;
+  }
+
+  
   /* section*/
   .section{
     width: 100%;
@@ -367,6 +376,7 @@
   /* CLASSES ****************************************************************************/
 
 
+
   /*quotes*/
   .special_quote{
     font-family: Darker_Grotesque_SemiBold;
@@ -393,6 +403,15 @@
     .inner_wrapper.window_h{
       min-height: 100vh;
       padding: 50px 0px;
+      position: relative;
+    }
+
+    .inner_wrapper.window_h > .full{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
 
     /*for dark background*/
@@ -413,6 +432,14 @@
     .section.dark_b > .inner_wrapper > .two_thirds ul li
     .section.dark_b > .inner_wrapper > .two_thirds.switch_col ul li{
       color:#DFE7EA;
+    }
+
+    .section.dark_b > .inner_wrapper > .full h2,
+    .section.dark_b > .inner_wrapper > .two_thirds h2,
+    .section.dark_b > .inner_wrapper > .third h2,
+    .section.dark_b > .inner_wrapper > .third.switch_col h2,
+    .section.dark_b > .inner_wrapper > .two_thirds.switch_col h2{
+      color: #80B0DC;
     }
 
   /* dark background sections */
