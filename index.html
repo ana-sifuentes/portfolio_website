@@ -27,252 +27,6 @@
 
 
 
-  /* NAVIGATION **************************************************************************************/
-
-  /*navigation menu*/
-  .navigation_menu{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 997;
-    display: none;
-  }
-
-  /*vertical line*/
-  .navigation_menu::before{
-    content:"";
-    position:absolute;
-    z-index:0;
-    top:0;
-    left:29px;
-    height:100%;
-    bottom:0;
-    border-left: 2px solid #B8BEC1;
-  }
-
-  /* unordered list for buttons*/
-  .navigation_menu ul{
-    margin-top:50px;
-    position:relative;
-    display:block;
-    z-index:2;
-    padding-left:20px
-  }
-
-  /* list items  = buttons */
-  .navigation_menu ul li{
-    position:relative;
-    display:block;
-    margin:25px 0;
-  }
-
-  /* button circles */
-  .navigation_menu ul li a{
-    -moz-transition:all 0.15s ease-in-out;
-    -o-transition:all 0.15s ease-in-out;
-    -webkit-transition:all 0.15s ease-in-out;
-    transition:all 0.15s ease-in-out;
-    display:inline-block;
-    width:20px;
-    height:20px;
-    border-radius:100%;
-    background:#B8BEC1;
-    vertical-align:middle;
-  }
-
-  /* current button or hover button */
-  .navigation_menu ul li.current a,
-  .navigation_menu ul li a:hover {
-    -moz-transform:scale(2);
-    -ms-transform:scale(2);
-    -webkit-transform:scale(2);
-    transform:scale(2);
-    background:#F38831;
-  }
-
-  /*titles */
-  .navigation_menu ul span{
-    -moz-transition:opacity 0.3s ease-in-out;
-    -o-transition:opacity 0.3s ease-in-out;
-    -webkit-transition:opacity 0.3s ease-in-out;
-    transition:opacity 0.3s ease-in-out;
-    background:#F38831;
-    color:#111740;
-    font-size:14px;
-    font-family: Darker_Grotesque_SemiBold;
-    position:fixed;
-    vertical-align:middle;
-    margin-left:35px;
-    margin-top:-18px;
-    border-radius:3px;
-    padding:2px 10px;
-    display: none;
-  }
-
-  .navigation_menu ul li a:hover+span{
-    display:block;
-  }
-
-  /*specification for smaller screens */
-  @media(max-width:720px) {
-    .navigation_menu{
-      width: 100%;
-      height: 60px;
-      position: fixed;
-      /*background-color: #ffffffdb;*/
-      float: left;
-    }
-
-    .navigation_menu::before{
-      left: 0;
-      float: left;
-      width: 100%;
-      height: 30px;
-      border-left: 0;
-      border-bottom: 2px solid #DFE7EA;
-    }
-
-    .navigation_menu ul{
-      margin-top:21px;
-      padding-left:4%;
-    }
-
-    .navigation_menu ul li {
-      float: left;
-      margin: 0px 15px;
-    }
-
-    .navigation_menu ul span{
-      margin-left: -11px;
-      margin-top: 15px;
-    }
-
-  }
-
-  @media(max-width:575px) {
-    .navigation_menu ul li {
-      margin: 0px 10px;
-    }
-  }
-
-
-  @media(max-width:475px) {
-    .navigation_menu ul li {
-      margin: 0px 2%;
-    }
-
-    .navigation_menu ul li a{
-      width:15px;
-      height:15px;
-    }
-
-    .navigation_menu ul {
-      margin-top: 23px;
-      padding-left: 3%;
-    }
-  }
-
-
-  /* SECTIONS **************************************************************************************/
-
-  /*main welcome */
-  .main_welcome{
-    padding:0px;
-    height: 100vh;
-    background-color: #111740;
-    width: 100%;
-    display: block;
-    clear: both;
-    font-size: 18px;
-    float: left;
-  }
-
-
-  /*section counter for navigation*/
-  .section_counter{
-    width:100%;
-    float: left;
-    height: auto;
-  }
-
-  
-  /* section*/
-  .section{
-    width: 100%;
-    display: block;
-    padding: 100px 0px 50px 0px;
-    clear: both;
-    font-size: 18px;
-    float: left;
-    background-color:#DFE7EA;
-  }
-
-
-
-  /*inner section wrapper*/
-  .section >  .inner_wrapper {
-    max-width: 955px;
-    width: 90%;
-    margin: 0px 0px 0px 7%;
-    float: left;
-    clear: both;
-  }
-
-  @media(max-width: 720px){
-
-    .section{
-      padding: 100px 0px 0px 0px;
-    }
-
-    .section > .inner_wrapper{
-      margin: 0px 6% 0px 6%;
-      width: 88%;
-    }
-  }
-
-  /* COLUMNS IN SECTIONS ****************************************************************************/
-
-  .section > .inner_wrapper > .full{
-    width: 96%;
-    float: left;
-    margin: 0px 2%;
-  }
-
-  .section > .inner_wrapper > .two_thirds{
-    width: 62%;
-    float: left;
-    margin: 0px 2%;
-  }
-
-  .section > .inner_wrapper > .third{
-    width: 30%;
-    float: left;
-    margin: 0px 2%;
-  }
-
-
-  .section > .inner_wrapper > .third.switch_col,
-  .section > .inner_wrapper > .two_thirds.switch_col{
-    float:right;
-  }
-
-
-  @media (max-width: 720px){
-    .section > .inner_wrapper > .full,
-    .section > .inner_wrapper > .third,
-    .section > .inner_wrapper > .two_thirds,
-    .section > .inner_wrapper > .third.switch_col,
-    .section > .inner_wrapper > .two_thirds.switch_col{
-        width: 100%;
-        margin: 0px 0%;
-        float:none;
-    }
-  }
-
-
-
-
   /* FONTS **************************************************************************************/
 
   @font-face {
@@ -336,20 +90,33 @@
       color:#111740;
       font-family: Crimson_Pro_Regular;
       margin-bottom: 1.5em;
-      font-size: 1em;
-      line-height: 1.2em;
+      font-size:1.4em;
+      line-height:1.2em;
     }
 
     /*titles */
     h1{
       color:#111740;
       font-family: Crimson_Pro_Black;
-      font-size: 4em;
+      font-size: 5em;
       line-height: 0.8em;
       font-weight: bold;
       text-rendering: optimizeLegibility;
     }
 
+
+    h2{
+      color: #264085;
+      font-family: Darker_Grotesque_SemiBold;
+      font-size: 3em;
+      letter-spacing: 0.1em;
+      padding-bottom: 50px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+
+    
     h3{
       color: #264085;
       font-family: Darker_Grotesque_Medium;
@@ -368,9 +135,259 @@
       font-family: 'Crimson_Pro_Regular';
     }
 
-    @media(max-width: 790px){
-      .section{font-size:16px;}
-    }
+
+
+
+    
+  /* NAVIGATION **************************************************************************************/
+
+      /*navigation menu*/
+      .navigation_menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 997;
+        display: none;
+      }
+
+      /*vertical line*/
+      .navigation_menu::before{
+        content:"";
+        position:absolute;
+        z-index:0;
+        top:0;
+        left:29px;
+        height:100%;
+        bottom:0;
+        border-left: 2px solid #B8BEC1;
+      }
+
+      /* unordered list for buttons*/
+      .navigation_menu ul{
+        margin-top:50px;
+        position:relative;
+        display:block;
+        z-index:2;
+        padding-left:20px
+      }
+
+      /* list items  = buttons */
+      .navigation_menu ul li{
+        position:relative;
+        display:block;
+        margin:25px 0;
+      }
+
+      /* button circles */
+      .navigation_menu ul li a{
+        -moz-transition:all 0.15s ease-in-out;
+        -o-transition:all 0.15s ease-in-out;
+        -webkit-transition:all 0.15s ease-in-out;
+        transition:all 0.15s ease-in-out;
+        display:inline-block;
+        width:20px;
+        height:20px;
+        border-radius:100%;
+        background:#B8BEC1;
+        vertical-align:middle;
+      }
+
+      /* current button or hover button */
+      .navigation_menu ul li.current a,
+      .navigation_menu ul li a:hover {
+        -moz-transform:scale(2);
+        -ms-transform:scale(2);
+        -webkit-transform:scale(2);
+        transform:scale(2);
+        background:#F38831;
+      }
+
+      /*titles */
+      .navigation_menu ul span{
+        -moz-transition:opacity 0.3s ease-in-out;
+        -o-transition:opacity 0.3s ease-in-out;
+        -webkit-transition:opacity 0.3s ease-in-out;
+        transition:opacity 0.3s ease-in-out;
+        background:#F38831;
+        color:#111740;
+        font-size:14px;
+        font-family: Darker_Grotesque_SemiBold;
+        position:fixed;
+        vertical-align:middle;
+        margin-left:35px;
+        margin-top:-18px;
+        border-radius:3px;
+        padding:2px 10px;
+        display: none;
+      }
+
+      .navigation_menu ul li a:hover+span{
+        display:block;
+      }
+
+      /*specification for smaller screens */
+      @media(max-width:720px) {
+        .navigation_menu{
+          width: 100%;
+          height: 60px;
+          position: fixed;
+          /*background-color: #ffffffdb;*/
+          float: left;
+        }
+
+        .navigation_menu::before{
+          left: 0;
+          float: left;
+          width: 100%;
+          height: 30px;
+          border-left: 0;
+          border-bottom: 2px solid #DFE7EA;
+        }
+
+        .navigation_menu ul{
+          margin-top:21px;
+          padding-left:4%;
+        }
+
+        .navigation_menu ul li {
+          float: left;
+          margin: 0px 15px;
+        }
+
+        .navigation_menu ul span{
+          margin-left: -11px;
+          margin-top: 15px;
+        }
+
+      }
+
+      @media(max-width:575px) {
+        .navigation_menu ul li {
+          margin: 0px 10px;
+        }
+      }
+
+
+      @media(max-width:475px) {
+        .navigation_menu ul li {
+          margin: 0px 2%;
+        }
+
+        .navigation_menu ul li a{
+          width:15px;
+          height:15px;
+        }
+
+        .navigation_menu ul {
+          margin-top: 23px;
+          padding-left: 3%;
+        }
+      }
+
+
+  /* SECTIONS **************************************************************************************/
+
+      /*main welcome */
+      .main_welcome{
+        padding:0px;
+        height: 100vh;
+        min-height: 100vh;
+        background-color: #111740;
+        width: 100%;
+        display: block;
+        clear: both;
+        font-size: 18px;
+        float: left;
+      }
+
+
+      /*section counter for navigation*/
+      .section_counter{
+        width:100%;
+        float: left;
+        height: auto;
+      }
+
+
+      /* section*/
+      .section{
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        padding: 100px 0px 50px 0px;
+        clear: both;
+        font-size: 18px;
+        float: left;
+        background-color:#DFE7EA;
+      }
+
+
+
+      /*inner section wrapper*/
+      .section >  .inner_wrapper {
+        max-width: 955px;
+        width: 90%;
+        margin: 0px 0px 0px 7%;
+        float: left;
+        clear: both;
+      }
+
+      @media(max-width: 720px){
+
+        .section{
+          padding: 100px 0px 0px 0px;
+        }
+
+        .section > .inner_wrapper{
+          margin: 0px 6% 0px 6%;
+          width: 88%;
+        }
+      }
+
+  /* COLUMNS IN SECTIONS ****************************************************************************/
+
+      .section > .inner_wrapper > .full{
+        width: 96%;
+        float: left;
+        margin: 0px 2%;
+      }
+
+      .section > .inner_wrapper > .two_thirds{
+        width: 62%;
+        float: left;
+        margin: 0px 2%;
+      }
+
+      .section > .inner_wrapper > .third{
+        width: 30%;
+        float: left;
+        margin: 0px 2%;
+      }
+
+
+      .section > .inner_wrapper > .third.switch_col,
+      .section > .inner_wrapper > .two_thirds.switch_col{
+        float:right;
+      }
+
+
+      @media (max-width: 720px){
+        .section > .inner_wrapper > .full,
+        .section > .inner_wrapper > .third,
+        .section > .inner_wrapper > .two_thirds,
+        .section > .inner_wrapper > .third.switch_col,
+        .section > .inner_wrapper > .two_thirds.switch_col{
+            width: 100%;
+            margin: 0px 0%;
+            float:none;
+        }
+      }
+
+      @media(max-width: 790px){
+        .section{font-size:16px;}
+      }
+
 
 
   /* CLASSES ****************************************************************************/
@@ -478,15 +495,13 @@
 
 
 
-<div class="section_counter s_1 ">
+<div class="section_counter s_1" id="introducao">
 <!-- introduction ------------------------------------------------------------------>
-<div class="section window_h" id="introducao">
-
-
+<div class="section window_h">
   <div class="inner_wrapper">
     <div class="full">
 
-      <img src="demo_images/detail peeps@4x.png">
+      <img src="demo_images/detail peeps@4x.png" width="25%;">
       <h3>
         Por muito tempo, o foco no controle do sobrepeso e da obesidade tem sido direcionado
         às escolhas individuais. Contudo,  ao entendermos o seu comportamento de epidemia,
@@ -506,16 +521,25 @@
 <!-- epidemia ------------------------------------------------------------------>
 <div class="section dark_b" id="epidemia">
 
-  <div class="inner_wrapper">
+
+
+  <div class="inner_wrapper window_h">
     <div class="two_thirds">
       <h1>Epidemia de obesidade e as DCNT</h1>
-      <h3>
+      
+      <h2>
         Ao contrário de outros fatores de risco para o desenvolvimento de doenças
         crônicas não transmissíveis (DCNT), a porcentagem da população que apresenta
         excesso de peso ou obesidade cresce de forma preocupante e epidêmica.
-      </h3>
+      </h2>
+    </div>
+  </div>  
 
 
+
+
+  <div class="inner_wrapper">
+    <div class="two_thirds">
       <p>
         As DCNT são doenças  multifatoriais, isto é, são causadas por diversos fatores de risco,
         apresentam longos períodos de  latência e afetam pessoas por  muitos anos, até mesmo
