@@ -501,6 +501,106 @@
 
 
 
+<style>
+
+.filler {
+  height: 20rem;
+  text-align: center;
+}
+#scrolly-side .scrolly {
+  display: flex;
+  max-width: 60rem;
+  margin: 3rem auto;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+#scrolly-side .scrolly > * {
+  flex: 1;
+}
+#scrolly-side .scrolly article {
+  padding-right: 1rem;
+  max-width: 30rem;
+}
+#scrolly-side .scrolly article .step {
+  min-height: 67vh;
+  margin-bottom: 1rem;
+  background-color: #5b5b5b;
+  transition: background-color 250ms ease-in-out;
+}
+#scrolly-side .scrolly article .step:last-of-type {
+  margin-bottom: 0;
+}
+#scrolly-side .scrolly article .step.is-active {
+  background-color: #008080;
+}
+#scrolly-side .scrolly article .step p {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+  color: #f4f4f4;
+}
+#scrolly-side .scrolly figure.sticky {
+  position: sticky;
+  width: 100%;
+  height: 50vh;
+  background: #969696;
+  margin: 0;
+  top: 25vh;
+  left: 0;
+}
+#scrolly-side .scrolly figure.sticky .bar-outer {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 90%;
+  height: 4rem;
+  background-color: #fff;
+}
+#scrolly-side .scrolly figure.sticky .bar-inner {
+  width: 10%;
+  height: 100%;
+  transition: width 1s ease-in-out;
+  background-color: #daa520;
+}
+
+</style>
+
+
+<section id='scrolly-side'>
+  
+  <div class='scrolly'>
+    
+    <!--  step text   -->
+	  <article>
+      <div class='step' data-width='10%' data-index='0'>
+          <p>Bar is 10%</p>
+      </div>
+      <div class='step' data-width='90%' data-index='1'>
+         <p>Bar is 90%</p>
+      </div>
+      <div class='step' data-width='50%' data-index='2'>
+        <p>Bar is 50%</p>
+      </div>
+	  </article>
+    
+     <!--  sticky graphic   -->
+	  <figure class='sticky'>
+		  <div class='bar-outer'>
+			  <div class='bar-inner'></div>
+  		</div>
+  	</figure>
+    
+  </div>
+  
+</section>
+
+
+
+
+<!-------->
+
 <!-- main welcome -------------------------------------------------------------------->
 <div class="main_welcome" id="welcome">
 
@@ -577,7 +677,7 @@
     </div>
 
       <div class="third">
-        
+
         <img src="https://via.placeholder.com/400x400">
         <p>
           <i> “Death in old age is inevitable, but death before old age is not”
@@ -684,7 +784,7 @@
 
       <div class="third">
           <img src="https://via.placeholder.com/400x400">
-      </div>  
+      </div>
     </div>
 
 
@@ -734,7 +834,7 @@
       <h3>Por que uma pessoa desenvolve obesidade? </h3>
 
     </div>
-    
+
     <div class="two_thirds">
       <img src="demo_images/why obesity@4x.png">
     </div>
@@ -1236,7 +1336,7 @@
        para políticas públicas que devem se adequar às necessidades da população.
        Explore ao lado as recomendações do guia alimentar para a saúde da população brasileira.
     </p>
-    
+
     </div>
 
     <div class="third switch_col">
@@ -1441,9 +1541,39 @@
 
   }
 
+</script>
 
+<script>
 
+  const container = d3.select('#scrolly-side');
+  const stepSel = container.selectAll('.step');
 
+  function updateChart(index) {
+  	const sel = container.select(`[data-index='${index}']`);
+  	const width = sel.attr('data-width');
+  	stepSel.classed('is-active', (d, i) => i === index);
+  	container.select('.bar-inner').style('width', width);
+  }
+
+  function init() {
+  	Stickyfill.add(d3.select('.sticky').node());
+
+  	enterView({
+  		selector: stepSel.nodes(),
+  		offset: 0.5,
+  		enter: el => {
+  			const index = +d3.select(el).attr('data-index');
+  			updateChart(index);
+  		},
+  		exit: el => {
+  			let index = +d3.select(el).attr('data-index');
+  			index = Math.max(0, index - 1);
+  			updateChart(index);
+  		}
+  	});
+  }
+
+  init()
 
 
 
