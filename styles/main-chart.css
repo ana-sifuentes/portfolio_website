@@ -1,0 +1,144 @@
+#main-chart-content {
+    padding-top: 5em;
+}
+
+#main-chart-container {
+    width: 100%;
+    height: auto;
+}
+
+#main-chart-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+#main-chart-table th {
+    color: var(--dark-blue);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 0.5em 0.5em;
+    text-align: center;
+}
+
+#main-chart-table td {
+    border: 1px solid var(--medium-gray);
+    color: var(--dark-blue);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1em;
+    line-height: 1.15em;
+    padding: 0.25em 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-chart-table tr:nth-child(2) td {
+    background-color: var(--light-gray);
+}
+
+#main-chart-table tr td:nth-child(1) {
+    font-weight: 600;
+}
+
+#main-chart-x-axis .domain,
+#main-chart-y-axis .domain,
+#main-chart-x-axis .tick line {
+    display: none;
+}
+
+#main-chart-y-axis .tick line {
+    stroke: var(--medium-gray);
+    stroke-width: 0.5;
+}
+
+#main-chart-x-axis .tick text {
+    fill: var(--dark-gray);
+    cursor: pointer;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.4em;
+}
+
+#main-chart-x-axis-details {
+    fill: var(--dark-gray);
+    cursor: default;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.4em;
+}
+
+.main-chart-current-order {
+    fill: var(--dark-gray);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#main-chart-y-axis .tick text {
+    fill: var(--dark-gray);
+    cursor: pointer;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.25em;
+}
+
+.main-chart-circle {
+    opacity: 0.8;
+}
+
+#main-chart-tick {
+    cursor: pointer;
+    fill: var(--light-gray);
+    stroke: var(--dark-gray);
+    stroke-width: 0.75;
+}
+
+#main-chart-tick-fill {
+    cursor: pointer;
+    fill: var(--dark-gray);
+}
+
+#main-chart-tick-message {
+    fill: var(--dark-gray);
+    cursor: pointer;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3em;
+}
+
+.main-chart-label {
+    fill: var(--white);
+    cursor: default;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 0.825em;
+    font-weight: 500;
+}
+
+.main-chart-circle-category-1 {
+    fill: var(--red);
+}
+
+.main-chart-circle-category-2 {
+    fill: var(--orange);
+}
+
+.main-chart-circle-category-3 {
+    fill: var(--dark-blue);
+}
+
+.main-chart-circle-category-4 {
+    fill: var(--yellow);
+}
+
+.main-chart-circle-category-5 {
+    fill: var(--wine-red);
+}
+
+.main-chart-circle-category-6 {
+    fill: var(--green);
+}
+
+.main-chart-circle-category-7 {
+    fill: var(--deep-blue);
+}
+
+.main-chart-circle-category-8 {
+    fill: var(--light-blue);
+}

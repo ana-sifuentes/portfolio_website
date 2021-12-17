@@ -1,0 +1,119 @@
+#welcome-section {
+    background-color: var(--dark-blue);
+    font-size: 1.125em;
+    height: 100vh;
+    padding: 0 2.5em 0 2.5em !important;
+}
+
+#welcome-section img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--off-white);
+    height: 100vh;
+    min-height: 100vh;
+    padding: 5em 5em 0.5em 7.5em;
+}
+
+#introduction-section img {
+    margin-bottom: 0.5em;
+    max-width: 25%;
+}
+
+#introduction-section p {
+    color: var(--deep-blue);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    width: 66%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--off-white);
+    min-height: 100vh;
+    padding: 0 5em 0 7.5em;
+}
+
+.section h1,
+.section p,
+.section ul {
+    color: var(--dark-blue);
+}
+
+.section h2,
+.section h3 {
+    color: var(--deep-blue);
+}
+
+.dark-background-section {
+    background-color: var(--dark-blue);
+}
+
+.dark-background-section h1,
+.dark-background-section p,
+.dark-background-section ul {
+    color: var(--off-white);
+}
+
+.dark-background-section h2,
+.dark-background-section h3 {
+    color: var(--light-blue);
+}
+
+.section-cover,
+.section-end-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    width: 75%;
+}
+
+.section .content {
+    min-height: 100vh;
+}
+
+.section .medium-content {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 80%;
+}
+
+.section .narrow-content {
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-right: 2.5em;
+    width: 50%;
+}
+
+.quote {
+    color: var(--deep-blue);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+.quote-dark-section {
+    color: var(--off-white);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+.chart-details-wrapper {
+}
