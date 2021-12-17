@@ -139,8 +139,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-3-columns medium-content">
-                <div class="d-flex-center-v" id="fatores_risco_scroll">
+            <div class="grid-3-columns medium-content" id="fatores_risco_scroll">
+                <div class="d-flex-center-v" >
                     <p>
                         Os principais fatores de risco para DCNT são tabagismo,
                         consumo abusivo de álcool, alimentação não saudável e
@@ -156,25 +156,29 @@
                         últimos anos, como é o caso do tabagismo.
                     </p>
                 </div>
-
-<script>
-
-$(window).scroll(function() {
-   var hT = $('#fatores_risco_scroll').offset().top,
-       hH = $('#fatores_risco_scroll').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       console.log('arrived to fatores de risco');
-   }
-});
-</script>
-
-
                 <div class="grid-item-2-3 d-flex-center">
                     <img src="assets/risk-factors/4.png" />
                 </div>
             </div>
+
+            <script>
+
+            $(window).scroll(function() {
+               var hT = $('#fatores_risco_scroll').offset().top,
+                   hH = $('#fatores_risco_scroll').outerHeight(),
+                   wH = $(window).height(),
+                   wS = $(this).scrollTop(),
+                   div_H = $('#fatores_risco_scroll').height();
+                   
+               if (wS > (hT+hH-wH) && ws < (hT+hH-wH+div_H)){
+                   console.log('in fatores de risco');
+               }
+            });
+            </script>
+
+
+
+
             <div class="grid-3-columns medium-content">
                 <div class="grid-item-1-2 d-flex-center">
                     <img src="assets/tabagism/1.png" />
