@@ -184,7 +184,13 @@
 
 
               //check if we are in the div
-               if (scroll_p > div_top && scroll_p < div_bottom ){
+
+              if(scroll_p < div_top) {
+                $("#fatores_risco_img_1").hide();
+                $("#fatores_risco_img_2").hide();
+                $("#fatores_risco_img_3").hide();
+               }
+               else if (scroll_p > div_top && scroll_p < div_bottom ){
 
                    console.log('we are in fatores de risco');
 
@@ -195,11 +201,11 @@
                      $("#fatores_risco_img_3").hide();
                      //fade in image one
                    }
-                   if(scroll_p > div_top+div_split && scroll_p > div_top+(div_split*2)){
+                   if(scroll_p > div_top+div_split && scroll_p < div_top+(div_split*2)){
                      console.log('image two');
                      $("#fatores_risco_img_1").hide();
-                     $("#fatores_risco_img_2").fadeIn();
                      $("#fatores_risco_img_3").hide();
+                     $("#fatores_risco_img_2").fadeIn();
                      //fade in image two
                    }
 
@@ -210,6 +216,11 @@
                      $("#fatores_risco_img_3").fadeIn();
                      //fade in image two
                    }
+               }
+               else if(scroll_p > div_bottom) {
+                 $("#fatores_risco_img_1").hide();
+                 $("#fatores_risco_img_2").hide();
+                 $("#fatores_risco_img_3").show();
                }
 
 
