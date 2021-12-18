@@ -142,18 +142,21 @@
             <div class="grid-3-columns medium-content" id="fatores_risco_scroll">
                 <div class="d-flex-center-v" >
                     <p>
-                        Os principais fatores de risco para DCNT são tabagismo,
+                        Os <span id="fatores_risco_bg_1" class="green_background">principais fatores</span>
+                        de risco para DCNT são tabagismo,
                         consumo abusivo de álcool, alimentação não saudável e
                         inatividade física.
                     </p>
                     <p>
-                        Além disso, há fatores de risco metabólicos, como
-                        hipertensão (pressão arterial elevada), hiperglicemia
+                        Além disso, há fatores de
+                        <span id="fatores_risco_bg_2" class="green_background">risco metabólicos</span>,
+                        como hipertensão (pressão arterial elevada), hiperglicemia
                         (glicose elevada no sangue) e excesso de peso/obesidade.
                     </p>
                     <p>
                         Alguns fatores de risco para DCNT têm reduzido nos
-                        últimos anos, como é o caso do tabagismo.
+                        últimos anos, como é o caso do
+                        <span id="fatores_risco_bg_3" class="green_background">tabagismo</span>.
                     </p>
                 </div>
                 <div class="grid-item-2-3 d-flex-center">
@@ -165,6 +168,8 @@
 
             <style>
               .fade_img{display: none;}
+              .green_background{background-color: green; opacity: 0%;}
+
             </style>
 
             <script>
@@ -197,6 +202,8 @@
                    if(scroll_p > div_top &&  scroll_p < div_top+div_split){
                      console.log('image one');
                      $("#fatores_risco_img_1").show();
+                     $("#fatores_risco_bg_1").css('opacity') = '100';
+
                      $("#fatores_risco_img_2").hide();
                      $("#fatores_risco_img_3").hide();
                      //fade in image one
@@ -206,6 +213,7 @@
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_3").hide();
                      $("#fatores_risco_img_2").show();
+                      $("#fatores_risco_bg_2").css('opacity') = '100';
                      //fade in image two
                    }
 
@@ -214,6 +222,7 @@
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_2").hide();
                      $("#fatores_risco_img_3").show();
+                      $("#fatores_risco_bg_3").css('opacity') = '100';
                      //fade in image two
                    }
                }
