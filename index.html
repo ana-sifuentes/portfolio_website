@@ -170,8 +170,8 @@
               .fade_img{display: none;}
               .txt_color{opacity:0; padding: 0px 7px; font-weight: bold;}
 
-              .txt_color.green{background-color: var(--green); color:var(--dark-blue);}
-              .txt_color.orange{background-color: var(--orange);}
+              .txt_color.green{background-color: var(--green); }
+              .txt_color.orange{background-color: var(--orange);color:var(--dark-blue); }
               .txt_color.yellow{background-color: var(--yellow); color:var(--dark-blue);}
 
 
@@ -182,7 +182,7 @@
             $(window).scroll(function() {
 
               var window_h = $(window).height(), //window height
-                  scroll_p = $(this).scrollTop() -250; //where we are on the page - for when it comes into view
+                  scroll_p = $(this).scrollTop(); //where we are on the page - for when it comes into view
 
               var div_p = $('#fatores_risco_scroll').offset().top, // div position on page
                   div_o_h = $('#fatores_risco_scroll').outerHeight(), //div outerheight
@@ -190,7 +190,7 @@
 
               var div_top = div_p + div_o_h - window_h,//top of the div
                   div_bottom = div_top + div_h, //bottom of the div
-                  div_split = 200/3;  //split scrolling
+                  div_split = 180/3;  //split scrolling
 
 
               //check if we are in the div
