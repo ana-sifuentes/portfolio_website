@@ -180,7 +180,7 @@
 
               var div_top = div_p + div_o_h - window_h,//top of the div
                   div_bottom = div_top + div_h, //bottom of the div
-                  div_split = window_h/3;  //split scrolling
+                  div_split = 300/3;  //split scrolling
 
 
               //check if we are in the div
@@ -196,7 +196,7 @@
 
                    if(scroll_p > div_top &&  scroll_p < div_top+div_split){
                      console.log('image one');
-                     $("#fatores_risco_img_1").fadeIn();
+                     $("#fatores_risco_img_1").show();
                      $("#fatores_risco_img_2").hide();
                      $("#fatores_risco_img_3").hide();
                      //fade in image one
@@ -205,7 +205,7 @@
                      console.log('image two');
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_3").hide();
-                     $("#fatores_risco_img_2").fadeIn();
+                     $("#fatores_risco_img_2").show();
                      //fade in image two
                    }
 
@@ -213,7 +213,7 @@
                      console.log('image three');
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_2").hide();
-                     $("#fatores_risco_img_3").fadeIn();
+                     $("#fatores_risco_img_3").show();
                      //fade in image two
                    }
                }
