@@ -157,22 +157,48 @@
                     </p>
                 </div>
                 <div class="grid-item-2-3 d-flex-center">
-                    <img src="assets/risk-factors/4.png" />
+                    <img id="fatores_risco_img_1" src="assets/risk-factors/4.png"/>
                 </div>
             </div>
 
             <script>
 
             $(window).scroll(function() {
-               var hT = $('#fatores_risco_scroll').offset().top,
-                   hH = $('#fatores_risco_scroll').outerHeight(),
-                   wH = $(window).height(),
-                   wS = $(this).scrollTop(),
-                   div_H = $('#fatores_risco_scroll').height();
-                   
-               if (wS > (hT+hH-wH) && ws < (hT+hH-wH+div_H)){
-                   console.log('in fatores de risco');
+
+              var window_h = $(window).height(), //window height
+                  scroll_p = $(this).scrollTop(); //where we are on the page
+
+              var div_p = $('#fatores_risco_scroll').offset().top, // div position on page
+                  div_o_h = $('#fatores_risco_scroll').outerHeight(), //div outerheight
+                  div_h = $('#fatores_risco_scroll').height(), //div height
+
+              var div_top = div_position + div_o_h - window_h,//top of the div
+                  div_bottom = div_top + div_h, //bottom of the div
+                  div_split = div_h/3;  //split scrolling
+
+
+              //check if we are in the div
+               if (scroll_p > div_top && scroll_p < div_bottom ){
+
+                   console.log('we are in fatores de risco');
+
+                   if(scroll_p > div_top &&  scroll_p < div_top+div_split){
+                     console.log('image one');
+                     //fade in image one
+                   }
+                   if(scroll_p > div_top+div_split && scroll_p > div_top+(div_split*2)){
+                     console.log('image two');
+                     //fade in image two
+                   }
+
+                   if(  scroll_p > div_top+(div_split*2) && scroll_p < div_bottom ){
+                     console.log('image three');
+                     //fade in image two
+                   }
                }
+
+
+
             });
             </script>
 
