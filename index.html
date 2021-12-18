@@ -142,21 +142,21 @@
             <div class="grid-3-columns medium-content" id="fatores_risco_scroll">
                 <div class="d-flex-center-v" >
                     <p>
-                        Os <span id="fatores_risco_bg_1" class="green_background">principais fatores</span>
+                        Os <span id="fatores_risco_bg_1" class="txt_color yellow">principais fatores</span>
                         de risco para DCNT são tabagismo,
                         consumo abusivo de álcool, alimentação não saudável e
                         inatividade física.
                     </p>
                     <p>
                         Além disso, há fatores de
-                        <span id="fatores_risco_bg_2" class="green_background">risco metabólicos</span>,
+                        <span id="fatores_risco_bg_2" class="txt_color orange">risco metabólicos</span>,
                         como hipertensão (pressão arterial elevada), hiperglicemia
                         (glicose elevada no sangue) e excesso de peso/obesidade.
                     </p>
                     <p>
                         Alguns fatores de risco para DCNT têm reduzido nos
                         últimos anos, como é o caso do
-                        <span id="fatores_risco_bg_3" class="green_background">tabagismo</span>.
+                        <span id="fatores_risco_bg_3" class="txt_color green">tabagismo</span>.
                     </p>
                 </div>
                 <div class="grid-item-2-3 d-flex-center">
@@ -168,7 +168,12 @@
 
             <style>
               .fade_img{display: none;}
-              .green_background{background-color: green; opacity: 0%; padding: 0px 7px;}
+              .txt_color{opacity:0; padding: 0px 7px;}
+
+              .txt_color.green{background-color: var(--green);}
+              .txt_color.orange{background-color: var(--orange);}
+              .txt_color.yellow{background-color: var(--yellow);}  
+
 
             </style>
 
@@ -185,7 +190,7 @@
 
               var div_top = div_p + div_o_h - window_h,//top of the div
                   div_bottom = div_top + div_h, //bottom of the div
-                  div_split = 100/3;  //split scrolling
+                  div_split = 180/3;  //split scrolling
 
 
               //check if we are in the div
@@ -202,7 +207,7 @@
                    if(scroll_p > div_top &&  scroll_p < div_top+div_split){
                      console.log('image one');
                      $("#fatores_risco_img_1").show();
-                     $("#fatores_risco_bg_1").css('opacity', '0.6');
+                     $("#fatores_risco_bg_1").css('opacity', '1');
 
                      $("#fatores_risco_img_2").hide();
                      $("#fatores_risco_img_3").hide();
@@ -213,7 +218,7 @@
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_3").hide();
                      $("#fatores_risco_img_2").show();
-                     $("#fatores_risco_bg_1").css('opacity', '0.6');
+                     $("#fatores_risco_bg_2").css('opacity', '1');
                      //fade in image two
                    }
 
@@ -222,7 +227,7 @@
                      $("#fatores_risco_img_1").hide();
                      $("#fatores_risco_img_2").hide();
                      $("#fatores_risco_img_3").show();
-                     $("#fatores_risco_bg_1").css('opacity', '0.6');
+                     $("#fatores_risco_bg_3").css('opacity', '1');
                      //fade in image two
                    }
                }
