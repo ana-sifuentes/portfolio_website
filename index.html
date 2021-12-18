@@ -157,9 +157,15 @@
                     </p>
                 </div>
                 <div class="grid-item-2-3 d-flex-center">
-                    <img id="fatores_risco_img_1" src="assets/risk-factors/4.png"/>
+                    <img class="fade_img" id="fatores_risco_img_1" src="assets/risk-factors/2.png"/>
+                    <img class="fade_img" id="fatores_risco_img_2" src="assets/risk-factors/3.png"/>
+                    <img class="fade_img" id="fatores_risco_img_3" src="assets/risk-factors/5.png"/>
                 </div>
             </div>
+
+            <style>
+              .fade_img{display: none;}
+            </style>
 
             <script>
 
@@ -174,7 +180,7 @@
 
               var div_top = div_p + div_o_h - window_h,//top of the div
                   div_bottom = div_top + div_h, //bottom of the div
-                  div_split = div_h/3;  //split scrolling
+                  div_split = window_h/3;  //split scrolling
 
 
               //check if we are in the div
@@ -184,15 +190,24 @@
 
                    if(scroll_p > div_top &&  scroll_p < div_top+div_split){
                      console.log('image one');
+                     $("#fatores_risco_img_1").fadeIn();
+                     $("#fatores_risco_img_2").hide();
+                     $("#fatores_risco_img_3").hide();
                      //fade in image one
                    }
                    if(scroll_p > div_top+div_split && scroll_p > div_top+(div_split*2)){
                      console.log('image two');
+                     $("#fatores_risco_img_1").hide();
+                     $("#fatores_risco_img_2").fadeIn();
+                     $("#fatores_risco_img_3").hide();
                      //fade in image two
                    }
 
                    if(  scroll_p > div_top+(div_split*2) && scroll_p < div_bottom ){
                      console.log('image three');
+                     $("#fatores_risco_img_1").hide();
+                     $("#fatores_risco_img_2").hide();
+                     $("#fatores_risco_img_3").fadeIn();
                      //fade in image two
                    }
                }
