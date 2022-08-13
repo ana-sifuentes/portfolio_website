@@ -98,15 +98,16 @@ hr {
 
 .button a{
   text-decoration: none;
-  font:'Outfit', sans-serif;
+  font-family:'Outfit', sans-serif;
   color: var(--light_gray);
+  padding: 13px;
 }
 
 .button{
-  width: 30%;
+  width: 20%;
   display: inline-block;
   padding:10px;
-  background-color: var(--orange);  
+  background-color: var(--orange);
 }
 
 .button:hover{

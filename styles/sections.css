@@ -8,10 +8,6 @@
     vertical-align:middle;
 }
 
-#main-section img {
-    max-width: 100%;
-    width: 100%;
-}
 
 
 .section {
@@ -85,8 +81,14 @@
     line-height: 1.25em;
 }
 
+
+.social-media-wrapper{
+  float: left;
+  margin: auto;
+}
+
 .social-media-img{
-  width:30%;
+  width:10%;
   float: left;
 }
 
