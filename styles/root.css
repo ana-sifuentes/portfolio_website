@@ -96,18 +96,17 @@ hr {
 }
 
 
-a.button{
+.button a{
   text-decoration: none;
   font:'Outfit', sans-serif;
+  color: var(--light_gray);
 }
 
 .button{
   width: 30%;
   display: inline-block;
   padding:10px;
-  background-color: var(--orange);
-  color: var(--light_gray);
-  font: 'Outfit', sans-serif;
+  background-color: var(--orange);  
 }
 
 .button:hover{

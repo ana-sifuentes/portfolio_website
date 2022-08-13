@@ -84,3 +84,12 @@
     font-weight: 600;
     line-height: 1.25em;
 }
+
+.social-media-img{
+  width:30%;
+  float: left;
+}
+
+.social-media-img img{
+  width: 30px;
+}
