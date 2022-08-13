@@ -95,6 +95,22 @@ hr {
     width: 70%;
 }
 
+
+.button{
+  width:30%;
+  padding:10px;
+  background-color: var(--orange);
+  color: var(--light_gray);
+  font: 'Outfit', sans-serif;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: var(--yellow);
+  color:var(--light_gray);
+}
+
+
 .full-height {
     min-height: 100vh;
 }
