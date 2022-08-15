@@ -6,6 +6,7 @@
     text-align: center;
     display:table-cell;
     vertical-align:middle;
+    background-image:url('assets/decoration_background.png');
 }
 
 
@@ -28,7 +29,6 @@
     font-weight: 600;
     line-height: 1.25em;
 }
-
 
 
 .spacer{
