@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+/* === Base Styles === */
 
-
-:root {
-    --black: #000000;
-    --pink: #F6C2FD;
-    --purple:#672FF8;
-    --orange:#EC602F;
-    --yellow:#F5B64A;
-    --green:#234F18;
-    --blue:#4DB8ED;
-    --light_gray:#F4F4F4;
-    --medium_gray:#DBDAD1;
-    --white: #ffffff;
-    --dark_orange: #AD4926;
+/* Font: Helvetica, system fallback */
+body, p, h1, h2, h3, ul, a {
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+/* Color Variables */
+:root {
+    --white: #FFFFFF;
+    --lilac: #F7EEFC;
+    --dark-purple: #320C18;
+    --medium-gray: #B8B3B7;
+    --dark-gray: #5D585C;
+    --dark-black: #14130F;
+}
+
+/* Reset */
 * {
     border: 0;
     margin: 0;
@@ -24,26 +23,20 @@
     font-size: 100%;
     padding: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
-html {
-    display: table;
+/* Layout */
+html, body {
     height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
-    width: 100%;
+    background: var(--white);
+    color: var(--dark-black);
 }
 
-body {
-    background: var(--black);
-    color: var(--light_gray);
-    display: table-cell;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
+/* Typography */
 h1 {
-    font-family: 'Reem Kufi', sans-serif;
     font-size: 5em;
     font-weight: 900;
     line-height: 0.8em;
@@ -52,7 +45,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Reem Kufi', sans-serif;
     font-size: 2.25em;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -60,7 +52,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Reem Kufi', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -69,9 +60,7 @@ h3 {
     padding-bottom: 3.125em;
 }
 
-
 p {
-    font-family: 'Outfit', sans-serif;
     font-size: 1.3em;
     font-weight: 400;
     line-height: 1.5em;
@@ -79,52 +68,50 @@ p {
 }
 
 ul {
-    font-family: 'Outfit', sans-serif;
     font-weight: 400;
     padding-left: 1.25em;
 }
 
 hr {
-    border-top: solid 1px var(--medium_gray);
-    fill: var(--medium_gray);
+    border-top: solid 1px var(--medium-gray);
+    fill: var(--medium-gray);
     height: 1px;
     margin: 2em auto;
     width: 70%;
 }
 
-
-.button{
-  display: inline-block;
+/* === Button === */
+.button {
+    display: inline-block;
 }
 
-.button a{
-  text-decoration: none;
-  font-family: 'Outfit', sans-serif;
-  color: var(--light_gray);
-  padding: 10px 15px;
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  background-color: var(--orange);
+.button a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dark-purple);
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.button a:hover{
-  background-color: var(--yellow);
-  color: var(--black);
+.button a:hover {
+    background-color: var(--medium-gray);
+    color: var(--dark-black);
 }
 
-
+/* === Navbar === */
 .navbar {
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
-    background: #f4f4f4;
+    background: var(--lilac);
+    border-bottom: 1px solid var(--medium-gray);
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: var(--dark-black);
     font-weight: bold;
 }
-
