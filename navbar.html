@@ -1,91 +1,104 @@
 <style>
   :root {
-    --white: #ffffff;
-    --lilac: #f7eefc;
-    --dark_purple: #320c18;
-    --medium_gray: #b8b3b7;
-    --dark_gray: #5d585c;
-    --dark_black: #14130f;
-  }
+  --white: #ffffff;
+  --lilac: #f7eefc;
+  --dark_purple: #320c18;
+  --medium_gray: #b8b3b7;
+  --dark_gray: #5d585c;
+  --dark_black: #14130f;
+}
 
-  .navbar {
-    width: 100%;
-    background-color: var(--white);
-    color: var(--dark_black);
-    position: relative;
-    z-index: 1000;
-    border-bottom: 1px solid var(--medium_gray);
-  }
+.navbar {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--dark_black);
+  position: relative;
+  z-index: 1000;
+  border-bottom: 1px solid var(--medium_gray);
+}
 
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 75%;
+  max-width: 1200px;
+  padding: 0.75rem 1rem;
+  margin: 0 auto;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  height: 28px;
+  width: 28px;
+}
+
+/* Menu wrapper takes full width */
+.menu-wrapper {
+  display: none; /* hidden by default */
+  width: 100%;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--medium_gray);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* Inner contents have max width and flex/grid layout */
+.menu-contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  min-width: 75%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.menu-contents a {
+  text-decoration: none;
+  color: var(--dark_black);
+  background-color: var(--lilac);
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-contents a:hover {
+  background-color: var(--medium_gray);
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
   .navbar-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width:75%;
-    max-width: 1200px;
-    padding: 0.75rem 1rem;
-    margin: 0 auto;
+    min-width: 90%;
   }
 
-  .navbar-left,
-  .navbar-right {
-    display: flex;
-    align-items: center;
+  .menu-contents {
+    grid-template-columns: 1fr;
+    min-width: 90%;
   }
+}
 
-  .logo img {
-    height: 40px;
-  }
-
-  .menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .menu-toggle img {
-    height: 28px;
-    width: 28px;
-  }
-
-  .menu {
-    display: none;
-    flex-wrap: wrap;
-    background-color: var(--white);
-    width: 100%;
-    padding: 1rem;
-    border-bottom: 1px solid var(--medium_gray);
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: var(--dark_black);
-    background-color: var(--lilac);
-    padding: 0.75rem;
-    border-radius: 5px;
-    font-weight: 600;
-    font-family: 'Helvetica', sans-serif;
-    flex: 1 1 calc(25% - 1rem);
-    margin: 0.5rem;
-    text-align: center;
-  }
-
-  .menu a:hover {
-    background-color: var(--medium_gray);
-    color: var(--white);
-  }
-
-  @media screen and (max-width: 768px) {
-    .menu a {
-      flex: 1 1 100%;
-    }
-    .navbar-inner {
-      min-width: 90%;
-    }
-  }
 </style>
 
 <nav class="navbar">
@@ -103,11 +116,13 @@
     </div>
   </div>
 
-  <div class="menu" id="menu">
+  <div class="menu-wrapper" id="menu">
+    <div class="menu-contents">
     <a href="index.html">Home</a>
     <a href="work.html">Work</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
+  </div>
   </div>
 </nav>
 
