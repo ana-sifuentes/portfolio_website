@@ -44,8 +44,16 @@
         </section>
 
 
+        
         <!-- Scripts -->
         <script src="code/navigation.js"></script>
+        <script>
+        fetch("navbar.html")
+          .then(res => res.text())
+          .then(data => {
+              document.getElementById("navbar-placeholder").innerHTML = data;
+          });
+        </script>
 
     </body>
 </html>
