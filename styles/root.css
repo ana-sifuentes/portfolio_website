@@ -200,3 +200,10 @@ a:hover {
 }
 
 
+
+/* === Spacer === */
+.spacer{
+  width:100%;
+  height: 1em;
+  clear:both;
+}
