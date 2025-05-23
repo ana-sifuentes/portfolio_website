@@ -1,15 +1,5 @@
 /* === Navbar styling === */
 
-/* Color Variables */
-:root {
-    --white: #FFFFFF;
-    --lilac: #F7EEFC;
-    --dark-purple: #320C18;
-    --medium-gray: #B8B3B7;
-    --dark-gray: #5D585C;
-    --dark-black: #14130F;
-}
-
   .navbar {
     width: 100%;
     color: var(--dark_black);
@@ -90,7 +80,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
-
 
   .menu-section h3 {
     margin-top: 0;
