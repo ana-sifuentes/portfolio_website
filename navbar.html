@@ -49,16 +49,22 @@
 }
 
 /* Menu wrapper takes full width */
-.menu-wrapper {
+.menu {
   /* display: none;  hidden by default */
   background-color: var(--white);
   border-bottom: 1px solid var(--medium_gray);
   position: absolute;
   top: 100%;
   left: 0;
+  width:100%;
+  height: 100vh;
+}
+
+.menu-wrapper {
   min-width: 75%;
   max-width: 1200px;
-}
+} 
+
 
 /* Inner contents have max width and flex/grid layout */
 .menu-contents {
@@ -88,13 +94,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-inner {
+  .navbar-inner, .menu_wrapper {
     min-width: 90%;
   }
 
   .menu-contents {
     grid-template-columns: 1fr;
-    min-width: 90%;
   }
 }
 
@@ -115,12 +120,14 @@
     </div>
   </div>
 
-  <div class="menu-wrapper" id="menu">
+  <div class="menu" id="menu">
+  <div class="menu-wrapper">
     <div class="menu-contents">
      <a href="work.html">Work</a>
      <a href="blog.html">Blog</a>
      <a href="contact.html">Contact</a>
    </div>
+  </div>
   </div>
 
 
