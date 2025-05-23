@@ -50,8 +50,7 @@
 
 /* Menu wrapper takes full width */
 .menu-wrapper {
-  display: none; /* hidden by default */
-  width: 100%;
+  /* display: none;  hidden by default */
   background-color: var(--white);
   border-bottom: 1px solid var(--medium_gray);
   position: absolute;
@@ -64,8 +63,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  min-width: 75%;
-  max-width: 1200px;
   padding: 1rem;
   margin: 0 auto;
   box-sizing: border-box;
@@ -114,16 +111,18 @@
         <img src="assets/menu.svg" alt="Menu" />
       </button>
     </div>
+
+    <div class="menu-wrapper" id="menu">
+      <div class="menu-contents">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
 
-  <div class="menu-wrapper" id="menu">
-    <div class="menu-contents">
-    <a href="index.html">Home</a>
-    <a href="work.html">Work</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  </div>
+
 </nav>
 
 
