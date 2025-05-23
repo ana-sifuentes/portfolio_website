@@ -56,12 +56,14 @@
   position: absolute;
   top: 100%;
   left: 0;
+  min-width: 75%;
+  max-width: 1200px;
 }
 
 /* Inner contents have max width and flex/grid layout */
 .menu-contents {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
   margin: 0 auto;
@@ -111,15 +113,14 @@
         <img src="assets/menu.svg" alt="Menu" />
       </button>
     </div>
+  </div>
 
-    <div class="menu-wrapper" id="menu">
-      <div class="menu-contents">
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
+  <div class="menu-wrapper" id="menu">
+    <div class="menu-contents">
+     <a href="work.html">Work</a>
+     <a href="blog.html">Blog</a>
+     <a href="contact.html">Contact</a>
+   </div>
   </div>
 
 
