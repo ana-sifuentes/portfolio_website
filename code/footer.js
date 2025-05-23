@@ -1,0 +1,33 @@
+document.getElementById("footer").innerHTML = `
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">Sifuentes</div>
+
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h3><a href="work.html">Work</a></h3>
+          <ul>
+            <li><a href="#">Main Project 1</a></li>
+            <li><a href="work.html" class="more-link">All Work →</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3><a href="blog.html">Blog</a></h3>
+          <ul>
+            <li><a href="#">Most Recent Blog 1</a></li>
+            <li><a href="blog.html" class="more-link">All Blogs →</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3><a href="contact.html">Contact</a></h3>
+          <ul>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+`;
