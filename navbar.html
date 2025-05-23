@@ -1,35 +1,19 @@
 <style>
-  :root {
-    --white: #ffffff;
-    --lilac: #f7eefc;
-    --dark_purple: #320c18;
-    --medium_gray: #b8b3b7;
-    --dark_gray: #5d585c;
-    --dark_black: #14130f;
-  }
 
   .navbar {
     width: 100%;
-    background-color: var(--white);
     color: var(--dark_black);
     position: relative;
     z-index: 1000;
-    border-bottom: 1px solid var(--medium_gray);
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 0 1rem;
   }
-
-      
-
 
   .navbar-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 75%;
-    max-width: 1200px;
     padding: 0.75rem 1rem;
     margin: 0 auto;
   }
@@ -50,10 +34,26 @@
     cursor: pointer;
   }
 
+  #hamburger path {
+    transition: all 0.3s ease;
+    transform-origin: 50% 50%;
+  }
+
+  #hamburger.open path#line1 {
+    transform: rotate(45deg) translate(10px, 10px);
+  } 
+  #hamburger.open path#line2 {
+    opacity: 0;
+  }
+  #hamburger.open path#line3 {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  /*
   .menu-toggle img {
     height: 28px;
     width: 28px;
-  }
+  }*/
 
   .menu {
     display: none;
@@ -61,7 +61,6 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--white);
     border-bottom: 1px solid var(--medium_gray);
     justify-content: center;
     gap: 2rem;
@@ -70,8 +69,6 @@
   }
 
   .menu-wrapper {
-    min-width: 75%;
-    max-width: 1200px;
     padding: 0.75rem 1rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -85,7 +82,7 @@
   }
 
 
-.menu-section h3 {
+  .menu-section h3 {
     margin-top: 0;
     font-size: 1.2rem;
     color: var(--dark_black);
@@ -100,96 +97,50 @@
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size 0.7s ease;
-}
+  }
 
-.menu-section h3:hover {
-   background-size: 100% 1px;
-}
+  .menu-section h3:hover {
+     background-size: 100% 1px;
+  }
 
-.menu-section ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-  margin: 0.5rem 0;
-}
+  .menu-section ul {
+   list-style: disc;
+   padding-left: 1.2rem;
+   margin: 0.5rem 0;
+  }
 
-.menu-section li {
-  margin-bottom: 0.5rem;
-  list-style-type:circle;
-}
+  .menu-section li {
+    margin-bottom: 0.5rem;
+    list-style-type:circle;
+  }
 
+  .menu-section a {
+    text-decoration: none;
+    color: var(--dark_black);
+    font-weight: 100;
+    background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease;
+    font-size: smaller;
+  }
 
-.menu-section a {
-  text-decoration: none;
-  color: var(--dark_black);
-  font-weight: 100;
-  background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
-  transition: background-size 0.3s ease;
-  font-size: smaller;
-}
+  .menu-section a:hover {
+    background-size: 100% 1px;
+  }
 
-.menu-section a:hover {
-  background-size: 100% 1px;
-}
-
-
-
-.more-link {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
-
-
-
-  #hamburger path {
-    transition: all 0.3s ease;
-    transform-origin: 50% 50%;
+  .more-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
   }
 
 
-
-#hamburger.open path#line1 {
-  transform: rotate(45deg) translate(10px, 10px);
-}
-#hamburger.open path#line2 {
-  opacity: 0;
-}
-#hamburger.open path#line3 {
-  transform: rotate(-45deg) translate(10px, -10px);
-}
-
-
-
-.container {
-  width: 100%;
-  max-width: 800px;
-  padding-left: clamp(1rem, 4vw, 2rem);
-  padding-right: clamp(1rem, 4vw, 2rem);
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.navbar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.menu-wrapper {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-contents {
-    grid-template-columns: 1fr;
-  }
+  @media screen and (max-width: 768px) {
+    .menu-contents {
+      grid-template-columns: 1fr;
+    }
 }
 
 

@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
           menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
         });
       }
+
+      document.getElementById("hamburger").addEventListener("click", () => {
+          document.getElementById("hamburger").classList.toggle("open");
+      });
+
+
     });
-
-  document.getElementById("hamburger").addEventListener("click", () => {
-    document.getElementById("hamburger").classList.toggle("open");
-  });
-
-
 
 });
