@@ -123,6 +123,62 @@ a:hover {
 
 
 
+/* Full-width Container (no margin) */
+.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Grid Parent */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Grid Items */
+.grid-item {
+  text-align: left;
+}
+
+/* Column Merging */
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3;
+}
+
+/* Row Merging */
+.row-span-2 {
+  grid-row: span 2;
+}
+
+/* Responsive Stack on small screens */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-span-2,
+  .col-span-3 {
+    grid-column: span 1;
+  }
+
+  .row-span-2 {
+    grid-row: span 1;
+  }
+}
+
+
+
+
+
+
+
+
 /* === Button === */
 .button {
     display: inline-block;
