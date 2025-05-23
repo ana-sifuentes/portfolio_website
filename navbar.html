@@ -150,29 +150,23 @@
     transform-origin: 50% 50%;
   }
 
-  #hamburger.open #line1 {
-   transform: rotate(45deg) translate(10px, 10px);
-  }
 
-  #hamburger.open #line2 {
-   opacity: 0;
-  }
 
-  #hamburger.open #line3 {
-    transform: rotate(-45deg) translate(10px, -10px);
-  }
-
-#line1,
-#line2,
-#line3 {
-  transform: rotate(0deg) translate(0, 0);
+#hamburger.open path#line1 {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+#hamburger.open path#line2 {
+  opacity: 0;
+}
+#hamburger.open path#line3 {
+  transform: rotate(-45deg) translate(10px, -10px);
 }
 
 
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   padding-left: clamp(1rem, 4vw, 2rem);
   padding-right: clamp(1rem, 4vw, 2rem);
   margin: 0 auto;
@@ -257,9 +251,6 @@
    
   </div>
 </div>
-
-
-
 
     </div>
   </div>
