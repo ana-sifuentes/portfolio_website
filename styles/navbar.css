@@ -2,7 +2,7 @@
 
   .navbar {
     width: 100%;
-    color: var(--dark_black);
+    color: #14130F;
     position: relative;
     z-index: 1000;
     display: flex;
@@ -56,12 +56,12 @@
     top: 100%;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid var(--medium_gray);
+    border-bottom: 1px solid #B8B3B7;
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
     height: 100vh;
-    background-color: var(--white);
+    background-color: #FFFFFF;
   }
 
   .menu.visible {
@@ -84,14 +84,14 @@
   .menu-section h3 {
     margin-top: 0;
     font-size: 1.2rem;
-    color: var(--dark_black);
+    color: #14130F;
     font-weight: 200;
     letter-spacing: 0;
     line-height: 0;
     margin: 0;
     padding: 1rem 0rem;
     text-decoration: none;
-    background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
+    background-image: linear-gradient(to right, #320C18, #320C18);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
@@ -115,9 +115,9 @@
 
   .menu-section a {
     text-decoration: none;
-    color: var(--dark_black);
+    color:#14130F;
     font-weight: 100;
-    background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
+    background-image: linear-gradient(to right,#320C18, #320C18);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
