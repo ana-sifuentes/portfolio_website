@@ -100,18 +100,4 @@ hr {
     color: var(--dark-black);
 }
 
-/* === Navbar === */
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-    background: var(--lilac);
-    border-bottom: 1px solid var(--medium-gray);
-}
 
-.navbar a {
-    text-decoration: none;
-    color: var(--dark-black);
-    font-weight: bold;
-}
