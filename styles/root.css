@@ -61,7 +61,7 @@ h3 {
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 1em;
@@ -78,6 +78,24 @@ hr {
     height: 1px;
     margin: 2em auto;
     width: 70%;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #14130F;
+  font-weight: 100;
+  background-image: linear-gradient(to right, #320C18, #320C18);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px; /* full width by default */
+  transition: background-size 0.3s ease;
+  font-size: 0.9em;
+}
+
+a:hover {
+  background-size: 0% 1px; /* shrinks on hover (disappears) */
 }
 
 

@@ -44,7 +44,7 @@
 
             <div class="spacer"></div>
 
-            <h1> Hi, I'm Ana! ☀️</h1>
+            <h2> Hi, I'm Ana! ☀️</h2>
 
             <div class="spacer"></div>
             
@@ -61,87 +61,95 @@
 
         </div>
 
-
-  <div class="container">
-    <!-- Row 1 -->
-    <div class="grid">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-    </div>
-
-    <!-- Row 2 - only element 4 inside -->
-    <div class="row-2">
-      <div class="box">4</div>
-    </div>
-
-    <!-- Row 3 - only element 6 inside -->
-    <div class="row-3">
-      <div class="box">6</div>
-    </div>
+<div class="container">
+  <div class="grid">
+    <div class="grid-item">1</div>
+    <div class="grid-item col-span-2">2 + 3 merged (2/3)</div>
   </div>
 
-  <!-- Breakout Element 5 outside the container -->
-  <div class="breakout-box">
-    5 (spans edge-to-edge)
+  <div class="grid">
+  <div class="grid-item row-span-2">Tall Section (spans 2 rows)</div>
+  <div class="grid-item">Short</div>
+  <div class="grid-item">Short</div>
+  <div class="grid-item">Short</div>
+</div>
+</div>
+
+
+<div class="full-width">
+  <div class="grid">
+    <div class="grid-item col-span-2">2/3 width</div>
+    <div class="grid-item">1/3 width</div>
   </div>
+</div>
 
 
-<style>.grid {
+<div class="grid">
+  <div class="grid-item row-span-2">Tall Section (spans 2 rows)</div>
+  <div class="grid-item">Short</div>
+  <div class="grid-item">Short</div>
+  <div class="grid-item">Short</div>
+</div>
+
+
+
+
+<style>
+
+
+
+/* Full-width Container (no margin) */
+.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Grid Parent */
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
   gap: 1rem;
 }
 
-.row-2,
-.row-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.box {
-  background: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
+/* Grid Items */
+.grid-item {
+  background: #eee;
+  padding: 1rem;
   border-radius: 8px;
-  font-weight: bold;
+  text-align: center;
 }
 
-/* Edge-to-edge breakout box */
-.breakout-box {
-    position: relative;
-    width: 50vw;
-    height: 310px;
-    background: #bbb;
-    margin-top: -310px;
-    margin-bottom: 1rem;
-    display: none;
-    align-items: right;
-    justify-content: right;
-    z-index: 0;
-    border-radius: 15px;
-    position: relative;
-    width: 50%;
-    height: 310px;
-    background: #bbb;
-    /* margin-top: 1rem; */
-    margin-left: auto;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    z-index: 0;
-    float: right;
-    box-sizing: border-box;
-    padding: 0 1rem;
-
+/* Column Merging */
+.col-span-2 {
+  grid-column: span 2;
 }
+
+.col-span-3 {
+  grid-column: span 3;
+}
+
+/* Row Merging */
+.row-span-2 {
+  grid-row: span 2;
+}
+
+/* Optional: Responsive Stack on small screens */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-span-2,
+  .col-span-3 {
+    grid-column: span 1;
+  }
+
+  .row-span-2 {
+    grid-row: span 1;
+  }
+}
+
 
 </style>
 
