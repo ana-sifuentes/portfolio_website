@@ -111,8 +111,6 @@ a:hover {
     margin: 0 auto;
   }
 
-
-
 .container {
     width: 100%;
     max-width: 800px;
@@ -167,6 +165,47 @@ a:hover {
   height: auto;
   object-fit: cover; 
 }
+
+
+/* Default layout (desktop / wide) — keep stacked */
+.grid-item.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid-item.article .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Mini grid layout for smaller screens */
+@media (max-width: 768px) {
+  .grid-item.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Even items: content right, image left */
+  .grid-item.article:nth-of-type(even) {
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* Reset inside direction so content doesn't flip too */
+  .grid-item.article:nth-of-type(even) .content,
+  .grid-item.article:nth-of-type(even) .image {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+
+
 
 
 /* Responsive Stack on small screens */
