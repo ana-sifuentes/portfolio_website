@@ -85,18 +85,10 @@ hr {
 
   .content-wrapper {
     width: 100%;
-    color: var(--dark_black);
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
   }
 
   .content-inner {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0.75rem 1rem;
     margin: 0 auto;
   }
