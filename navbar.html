@@ -112,17 +112,26 @@
   list-style-type:circle;
 }
 
+
+
+
 .menu-section a {
-    text-decoration: none;
-    color: var(--dark_black);
-    font-weight: 500;
-    font-weight: 100;
-    font-size: smaller;
+  text-decoration: none;
+  color: var(--dark_black);
+  font-weight: 100;
+  background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+  font-size: smaller;
 }
 
 .menu-section a:hover {
-  color: var(--dark_purple);
+  background-size: 100% 2px;
 }
+
+
 
 .more-link {
   display: inline-block;
@@ -189,31 +198,35 @@
     <div class="menu-wrapper">
 <div class="menu-contents">
   <div class="menu-section">
-    <h3>Work</h3>
+      <a href=""><h3>Work</h3></a>
     <ul>
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
       <li><a href="#">Item 3</a></li>
     </ul>
-    <a href="work.html" class="more-link">› link to more</a>
+    <a href="work.html" class="more-link">More → </a>
   </div>
 
   <div class="menu-section">
-    <h3>Blog</h3>
+    <a href=""><h3>Blog</h3></a>
     <ul>
       <li><a href="#">Post 1</a></li>
       <li><a href="#">Post 2</a></li>
+      <li><a href="#">Post 3</a></li>
     </ul>
-    <a href="blog.html" class="more-link">› see all posts</a>
+    <a href="blog.html" class="more-link">More → </a>
   </div>
 
   <div class="menu-section">
-    <h3>Contact</h3>
+      <a href=""><h3>Contact</h3></a>
+
+       <a href="contact.html" class="more-link">Let's work together! 📩 </a>
+
     <ul>
       <li><a href="#">Email</a></li>
       <li><a href="#">Instagram</a></li>
     </ul>
-    <a href="contact.html" class="more-link">› get in touch</a>
+   
   </div>
 </div>
 
