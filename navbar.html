@@ -84,22 +84,6 @@
     gap: 1rem;
   }
 
-  .menu-contents a {
-    text-decoration: none;
-    color: var(--dark_black);
-    background-color: var(--lilac);
-    padding: 0.75rem;
-    border-radius: 5px;
-    font-weight: 600;
-    font-family: 'Helvetica', sans-serif;
-    text-align: left;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-
-  .menu-contents a:hover {
-    background-color: var(--medium_gray);
-    color: var(--white);
-  }
 
 
   .menu-section {
@@ -110,9 +94,14 @@
 }
 
 .menu-section h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: var(--dark_black);
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--dark_black);
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 1rem 0rem;
 }
 
 .menu-section ul {
@@ -126,9 +115,11 @@
 }
 
 .menu-section a {
-  text-decoration: none;
-  color: var(--dark_black);
-  font-weight: 500;
+    text-decoration: none;
+    color: var(--dark_black);
+    font-weight: 500;
+    font-weight: 100;
+    font-size: smaller;
 }
 
 .menu-section a:hover {
@@ -187,7 +178,7 @@
 
     <div class="navbar-right">
       <button class="menu-toggle" id="menu-toggle">
-        <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#320C18" stroke-width="5" stroke-linecap="round" class="cursor-pointer">
+        <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#320C18" stroke-width="3" class="cursor-pointer">
           <path id="line1" d="M 20 30 H 80" />
           <path id="line2" d="M 20 50 H 80" />
           <path id="line3" d="M 20 70 H 80" />
