@@ -19,6 +19,7 @@
     justify-content: center;
     gap: 2rem;
     padding: 0 1rem;
+    height: 100vh;
   }
 
       
@@ -85,11 +86,6 @@
   }
 
 
-
-.menu-section {
-
-}
-
 .menu-section h3 {
     margin-top: 0;
     font-size: 1.2rem;
@@ -99,6 +95,16 @@
     line-height: 0;
     margin: 0;
     padding: 1rem 0rem;
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease;
+}
+
+.menu-section h3:hover {
+   background-size: 100% 2px;
 }
 
 .menu-section ul {
@@ -113,8 +119,6 @@
 }
 
 
-
-
 .menu-section a {
   text-decoration: none;
   color: var(--dark_black);
@@ -122,13 +126,13 @@
   background-image: linear-gradient(to right, var(--dark_purple), var(--dark_purple));
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 1px;
   transition: background-size 0.3s ease;
   font-size: smaller;
 }
 
 .menu-section a:hover {
-  background-size: 100% 2px;
+  background-size: 100% 1px;
 }
 
 
@@ -158,6 +162,12 @@
   #hamburger.open #line3 {
     transform: rotate(-45deg) translate(10px, -10px);
   }
+
+#line1,
+#line2,
+#line3 {
+  transform: rotate(0deg) translate(0, 0);
+}
 
 
 
@@ -198,7 +208,7 @@
     <div class="menu-wrapper">
 <div class="menu-contents">
   <div class="menu-section">
-      <a href=""><h3>Work</h3></a>
+      <a href="work.html"><h3>Work</h3></a>
     <ul>
       <li><a href="#">Item 1</a></li>
       <li><a href="#">Item 2</a></li>
@@ -208,7 +218,7 @@
   </div>
 
   <div class="menu-section">
-    <a href=""><h3>Blog</h3></a>
+    <a href="blog.html"><h3>Blog</h3></a>
     <ul>
       <li><a href="#">Post 1</a></li>
       <li><a href="#">Post 2</a></li>
@@ -218,7 +228,7 @@
   </div>
 
   <div class="menu-section">
-      <a href=""><h3>Contact</h3></a>
+      <a href="contact.html"><h3>Contact</h3></a>
 
        <a href="contact.html" class="more-link">Let's work together! 📩 </a>
 
