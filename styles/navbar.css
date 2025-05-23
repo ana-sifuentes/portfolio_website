@@ -61,23 +61,31 @@
   }
 
 
-  .menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid #B8B3B7;
-    justify-content: center;
-    gap: 2rem;
-    height: 100vh;
-    background-color: #FFFFFF;
-    padding-top: 2em;
-  }
+.menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #B8B3B7;
+  justify-content: center;
+  gap: 2rem;
+  height: auto;
+  background-color: #FFFFFF;
+  padding-top: 2em;
+  display: block; 
+  visibility: hidden;
+}
 
-  .menu.visible {
-    display: flex;
-  }
+.menu.visible {
+  max-height: 1000px; 
+  opacity: 1;
+  visibility: visible;
+}
+
 
   .menu-wrapper {
     margin: 0 auto;

@@ -4,21 +4,26 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       document.getElementById("navbar-placeholder").innerHTML = data;
 
-      // Add toggle functionality
       const toggleBtn = document.getElementById("menu-toggle");
       const menu = document.getElementById("menu");
       const hamburger = document.getElementById("hamburger");
 
-      if (toggleBtn && menu) {
-        toggleBtn.addEventListener("click", () => {
+      if (toggleBtn && menu && hamburger) {
+        const toggleMenu = () => {
           menu.classList.toggle("visible");
-        });
-      }
-
-      if (hamburger) {
-        hamburger.addEventListener("click", () => {
           hamburger.classList.toggle("open");
+        };
+
+        toggleBtn.addEventListener("click", toggleMenu);
+
+        menu.addEventListener("click", (e) => {
+          // Close the menu only if the clicked element is NOT a link
+          if (!e.target.closest("a")) {
+            toggleMenu();
+          }
         });
+
+        hamburger.addEventListener("click", toggleMenu);
       }
     });
 });
