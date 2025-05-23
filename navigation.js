@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (toggleBtn && menu) {
         toggleBtn.addEventListener("click", () => {
-          menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+          menu.classList.toggle("visible");
         });
       }
 

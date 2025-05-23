@@ -1,4 +1,4 @@
-<style>
+/* === Navbar styling === */
 
   .navbar {
     width: 100%;
@@ -62,6 +62,10 @@
     padding: 1rem;
     height: 100vh;
     background-color: var(--white);
+  }
+
+  .menu.visible {
+    display: flex;
   }
 
   .menu-wrapper {
@@ -138,5 +142,3 @@
       grid-template-columns: 1fr;
     }
 }
-
-</style>
