@@ -44,14 +44,66 @@
 
             <div class="spacer"></div>
 
-            <p>
-                ana sifuentes home
-            </p>
+            <h1> Hi, I'm Ana! ☀️</h1>
 
             <div class="spacer"></div>
+            
+            <p>
+                I'm a <b>designer</b> and <b>strategist</b> with 10+ years of experience turning complex ideas into clear, 
+                beautiful solutions. 
+            </p>
+            <p>  
+                I work <b>end-to-end</b>; from research and storytelling to visual design and data.
+            </p>
+
+            <p> <a href="contact.html">Let's work together! 📩 </a> </p>
+
 
         </div>
-        
+
+
+        <div class="container">
+
+              <div class="grid">
+    <!-- Row 1 -->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <!-- Row 2 -->
+    <div class="box">4</div>
+    <div class="box large">5 (spans 2 cols × 2 rows)</div>
+
+    <!-- Row 3 -->
+    <div class="box">6</div>
+    <!-- empty spot is occupied by large box -->
+  </div>
+
+
+  <style>   .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 150px;
+      gap: 1rem;
+    }
+
+    .box {
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .box.large {
+      grid-column: span 2;
+      grid-row: span 2;
+      background: #bbb;
+    }</style>
+        </div>
+
     </div>
 
         <!-- Scripts -->
