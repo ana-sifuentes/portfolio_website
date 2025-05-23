@@ -32,6 +32,13 @@
     text-decoration: none;
   }
 
+  a.navbar-logo{
+      text-decoration: none !important; 
+      background-image: none !important; 
+      background-size: 0% 0 !important;
+      transition: none !important;
+  }
+
   .menu-toggle {
     background: none;
     border: none;
