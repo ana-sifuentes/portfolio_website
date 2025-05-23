@@ -85,13 +85,11 @@ hr {
 a {
   text-decoration: none;
   color: #14130F;
-  font-weight: 100;
   background-image: linear-gradient(to right, #320C18, #320C18);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% 1px; /* full width by default */
   transition: background-size 0.3s ease;
-  font-size: 0.9em;
 }
 
 a:hover {
