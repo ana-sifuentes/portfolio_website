@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add toggle functionality
       const toggleBtn = document.getElementById("menu-toggle");
       const menu = document.getElementById("menu");
+      const hamburger = document.getElementById("hamburger");
 
       if (toggleBtn && menu) {
         toggleBtn.addEventListener("click", () => {
@@ -14,11 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      document.getElementById("hamburger").addEventListener("click", () => {
-          document.getElementById("hamburger").classList.toggle("open");
-      });
-
-
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("open");
+        });
+      }
     });
-
 });
