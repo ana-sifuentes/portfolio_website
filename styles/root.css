@@ -121,8 +121,9 @@ a:hover {
 }
 
 .full_height{
-    min-height: 100vh;
+    min-height: 95vh;
     border: 1px solid blue;
+    align-content: center;
 }
 
 /* Full-width Container (no margin) */
