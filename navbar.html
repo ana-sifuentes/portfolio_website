@@ -92,7 +92,7 @@
     border-radius: 5px;
     font-weight: 600;
     font-family: 'Helvetica', sans-serif;
-    text-align: center;
+    text-align: left;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
@@ -100,6 +100,48 @@
     background-color: var(--medium_gray);
     color: var(--white);
   }
+
+
+  .menu-section {
+  background-color: var(--lilac);
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.menu-section h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--dark_black);
+}
+
+.menu-section ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.menu-section li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-section a {
+  text-decoration: none;
+  color: var(--dark_black);
+  font-weight: 500;
+}
+
+.menu-section a:hover {
+  color: var(--dark_purple);
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
 
 
   #hamburger path {
@@ -145,7 +187,7 @@
 
     <div class="navbar-right">
       <button class="menu-toggle" id="menu-toggle">
-        <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="black" stroke-width="10" stroke-linecap="round" class="cursor-pointer">
+        <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#320C18" stroke-width="5" stroke-linecap="round" class="cursor-pointer">
           <path id="line1" d="M 20 30 H 80" />
           <path id="line2" d="M 20 50 H 80" />
           <path id="line3" d="M 20 70 H 80" />
@@ -156,19 +198,40 @@
 
   <div class="menu" id="menu">
     <div class="menu-wrapper">
-      <div class="menu-contents">
-        <a href="work.html">Work</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </div>
+<div class="menu-contents">
+  <div class="menu-section">
+    <h3>Work</h3>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+    <a href="work.html" class="more-link">› link to more</a>
+  </div>
+
+  <div class="menu-section">
+    <h3>Blog</h3>
+    <ul>
+      <li><a href="#">Post 1</a></li>
+      <li><a href="#">Post 2</a></li>
+    </ul>
+    <a href="blog.html" class="more-link">› see all posts</a>
+  </div>
+
+  <div class="menu-section">
+    <h3>Contact</h3>
+    <ul>
+      <li><a href="#">Email</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <a href="contact.html" class="more-link">› get in touch</a>
+  </div>
+</div>
+
+
+
+
     </div>
   </div>
 </nav>
 
-
-<script>
-  document.getElementById("hamburger").addEventListener("click", () => {
-  document.getElementById("hamburger").classList.toggle("open");
-});
-
-</script>
