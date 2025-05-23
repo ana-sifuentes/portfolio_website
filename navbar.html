@@ -101,6 +101,26 @@
     color: var(--white);
   }
 
+
+  #hamburger path {
+    transition: all 0.3s ease;
+    transform-origin: 50% 50%;
+  }
+
+  #hamburger.open #line1 {
+   transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  #hamburger.open #line2 {
+   opacity: 0;
+  }
+
+  #hamburger.open #line3 {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+
+
   @media screen and (max-width: 768px) {
     .navbar-inner,
     .menu-wrapper {
@@ -111,6 +131,8 @@
       grid-template-columns: 1fr;
     }
   }
+
+
 </style>
 
 <nav class="navbar">
@@ -123,7 +145,11 @@
 
     <div class="navbar-right">
       <button class="menu-toggle" id="menu-toggle">
-        <img src="assets/menu.svg" alt="Menu" />
+        <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="black" stroke-width="10" stroke-linecap="round" class="cursor-pointer">
+          <path id="line1" d="M 20 30 H 80" />
+          <path id="line2" d="M 20 50 H 80" />
+          <path id="line3" d="M 20 70 H 80" />
+        </svg>
       </button>
     </div>
   </div>
@@ -139,3 +165,10 @@
   </div>
 </nav>
 
+
+<script>
+  document.getElementById("hamburger").addEventListener("click", () => {
+  document.getElementById("hamburger").classList.toggle("open");
+});
+
+</script>
