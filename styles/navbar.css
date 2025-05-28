@@ -20,6 +20,7 @@
   }
 
   .navbar-left,
+  .narbar-center,
   .navbar-right {
     display: flex;
     align-items: center;
