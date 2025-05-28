@@ -37,56 +37,92 @@
     <body>
         
 
-        <!-- Introduction Section -->
-        <div class="content-wrapper">
-  
-         <div class="container full_height" id="intro">
+    <!-- Introduction Section -->
 
 
-            <nav class="navbar">
-                <div class="navbar-inner">
-                    <div class="navbar-left">
-                        <a href="index.html" class="navbar-logo">anasifuentes</a>
-                    </div>
+<style>
+.page-container {
+  width: 100%;
+}
 
-                    <div class="navbar-center"> Work </div>
+.full-height-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-                    <div class="navbar-center"> Blog </div>
+.menu {
+  height: 10vh;
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
 
-                    <div class="navbar-center"> Contact </div>
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 
-                    <div class="navbar-right">
-                        <button class="menu-toggle" id="menu-toggle">
-                            <svg id="hamburger" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#320C18" stroke-width="3" class="cursor-pointer">
-                                <path id="line1" d="M 20 30 H 80" />
-                                <path id="line2" d="M 20 50 H 80" />
-                                <path id="line3" d="M 20 70 H 80" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+.menu a {
+  color: white;
+  text-decoration: none;
+}
 
-                <div id="navbar-placeholder"></div>
-            </nav>
-            
+.content {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
 
-            <div class="grid">
-                <div class="grid-item col-span-2">
-                        <div class="spacer"></div>
-                        <h2> Hi, I'm Ana! ☀️</h2>
-                        <div class="spacer"></div>
-            
-                        <p> I'm a <b>designer</b> and <b>strategist</b> with 10+ years of experience 
-                            turning complex ideas into clear, beautiful solutions. </p>
-                        <p> I work <b>end-to-end</b>; from research and storytelling to visual design and data.</p>
+.centered {
+  text-align: center;
+}
 
-                        <p> 📩 <a href="contact.html">Let's work together!  </a> </p>
-                </div>
-                <div class="grid-item"></div>
-            </div>
-        </div>
-       </div>
+    
+</style>
 
+
+<section class="page-container">
+  <div class="full-height-layout">
+    <nav class="menu">
+      <!-- Your menu items here -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="centered">
+        <!-- Your centered content here -->
+        <h1>Hello World</h1>
+        <p>
+I'm a designer and content strategist with 10+ years of experience turning complex ideas into clear, beautiful solutions.
+
+I work end-to-end; from research and storytelling to visual design and data.
+
+📩 Let's work together!
+
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+        
     <div class="content-wrapper">
         <div class="container full_height" id="work">
             <div class="grid">
