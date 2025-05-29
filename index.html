@@ -130,26 +130,72 @@
                 color: white;
             }
 
-            /* Menu */
-            .menu {
+            /* navbar */
+
+            .navbar {
                 height: 10vh;
-                color: white;
+                background: transparent;
                 display: flex;
                 align-items: center;
-                padding: 0 2rem;
-            }
-
-            .menu ul {
-                list-style: none;
-                display: flex;
-                gap: 2rem;
-                margin: 0;
                 padding: 0;
             }
 
-            .menu a {
-                color: white;
+            .navbar-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            .navbar ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar li {
+                margin: 0 1rem;
+            }
+
+            .navbar .brand {
+                margin-right: auto;
+            }
+
+            .navbar .nav-item,
+            .navbar .hamburger {
+                margin-left: 2rem;
+            }
+
+            .navbar .hamburger {
+                display: block;
+                cursor: pointer;
+                display: flex;
+            }
+
+            .navbar a {
                 text-decoration: none;
+                color: white;
+                background-image: linear-gradient(to right, white, white);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 1px; /* start invisible */
+                transition: background-size 0.3s ease;
+            }
+
+            /* On hover, underline grows */
+            .navbar a:hover {
+                background-size: 100% 1px;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .navbar .nav-item {
+                    display: none;
+                }
             }
 
             /* Shared Container & Grid */
@@ -210,13 +256,27 @@
 
         <section class="section-container">
             <div class="hero">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <nav class="navbar">
+                    <div class="container navbar-content">
+                        <ul>
+                            <li class="brand"><a href="#">anasifuentes</a></li>
+                            <li class="nav-item"><a href="#">Work</a></li>
+                            <li class="nav-item"><a href="#">Blog</a></li>
+                            <li class="nav-item"><a href="#">Contact</a></li>
+                            <li class="hamburger">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    fill="white"
+                                    viewBox="0 0 100 80"
+                                >
+                                    <rect width="100" height="5"></rect>
+                                    <rect y="30" width="100" height="5"></rect>
+                                    <rect y="60" width="100" height="5"></rect>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
 
                 <div class="centered-content">
@@ -254,7 +314,7 @@
         <div id="footer-placeholder"></div>
 
         <!-- Scripts -->
-        <script src="code/navigation.js"></script>
+        <script src="code/navbar.js"></script>
         <script src="code/footer.js"></script>
     </body>
 </html>
