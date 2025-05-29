@@ -51,6 +51,22 @@
                 background-size: cover;
             }
 
+            .hero::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(
+                    0,
+                    0,
+                    0,
+                    0.4
+                ); /* Change color and opacity here */
+                background-image: url("./assets/website_background_1.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                z-index: -1; /* Push behind content */
+            }
             /* Menu */
             .menu {
                 height: 10vh;
