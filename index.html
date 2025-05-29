@@ -117,9 +117,9 @@
             .section-container {
                 width: 100%;
                 height: 100vh;
-                border: 1px solid blue;
                 position: relative;
                 z-index: 1;
+                background-color: white;
             }
 
             /* Hero Section (first screen) */
@@ -138,7 +138,6 @@
             .navbar {
                 top: 0;
                 z-index: 1000;
-                border: 1px solid red;
                 height: 10vh;
                 background: transparent;
                 display: flex;
@@ -167,7 +166,7 @@
             }
 
             .navbar li {
-                margin: 0 1rem;
+                margin: 0 1rem 0 0;
             }
 
             .navbar .brand {
@@ -177,6 +176,18 @@
             .navbar .nav-item,
             .navbar .hamburger {
                 margin-left: 2rem;
+            }
+
+            .nav-item {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.7s ease;
+            }
+
+            .nav-item.hidden {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.7s ease;
             }
 
             .navbar .hamburger {
@@ -200,6 +211,27 @@
             /* On hover, underline grows */
             .navbar a:hover {
                 background-size: 100% 1px;
+            }
+
+            .hamburger svg rect {
+                fill: white;
+                transition: all 0.4s ease;
+                transform-origin: center;
+            }
+
+            /* Top line */
+            .hamburger.active svg rect:nth-child(1) {
+                transform: rotate(45deg) translate(20px, 22px);
+            }
+
+            /* Middle line fades out */
+            .hamburger.active svg rect:nth-child(2) {
+                opacity: 0;
+            }
+
+            /* Bottom line */
+            .hamburger.active svg rect:nth-child(3) {
+                transform: rotate(-45deg) translate(20px, -13px);
             }
 
             /* Responsive */
@@ -250,7 +282,6 @@
 
             .grid-item {
                 text-align: left;
-                border: 1px solid #d3d3d3;
             }
 
             /* Responsive */
@@ -283,8 +314,55 @@
                 padding-top: 10vh;
             }
 
+            .menu-overlay > .container {
+                padding-top: 0px;
+            }
+
             .menu-overlay.active {
                 display: block;
+            }
+
+            /* General styles for links in the menu */
+            .menu-section a {
+                color: #14130f;
+                text-decoration: none;
+                display: inline-block;
+                background-image: linear-gradient(to right, #320c18, #320c18);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 1px;
+                transition: background-size 0.5s ease;
+            }
+
+            .menu-section a:hover {
+                background-size: 100% 1px;
+            }
+
+            /* Adjust heading styling as you had it */
+            .menu-section h3 {
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: 200;
+                letter-spacing: 0;
+                line-height: 1.2;
+            }
+
+            /* Style the ul inside each section */
+            .menu-section ul {
+                list-style: none;
+                padding: 0;
+                margin: 1rem 0;
+            }
+
+            /* Style each list item */
+            .menu-section ul li {
+                margin: 0.5rem 0;
+            }
+
+            /* Optional: spacing between "More →" and the rest */
+            .menu-section .more-link {
+                margin-top: 1rem;
+                display: inline-block;
             }
 
             body.menu-open {
@@ -326,8 +404,13 @@
                                 <li><a href="#">Item 1</a></li>
                                 <li><a href="#">Item 2</a></li>
                                 <li><a href="#">Item 3</a></li>
+                                <li></li>
+                                <li>
+                                    <a href="work.html" class="more-link"
+                                        >More →</a
+                                    >
+                                </li>
                             </ul>
-                            <a href="work.html" class="more-link">More →</a>
                         </div>
                     </div>
 
@@ -339,8 +422,13 @@
                                 <li><a href="#">Post 1</a></li>
                                 <li><a href="#">Post 2</a></li>
                                 <li><a href="#">Post 3</a></li>
+                                <li></li>
+                                <li>
+                                    <a href="blog.html" class="more-link"
+                                        >More →</a
+                                    >
+                                </li>
                             </ul>
-                            <a href="blog.html" class="more-link">More →</a>
                         </div>
                     </div>
 
@@ -351,10 +439,14 @@
                             <ul>
                                 <li><a href="#">Email</a></li>
                                 <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Linkedin</a></li>
+                                <li></li>
+                                <li>
+                                    <a href="contact.html" class="more-link">
+                                        Let's work together! 📩
+                                    </a>
+                                </li>
                             </ul>
-                            <a href="contact.html" class="more-link"
-                                >Let's work together! 📩</a
-                            >
                         </div>
                     </div>
                 </div>
@@ -383,7 +475,9 @@
                 <div class="grid">
                     <div class="grid-item col-3-3">
                         <h2>Work</h2>
-                        <p>Lorem ipsum</p>
+                        <p>
+                            From concept to prototype, from sketch to strategy.
+                        </p>
                     </div>
                 </div>
 
@@ -400,6 +494,7 @@
         <script>
             $(document).ready(function () {
                 const $hamburger = $(".hamburger");
+                const $navitem = $(".nav-item");
                 const $menu = $("#menu");
                 const $body = $("body");
 
@@ -411,9 +506,13 @@
                     if (shouldOpen) {
                         $menu.show();
                         $body.addClass("fixed_position");
+                        $hamburger.addClass("active");
+                        $navitem.addClass("hidden");
                     } else {
                         $menu.hide();
                         $body.removeClass("fixed_position");
+                        $hamburger.removeClass("active");
+                        $navitem.removeClass("hidden");
                     }
                 }
 
@@ -436,12 +535,19 @@
                     }
                 });
 
-                // Optional: Close on Escape key
-                $(document).on("keydown", function (e) {
-                    if (e.key === "Escape") {
-                        toggleMenu(false);
-                    }
-                });
+                const hero = document.querySelector(".hero");
+
+                const images = [
+                    "./assets/website_background_1.png",
+                    "./assets/website_background_2.png",
+                ];
+
+                let currentIndex = 0;
+
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    hero.style.backgroundImage = `url(${images[currentIndex]})`;
+                }, 3000);
             });
         </script>
 
