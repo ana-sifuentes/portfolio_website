@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  border: 1px solid blue;
 }
 
 .content_menu{
@@ -84,7 +84,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;  
 }
 
 .centered {
@@ -104,6 +103,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin:2em 0;
 }
 
 .col-1-3 {
@@ -143,226 +143,61 @@
 
 
 <section class="page-container">
-  <div class="full-height-layout">
+  <div class="full-height-layout" style="background-image:'/assets/website_background_1.png';">
     <nav class="menu">
       <!-- Your menu items here -->
       <ul>
         <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 
     <div class="content_menu">
-      <div class="centered">
+      <div class="container centered">
         <!-- Your centered content here -->
-        <h1>Hello World</h1>
-        <p>
-I'm a designer and content strategist with 10+ years of experience turning complex ideas into clear, beautiful solutions.
+        <h1>Hi, I'm Ana!</h1>
+        <p>I'm a designer + content strategist with a passion for data. 
+            I work end-to-end; turning complex ideas into clear, beautiful solutions.
+        </p>    
+        <p> 📩 Let's work together! </p>
+           
 
-I work end-to-end; from research and storytelling to visual design and data.
 
-📩 Let's work together!
-
-</p>
       </div>
     </div>
   </div>
 </section>
 
 
+
+
 <section class="content">
+    <div class="full-height-layout">
   <div class="container">
+
+    <div class="grid">
+        <div class="grid-item col-3-3">
+            <h2>Work</h2>
+            <p> Lorem ipsum</p>
+        </div>
+    </div>
+
+
     <div class="grid">
       <div class="grid-item col-1-3">1/3</div>
       <div class="grid-item col-1-3">1/3</div>
       <div class="grid-item col-1-3">1/3</div>
     </div>
 
-    <div class="grid" style="margin-top: 2rem;">
-      <div class="grid-item col-2-3">2/3</div>
-      <div class="grid-item col-1-3">1/3</div>
-    </div>
 
-    <div class="grid" style="margin-top: 2rem;">
-      <div class="grid-item col-3-3">3/3 (Full width)</div>
-    </div>
+  </div>
   </div>
 </section>
 
 
 
-
-
-
-        
-    <div class="content-wrapper">
-        <div class="container full_height" id="work">
-            <div class="grid">
-                <div class="grid-item col-span-2">
-                        <div class="spacer"></div>
-                        <h3> Work </h3>
-                        <div class="spacer"></div>
-                        <p> From concept to prototype, from sketch to strategy. 
-                            I specialize in end-to-end design, shaping products from the ground up, 
-                            refining both visuals and copy to bring clarity to complex challenges.
-                        </p>
-                </div>
-                <div class="grid-item"></div>
-            </div>
-
-            <div class="spacer"></div>
-
-            <div class="grid">
-                <div class="grid-item">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Rest Days1</h4>
-                        <p> Boosting engagement during off-days in a fitness app.</p>
-                    </div>
-                </div>
-                <div class="grid-item">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Rest Days1</h4>
-                        <p> Boosting engagement during off-days in a fitness app.</p>
-                    </div>
-                </div>
-                 <div class="grid-item">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Rest Days1</h4>
-                        <p> Boosting engagement during off-days in a fitness app.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="grid-item col-span-3">
-                    <p> <a href="work.html"> More projects → </a> </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-<div class="content-wrapper">
-    <div class="container full_height" id="blog">
-            <div class="grid">
-                <div class="grid-item col-span-2">
-                        <div class="spacer"></div>
-                        <h3> Blog </h3>
-                        <div class="spacer"></div>
-                        <p> 
-                            Curious what I get up to outside of work? 
-                            From turning my closet into a design project to visualizing personal 
-                            health data and even sharing a bit of life advice; it's all on my blog.
-                        </p>
-                </div>
-                <div class="grid-item"></div>
-            </div>
-            <div class="spacer"></div>
-            <div class="grid">
-                <div class="grid-item article">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Blog 1</h4>
-                        <p> Lorem ipsum.</p>
-                    </div>
-                </div>
-                <div class="grid-item article">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Blog 2</h4>
-                        <p> Lorem ipsum.</p>
-                    </div>
-                </div>
-                <div class="grid-item article">
-                     <div class="image">
-                        <img src="https://placehold.co/600x400/EEE/31343C">
-                    </div>
-                    <div class="content">
-                        <h4>Blog 3</h4>
-                        <p> Lorem ipsum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="grid-item col-span-3">
-                    <p> <a href="blog.html"> More articles → </a> </p>
-                </div>
-            </div>
-        </div>
-</div>
-
-
-<div class="content-wrapper">
-         <div class="container full_height" id="freelance">
-
-            <div class="grid">
-
-                <div class="grid-item"></div>
-
-                <div class="grid-item col-span-2">
-
-                        <div class="spacer"></div>
-                        <h3> Let's work together!</h3>
-                        <p>I'm looking to join a thoughtful design team and 
-                            build something meaningful together.
-                        </p>
-                        <div class="spacer"></div>
-                </div>
-
-
-            </div>
-         
-        </div>
-</div>
-    <!--
-    <div class="spacer"></div> <div class="spacer"></div> <div class="spacer"></div> <div class="spacer"></div>
-
-
-<div class="container">
-  <div class="grid">
-    <div class="grid-item">1</div>
-    <div class="grid-item col-span-2">2 + 3 merged (2/3)</div>
-  </div>
-
-  <div class="grid">
-  <div class="grid-item row-span-2">Tall Section (spans 2 rows)</div>
-  <div class="grid-item">Short</div>
-  <div class="grid-item">Short</div>
-  <div class="grid-item">Short</div>
-</div>
-</div>
-
-
-<div class="full-width">
-  <div class="grid">
-    <div class="grid-item col-span-2">2/3 width</div>
-    <div class="grid-item">1/3 width</div>
-  </div>
-</div>
-
-
-<div class="grid">
-  <div class="grid-item row-span-2">Tall Section (spans 2 rows)</div>
-  <div class="grid-item">Short</div>
-  <div class="grid-item">Short</div>
-  <div class="grid-item">Short</div>
-</div>
-
-
--->
 
 
         <div id="footer-placeholder"></div>
@@ -375,3 +210,11 @@ I work end-to-end; from research and storytelling to visual design and data.
 
     </body>
 </html>
+
+
+<!--
+    <div class="grid">
+      <div class="grid-item col-2-3">2/3</div>
+      <div class="grid-item col-1-3">1/3</div>
+    </div>
+-->
