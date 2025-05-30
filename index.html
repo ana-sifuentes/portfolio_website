@@ -23,10 +23,9 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lilita+One&family=Rubik:wght@400&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
 
         <!-- Styles -->
         <!--<link rel="stylesheet" href="styles/root.css" />-->
@@ -75,29 +74,31 @@
             /* Headings */
             h1 {
                 font-family: "Caveat", cursive;
-                font-size: 5em;
+                font-size: 4em;
                 font-weight: 900;
                 line-height: 0.8em;
                 padding-bottom: 0.25em;
                 text-rendering: optimizeLegibility;
             }
 
-            h2,
+            h2{
+                font-family: "Caveat", cursive;
+                font-size: 3em;
+                font-weight: 600;
+                line-height: 0.8em;
+                margin-bottom: 0.25em;
+                text-rendering: optimizeLegibility;
+            }
+
             h3,
             h4,
             h5,
             h6 {
-                font-family: "Lilita One", cursive;
+                font-family: "Fredoka", cursive;
                 font-weight: bold;
             }
 
-            h2 {
-                font-size: 2.25em;
-                font-weight: 600;
-                letter-spacing: 0.1em;
-                line-height: 1.1em;
-                margin-bottom: 0.4em;
-            }
+
 
             h3 {
                 font-size: 1.5em;
@@ -114,7 +115,7 @@
             }
 
             p {
-                font-size: 1.2em;
+                font-size: 1em;
                 font-weight: 400;
                 line-height: 1.5em;
                 margin-bottom: 1em;
@@ -136,12 +137,20 @@
                 background-color: white;
             }
 
+            .section-container.top_name{
+                background-color: #F7EEFC;
+                color: black;
+                min-height: 30vh;
+                height: auto;
+                padding: 2em 0 1em 0;
+            }
+
             /* Hero Section (first screen) */
             .hero {
                 height: 100vh;
                 display: flex;
                 flex-direction: column;
-                background: url("./assets/website_background_1.png") no-repeat
+                background: url("./assets/sifuentes_work_highlight_1.png") no-repeat
                     center center;
                 background-size: cover;
                 color: white;
@@ -296,7 +305,7 @@
             }
 
             .container {
-                padding-top: 10vh;
+                padding-top: 5vh;
             }
             .centered-content {
                 flex: 1;
@@ -462,6 +471,33 @@
                 overflow: hidden;
             }
 
+            .test {
+                width: 100%;
+                min-height: 2vh;
+                background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23f7eefc' /%3E%3C/svg%3E");
+                background-repeat: repeat-x;
+                background-position: top;
+                background-size: 100px 20px;
+                animation: waveMove 3.5s linear infinite;
+            }
+
+            .test.bottom{
+                 background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23f7eefc' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
+                 background-position: top;
+                 min-height: 40px;
+            }
+
+
+
+            @keyframes waveMove {
+              0% {
+                background-position-x: 0;
+              }
+              100% {
+                background-position-x: 100px;
+              }
+            }
+
 
 
 
@@ -550,22 +586,33 @@
             </div>
         </section>
 
-        <section class="section-container">
-            <div class="hero">
-                <div class="centered-content">
-                    <div class="container">
+
+
+
+
+
+        <section class="section-container top_name">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid-item col-3-3">
                         <h1>Hi, I'm Ana!</h1>
                         <p>
                             Designer + content strategist with a passion for
-                            data.<br />
-                            I work end-to-end; turning complex ideas into clear
-                            solutions.
+                            data.
                         </p>
-                        <p>📩 Let's work together!</p>
+
+                        <p>
+                            <a href="contact.html">
+                                📩 Let's work together!
+                              </a>
+                        </p>
+
                     </div>
                 </div>
             </div>
         </section>
+        <div class="test bottom"></div>
+
 
 
         <section class="section-container">
@@ -609,20 +656,16 @@
 
         </section>
 
+        <div class="test"></div>
         <section
             class="section-container"
             id="blog"
             style="background-color: #f7eefc"
-        >
+>
             <div class="container">
                 <div class="grid">
                     <div class="grid-item col-3-3">
                         <h2>Blog</h2>
-                        <p>
-                            <i>
-                                Data is everywhere. From my closet to my workouts.
-                            </i>
-                        </p>
                     </div>
                 </div>
 
@@ -633,8 +676,7 @@
                         </a>
                         <h4>Figma Fashion</h4>
                         <p>
-                            I have a confession to make. I’m a bit obsessed with
-                            style.
+                            I'm a bit obsessive. So I turned my closet into a design project.
                         </p>
                         <p><a href="">Read more→ </a></p>
                     </div>
@@ -643,7 +685,7 @@
                             <img src="assets/sifuentes_blog_highlight_2.png" />
                         </a>
                         <h4>Shapes of Data</h4>
-                        <p>Looking at data in a different way.</p>
+                        <p>Looking at my fitness and health data in a different way.</p>
                         <p><a href="">Read more→ </a></p>
                     </div>
                     <div class="grid-item col-1-3">
@@ -658,12 +700,13 @@
 
                 <div class="grid">
                     <div class="grid-item col-3-3">
-                       <p><a href="">All articles →</a></p>
+                       <p><a href="">📝 All articles</a></p>
                     </div>
                 </div>
 
             </div>
         </section>
+        <div class="test bottom"></div>
 
         <section class="section-container">
             <div class="container">
@@ -682,7 +725,7 @@
                 </div>
         </section>
 
-
+<div class="test"></div>
 
             <footer class="footer">
                <div class="footer-inner container">
@@ -789,7 +832,7 @@
                 setInterval(() => {
                     currentIndex = (currentIndex + 1) % images.length;
                     hero.style.backgroundImage = `url(${images[currentIndex]})`;
-                }, 3000);
+                }, 5000);
             });
         </script>
 
