@@ -1,7 +1,13 @@
 $(document).ready(function () {
+  //load divs
+  //
+  //menu load
+  $("#menu-placeholder").load("menu.html");
+
   //footer load
   $("#footer-placeholder").load("footer.html");
 
+  //check if user is scrolling to show navbar
   let lastScrollY = window.scrollY;
   const header = document.querySelector(".navbar");
 
@@ -20,28 +26,24 @@ $(document).ready(function () {
     lastScrollY = window.scrollY;
   });
 
+  //navbar and menu open/close
+
   const $hamburger = $(".hamburger");
   const $navitem = $(".nav-item");
   const $menu = $("#menu");
   const $body = $("body");
 
-  fetch("footer.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.querySelector("#footer-container").innerHTML = data;
-    });
-
   function toggleMenu(forceState = null) {
-    const isOpen = $menu.is(":visible");
-    const shouldOpen = forceState !== null ? forceState : !isOpen;
+    const isHidden = $("#menu").hasClass("hidden");
+    const shouldOpen = forceState !== null ? forceState : isHidden;
 
     if (shouldOpen) {
-      $menu.show();
+      $("#menu").removeClass("hidden");
       $body.addClass("fixed-position");
       $hamburger.addClass("active");
       $navitem.addClass("hidden");
     } else {
-      $menu.hide();
+      $("#menu").addClass("hidden");
       $body.removeClass("fixed-position");
       $hamburger.removeClass("active");
       $navitem.removeClass("hidden");
@@ -64,3 +66,6 @@ $(document).ready(function () {
     }
   });
 });
+
+//file:///Users/anita/testing/index.html
+// open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
