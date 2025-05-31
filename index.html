@@ -114,6 +114,11 @@
                 line-height: 1em;
             }
 
+
+            p, ul, ul li, ol, ol li{
+                font-family: "Rubik";
+            }
+
             p {
                 font-size: 1em;
                 font-weight: 400;
@@ -127,6 +132,29 @@
                 line-height: 1.2em;
                 margin-bottom: 0.7em;
             }
+
+            p.note{
+                color: #5D585C;
+                font-weight: 300;
+                font-style: italic;
+                padding: 0.5em 0;
+            }
+
+            .social-links{
+                margin-right:10px;
+            }
+
+            ul{
+                list-style-type: none;
+                margin-bottom: 1em;
+            }
+            ul li{
+                padding-bottom: 0.5em;
+            }
+
+            b{
+                font-weight: 600;
+            }
             /* General Layout */
 
             .section-container {
@@ -138,66 +166,37 @@
             }
 
             .section-container.top_name{
-                background-color: #F7EEFC;
                 color: black;
                 min-height: 30vh;
                 height: auto;
                 padding: 2em 0 1em 0;
             }
 
-            /* Hero Section (first screen) */
-            .hero {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                background: url("./assets/sifuentes_work_highlight_1.png") no-repeat
-                    center center;
-                background-size: cover;
-                color: white;
-                background-color: #320C18;
+            .section-container.lilac{
+               background-color: #F7EEFC;
             }
 
-            .work-highlight-1 {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                background: url("./assets/sifuentes_work_highlight_1.png")
-                    no-repeat center center;
-                background-size: cover;
-                color: white;
-            }
-            .work-highlight-2 {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                background: url("./assets/sifuentes_work_highlight_2.png")
-                    no-repeat center center;
-                background-size: cover;
-                color: white;
-            }
-
-            .work-highlight-3 {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                background: url("./assets/sifuentes_work_highlight_3.png")
-                    no-repeat center center;
-                background-size: cover;
-                color: white;
-            }
-            /* navbar */
 
             .navbar {
                 top: 0;
                 z-index: 1000;
                 height: 10vh;
-                background: transparent;
+                background-color: #F7EEFC;
                 display: flex;
-                color: red;
+                color: black;
                 align-items: center;
                 width: 100%;
-                mix-blend-mode: difference;
                 position: fixed;
+                transition: transform 0.3s ease;
+
+
+           }
+
+
+
+            .navbar.hidden{
+
+                transform: translateY(-100%);
             }
 
             .navbar-content {
@@ -215,25 +214,28 @@
                 list-style: none;
                 padding: 0;
                 margin: 0;
+
             }
 
-            .navbar li {
-                margin: 0 1rem 0 0;
+            .navbar .hamburger {
+                display: block;
+                display: flex;
+                position: sticky;
+                 cursor: pointer;
             }
 
             .navbar .brand {
                 margin-right: auto;
             }
 
-            .navbar .nav-item,
-            .navbar .hamburger {
-                margin-left: 2rem;
-            }
+
 
             .nav-item {
+
                 opacity: 1;
                 visibility: visible;
                 transition: opacity 0.7s ease;
+                 margin: 0 3rem 0  1rem;
             }
 
             .nav-item.hidden {
@@ -242,18 +244,12 @@
                 transition: opacity 0.7s ease;
             }
 
-            .navbar .hamburger {
-                display: block;
-                cursor: pointer;
-                display: flex;
-                position: sticky;
-                mix-blend-mode: difference;
-            }
 
-            .navbar a {
+
+            .navbar > .navbar-content a {
                 text-decoration: none;
-                color: white;
-                background-image: linear-gradient(to right, white, white);
+                color: black;
+                background-image: linear-gradient(to right, black, black);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 1px;
@@ -261,12 +257,12 @@
             }
 
 
-            .navbar a:hover {
+            .navbar > .navbar-content a:hover {
                 background-size: 100% 1px;
             }
 
             .hamburger svg rect {
-                fill: white;
+                fill: black;
                 transition: all 0.4s ease;
                 transform-origin: center;
             }
@@ -305,8 +301,14 @@
             }
 
             .container {
-                padding-top: 5vh;
+                padding-top: 10vh;
+                padding-bottom: 10vh;
             }
+
+            .section-container.top_name > .container{
+                padding-bottom: 0;
+            }
+
             .centered-content {
                 flex: 1;
                 display: flex;
@@ -323,6 +325,13 @@
             }
 
 
+            .grid.even {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .grid.even.section-title{
+                margin-bottom: 3em;
+            }
 
             .grid a {
               color: black;
@@ -353,9 +362,12 @@
               box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
             }
 
-            .grid.content-blocks > .grid-item > img {
+            .grid-item > img {
                 margin-bottom: 1em;
                 border-radius: 10px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
             }
             .grid.content-blocks > .grid-item > h4 {
                 margin-bottom: 0.5em;
@@ -366,6 +378,7 @@
                 line-height: 1.2em;
                 margin-bottom: 0.7em;
             }
+
             .col-1-3 {
                 grid-column: span 1;
             }
@@ -376,26 +389,42 @@
                 grid-column: span 3;
             }
 
+            .col-1-2 {
+                grid-column: span 1;
+            }
+            .col-2-2 {
+                grid-column: span 2;
+            }
+
+
+
             .grid-item {
                 text-align: left;
             }
 
-            .grid-item img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
+
+            .col-1-2.right-align {
+                text-align: right;
+                align-content: center;
             }
+
 
             /* Responsive */
             @media (max-width: 600px) {
-                .grid {
+                .grid, .grid.even {
                     grid-template-columns: 1fr;
                 }
 
                 .col-1-3,
                 .col-2-3,
-                .col-3-3 {
+                .col-3-3
+                .col-1-2,
+                .col-2-2{
                     grid-column: span 1 !important;
+                }
+
+                .grid.even.section-title{
+                    grid-template-columns: 1fr 1fr;
                 }
             }
 
@@ -410,7 +439,7 @@
                 z-index: 999;
                 width: 100vw;
                 height: 100vh;
-                background-color: white;
+                background-color:#F7EEFC;
                 overflow-y: auto;
                 display: none;
                 padding-top: 10vh;
@@ -471,7 +500,7 @@
                 overflow: hidden;
             }
 
-            .test {
+            .wave-decoration {
                 width: 100%;
                 min-height: 2vh;
                 background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23f7eefc' /%3E%3C/svg%3E");
@@ -481,7 +510,7 @@
                 animation: waveMove 3.5s linear infinite;
             }
 
-            .test.bottom{
+            .wave-decoration.bottom{
                  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23f7eefc' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
                  background-position: top;
                  min-height: 40px;
@@ -514,7 +543,7 @@
                         <svg
                             width="24"
                             height="24"
-                            fill="white"
+                            fill="black"
                             viewBox="0 0 100 80"
                         >
                             <rect width="100" height="5"></rect>
@@ -523,7 +552,9 @@
                         </svg>
                     </li>
                 </ul>
+
             </div>
+
         </nav>
 
         <section class="menu-overlay" id="menu">
@@ -532,15 +563,15 @@
                     <!-- Work -->
                     <div class="grid-item col-1-3">
                         <div class="menu-section">
-                            <a href="work.html"><h3>Work</h3></a>
+                            <a href="work.html"><h4>Work</h4></a>
                             <ul>
                                 <li><a href="#">Item 1</a></li>
                                 <li><a href="#">Item 2</a></li>
                                 <li><a href="#">Item 3</a></li>
                                 <li></li>
-                                <li>
+                                <li>👩🏽‍💻
                                     <a href="work.html" class="more-link"
-                                        >All projects→</a
+                                        >All projects </a
                                     >
                                 </li>
                             </ul>
@@ -550,15 +581,15 @@
                     <!-- Blog -->
                     <div class="grid-item col-1-3">
                         <div class="menu-section">
-                            <a href="blog.html"><h3>Blog</h3></a>
+                            <a href="blog.html"><h4>Blog</h4></a>
                             <ul>
                                 <li><a href="#">Post 1</a></li>
                                 <li><a href="#">Post 2</a></li>
                                 <li><a href="#">Post 3</a></li>
                                 <li></li>
-                                <li>
+                                <li>📝
                                     <a href="blog.html" class="more-link"
-                                        >All articles→</a
+                                        >All articles </a
                                     >
                                 </li>
                             </ul>
@@ -568,15 +599,15 @@
                     <!-- Contact -->
                     <div class="grid-item col-1-3">
                         <div class="menu-section">
-                            <a href="contact.html"><h3>Contact</h3></a>
+                            <a href="contact.html"><h4>Contact</h4></a>
                             <ul>
                                 <li><a href="#">Email</a></li>
                                 <li><a href="#">Instagram</a></li>
                                 <li><a href="#">Linkedin</a></li>
                                 <li></li>
-                                <li>
+                                <li>📩
                                     <a href="contact.html" class="more-link">
-                                        Let's work together! 📩
+                                        Let's work together!
                                     </a>
                                 </li>
                             </ul>
@@ -591,7 +622,7 @@
 
 
 
-        <section class="section-container top_name">
+        <section class="section-container top_name lilac">
             <div class="container">
                 <div class="grid">
                     <div class="grid-item col-3-3">
@@ -602,72 +633,155 @@
                         </p>
 
                         <p>
+                            📩
                             <a href="contact.html">
-                                📩 Let's work together!
-                              </a>
+                                 Let's work together!
+                            </a>
                         </p>
 
                     </div>
                 </div>
             </div>
         </section>
-        <div class="test bottom"></div>
+        <div class="wave-decoration bottom"></div>
 
 
 
         <section class="section-container">
             <div class="container">
-                <div class="grid">
-                    <div class="grid-item col-3-3">
+                <div class="grid even section-title">
+                    <div class="grid-item col-1-2">
                         <h2>Work</h2>
-                        <p>
-                           From concept to prototype. From draft to strategy.
+                    </div>
+                    <div class="grid-item col-1-2 right-align">
+                        <p>👩🏽‍💻
+                            <a href="#">
+                                All projects
+                            </a>
+
                         </p>
                     </div>
                 </div>
 
-                <div class="grid">
-                    <div class="grid-item col-3-3">
-                        <img src="https://placehold.co/600x400">
+                <div class="grid even">
+                     <!--- project 1 -->
+                    <div class="grid-item col-2-1">
+                        <a href="">
+                            <img src="assets/sifuentes_work_highlight_1.png">
+                        </a>
                     </div>
-                </div>
+                    <div class="grid-item col-2-1">
 
-                <div class="grid">
-                    <div class="grid-item col-3-3">
-                        <img src="https://placehold.co/600x400">
-                    </div>
-                </div>
+                        <h3> Recipe Cards</h3>
+                        <p class="note"> Branding, Product Design, Data Viz</p>
 
-                <div class="grid">
-                    <div class="grid-item col-3-3">
-                        <img src="https://placehold.co/600x400">
-                    </div>
-                </div>
-
-                <div class="grid">
-                    <div class="grid-item col-3-3">
+                        <ul>
+                            <li><b>Client:</b> Personal project</li>
+                            <li><b>Timeline:</b> 3 months</li>
+                            <li><b>Outcome:</b> Conceptual prototype</li>
+                        </ul>
 
                         <p>
-                            See all projects ->
+                            Deciding what to cook every day can be overwhelming,
+                            especially when trying to balance nutrition, cost, and convenience.
+                            This challenge inspired a set of <b>recipe cards</b> and <b>app prototype</b> with nutritious, affordable,
+                            and shelf-stable meals.
+                        </p>
+
+                        <p>📒
+                            <a href="">Read Case Study</a>
                         </p>
                     </div>
                 </div>
 
+                <div class="grid even">
+                    <!--- project 2 -->
+                    <div class="grid-item col-2-1">
+                        <a href="">
+                            <img src="assets/sifuentes_work_highlight_2.png">
+                        </a>
+                    </div>
+
+                    <div class="grid-item col-2-1">
+
+                        <h3> Rest Days</h3>
+                        <p class="note"> Strategy, Product Design, Content </p>
+
+                        <ul>
+                            <li><b>Team:</b> Freeletics</li>
+                            <li><b>Timeline:</b> 2 months</li>
+                            <li><b>Outcome:</b>Proof of concept</li>
+                        </ul>
+
+                        <p>
+                            My team and I explored how to keep users engaged on
+                            their rest days by creating a new content experience.
+
+                            Through some very <b>precise redesign</b> changes,
+                            <b>copy updates</b> and a series of short articles,
+                            we gave users helpful tips to fuel their recovery
+                            and at the same time increase app opens.
+                        </p>
+
+                        <p>📒
+                            <a href="">Read Case Study</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid even">
+                    <!--- project 3 -->
+                    <div class="grid-item col-2-1">
+                        <a href="">
+                            <img src="assets/sifuentes_work_highlight_3.png">
+                        </a>
+                    </div>
+                    <div class="grid-item col-2-1">
+
+                        <h3> Obesity Epidemic</h3>
+                        <p class="note"> Data Viz, Branding, Front-end Support </p>
+
+                        <ul>
+                            <li><b>Team:</b> Odd Studio</li>
+                            <li><b>Timeline:</b> 4 months</li>
+                            <li><b>Outcome:</b>Usable data for policy makers</li>
+                        </ul>
+
+                        <p>
+                            This project originated as a <b>research study</b> on Brazil's obesity epidemic and
+                            the increasing prevalence of noncommunicable
+                            diseases. We collaborated with the research team to transform the
+                            paper into an accessible <b>website for policy makers</b> and the general public.
+                        </p>
+
+                        <p>📒
+                            <a href="">Read Case Study</a>
+                        </p>
+                    </div>
+                </div>
 
         </section>
 
-        <div class="test"></div>
+        <div class="wave-decoration"></div>
         <section
-            class="section-container"
-            id="blog"
-            style="background-color: #f7eefc"
+            class="section-container lilac">
 >
             <div class="container">
-                <div class="grid">
-                    <div class="grid-item col-3-3">
+
+                <div class="grid even section-title">
+                    <div class="grid-item col-1-2">
                         <h2>Blog</h2>
                     </div>
+                    <div class="grid-item col-1-2 right-align">
+                        <p>📝
+                            <a href="#">
+                                All articles
+                            </a>
+
+                        </p>
+                    </div>
                 </div>
+
 
                 <div class="grid content-blocks">
                     <div class="grid-item col-1-3">
@@ -678,7 +792,7 @@
                         <p>
                             I'm a bit obsessive. So I turned my closet into a design project.
                         </p>
-                        <p><a href="">Read more→ </a></p>
+                        <p><a href="">Read more </a>→</p>
                     </div>
                     <div class="grid-item col-1-3">
                         <a href="#">
@@ -686,7 +800,7 @@
                         </a>
                         <h4>Shapes of Data</h4>
                         <p>Looking at my fitness and health data in a different way.</p>
-                        <p><a href="">Read more→ </a></p>
+                        <p><a href="">Read more </a>→</p>
                     </div>
                     <div class="grid-item col-1-3">
                         <a href="#">
@@ -694,73 +808,150 @@
                         </a>
                         <h4>Designers x Devs</h4>
                         <p>How me and my team avoid cat fights at work.</p>
-                        <p><a href="">Read more→ </a></p>
+                        <p><a href="">Read more </a>→</p>
                     </div>
                 </div>
 
-                <div class="grid">
-                    <div class="grid-item col-3-3">
-                       <p><a href="">📝 All articles</a></p>
-                    </div>
-                </div>
+
 
             </div>
         </section>
-        <div class="test bottom"></div>
+        <div class="wave-decoration bottom"></div>
 
         <section class="section-container">
-            <div class="container">
-                <div class="grid">
-                    <div class="grid-item col-2-3">
+            <div class="container ">
+                <div class="grid even centered-content">
+                    <div class="grid-item col-2-1">
                         <img src="assets/sifuentes_ana_photo_round.png">
+
                     </div>
 
-                    <div class="grid-item col-1-3">
+                    <div class="grid-item col-2-1 ">
                         <h1>Let's chat!</h1>
-                        <p>
-                            I'm open for freelance.
+
+                        <p >
+                            <a class="social-links" href="">
+                            Linkedin
+                            </a>
+
+                            <a class="social-links" href="">
+                                Email
+                            </a>
+
+                            <a class="social-links" href="">
+                                Instagram
+                            </a>
+
                         </p>
+
+                        <p>
+                            Right now, I’m looking to join a cool design team, building products we love.
+                        </p>
+                        <p>
+                            I'm also open for freelance!
+                            <a href="">
+                                contact me
+                            </a>
+                        </p>
+
+                        <p>.</p>
+                        <p>☺️
+                            <a href="#">
+                                Read more about me
+                            </a>
+
+                        </p>
+
                     </div>
 
                 </div>
+
+
         </section>
 
-<div class="test"></div>
 
-            <footer class="footer">
-               <div class="footer-inner container">
+        <style>
+        .footer{
+        color: #14130F;
+        background-color: #F8EEFC;
+        padding: 3em 0 15em 0;
+        height: inherit;
+        }
 
+        .grid.footer > .grid-item{
+            text-align: center;
+        }
 
-                 <div class="footer-sections">
-                   <div class="footer-section">
-                     <h3><a href="work.html">Work</a></h3>
-                     <ul>
-                       <li><a href="#">Main Project 1</a></li>
-                       <li><a href="work.html" class="more-link">All Work →</a></li>
-                     </ul>
-                   </div>
+        .footer > .container {
+            height: 60vh;
 
-                   <div class="footer-section">
-                     <h3><a href="blog.html">Blog</a></h3>
-                     <ul>
-                       <li><a href="#">Most Recent Blog 1</a></li>
-                       <li><a href="blog.html" class="more-link">All Blogs →</a></li>
-                     </ul>
-                   </div>
+        }
 
-                   <div class="footer-section">
-                     <h3><a href="contact.html">Contact</a></h3>
-                     <ul>
-                       <li><a href="#">Email</a></li>
-                       <li><a href="#">Instagram</a></li>
-                     </ul>
-                   </div>
+        .footer a {
+            text-decoration: none;
+            color: black;
+            background-image: linear-gradient(to right, black, black);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 1px;
+            transition: background-size 0.3s ease;
+        }
 
 
+        .footer a:hover {
+            background-size: 100% 1px;
+        }
+        .footer ul{
+            margin-top:3em;
+        }
+        </style>
 
-                 </div>
-               </div>
-             </footer>
+
+        <div class="wave-decoration"></div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="grid footer">
+                    <div class="grid-item col-1-3">
+                        <h4>
+                            <a href="">
+                                Work
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="grid-item col-1-3">
+
+
+                            <h4>📩
+                                <a href="contact.html" class="more-link">
+                                    Let's chat!
+                                </a>
+                            </h4>
+
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item col-1-3">
+                        <h4>
+                            <a href="">
+                                Blog
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="grid-item col-3-3">
+                        <ul>
+                        <li class="brand"><a href="#">anasifuentes</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        </footer>
 
 
 
@@ -769,6 +960,29 @@
 
         <script>
             $(document).ready(function () {
+
+
+              let lastScrollY = window.scrollY;
+              const header = document.querySelector(".navbar");
+
+              window.addEventListener("scroll", () => {
+                const isMenuOpen = $("#menu").is(":visible");
+
+                // Only apply hide/show behavior if menu is NOT open
+                if (!isMenuOpen) {
+                  if (window.scrollY > lastScrollY) {
+                    header.classList.add("hidden");
+                  } else {
+                    header.classList.remove("hidden");
+                  }
+                }
+
+                lastScrollY = window.scrollY;
+              });
+
+
+
+
                 const $hamburger = $(".hamburger");
                 const $navitem = $(".nav-item");
                 const $menu = $("#menu");
@@ -819,20 +1033,6 @@
                     }
                 });
 
-                const hero = document.querySelector(".hero");
-
-                const images = [
-                    "./assets/sifuentes_work_highlight_1.png",
-                    "./assets/sifuentes_work_highlight_2.png",
-                    "./assets/sifuentes_work_highlight_3.png",
-                ];
-
-                let currentIndex = 0;
-
-                setInterval(() => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    hero.style.backgroundImage = `url(${images[currentIndex]})`;
-                }, 5000);
             });
         </script>
 
