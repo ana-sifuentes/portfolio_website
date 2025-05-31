@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <!--Title and Description -->
-        <title>ana sifuentes blog</title>
+        <title>ana sifuentes website</title>
         <meta name="description" content="" />
 
         <!--Setup--->
@@ -14,15 +14,22 @@
         />
 
         <!--Social Media Sharing -->
-        <meta property="og:title" content="ana sifuentes blog" />
+        <meta property="og:title" content="ana sifuentes " />
         <meta property="og:description" content="" />
         <meta property="og:image" content="" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
 
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Styles -->
-        <link rel="stylesheet" href="styles/root.css" />
-        <link rel="stylesheet" href="styles/sections.css" />
+        <link rel="stylesheet" href="styles/main.css" />
 
         <!-- Libraries -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -31,30 +38,88 @@
     </head>
 
     <body>
-    <div id="navbar-placeholder"></div>
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class="navbar-content container-navbar">
+                <ul>
+                    <li class="brand"><a href="#">anasifuentes</a></li>
+                    <li class="nav-item"><a href="#">Work</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="hamburger">
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="black"
+                            viewBox="0 0 100 80"
+                        >
+                            <rect width="100" height="5"></rect>
+                            <rect y="30" width="100" height="5"></rect>
+                            <rect y="60" width="100" height="5"></rect>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
 
-        <!-- Introduction Section -->
-        <section id="main-section">
-            <p>
-                ana sifuentes blog
-            </p>
+        <!--introduction-->
+        <section class="section-container hero lilac">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid-item col-3-3">
+                        <h1>Blog</h1>
+                        <p>Data + Design for daily life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wave-decoration bottom"></div>
 
-            <div class="spacer"></div>
-          
+        <section class="section-container">
+            <div class="container">
+                <!-- blogs  -->
+                <div class="grid content-blocks">
+                    <div class="grid-item col-1-3">
+                        <a href="#">
+                            <img src="assets/sifuentes-blog-highlight-1.png" />
+                        </a>
+                        <h4>Figma Fashion</h4>
+                        <p>
+                            I'm a bit obsessive. So I turned my closet into a
+                            design project.
+                        </p>
+                        <p><a href="">Read more </a>→</p>
+                    </div>
+                    <div class="grid-item col-1-3">
+                        <a href="#">
+                            <img src="assets/sifuentes-blog-highlight-2.png" />
+                        </a>
+                        <h4>Shapes of Data</h4>
+                        <p>
+                            Looking at my fitness and health data in a different
+                            way.
+                        </p>
+                        <p><a href="">Read more </a>→</p>
+                    </div>
+                    <div class="grid-item col-1-3">
+                        <a href="#">
+                            <img src="assets/sifuentes-blog-highlight-3.png" />
+                        </a>
+                        <h4>Designers x Devs</h4>
+                        <p>How me and my team avoid cat fights at work.</p>
+                        <p><a href="">Read more </a>→</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
 
         <!-- Scripts -->
-
-        <script>
-        fetch("navbar.html")
-          .then(res => res.text())
-          .then(data => {
-              document.getElementById("navbar-placeholder").innerHTML = data;
-          });
-        </script>
-
-        
+        <script src="code/menu-footer.js"></script>
     </body>
 </html>
