@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Load navbar
-  $("#navbar-placeholder").load("components/navbar.html", function () {
+  $("#navbar-placeholder").load("/testing/components/navbar.html", function () {
     const header = document.querySelector(".navbar");
 
     let lastScrollY = window.scrollY;
@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
   // Load menu
-  $("#menu-placeholder").load("components/menu.html", function () {
+  $("#menu-placeholder").load("/components/menu.html", function () {
     const $hamburger = $(".hamburger");
     const $navitem = $(".nav-item");
     const $menu = $("#menu");
@@ -62,5 +62,5 @@ $(document).ready(function () {
   });
 
   // Load footer
-  $("#footer-placeholder").load("components/footer.html");
+  $("#footer-placeholder").load("/components/footer.html");
 });
