@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Load navbar
-  $("#navbar-placeholder").load("/testing/components/navbar.html", function () {
+  $("#navbar-placeholder").load("/components/navbar.html", function () {
     const header = document.querySelector(".navbar");
 
     let lastScrollY = window.scrollY;
