@@ -480,6 +480,7 @@ body.menu-open {
 @media (max-width: 600px) {
     .grid,
     .grid.even,
+    .grid.even.centered-content,
     .grid.footer_w {
         grid-template-columns: 1fr;
     }
