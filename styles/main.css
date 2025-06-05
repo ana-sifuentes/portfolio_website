@@ -51,21 +51,24 @@ h4,
 h5,
 h6 {
     font-family: "Fredoka", cursive;
-    font-weight: bold;
+    font-weight: 500;
+    line-height: 1.2em;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: 500;
     letter-spacing: 0.1em;
-    line-height: 1em;
 }
 
 h4 {
     font-size: 1.2em;
-    font-weight: 500;
     letter-spacing: 0.1em;
-    line-height: 1em;
+}
+
+h5 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
 }
 
 .work-entry h3,
@@ -171,8 +174,16 @@ b {
 }
 
 .container {
-    padding-top: 10vh;
+    padding-top: 6vh;
     padding-bottom: 10vh;
+}
+
+.container.blog-overview {
+    padding-top: 0;
+}
+
+.container.blog-overview > .grid {
+    margin-bottom: 4em;
 }
 
 .section-container.hero > .container {
@@ -440,15 +451,15 @@ body.menu-open {
     height: inherit;
 }
 
-.grid.footer > .grid-item {
+.grid.footer_w > .grid-item {
     text-align: center;
 }
 
-.footer > .container {
+.footer_w > .container {
     height: 60vh;
 }
 
-.footer a {
+.footer_w a {
     text-decoration: none;
     color: black;
     background-image: linear-gradient(to right, black, black);
@@ -458,10 +469,10 @@ body.menu-open {
     transition: background-size 0.3s ease;
 }
 
-.footer a:hover {
+.footer_w a:hover {
     background-size: 100% 1px;
 }
-.footer ul {
+.footer_w ul {
     margin-top: 3em;
 }
 
@@ -469,13 +480,19 @@ body.menu-open {
 @media (max-width: 600px) {
     .grid,
     .grid.even,
-    .grid.footer {
+    .grid.footer_w {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item,
+    .footer_w {
         grid-template-columns: 1fr;
     }
 
     .col-1-3,
     .col-2-3,
-    .col-3-3 .col-1-2,
+    .col-3-3,
+    .col-1-2,
     .col-2-2 {
         grid-column: span 1 !important;
     }
