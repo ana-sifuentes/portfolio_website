@@ -6,18 +6,22 @@ $(document).ready(function () {
     let lastScrollY = window.scrollY;
 
     window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
       const isMenuHidden = $("#menu").hasClass("hidden");
 
-      // Only apply hide/show behavior if menu is hidden
-      if (isMenuHidden) {
-        if (window.scrollY > lastScrollY) {
-          header.classList.add("hidden");
-        } else {
-          header.classList.remove("hidden");
+      // Always show navbar at the very top of the page
+      if (currentScrollY <= 0) {
+        header.classList.remove("hidden");
+      } else if (isMenuHidden) {
+        // Only hide/show if menu is hidden and user is not at top
+        if (currentScrollY > lastScrollY) {
+          header.classList.add("hidden"); // scrolling down
+        } else if (currentScrollY < lastScrollY) {
+          header.classList.remove("hidden"); // scrolling up
         }
       }
 
-      lastScrollY = window.scrollY;
+      lastScrollY = currentScrollY;
     });
 
     // Load menu
@@ -47,7 +51,7 @@ $(document).ready(function () {
       // Toggle on hamburger click
       $hamburger.on("click", function (e) {
         e.stopPropagation(); // Prevent bubbling to document
-       // console.log("change to x");
+        // console.log("change to x");
         toggleMenu();
       });
 
