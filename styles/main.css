@@ -130,7 +130,7 @@ ul {
 }
 ul li {
     padding-bottom: 0.5em;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.5em;
 }
 
@@ -178,8 +178,8 @@ b {
 }
 
 .container {
-    padding-top: 6vh;
-    padding-bottom: 10vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .container.blog-overview {
@@ -668,4 +668,20 @@ ul.project-details li {
     height: 100%;
     background-color: #320c18;
     transition: width 0.4s ease;
+}
+
+.photo-highlight {
+    text-align: center;
+}
+.photo-highlight > p {
+    margin-bottom: 0;
+}
+
+.photo-highlight > h5 {
+    margin-bottom: 0;
+}
+
+.spacer {
+    height: 1vh;
+    display: block;
 }
