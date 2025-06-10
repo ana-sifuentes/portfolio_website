@@ -709,3 +709,24 @@ ul.project-details li {
     height: 1vh;
     display: block;
 }
+
+.button-primary {
+    color: #f7eefc;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    background-color: #320c18;
+    border: 0.2em solid #320c18;
+    width: fit-content;
+    transition: width 0.4s ease;
+}
+.button-primary > p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.button-primary:hover {
+    background-color: #f7eefc;
+    color: #320c18;
+    border: 0.2em solid #320c18;
+}
