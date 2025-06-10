@@ -505,7 +505,7 @@ body.menu-open {
 }
 
 /* Responsive ***********************************************************/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .grid,
     .grid.even,
     .grid.four,
@@ -537,6 +537,25 @@ body.menu-open {
 
     .navbar .nav-item {
         display: none;
+    }
+
+    /* Override for mobile-two to force 2 per row */
+    .grid.four.mobile-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid.mobile-image-first {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .grid.mobile-image-first .grid-item {
+        order: 2; /* default for all items */
+    }
+
+    .grid.mobile-image-first .grid-item.image-block {
+        order: 1; /* images come first */
     }
 }
 
@@ -638,6 +657,11 @@ ul.project-details li {
     border: 0.2em solid #f7eefc;
     border-radius: 10px;
     padding: 1em;
+}
+
+.border-outline > h4,
+.border-outline > p {
+    margin-bottom: 0;
 }
 
 .full-banner {
