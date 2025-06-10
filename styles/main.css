@@ -177,6 +177,48 @@ b {
     max-width: 650px;
 }
 
+/**CV page specifications *********************************************/
+
+.container.cv-entry p,
+.container.cv-entry h1,
+.container.cv-entry h2,
+.container.cv-entry h3,
+.container.cv-entry h4,
+.container.cv-entry ul,
+.container.cv-entry ul li {
+    margin-bottom: 0;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.container.cv-entry h1 {
+    font-size: 2em;
+}
+
+.container.cv-entry h2 {
+    font-size: 1.5em;
+}
+.container.cv-entry h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.container.cv-entry h4 {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.container.cv-entry ul {
+    list-style-type: circle;
+    margin-left: 1.2em;
+}
+
+.container.cv-entry p,
+.container.cv-entry ul,
+.container.cv-entry ul li {
+    font-size: 1em;
+}
+/*********************************************/
+
 .container {
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -308,7 +350,7 @@ b {
     text-align: left;
 }
 
-.col-1-2.right-align {
+.grid-item.right-align {
     text-align: right;
     align-content: center;
 }
@@ -531,7 +573,7 @@ body.menu-open {
         grid-column: span 1 !important;
     }
 
-    .grid.even.section-title {
+    .grid.section-title {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -599,7 +641,8 @@ body.menu-open {
 
 .line-divider {
     border-top: 1px solid darkgray;
-    margin: 1em;
+    margin: 1em 0;
+    width: 100%;
 }
 
 .footnote {
