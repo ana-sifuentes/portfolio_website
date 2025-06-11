@@ -151,6 +151,10 @@ b {
     background-color: white;
 }
 
+.section-container.extra-space {
+    padding: 10vh 0 10vh 0;
+}
+
 .section-container.hero {
     color: black;
     min-height: 30vh;
@@ -645,6 +649,14 @@ body.menu-open {
     min-height: 40px;
 }
 
+.wave-decoration.light {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23fbf7fd' /%3E%3C/svg%3E");
+}
+
+.wave-decoration.bottom.light {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23fbf7fd' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
+}
+
 @keyframes waveMove {
     0% {
         background-position-x: 0;
@@ -772,6 +784,11 @@ ul.project-details li {
     display: block;
 }
 
+.spacer-max {
+    height: 15vh;
+    display: block;
+}
+
 .button-primary {
     color: #f7eefc;
     border-radius: 10px;
@@ -782,6 +799,14 @@ ul.project-details li {
     width: fit-content;
     transition: width 0.4s ease;
 }
+
+.button-primary {
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border 0.4s ease;
+}
+
 .button-primary > p {
     margin-bottom: 0;
     font-weight: 600;
@@ -791,4 +816,93 @@ ul.project-details li {
     background-color: #f7eefc;
     color: #320c18;
     border: 0.2em solid #320c18;
+}
+
+.button-primary.center {
+    text-align: center;
+}
+
+/***rotating gallery ******************/
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2em;
+    overflow: hidden;
+}
+
+.gallery-slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.gallery-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.gallery-slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #f7eefc;
+    border: 1px solid #320c18;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-dots .dot.active {
+    background-color: #320c18;
+    border: 1px solid #f7eefc;
+}
+
+/**pricing table ******************************/
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: "Rubik";
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 0.5rem;
+}
+
+.pricing-table th {
+    background-color: #fff;
+    color: #320c18;
+    border-bottom: 1px solid #320c18;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #fbf7fd; /* lilac */
+}
+
+.pricing-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.pricing-table td:first-child {
+    text-align: left;
+    font-weight: 400;
 }
