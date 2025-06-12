@@ -181,6 +181,10 @@ b {
     max-width: 650px;
 }
 
+.container.blog-entry,
+.container.work-entry {
+    margin-top: 15vh;
+}
 /**CV page specifications *********************************************/
 
 .container.cv-entry {
