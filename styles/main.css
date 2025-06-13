@@ -145,6 +145,9 @@ b {
     font-weight: 450;
 }
 
+i {
+    font-style: italic;
+}
 /*grid + container system ******************************************************/
 
 .section-container {
@@ -602,6 +605,10 @@ body.menu-open {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .work-entry > .grid > .grid-item > img {
+        max-width: 100%;
     }
 }
 /*special clasess *********************************************************/
