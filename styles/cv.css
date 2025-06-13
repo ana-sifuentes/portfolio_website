@@ -1,0 +1,55 @@
+/**CV page specifications *********************************************/
+
+.container.cv-entry {
+    margin-top: 10vh;
+}
+
+.container.cv-entry p,
+.container.cv-entry h1,
+.container.cv-entry h2,
+.container.cv-entry h3,
+.container.cv-entry h4,
+.container.cv-entry ul,
+.container.cv-entry ul li {
+    margin-bottom: 0;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.container.cv-entry h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    font-weight: 400;
+}
+
+.container.cv-entry h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: 300;
+}
+.container.cv-entry h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.container.cv-entry h4 {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.container.cv-entry ul {
+    list-style-type: circle;
+    margin-left: 1.2em;
+}
+
+.container.cv-entry p,
+.container.cv-entry ul,
+.container.cv-entry ul li {
+    font-size: 1em;
+}
+
+@media (max-width: 700px) {
+    .grid.grid.small-gap > .grid-item.right-align {
+        text-align: left;
+        align-content: center;
+    }
+}
