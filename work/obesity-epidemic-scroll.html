@@ -1,0 +1,813 @@
+<!doctype html>
+
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>ana sifuentes website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!---fonts for this project -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Darker+Grotesque:wght@300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles/main.css" />
+
+        <!-- Libraries -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
+
+        <style>
+            /**scrollytelling classes*****************************************************************/
+
+            .scroll-indicator {
+                position: fixed;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 999;
+                animation: bounce 2s infinite;
+                transition: opacity 0.3s ease;
+            }
+
+            .scroll-arrow {
+                width: 40px;
+                height: 40px;
+                display: block;
+            }
+
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateX(-50%) translateY(0);
+                }
+                50% {
+                    transform: translateX(-50%) translateY(-6px);
+                }
+            }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition:
+                    opacity 0.6s ease-out,
+                    transform 0.6s ease-out;
+            }
+
+            .fade-up.in-view {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .scroll-gallery {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .gallery-image {
+                opacity: 0;
+                position: absolute;
+                transition: opacity 0.7s ease;
+            }
+
+            .gallery-image.active {
+                opacity: 1;
+                position: relative;
+                width: 100%;
+            }
+
+            /*******************************************************************/
+
+            /*scrolly definitions */
+
+            .section-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8vh 2rem;
+                text-align: left;
+            }
+
+            .section-wrapper.full-wrap {
+                min-height: 100vh;
+            }
+            .section-wrapper.auto-height {
+                min-height: 100%;
+            }
+
+            .section-wrapper.mini-height {
+                height: 20vh;
+            }
+
+            .project-hero {
+                background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-scroll-cover.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+            }
+
+            .project-hero.cover-img {
+                background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-scroll-cover.png");
+            }
+
+            .project-hero.highlight-img-1 {
+                min-height: 120vh;
+                background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-big-dataviz.png");
+            }
+
+            .full-container {
+                position: relative;
+                z-index: 1;
+                color: black;
+                width: 100%;
+                max-width: 800px;
+                padding-left: clamp(1rem, 6vw, 2rem);
+                padding-right: clamp(1rem, 6vw, 2rem);
+            }
+
+            h1 {
+                margin-bottom: 0.5em;
+            }
+
+            h1.main-title {
+                font-size: clamp(2rem, 6vw, 4rem);
+                font-weight: 700;
+                margin-bottom: 0.2em;
+                font-family: "Rubik", sans-serif;
+                line-height: 1.1;
+            }
+
+            h2.main-subtitle {
+                font-family: "Caveat", cursive;
+                font-size: clamp(2rem, 4vw, 4rem);
+                font-weight: 300;
+                line-height: 1;
+            }
+
+            .color-palette {
+                width: 100%;
+                height: 120px;
+                border-radius: 10px;
+                margin-bottom: 1em;
+            }
+
+            /*******************************************************************/
+
+            /*color definitions for this page*/
+            .section-wrapper.dark-blue {
+                background-color: #12173d;
+            }
+            .full-container.dark-blue {
+                color: white;
+            }
+            .wave-decoration.dark-blue-wave {
+                min-height: 20px;
+                background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%2312173d' /%3E%3C/svg%3E");
+            }
+            .wave-decoration.bottom.dark-blue-wave {
+                background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%2312173d' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
+            }
+
+            /*color palette*/
+            .color-palette.dark-blue {
+                background-color: #12173d;
+            }
+            .color-palette.mid-blue {
+                background-color: #2c3f81;
+            }
+            .color-palette.light-blue {
+                background-color: #8bb0d9;
+            }
+            .color-palette.green {
+                background-color: #4b7c47;
+            }
+            .color-palette.yellow {
+                background-color: #f4c560;
+            }
+            .color-palette.orange {
+                background-color: #e68e46;
+            }
+            .color-palette.red {
+                background-color: #d84339;
+            }
+            .color-palette.wine {
+                background-color: #5c243f;
+            }
+
+            /*fonts*/
+            .crimson-pro {
+                font-family: "Crimson Pro", serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+
+            p.crimson-pro,
+            p.dark {
+                font-size: 1.5em;
+                line-height: 1;
+            }
+
+            .darker-grotesque {
+                font-family: "Darker Grotesque", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+            /****take to main?***************************************************************/
+
+            .statement > p {
+                font-size: 1.8em;
+                font-family: "RUBIK";
+                line-height: 1.2em;
+            }
+
+            .statement {
+                text-align: left;
+                background-color: #edeced;
+                border-left: 1em solid #5d585c;
+                border-right: 0;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                padding: 1.5em;
+            }
+
+            .statement.reverse {
+                text-align: right;
+                background-color: #edeced;
+                border-right: 1em solid #5d585c;
+                border-left: 0;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                padding: 1.5em;
+            }
+
+            .statement.problem {
+                border-left: 1em solid #d84337;
+            }
+
+            .statement.solution {
+                border-right: 1em solid #4b7c47;
+            }
+
+            .grid-item.center-txt {
+                text-align: center;
+            }
+            /***navbar edits for landing ****************************************************************/
+
+            .navbar.scroll-landing {
+                background-color: transparent;
+            }
+            .navbar.scroll-landing > .navbar-content a {
+                color: white;
+                background-image: linear-gradient(to right, white, white);
+            }
+
+            .navbar.scroll-landing .hamburger svg rect {
+                fill: white;
+            }
+
+            .navbar.scroll-landing .hamburger.active svg rect {
+                fill: black;
+            }
+
+            /*******************************************************************/
+
+            /*changes to review  other classes*/
+            ul.project-details {
+                list-style-type: none;
+                margin-left: 0;
+                margin-bottom: 2em;
+            }
+            ul.project-details li {
+                margin-bottom: 0.2em;
+                padding-bottom: 0;
+                line-height: 1;
+            }
+
+            .dark-blue > .full-container > .grid a {
+                color: white;
+                background-image: linear-gradient(to right, white, white);
+            }
+        </style>
+
+        <!--intro landing -->
+        <section
+            class="section-wrapper full-wrap project-hero cover-img"
+            id="intro"
+        >
+            <div class="full-container dark-blue">
+                <h1 class="main-title">Obesity Epidemic</h1>
+                <h2 class="main-subtitle">
+                    Transforming an article into an interactive data
+                    storytelling website
+                </h2>
+            </div>
+        </section>
+
+        <!--overview -->
+        <section class="section-wrapper full-wrap dark-blue">
+            <div class="full-container dark-blue">
+                <div class="grid four">
+                    <div class="grid-item col-3-4">
+                        <p>
+                            <b> 🌐 Outcome: </b>
+                            <a href="https://bit.ly/3atbM4h"> Visit website </a>
+                        </p>
+                        <ul class="project-details">
+                            <li>
+                                <b>Client/Team:</b> Professor Rezende (<a
+                                    href="https://ppg.saudecoletiva.sites.unifesp.br/orientadores-view/leandro-fornias-machado-de-rezende"
+                                    >UNIFESP</a
+                                >), Odd Studio<br /><br />
+                            </li>
+
+                            <li><b>Timeline:</b> 4 months<br /><br /></li>
+
+                            <li>
+                                <b>Role:</b> Visual Designer + Front-end
+                                Support<br /><br />
+                            </li>
+
+                            <li><b>Tools:</b> Illustrator, Github</li>
+                        </ul>
+
+                        <div class="spacer-mid"></div>
+                        <p>
+                            This project originated as a research
+                            <b>study</b> on Brazil's <b>obesity epidemic</b> and
+                            the increasing prevalence of noncommunicable
+                            diseases. My team and I <b>transformed</b> a
+                            <b>research paper</b> into an accessible
+                            <b>website</b> for policy makers and the general
+                            public.<br />
+                            My role was creating all <b>visuals</b> and
+                            providing <b>front-end</b> support.
+                        </p>
+
+                        <div class="spacer-mid"></div>
+                        <p>📒 <a href=""> Read detailed case study </a></p>
+
+                        <p class="note">
+                            Continue scrolling for project overview.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wave-decoration bottom dark-blue-wave"></div>
+
+        <!-- PROBLEM -> SOLUTION -->
+        <section class="section-wrapper full-wrap">
+            <div class="full-container">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                        <h2 class="fade-up">Context</h2>
+                    </div>
+                    <div
+                        class="fade-up grid-item col-4-4 highlight statement problem"
+                    >
+                        <h6>Problem</h6>
+                        <p>
+                            Communicate a complex topic to diverse audiences +
+                            provide data to policy makers.
+                        </p>
+                    </div>
+                    <div class="spacer-mid"></div>
+                    <div
+                        class="fade-up grid-item col-4-4 highlight statement reverse solution"
+                    >
+                        <h6>Solution</h6>
+                        <p>
+                            A website were the general public can read the info
+                            with interactive data for policy makers.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUALS -->
+        <section class="section-wrapper full-wrap">
+            <div class="full-container">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h1 class="fade-up">Visual identity</h1>
+                        <p class="fade-up">
+                            We crafted a visual language that was
+                            <b>approachable</b> and <b>distinctive</b>,
+                            encouraging readers to stay engaged. The color
+                            palette blends warm and cool vibrant tones to
+                            reflect a <b>Brazilian identity</b>, while
+                            maintaining <b>strong contrast</b> for accessibility
+                            and data clarity. Each design element was chosen to
+                            support <b>readability</b> and <b>hierarchy</b>.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+
+                <!--color palette -->
+                <div class="grid four mobile-two fade-up">
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette dark-blue"></div>
+                        <p>#12173E</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette mid-blue"></div>
+                        <p>#2C3F81</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette light-blue"></div>
+                        <p>#8BB0D9</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette green"></div>
+                        <p>#4A7B47</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette yellow"></div>
+                        <p>#F4C660</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette orange"></div>
+                        <p>#E68E46</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette red"></div>
+                        <p>#D84339</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette wine"></div>
+                        <p>#5C253F</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+
+                <!--fonts -->
+                <div class="grid four">
+                    <div class="grid-item col-2-4 center-txt fade-up">
+                        <h1 class="crimson-pro">Crimson Pro</h1>
+                        <p class="crimson-pro">
+                            Typography is the voice of your brand.
+                        </p>
+                        <p class="crimson-pro">0 1 2 3 4 5 6 7 8 9</p>
+                    </div>
+
+                    <div class="grid-item col-2-4 center-txt fade-up">
+                        <h1 class="darker-grotesque">Darker Grotesque</h1>
+                        <p class="darker-grotesque">
+                            Crafted for clarity, built with purpose.
+                        </p>
+                        <p class="darker-grotesque">0 1 2 3 4 5 6 7 8 9</p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+
+                <!--applied style  -->
+                <div class="grid four">
+                    <div class="grid-item col-2-4">
+                        <img
+                            class="fade-up"
+                            src="https://placehold.co/400x400/EEE/31343C"
+                        />
+                    </div>
+                    <div class="grid-item col-2-4">
+                        <img
+                            class="fade-up"
+                            src="https://placehold.co/400x400/EEE/31343C"
+                        />
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <img
+                            class="fade-up"
+                            src="https://placehold.co/600x400/EEE/31343C"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA VIZ -->
+
+        <div class="wave-decoration dark-blue-wave"></div>
+        <!-- data viz intro -->
+        <section class="section-wrapper auto-height dark-blue">
+            <div class="full-container dark-blue">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h1 class="fade-up">Data Viz</h1>
+                        <p class="fade-up">
+                            We aimed to create friendly and unique visuals that
+                            invited the reader to keep scrolling.The palette
+                            balanced warm and cool vibrant tones to echoe a
+                            Brazilian identity. It also consider contrast for
+                            the data visualizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- scroll gallery -->
+        <section class="scroll-gallery section-wrapper auto-height dark-blue">
+            <div class="gallery-container">
+                <img
+                    src="../assets/work/obesity-epidemic/sifuentes-obesity-epidemic-design-highlight-1.png"
+                    class="gallery-image active"
+                />
+                <img
+                    src="https://placehold.co/600x401/EEE/31343C"
+                    class="gallery-image"
+                />
+                <img
+                    src="https://placehold.co/600x402/EEE/31343C"
+                    class="gallery-image"
+                />
+                <!-- more images -->
+            </div>
+        </section>
+        <!-- big dataviz -->
+        <section class="section-wrapper mini-height dark-blue"></section>
+        <section
+            class="section-wrapper full-wrap project-hero highlight-img-1"
+        ></section>
+        <section class="section-wrapper mini-height dark-blue"></section>
+
+        <div class="wave-decoration bottom dark-blue-wave"></div>
+
+        <!-- CODE -->
+        <section class="section-wrapper mini-height"></section>
+        <section class="section-wrapper">
+            <div class="full-container">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h1 class="fade-up">Code</h1>
+                        <p class="fade-up">
+                            Interactives parts of the website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-wrapper full-wrap">
+            <div class="full-container">
+                <!--scroll interaction  -->
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <img
+                            class="fade-up"
+                            src="../assets/work/obesity-epidemic/sifuentes-obesity-epidemic-transition-animation.gif"
+                        />
+                        <p>description line</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-wrapper full-wrap">
+            <div class="full-container">
+                <!--scroll interaction  -->
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <img
+                            class="fade-up"
+                            src="../assets/work/obesity-epidemic/sifuentes-obesity-epidemic-interaction.gif"
+                        />
+                        <p>interaction for users</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-wrapper full-wrap">
+            <div class="full-container">
+                <!--scroll interaction  -->
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <img
+                            class="fade-up"
+                            src="../assets/work/obesity-epidemic/sifuentes-obesity-epidemic-interaction-map.gif"
+                        />
+                        <p>dataviz for policy makers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---closing statement-->
+        <div class="wave-decoration dark-blue-wave"></div>
+        <!-- data viz intro -->
+        <section class="section-wrapper auto-height dark-blue">
+            <div class="full-container dark-blue">
+                <h1 class="main-title"></h1>
+                <h2 class="main-subtitle">closing statement</h2>
+            </div>
+        </section>
+
+        <div class="wave-decoration bottom dark-blue-wave"></div>
+
+        <!--deliverables -->
+
+        <section class="section-container">
+            <div class="container">
+                <div class="grid four">
+                    <div class="spacer-max"></div>
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <b> 🌐 Outcome: </b>
+                            <a href="https://bit.ly/3atbM4h"> Visit website </a>
+                        </p>
+
+                        <p>
+                            The team was able to <b>successfully deliver</b> the
+                            final product in a span of a few weeks. Professor
+                            Leandro’s team received:
+                        </p>
+                        <ul>
+                            <li>
+                                An <b>interactive website</b> with data
+                                visualizations and illustrations explaining
+                                complex concepts<br /><a
+                                    href="https://rezendelfm.github.io/obesidade-e-as-dcnt"
+                                    >https://rezendelfm.github.io/obesidade-e-as-dcnt/</a
+                                >
+                            </li>
+                            <li>
+                                <b>Data tools</b> specifically designed for
+                                policy makers to explore the noncommunicable
+                                disease data
+                            </li>
+                            <li>
+                                A <b>project identity</b> that is friendly,
+                                unique, and inviting.
+                            </li>
+                            <li>
+                                <b>Brand materials</b> and assets including:
+                                iconography, illustrations, brand guidelines,
+                                individual data visualizations, email template
+                                and a 1 minute promotional video.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="spacer-max"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--scroll arrow-->
+        <div class="scroll-indicator">
+            <svg
+                class="scroll-arrow"
+                width="40"
+                height="40"
+                viewBox="0 0 100 100"
+                fill="none"
+            >
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="48"
+                    stroke="white"
+                    stroke-width="4"
+                    fill="#12173D"
+                />
+                <path
+                    d="M30 45 L50 65 L70 45"
+                    stroke="white"
+                    stroke-width="6"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </div>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const waitForNavbar = () => {
+                    const navbar = document.querySelector(".navbar");
+
+                    if (navbar) {
+                        // Start with landing style
+                        navbar.classList.add("scroll-landing");
+
+                        const handleExit = () => {
+                            // Add fade-out class to trigger CSS transition
+                            navbar.classList.add("fade-out");
+
+                            // After the transition starts, remove scroll-landing and add hidden
+                            setTimeout(() => {
+                                navbar.classList.remove("scroll-landing");
+                                navbar.classList.add("hidden");
+                            }, 300); // Match your CSS transition duration
+
+                            window.removeEventListener("scroll", handleExit);
+                            navbar.removeEventListener("click", handleExit);
+                        };
+
+                        window.addEventListener("scroll", handleExit);
+                        navbar.addEventListener("click", handleExit);
+                    } else {
+                        setTimeout(waitForNavbar, 50);
+                    }
+                };
+
+                waitForNavbar();
+            });
+
+            // Fade-in animation observer
+            const fadeObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("in-view");
+                            fadeObserver.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1,
+                },
+            );
+
+            document.querySelectorAll(".fade-up").forEach((el) => {
+                fadeObserver.observe(el);
+            });
+
+            const scrollIndicator = document.querySelector(".scroll-indicator");
+            const introSection = document.querySelector("#intro");
+
+            function checkScrollIndicator() {
+                const rect = introSection.getBoundingClientRect();
+                scrollIndicator.style.opacity = rect.bottom <= 0 ? "0" : "1";
+                scrollIndicator.style.pointerEvents =
+                    rect.bottom <= 0 ? "none" : "auto";
+            }
+
+            // Initial scrollIndicator check on load
+            window.addEventListener("scroll", checkScrollIndicator);
+            window.addEventListener("load", checkScrollIndicator);
+        </script>
+    </body>
+</html>

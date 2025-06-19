@@ -433,6 +433,15 @@ i {
     margin-right: auto;
 }
 
+.brand {
+    color: black !important;
+}
+
+.brand.active a {
+    color: black !important;
+    background-image: linear-gradient(to right, black, black);
+}
+
 .nav-item {
     opacity: 1;
     pointer-events: auto;
@@ -478,6 +487,11 @@ i {
 /* Bottom line */
 .hamburger.active svg rect:nth-child(3) {
     transform: rotate(-45deg) translate(20px, -13px);
+}
+
+/*specify it's black */
+.hamburger.active svg rect {
+    fill: black;
 }
 
 /*menu ************************************************************/
