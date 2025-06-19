@@ -28,6 +28,7 @@ $(document).ready(function () {
     $("#menu-placeholder").load("/components/menu.html", function () {
       const $hamburger = $(".hamburger");
       const $navitem = $(".nav-item");
+      const $brand = $(".brand");
       const $menu = $("#menu");
       const $body = $("body");
 
@@ -39,11 +40,13 @@ $(document).ready(function () {
           $menu.removeClass("hidden");
           $body.addClass("fixed-position");
           $hamburger.addClass("active");
+          $brand.addClass("active");
           $navitem.addClass("hidden");
         } else {
           $menu.addClass("hidden");
           $body.removeClass("fixed-position");
           $hamburger.removeClass("active");
+          $brand.removeClass("active");
           $navitem.removeClass("hidden");
         }
       }
