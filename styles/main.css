@@ -891,7 +891,7 @@ a.image-layer-container {
 .gallery-container {
     position: relative;
     width: 100%;
-    max-width: 700px;
+
     margin: 0 auto 2em;
     overflow: hidden;
 }
