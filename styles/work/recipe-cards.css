@@ -1,0 +1,114 @@
+/*Obesity Epidemic colors + fonts */
+/*******************************************************************/
+
+/*color definitions for this page*/
+.section-wrapper.dark-blue {
+    background-color: #100b5a;
+}
+.full-container.dark-blue {
+    color: white;
+}
+
+.section-wrapper.pink {
+    background-color: #ffeaf3;
+}
+.full-container.pink {
+    color: black;
+}
+
+.wave-decoration.pink-wave {
+    min-height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23FFEAF3' /%3E%3C/svg%3E");
+}
+
+.wave-decoration.bottom.pink-wave {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23FFEAF3' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
+}
+
+.wave-decoration.dark-blue-wave {
+    min-height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23100B5A' /%3E%3C/svg%3E");
+}
+.wave-decoration.bottom.dark-blue-wave {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%23100B5A' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
+}
+
+/*color palette*/
+.color-palette.dark-blue {
+    background-color: #100b5a;
+}
+
+.color-palette.pink {
+    background-color: #ffeaf3;
+}
+.color-palette.coral {
+    background-color: #fea27e;
+}
+.color-palette.red {
+    background-color: #f53800;
+}
+
+.color-palette.white {
+    background-color: #fdfdfd;
+}
+
+/*special classes************************/
+.statement.problem {
+    border-left: 1em solid #f53800;
+}
+
+.statement.solution {
+    border-right: 1em solid #0b5a0b;
+}
+
+/*fonts*/
+
+.jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.jost,
+p.pacifico {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.pacifico {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/**imgs ***/
+
+.project-hero.cover-img {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-scroll-cover.png");
+}
+
+.project-intro.cover-img {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-scroll-intro.png");
+}
+
+.project-hero.highlight-img-1 {
+    min-height: 120vh;
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-illustrations.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.project-hero.highlight-img-2 {
+    min-height: 120vh;
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-prototype.gif");
+}
+
+@media (max-width: 700px) {
+    .project-hero.highlight-img-1 {
+        height: 100%;
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-illustrations-v.svg");
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
+}
