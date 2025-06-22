@@ -101,13 +101,20 @@ p.pacifico {
 
 .project-hero.highlight-img-2 {
     min-height: 120vh;
-    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-prototype.gif");
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-copy.svg");
 }
 
 @media (max-width: 700px) {
     .project-hero.highlight-img-1 {
         height: 100%;
         background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-illustrations-v.svg");
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
+
+    .project-hero.highlight-img-2 {
+        height: 100%;
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-copy-v.svg");
         background-size: contain;
         background-repeat: repeat-x;
     }
