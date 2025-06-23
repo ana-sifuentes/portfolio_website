@@ -73,10 +73,10 @@ p.darker-grotesque {
 /**imgs ***/
 
 .project-hero.cover-img {
-    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-scroll-cover.png");
+    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-scroll-cover.webp");
 }
 
 .project-hero.highlight-img-1 {
     min-height: 120vh;
-    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-big-dataviz.png");
+    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-big-dataviz.webp");
 }
