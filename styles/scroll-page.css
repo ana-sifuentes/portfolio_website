@@ -124,6 +124,33 @@ h2.main-subtitle {
         margin-left: auto;
         margin-right: auto;
     }
+
+    h1.main-title {
+        font-size: 3em;
+    }
+
+    h2.main-subtitle {
+        font-size: 3em;
+    }
+
+    .full-container {
+        position: relative;
+        z-index: 1;
+        color: black;
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .section-wrapper {
+        padding: 0;
+        padding-left: clamp(1rem, 6vw, 2rem);
+        padding-right: clamp(1rem, 6vw, 2rem);
+    }
+
+    .section-wrapper.full-wrap {
+        min-height: auto;
+    }
 }
 
 /****take to main?***************************************************************/
