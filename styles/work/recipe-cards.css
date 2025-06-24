@@ -9,7 +9,8 @@
     color: white;
 }
 
-.section-wrapper.pink {
+.section-wrapper.pink,
+.section-container.pink {
     background-color: #ffeaf3;
 }
 .full-container.pink {
@@ -44,6 +45,7 @@
 .color-palette.coral {
     background-color: #fea27e;
 }
+
 .color-palette.red {
     background-color: #f53800;
 }
