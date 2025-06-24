@@ -74,6 +74,8 @@ p.darker-grotesque {
 
 .project-hero.cover-img {
     background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-scroll-cover.webp");
+    padding-bottom: 12vh;
+    padding-top: 15vh;
 }
 
 .project-hero.highlight-img-1 {

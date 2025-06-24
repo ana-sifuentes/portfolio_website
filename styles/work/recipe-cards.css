@@ -86,10 +86,14 @@ p.pacifico {
 
 .project-hero.cover-img {
     background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-scroll-cover.webp");
+    padding-bottom: 12vh;
+    padding-top: 15vh;
 }
 
 .project-intro.cover-img {
     background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-scroll-intro.webp");
+    padding-bottom: 12vh;
+    padding-top: 15vh;
 }
 
 .project-hero.highlight-img-1 {
