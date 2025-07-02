@@ -82,3 +82,29 @@ p.darker-grotesque {
     min-height: 120vh;
     background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-big-dataviz.webp");
 }
+
+.project-hero.highlight-img-2 {
+    min-height: 120vh;
+    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-inspiration.png");
+}
+.project-hero.highlight-img-3 {
+    min-height: 120vh;
+    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-proposals.png");
+}
+
+.project-hero.highlight-img-4 {
+    min-height: 120vh;
+    background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-sketches.png");
+}
+
+/***add to main?***/
+.project-hero,
+.project-intro {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.section-wrapper.full-wrap {
+    min-height: 100vh;
+}
