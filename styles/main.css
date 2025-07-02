@@ -677,7 +677,7 @@ body.menu-open {
 }
 
 .line-divider {
-    border-top: 1px solid darkgray;
+    border-top: 1px solid #5d585c;
     margin: 1em 0;
     width: 100%;
 }

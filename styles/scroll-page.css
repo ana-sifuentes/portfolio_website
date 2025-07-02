@@ -163,7 +163,7 @@ h2.main-subtitle {
 
 .statement {
     text-align: left;
-    background-color: #edeced;
+    background-color: #f1f1f1;
     border-left: 1em solid #5d585c;
     border-right: 0;
     border-top-right-radius: 10px;
@@ -175,7 +175,7 @@ h2.main-subtitle {
 
 .statement.reverse {
     text-align: right;
-    background-color: #edeced;
+    background-color: #f1f1f1;
     border-right: 1em solid #5d585c;
     border-left: 0;
     border-top-left-radius: 10px;
