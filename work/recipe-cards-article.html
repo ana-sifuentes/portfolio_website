@@ -28,8 +28,15 @@
             rel="stylesheet"
         />
 
+        <!---fonts for this project -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="../styles/main.css" />
+        <link rel="stylesheet" href="../styles/scroll-page.css" />
         <link rel="stylesheet" href="../styles/work/recipe-cards.css" />
 
         <!-- Libraries -->
@@ -234,11 +241,11 @@
                             </h4>
                         </div>
                     </a>
-                    <a class="clean-hover" href="#handover">
+                    <a class="clean-hover" href="#wrap-up">
                         <div class="grid-item col-1-4 highlight spotlight-box">
                             <h4>
                                 🌟 8.<br />
-                                Handover
+                                Wrap-up
                             </h4>
                         </div>
                     </a>
@@ -295,83 +302,570 @@
 
                     <div class="grid-item col-4-4">
                         <img
-                            src="../assets/work/obesity-epidemic/sifuentes-obesity-epidemic-co-creation.png"
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-initial-concept.png"
                         />
                         <p class="footnote">
-                            Initial co-creation meetings with client.
+                            Initial grocery lists and conceptual notes.
                         </p>
                     </div>
 
-                    <!--2 scope ---------------------------------------------->
+                    <!--2 define ---------------------------------------------->
 
-                    <!--3 research ---------------------------------------------->
-                </div>
-                <!--
                     <div class="grid-item col-4-4">
                         <div class="spacer-max"></div>
-                        <img
-                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-overview-cards.webp"
-                        />
-                    </div>-->
+                    </div>
 
-                <!-- research -->
-                <div class="grid four">
-                    <div class="grid-item col-2-4">
-                        <h4>🔎 Research</h4>
+                    <div class="grid-item col-4-4">
+                        <h3 id="define">⛳ 2. Define</h3>
+
                         <p>
                             One of my key motivations for this project was to
-                            <b>maximize</b> <b>resources</b> and
-                            <b>minimize</b> <b>food</b> <b>waste</b>. The
-                            project also aligned with my personal values of
-                            <b>sustainability</b> and <b>nutrition</b>, leading
-                            me to focus on primarily <b>pescatarian</b> and
-                            <b>vegetarian</b> recipes.
+                            <b>maximize resources</b> and
+                            <b>minimize food waste</b>. The concept also aligned
+                            with my personal values of
+                            <b>sustainability and nutrition</b>, which led me to
+                            focus primarily on
+                            <b>pescatarian and vegetarian recipes</b>.
                         </p>
+
                         <p>
-                            To create a solid foundation for the recipes, I
-                            established clear guidelines: each meal would
-                            <b>balance</b> <b>fresh</b>, seasonal
-                            <b>produce</b> with <b>shelf-stable</b>
-                            <b>canned</b> <b>goods</b> to ensure nutritional
-                            density and affordability. For inspiration, I
-                            watched YouTube videos on meal prep strategies and
-                            <b>nutritional</b> <b>rankings</b> of
-                            <b>vegetables</b>, and consulting <b>food</b>
-                            <b>databases</b> to compare ingredient profiles. I
-                            had recently moved to a new country so supermarket
-                            visits became an opportunity to observe which
-                            regional vegetables were the <b>most</b>
-                            <b>affordable</b> and could be used to shape the
-                            <b>ingredient</b> <b>list</b>.
+                            To build a strong foundation, I defined clear
+                            <b>recipe guidelines</b>: each meal would center
+                            around one <b>core protein</b>and combine
+                            <b>fresh, seasonal produce</b> with
+                            <b>shelf-stable ingredients</b> to ensure both
+                            <b>nutritional density</b> and <b>affordability</b>.
                         </p>
+
                         <p>
-                            With my research in hand, I began planning and
-                            testing recipes, drawing inspiration from my
-                            <b>favorite</b> <b>dishes</b> while refining them
-                            based on <b>ingredient</b> <b>availability</b> and
-                            <b>nutritional</b> <b>value</b>.
+                            I selected <b>10 recipes</b> from my personal
+                            rotation and structured them by limiting myself to
+                            <b>5 proteins</b>—creating
+                            <b>2 dishes per protein</b>. I wrote down the
+                            recipes while cooking, testing them in real time and
+                            refining both flavor and structure.
+                        </p>
+
+                        <p>
+                            The <b>app idea came later</b>, so I scoped a
+                            focused <b>MVP prototype</b> for this phase. It
+                            featured two core functionalities: the ability to
+                            <b>cook a recipe step-by-step</b> and
+                            <b>stock a pantry</b>—a minimal version of the
+                            broader system I envisioned.
                         </p>
                     </div>
 
-                    <div class="grid-item col-2-4">
+                    <div class="grid-item col-4-4 highlight key-statement">
                         <p>
-                            <b>📚 Resources <br /></b>Food databases and food
-                            blogs<br />Videos on meal prep and nutritional<br />Local
-                            supermarkets for ingredient availability
+                            <b>👩🏼‍🍳 Design decision: </b><br />
+
+                            Limit the amount of ingredients for the first batch
+                            of recipes.
                         </p>
-                        <p></p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                    <!--3 research ---------------------------------------------->
+                    <div class="grid-item col-4-4">
+                        <h3 id="research">🔎 3. Research</h3>
+
                         <p>
-                            <b>🧩 Exploration<br /></b>Adapting recipes to
-                            regional availability and seasonal vs. shelf-stable
-                            ingredient combinations
+                            For inspiration, I explored
+                            <b>meal prep videos</b> on YouTube, nutritional
+                            rankings of vegetables, and <b>food databases</b> to
+                            compare ingredient profiles and understand the most
+                            affordable, nutrient-dense combinations.
                         </p>
+
                         <p>
-                            <b>🔑 Key Learning<br /></b>Observing local markets
-                            helps identify affordable, nutrient-dense options
+                            Visually, I drew inspiration from
+                            <b>food packaging and illustration styles</b>. I
+                            wanted the cards to feel <b>bold and vibrant</b>, so
+                            I referenced <b>Mexican design</b>,
+                            <b>playful Japanese illustrations</b>, and the
+                            color-rich aesthetics of
+                            <b>Portuguese sardine cans</b>. These helped shape
+                            the <b>color palette</b> and visual tone of the
+                            brand.
+                        </p>
+
+                        <p>
+                            One side of each card was designed to be highly
+                            <b>visual</b>, showcasing key ingredients and
+                            creating a quick, appetizing entry point into the
+                            recipe.
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section
+            class="section-wrapper full-wrap project-hero highlight-img-3"
+        ></section>
+
+        <!--4 proposal ---------------------------------------------->
+
+        <section class="section-container">
+            <div class="container work-entry">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h3 id="propose">📝 4. Propose</h3>
+
+                        <p>
+                            The goal for the recipe cards was to create a design
+                            that was both <b>practical</b> and
+                            <b>visually engaging</b>. I aimed for a
+                            <b>compact format</b> that could easily fit on top
+                            of the fridge, making it convenient for daily use,
+                            while <b>bold, lively colors</b> ensured it would
+                            stand out in any kitchen.
+                        </p>
+
+                        <p>
+                            Early on, I chose to use
+                            <b>illustrations instead of photography</b>. This
+                            decision allowed for
+                            <b>visual consistency</b> across all recipes, the
+                            <b>flexibility to reuse assets</b>, and avoided the
+                            complications of food photography—especially in a
+                            personal project with limited resources.
+                        </p>
+
+                        <p>
+                            I tested different formats and from initial
+                            <b>digital sketches </b> I created a
+                            <b>color palette</b> that worked as part of the
+                            project’s design constraints. These foundational
+                            choices helped shape a clear
+                            <b>brand identity</b> early on, and later made it
+                            easier to <b>scale the design</b> into a digital
+                            product during the app prototype phase.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>👩🏽‍🎨 Design decision: </b><br />
+
+                            Use illustrations instead of photography to reuse
+                            assets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="section-wrapper full-wrap project-hero highlight-img-4"
+        ></section>
+
+        <!--5 design ---------------------------------------------->
+
+        <section class="section-container">
+            <div class="container work-entry">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h3 id="design">🎨 5. Design</h3>
+
+                        <p>
+                            I began by <b>cleaning up initial sketches</b> from
+                            Procreate and turning them into
+                            <b>vector illustrations</b> in Figma. I also used
+                            the nutritional information I collected to include
+                            macros for each recipe. As I translated the recipe
+                            cards into digital format, the idea for an
+                            <b>app prototype</b> started to take shape. Reusing
+                            the assets I had already created made it easier to
+                            <b>bridge the transition from print to screen</b>
+                            while maintaining visual consistency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="section-wrapper full-wrap project-hero highlight-img-5"
+        ></section>
+
+        <section class="section-container">
+            <div class="container work-entry">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <p>
+                            The <b>Tamagoyaki card</b> was the first recipe I
+                            sketched and finalized—a
+                            <b>Japanese rolled omelette</b> that’s simple in
+                            flavor but <b>challenging in technique</b>. It
+                            became the testing ground for exploring layout and
+                            design decisions across the format.
+                        </p>
+                        <p>
+                            To make the most of the <b>limited space</b>, I took
+                            a <b>playful approach to typography</b>, letting the
+                            text flow naturally rather than sticking to strict
+                            alignment. I even reused the
+                            <b>egg illustration as a letter</b>, adding a fun
+                            visual twist that helped the card feel distinct.
+                        </p>
+                        <p>
+                            This process helped define a
+                            <b>creative, approachable style</b> that set the
+                            tone for the rest of the recipe cards.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-tamagoyaki.svg"
+                        />
+                    </div>
+
+                    <div class="grid-item col-2-4">
+                        <p>initial batch</p>
+                    </div>
+
+                    <div class="grid-item col-2-4">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-printed.png"
+                        />
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>user testing</p>
+                        <ul class="narrow-list">
+                            <li>
+                                <b>💡 Concept</b><br />
+                                Research study on the obesity epidemic in Brazil
+                            </li>
+
+                            <li>
+                                <b>🎯 Goal</b><br />Present data in a format
+                                accessible to policymakers and the general
+                                public
+                            </li>
+                            <li>
+                                <b>⚠️ Considerations</b>
+                                <br />
+
+                                Diverse audiences with varying levels of
+                                expertise <br />
+
+                                Complexity of the obesity crisis<br />
+                                Limited time and resources
+                            </li>
+                            <li>
+                                <b>✅ Solution</b><br />A website that
+                                simplifies the epidemic's causes and includes
+                                tools for data exploration
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>👩🏼‍🍳 Recipe feedback: </b><br />
+
+                            Recipes where delicious and easy to do.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            Once I started planning the app, I tested
+                            <b>color combinations</b> for
+                            <b>accessibility</b> to ensure that the design would
+                            be
+                            <b>usable and readable for a wide range of users</b
+                            >. Contrast and legibility were key considerations
+                            as I refined the visual identity for both the
+                            physical and digital experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid four mobile-two">
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette dark-blue"></div>
+                        <p>#100B5A</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette red"></div>
+                        <p>#F53800</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette coral"></div>
+                        <p>#FEA27E</p>
+                    </div>
+                    <div class="grid-item col-1-4 center-txt">
+                        <div class="color-palette pink"></div>
+                        <p>#FFEAF3</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+                <div class="grid four">
+                    <div class="grid-item col-2-4 center-txt">
+                        <h1 class="jost">Jost</h1>
+                        <p class="jost">0 1 2 3 4 5 6 7 8 9</p>
+                        <p class="jost">
+                            Design is crafted for clarity, built with purpose.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-2-4 center-txt">
+                        <h1 class="pacifico">Pacifico</h1>
+                        <p class="pacifico">0 1 2 3 4 5 6 7 8 9</p>
+                        <p class="pacifico">
+                            Typography is the voice of your brand.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>🔑 Key feedback:</b><br />
+                            Test <b>color combinations</b> to ensure
+                            <b>accessibility and readability</b> for all users.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+
+                    <div class="grid-item col-2-4">
+                        <p>
+                            I introduced the
+                            <b>sardine as the project's mascot</b>. This
+                            <b>humble, nutrient-dense fish</b> symbolized the
+                            project’s values: high in protein,
+                            <b>sustainably sourced</b>, affordable, and often
+                            overlooked—just like many good ingredients in a
+                            practical, nutritious kitchen.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-2-4">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-mascot.svg"
+                        />
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <!--main logo -->
+                    <div class="grid-item col-1-3">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-logo.webp"
+                        />
+                    </div>
+                    <div class="grid-item col-2-3">
+                        <p>
+                            The <b>logo</b> was designed as a playful element.
+                            The <b>"O"</b> emulates a <b>plate</b> that is also
+                            a <b>window</b>. What's on the menu changes
+                            according to the user's food preferences.
+                        </p>
+                    </div>
+
+                    <!-- logo variations -->
+                    <div class="grid-item col-3-3">
+                        <p class="note">Logo variations</p>
+                    </div>
+
+                    <div class="grid-item col-1-3">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-logo-1.webp"
+                        />
+                    </div>
+                    <div class="grid-item col-1-3">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-logo-2.webp"
+                        />
+                    </div>
+                    <div class="grid-item col-1-3">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-logo-3.webp"
+                        />
+                    </div>
+                </div>
+
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3 id="iterate">♻️ 6. Iterate</h3>
+
+                        <p>
+                            app flow -> sketches -> wireframes -> design system
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>👩🏽‍🎨 Design decision: </b><br />
+
+                            Create a scalable design system that can be used for
+                            other projects.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+
+                    <!--7 prototype ---------------------------------------------->
+
+                    <div class="grid-item col-4-4">
+                        <h3 id="prototype">🚀 7. Protoype</h3>
+
+                        <p>develop initial prototype -> testing</p>
+                    </div>
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>👩🏽‍💻 Developer advice: </b><br />
+
+                            Get feedback from developers to make sure components
+                            would work in different contexts.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="container work-entry">
+                <div class="grid four">
+                    <div class="grid-item col-4-4">
+                        <h3 id="wrap-up">🌟 8. Wrap-up</h3>
+
+                        <p>
+                            This project successfully combined
+                            <b>practical design</b> with <b>playful visuals</b>,
+                            and received <b>positive feedback</b> during early
+                            testing. The result was a complete, cohesive
+                            experience—designed to inspire better eating habits
+                            through clarity, accessibility, and joy.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <b>10 curated recipes</b> tested for flavor,
+                                balance, and <b>cost-efficiency</b>.
+                            </li>
+                            <li>
+                                <b>10 printed recipe cards</b> featuring bold
+                                illustrations, ingredient callouts, and
+                                step-by-step instructions.
+                            </li>
+                            <li>
+                                <b>App prototype</b> designed in Figma,
+                                including <b>two core sections</b> and reusable
+                                UI elements.
+                            </li>
+                            <li>
+                                <b>Conceptual app features</b> to tackle food
+                                waste, such as <b>pantry reminders</b> and
+                                <b>ingredient-based suggestions</b>.
+                            </li>
+                            <li>
+                                A cohesive <b>digital and print brand</b> built
+                                with vibrant colors, custom illustrations, and
+                                <b>playful typography</b>.
+                            </li>
+                        </ul>
+
+                        <p>
+                            I plan to <b>expand the project further</b>—adding
+                            new recipes to the collection, refining the app
+                            prototype, and potentially <b>pitching YOMI</b> as a
+                            full platform for cooking, pantry management, and
+                            <b>reducing food waste</b>.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+                    <!--closing -------------------------------------------->
+                    <div class="grid-item col-4-4">
+                        <h3>💭 Closing</h3>
+
+                        <p>
+                            This project was crafted with a lot of
+                            <b>care and intention</b>, and I hope that shows in
+                            all the little details. I thoroughly enjoyed diving
+                            into the <b>research</b>, building out
+                            <b>visual systems</b>, and sharpening my
+                            <b>UI design skills</b>. As a personal project, it
+                            brought together many of my strengths and gave me
+                            space to explore the topics I care about most.
+                        </p>
+
+                        <p>
+                            Working on <b>YOMI</b> made me genuinely happy, and
+                            it’s inspired me to keep developing it further. I
+                            see this as a platform to continue
+                            <b>refining my skills</b>, testing <b>new ideas</b>,
+                            and sharing something that feels both useful and
+                            meaningful. I’m excited to see where it goes next.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 highlight key-statement">
+                        <p>
+                            <b>🔭 Closing statement: </b><br />
+
+                            Cooking should be fun.<br />
+                            All decisions were made with this idea in mind.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-mid"></div>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-thank-you.webp"
+                        />
+                        <p>Thank you for reading!</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <div class="spacer-max"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------- ------ ------ ------ ------ ------ ------ ------ -->
+        <section class="section-container">
+            <div class="container work-entry">
                 <!-- skething -->
                 <div class="grid four">
                     <!--sketch img -->
@@ -649,11 +1143,7 @@
                             next and where it can take me.
                         </p>
                     </div>
-                    <div class="grid-item col-4-4">
-                        <img
-                            src="../assets/work/recipe-cards/sifuentes-recipe-cards-thank-you.webp"
-                        />
-                    </div>
+                    <div class="grid-item col-4-4"></div>
                 </div>
             </div>
         </section>

@@ -110,6 +110,24 @@ p.pacifico {
     background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-copy.svg");
 }
 
+.project-hero.highlight-img-3 {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-inspiration.png");
+    background-position: center;
+    min-height: 140vh;
+}
+
+.project-hero.highlight-img-4 {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-digital-sketches.png");
+    background-position: center;
+    min-height: 100vh;
+}
+
+.project-hero.highlight-img-5 {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-clean-cards.svg");
+    background-position: center;
+    min-height: 100vh;
+}
+
 @media (max-width: 700px) {
     .project-hero.highlight-img-1 {
         height: 100%;
@@ -123,5 +141,26 @@ p.pacifico {
         background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-copy-v.svg");
         background-size: contain;
         background-repeat: repeat-x;
+    }
+
+    .project-hero.highlight-img-3 {
+        height: 100%;
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-inspiration-v.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .project-hero.highlight-img-4 {
+        height: 100%;
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-digital-sketches-v.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .project-hero.highlight-img-5 {
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-clean-cards-v.svg");
+        background-size: contain;
+        height: 100%;
+        background-repeat: no-repeat;
     }
 }
