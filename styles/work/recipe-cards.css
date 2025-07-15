@@ -128,7 +128,23 @@ p.pacifico {
     min-height: 100vh;
 }
 
+.project-hero.highlight-img-6 {
+    background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-screens-examples.svg");
+    min-height: 120vh;
+}
+
+.figma-prototype {
+    display: none;
+}
+
 @media (max-width: 700px) {
+    .figma-frame {
+        display: none;
+    }
+    .figma-prototype {
+        display: block;
+    }
+
     .project-hero.highlight-img-1 {
         height: 100%;
         background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-illustrations-v.svg");
@@ -159,6 +175,13 @@ p.pacifico {
 
     .project-hero.highlight-img-5 {
         background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-clean-cards-v.svg");
+        background-size: contain;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .project-hero.highlight-img-6 {
+        background-image: url("/assets/work/recipe-cards/sifuentes-recipe-cards-screens-examples-v.svg");
         background-size: contain;
         height: 100%;
         background-repeat: no-repeat;
