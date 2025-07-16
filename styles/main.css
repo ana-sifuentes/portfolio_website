@@ -694,8 +694,8 @@ ul.narrow-list {
 }
 
 .quote {
-    background-color: var(--light-lilac);
-    color: var(--dark-purple);
+    background-color: var(--light-gray);
+    color: var(--dark-black);
     border-radius: 10px;
 }
 
@@ -759,7 +759,7 @@ a.clean-hover {
 .bar-container {
     width: 100%;
     height: 1.5rem;
-    background-color: var(--light-lilac);
+    background-color: var(--light-gray);
     border-radius: 8px;
     margin-top: 1rem;
     overflow: hidden;
