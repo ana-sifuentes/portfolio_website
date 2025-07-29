@@ -1,0 +1,17 @@
+hi there
+
+i was walking down memory lane the other day - in my head, i was actually working at a coffee show -
+and as i finishing cleaning up some project documentation and i ended up remembering something.
+
+
+back in one of my previous lives,
+when i used to work for the igem foundation
+and was responsable for mainting websites,
+i taught myself how to code.
+
+i wouldnt call myself an engineer, if anythig just a very technical designer
+but i used to design and implement websites
+and the more i did it, the more i wanted to do it,
+i started with html and css and ended learning javascript and jquery.
+
+
