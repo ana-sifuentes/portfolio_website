@@ -1,0 +1,38 @@
+hi there
+
+i was walking down memory lane the other day - in my head, i was actually working at a coffee show -
+and as i finishing cleaning up some project documentation and i ended up remembering something.
+
+
+back in one of my previous lives,
+when i used to work for the igem foundation
+and was responsable for mainting websites,
+i had to teach myself how to code.
+
+while i wouldnt call myself an engineer, i do consider myself a very technical designer
+and i am pretty used to designing and implementing websites.
+once i started creating them i got hooked.  the more i did it, the more i wanted to do it,
+i started with html and css and ended learning javascript and jquery.
+
+
+redoing my portfolio website has awaken that coding itch again
+and while i keep polishing my front-end skills i wanted to go back and check a litte
+project i did a few years ago. ready to look into some old javascript?
+
+
+let's review this through a STAR lense
+meaning -> situation, task, actions and results
+
+pro tip: this is a super useful structure whenever you are talking about your projects
+during interviews - ask a PM friend for help :)
+
+
+1) situation
+In 2020 a lot of things had to suddenly become remote
+
+
+2) tasks
+
+as the designer i was in charge of the website
+we already uploaded all information here so everything was already centralized and i was
+very familiar with the code
