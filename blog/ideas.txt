@@ -1,0 +1,123 @@
+
+
+
+LLM Master
+
+A tale about training an LLM, it's very similar to pokemon.
+
+
+
+introduction
+LLMs, or large language models, are one of the big AI tools right now.
+Are they good? Are they bad? Yes and No.
+Like any tool, it depends how it's being used.
+
+Will AI replace us? Unfortunately, for some of us, yes. New technological advancements come hand in hand with replacing 'repetitive' work. You can find endless examples throughout history, ever since we got creative and started adding wheels to carts, we decided not to stop and find other ways to reduce work.
+If we can find a way to be lazy, we will.
+
+What can we do now? Babe wake up, it's time use AI. We can only catch up, don't stay too far behind. If you have the chance to test a new technology early on, go for it. Even if this tool doesn't kick-off completely, knowledge is never wasted.
+
+I speak from experience because I found myself in this very situation in early 2024. I needed to train an LLM.
+
+
+Did I know about LLMs back then? No, babe. It was time to learn.
+Let me tell you about it.
+
+
+
+1)  what is an LLM and how is it a Pokémon?
+
+First, a disclaimer. My knowledge is mostly on the content, training and documentation side. implementation was done by engineers. So, in this case im not a super technical pokemon trainer but i was able to win some battles.
+
+
+
+LLMs is an artificial intelligence tool that uses large amounts of data to understand and generate natural human language.
+They are good at predicting what would come next so they can you improve your writing, bounce ideas and make calculations. However they aren't all powerful, they are limited by the data that was used to train them. Plus they will also inherit any implicit biases that data pools comes with.
+
+We can think that LLMs have different 'parts'. The corpus is what data it draws from, the pre-prompt defines how it process this data and the output is the final outcome it gives you. Also, you want to make sure the output is relevant and valuable so there is also wuality evalution involved in the process.
+
+
+I theorize they are like pokemon because they can be powerful but they depend on you to train them properly and they can only perform the limited set of moves you let them learn.
+
+Now let's see if my analogy works:
+- documentation  = the moves your pokemon has and the level
+- pre-prompt = how you train the pokemon
+- output = the pokemon using it's training and atttacks, basically how it fights
+- qa = make sure it's winning battles and getting ribbons
+
+Is this my best analogy? Pokemon fans say yes.
+Let's see go over my pokemon training strategy now.
+
+
+
+2) Documentation
+Or selecitng what moves to teach your pokemon.
+
+before making any decisions of what types of documents you need to 'feed' your llm you need to think of the use case. what kinds of battles will your LLM fight?
+most likely your llm will already have access to a large pool pof information it colelcted from the itnernet, think of what chatgpt already knows.
+
+but this pool however vast is limited. for the use case i needed it, it had veyr little information. i needed my llm to answer product specific questions for the freeletics app. the untrained knew what freeletics was but had no info on the diofferent tabs and exclusive workouts.
+
+what did i do? i started curating information to feed it. i divided the information into 2 large buckets, internal sources and external sources.
+i also wanted to influence the tone of how it spoke about fitness so i curated  articles from the freeletics that were more informative and descriptive side than on the marketing side. i also researched what were the most freuqnet fitness questions people asked onlione and wrote 4 pillar articles to inform the llm's tone of vopice.
+
+the biggest part of the work was creating a product documentation manual that had detailed information for the LLM. this involved pulling json files from the backend and translating them into a format the LLM could understand.
+our documentation was added into a spreadsheet where one column was the data, another the title of article and then a final one showing if the information was added or not. later on a data engineer added a column showing how many tokens an article had, we wanted to avoid creating files that were too large for the llm to look through.
+
+at first i thought that writting them in more casual human way of speaking would worj best but after trial and error i found th best formula, smaller chunks os information that were clearly labeled. basically think bullet points instead of learge paragraphs. this actually became very useful when i moved on the next part, training the pokemon to best use it';s moves.
+
+
+
+
+3) pre-prompt
+or how you use your pokemon in battle
+the pre-prompt tells the llm how to behave. here specificity is your friend, you can tell the llm to pretend to be a positive and encouraging fitness instructor or a pesky pokemon rival thats gonna push you to your limits.
+
+this is where the labels i had specified in the documentation became crucial.
+the product manual had very specific internal terms, for example fitness plans were called 'training journeys', however new users might not be familiar with that cocnept and would refer to them by other generic names. i specified in the prompt to identify these general terms and when responding to the user to use our internal term so in turn users would know how to find this info in the app.
+
+another benefit of breaking down the information was ithat it made it easir for the future implementation in other languages. i wrote all the documentation in english as i wanted to avoid rewritting all he files into the their localized target languages. can you imagine going back and editing information in 9 different files and then sending each of those to translators to confirm the changes made sense? nope.  it was essential files stayed in english.
+
+ the plan i devised was to specify the names of an internal term in alongside the translations in the documentation and only localize the prompt. i broke down the prompt into sections and clearly documented what each part was meant to do, i even acounted for language specific behaviors, for example we should speak to german users witha  formal tone. i tested my process by translating the prompt to spanish and then i then sat down with the localization team to discuss what extra nuances they could add their localized versions.
+
+ once the pre-prompts were translated we tested the output with a set of frequently asked translated questions to measure the success of the answers. the results were very positive! how did i measure that exactly? with the help qa!
+
+
+
+4) qa
+or how your measure your pokemon's success.
+
+for this part i collaborated with my dear friend, liza, (yes, same glamorous qa engineer who was featured in a previous blog! read it here)
+
+we worked together to design a rubric that would let us evaluate how the answers the llm was giving to users.
+the score was based on the average of metrics such relevancy, correctness and  personalization.  we also added a quick feedback survey button for users to know if the answer was helpful or not.
+we were very mindful of data privacy and complying with gdpr laws so made sure any data was handled with care and fully anonymized before pulling random samples to evaluate.
+
+this qa process helped me identify weak areas in the documentation and make iterative changes to improve - i took notes of which battle my pokemon was not doing so great on and went back to level up. analyzing trends and frequent questions also helped to prioritize which topics to start with and made the process more stremlined and effective.
+
+i got to share the work with intern i mentored throughout the project, helping them grow their skills in documentation, data analysis, and presenting insights.
+i had to be very clear in documenting my processes and doing frequent check-ins to make sure we were working in sync and getting the best results from our data.
+
+in the end the project was very successfull as 90% of respondents rated the answers as useful and we increased activation rates by ~9% during a/b testing.
+
+
+
+conclusion)
+
+i hope this article demistifies hwo llms work and how you can train one. it's a lot of information to consider but it can be done with a good strategy. in fact if you wanna read the project's results, you can read the case study here.
+
+
+i will be honest however and admit that this is streamlined version of how the project was layed out. there are lots of little extra considerations you ahve to have when dealing with new technologies.  syaing that training an llm can be done by one person is  bit of an overstatement, it takes a team to properly implement one and ongoing refinement to make sure you are delivering the best value possible to users.
+
+things change very quickly ont he front end of technology, even in the last few months we can see how search behavour has changed on google. you don't necessaerily click links anymore because ai now provides you with a quick summary. it's mostly because of this that i would recommend products  invest in creating their own llm, consumers are now used to searching using natural language rather than key search terms.
+
+In the end did i become a pokemon master? no, but ash ketchup didnt also win the pokemon league on his first try. but if pokemon taught me anything about training llms is that you have to be patient, train your pokemon with care and make sure you make the best choices posssible to win the battle.
+
+
+
+
+
+
+Use the pre-prompt
+here you can set the tone of voice and some basic information from the user it will interact with.
+for example in our case we wanted the llm to recommend different workouts based on the user's profile, we can attach that information to the preprompt to get tailored recommendations.
