@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>ana sifuentes website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles/main.css" />
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
+
+        <section class="section-container">
+            <div class="container blog-entry">
+                <div class="grid four">
+                    <!--title -->
+                    <div class="grid-item col-4-4">
+                        <h1>LLM Champion</h1>
+                        <p class="note">AI • Data • LLM</p>
+
+                        <p>August 24</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <i
+                                >Tips on improving your LLM's training, with
+                                Pokémon, again.
+                            </i>
+                        </p>
+
+                        <p>
+                            Last week we talked about <b>training an LLM</b> and
+                            how to me it was similar to <b>Pokémon</b>. Well, we
+                            are back from the <b>Safari Zone</b> again, me and
+                            all my Pokémon and LLM knowledge are going for the
+                            <b>championship</b>. What do I mean by this?
+                        </p>
+
+                        <p>
+                            1) I love <b>analogies</b> and <b>Pokémon</b><br />
+
+                            2) We'll discuss <b>best practices</b> for
+                            <b>LLM documentation</b>
+                        </p>
+
+                        <p>
+                            If you are completely new to <b>LLMs</b> and just
+                            need to understand how they work on a surface level,
+                            I recommend
+                            <a href="/blog/llm-champion"
+                                >my blog post about LLMs</a
+                            >
+                            or even
+                            <a href="/work/llm-training">my case study</a> on
+                            how I implemented one. Today's focus is
+                            <b>nitty-gritty details</b>. In Pokémon terms, we
+                            aren't playing just for fun, we are here to win
+                            <b>competitive tournaments</b>. That involves
+                            looking at <b>stats</b> and calculating
+                            <b>Effort Values (EVs)</b>.
+                        </p>
+
+                        <p>
+                            So, let's pretend we are <b>training an LLM</b> to
+                            talk about <b>Pokémon</b>. Ready to get very
+                            technical today?
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llm-champion/sifuentes-llm-champion-1.png"
+                        />
+                        <p class="note">On my way to catch some Pokémon.</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>1) <b>Organizing Your Data</b></h3>
+                        <p><i>At least 150 or more to see...</i></p>
+
+                        <p>
+                            First some technical details. <br />
+                            The smallest piece of information <b>LLMs</b> handle
+                            are called <b>tokens</b>. These can be characters,
+                            words, or sentences. The way they are calculated
+                            depends on the method the <b>LLM</b> is using to
+                            process words and turn them into numbers that it can
+                            more easily understand. You will see tools like
+                            <b>ChatGPT</b> or <b>Lovable</b> having a limit of
+                            how many tokens you can use unless you upgrade to a
+                            paid plan.
+                        </p>
+                        <p>
+                            Since <b>LLMs</b> can process only a limited amount
+                            of information at a time, the best thing to do is to
+                            break down your information into smaller pieces. If
+                            you want to learn more about this process, I
+                            recommend
+                            <a
+                                href="https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33"
+                                >this article on Medium →</a
+                            >.
+                        </p>
+
+                        <p>
+                            The amount processed works for both ways, both from
+                            the user's query and on the files the LLM is drawing
+                            from to answer. For documentation purposes we just
+                            need to focus on the training information being
+                            <b>digestible</b> for our <b>LLM</b>.
+                        </p>
+
+                        <p>
+                            In our case my LLM could only pull data from around
+                            <b>3</b> files, so I was very careful with my
+                            <b>information architecture</b> I didn't want to
+                            break down my data into a million pieces. To make
+                            sure my structure worked, a
+                            <b>data engineer</b> added a column that indicated
+                            the <b>token count</b> of my file plus a visual
+                            indicator if we were going over the limit. This way
+                            I could quickly scan all the files as I scrolled
+                            through the corpus. Ideally, I should stay around
+                            <b>1000 tokens</b>.
+                        </p>
+
+                        <p>
+                            Ok, now let's use an example to land these concepts
+                            in <b>Pokémon</b> terms. What if I wanted a single
+                            file that listed all the Pokémon names? Should we go
+                            over the token limit? (<i
+                                >By the way, the total discovered Pokémon as of
+                                summer 2025 is <b>1,025</b>. </i
+                            >)
+                        </p>
+
+                        <p>
+                            I would prefer to break them down into
+                            <b>alphabetical entries</b>, something like “Pokémon
+                            Names A.” That way, if we are looking for my boy
+                            <b>Haunter</b>, we can skip straight to H. Here’s
+                            how I would structure it:
+                        </p>
+
+                        <br /><br />
+                        <div
+                            style="
+                                background-color: #f1f1f1; /* dark gray */
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 2rem;
+                                flex-direction: column;
+                                border-radius: 20px;
+                            "
+                        >
+                            <p>
+                                <b
+                                    >[English name] [Pokémon type] [Generation]
+                                    [Evolutions Y/N]
+                                </b>
+                            </p>
+                        </div>
+                        <br /><br />
+                        <p>
+                            What other relevant information could we add? Maybe
+                            more details about <b>evolutions</b> or the
+                            Pokémon’s <b>ID number</b>. But since we want to
+                            keep our lists under the <b>token limit</b>, we need
+                            to balance the amount of information. It’s ok if a
+                            file ends up being smaller than others — we need to
+                            account for categories where we might have more
+                            data.
+                        </p>
+
+                        <p>
+                            What happens if the file goes over the
+                            <b>token limit</b>? It would <b>cut off</b>. The
+                            <b>LLM</b> would only read up until the token limit,
+                            so if crucial information was at the end of the
+                            file, it wouldn’t show up. How would you know how to
+                            get a <b>Haunter</b> in the game??? <br /><br />
+                            Better break down your data.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llm-champion/sifuentes-llm-champion-2.png"
+                        />
+
+                        <p class="footnote">
+                            <a
+                                href="https://www.youtube.com/watch?v=MCq94RixG2A&ab_channel=Mr.Pok%C3%A9dex"
+                                target="_blank"
+                                >Image credit: How to get Haunter in Pokemon
+                                Gold/Silver/Crystal [#093] by Mr. Pokédex</a
+                            >
+                        </p>
+                        <p class="note">
+                            Ok, you might notice a pattern — I love Ghost types.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>2) <b>Updating Your System</b></h3>
+                        <p><i>A new Pokémon type has been discovered!</i></p>
+
+                        <p>
+                            When <b>Steel</b> and <b>Dark</b> type Pokémon
+                            dropped during the <b>second generation</b> release,
+                            I was ecstatic. My beautiful <b>Sneasel</b> was
+                            added to the list of Pokémon, and I had to have her
+                            in my team!
+                        </p>
+
+                        <p>
+                            But how do we add this new information to our
+                            documentation? Here is where
+                            <b>planning ahead will save you.</b> It’s easy to
+                            organize everything if your information pool won’t
+                            grow. Sadly, that’s almost never the case. We have
+                            to be <b>flexible</b> and be prepared for when
+                            <b>new data</b> comes our way.
+                        </p>
+
+                        <p>
+                            Let’s think of a concrete example: what if I wanted
+                            to teach the <b>LLM</b> about <b>Eevee</b> and their
+                            evolutions? My strategy would be to create a
+                            <b>single file per Pokémon</b> that contained its
+                            Pokédex entry:
+                            <i
+                                >name, evolution, brief description, type, move
+                                list, etc.</i
+                            >
+                            This works much better than having a single file
+                            with ALL the information of ALL the
+                            <b>Eevee evolutions</b>. Even if a single entry
+                            feels easier to update, it would be way too long,
+                            and the <b>LLM</b> wouldn’t process it efficiently.
+                        </p>
+
+                        <p>
+                            I could also create a <b>specific entry</b> that
+                            explained the <b>Eevee evolutionary tree</b> in case
+                            a user wanted to learn about this topic. That way,
+                            the <b>LLM</b> would prefer drawing from this file
+                            instead of opening every single file on
+                            <b>Eevee</b>, <b>Flareon</b>, <b>Vaporeon</b>,
+                            <b>Jolteon</b>... etc.
+                        </p>
+
+                        <p>
+                            So, if we wanted to add <b>Umbreon</b> as a new
+                            <b>Eevee evolution</b>, our to-do list would look
+                            like this:
+                        </p>
+
+                        <ul>
+                            <li>Update the <b>“U” names list</b></li>
+                            <li>
+                                Update the <b>Eevee entry</b> to include the new
+                                evolution
+                            </li>
+                            <li>Update the <b>Dark Pokémon list</b></li>
+                            <li>Create a new <b>Umbreon entry</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llm-champion/sifuentes-llm-champion-3.png"
+                        />
+                        <p class="footnote">
+                            <a href="https://pokemondb.net/pokedex/umbreon/"
+                                >Image credit: Pokémon Database, Umbreon</a
+                            >
+                        </p>
+                        <p class="note">
+                            Honestly I couldn't decided between Espeon and
+                            Umbreon but I had to go for the new type.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>3) Translation + Localization</h3>
+                        <p><i> Pikachu, Pikachu, Pikachu</i></p>
+                        <p>
+                            Growing up watching <b>Pokémon</b> in Spanish and
+                            playing the games in English, it never
+                            <b>occurred</b> to me <b>Pokémon</b> had different
+                            names in other regions. <b>Bulbasaur</b> was the
+                            same guy on both sides of the border, but across the
+                            ocean, in <b>Germany</b>, he is known as
+                            <b>Bisasam</b>. I was <b>shocked</b> too; sometimes
+                            when me and my favorite engineer talk about
+                            <b>Pokémon</b> we need to Google who we are talking
+                            about.
+                        </p>
+
+                        <p>
+                            However, this is not the case for <b>Pikachu</b>.
+                            <b>Pikachu</b> is called <b>Pikachu</b> here in
+                            Europe, on the American continent, and even in its
+                            native Japan.
+                        </p>
+
+                        <p>
+                            So what happens if we want to implement our
+                            <b>LLM</b> in other regions?
+                        </p>
+
+                        <p>
+                            This puzzle took me a while to figure out— as I
+                            mentioned in my previous article (read it here), I
+                            wanted to avoid translating all the information into
+                            all the languages and then having to edit a cascade
+                            of files when we had to make edits. Can you imagine?
+                            The issues with version control, having to reach out
+                            to translators to edit all the relevant files in
+                            their language, the cost, the logistical nightmare
+                            that would land a critical hit?
+                        </p>
+
+                        <p>
+                            So how did I go about it? I tried a two-part
+                            strategy; let’s use <b>Charmander</b> as an example.
+                        </p>
+
+                        <p>
+                            In the documentation I would specify all the
+                            language variations, something like this:
+                        </p>
+                        <br /><br />
+
+                        <div
+                            style="
+                                background-color: #f1f1f1; /* dark gray */
+
+                                padding: 2rem;
+
+                                border-radius: 20px;
+                            "
+                        >
+                            <ul>
+                                <li>[EN] <b>Charmander</b></li>
+                                <li>[JA] <b>ヒトカゲ</b></li>
+                                <li>[FR] <b>Salamèche</b></li>
+                                <li>[ES] <b>Charmander</b></li>
+                                <li>[DE] <b>Glumanda</b></li>
+                                <li>[IT] <b>Charmander</b></li>
+                                <li>[KO] <b>파이리</b></li>
+                                <li>[ZH-M] <b>小火龍 / 小火龙</b></li>
+                                <li>[ZH-C] <b>小火龍</b></li>
+                                <li>[AR] <b>تشارمندر</b></li>
+                                <li>[BG] <b>Чармандър</b></li>
+                                <li>[HE] <b>צ'רמנדר</b></li>
+                                <li>[HI] <b>चारमैंडर</b></li>
+                                <li>[LT] <b>Žavingasis</b></li>
+                                <li>[RU] <b>Чармандер</b></li>
+                                <li>[TH] <b>ฮิโตคาเงะ</b></li>
+                            </ul>
+
+                            <p>
+                                [<b>Pokédex</b> entry in <b>English</b>:
+                                description, type, evolutions, move list, etc.]
+                            </p>
+                        </div>
+                        <br /><br />
+                        <p>
+                            In the pre-prompt I added the specification that the
+                            <b>LLM</b> should respond in the user's language and
+                            it should use the translation specified, thus
+                            avoiding that we would get a literal translation of
+                            <b>Charmander</b>— idk, you could end up with a
+                            Mexican <b>Charmander</b> being called Armando or
+                            something.
+                        </p>
+
+                        <p>
+                            With this strategy a German user who wanted to know
+                            when <b>Glumanda</b> learns <b>Flammenwurf</b>, the
+                            <b>LLM</b> would pull the information in English (<b
+                                >Charmander</b
+                            >
+                            learns <b>Flamethrower</b> at level 24) and deliver
+                            a correct answer in their language. Toll!
+                        </p>
+
+                        <p>
+                            Quick disclaimer: this strategy wasn't bulletproof;
+                            it worked in initial testing, but we had to make the
+                            pre-prompt very robust and the documentation very
+                            streamlined. Again, more testing is needed, but this
+                            strategy might put you on the right path,
+                            particularly if you are low on resources and end up
+                            being the single <b>LLM</b> <b>Pokémon</b> trainer.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="/assets/blog/llm-champion/sifuentes-llm-champion-4.png"
+                        />
+                        <p class="note">
+                            Oh no, I look too sleepy from cycling all night to
+                            catch a Haunter...
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            Working with new tools is always exciting — you are
+                            discovering things, experimenting, and trying new
+                            approaches almost daily. It can be a bit lonely, if
+                            I’m honest. Not having anyone else working on the
+                            documentation and not finding any
+                            <b>LLM</b> training best practices at the time was
+                            rough. So I hope these <b>PokeTips</b> help future
+                            trainers.
+                        </p>
+
+                        <p>
+                            The technology is still evolving day to day, and
+                            things will require a bit of trial and error. Let’s
+                            keep testing together and find new strategies. It
+                            can be exciting, no? Thinking you might discover a
+                            new Pokémon as you go. Maybe we can help each other
+                            become <b>LLM champions</b>.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <!--closing -->
+                    <div class="grid-item col-4-4">
+                        <h3>That’s Enough About Me!</h3>
+                        <p>What do you think? What should I focus on next?</p>
+                        <p>
+                            Who is your favorite Pokémon? Did you ever train
+                            with EVs or went competitive? Are you also surprised
+                            at different Pokémon names? I can't get over that
+                            confusion...
+                        </p>
+                        <p>
+                            Let me know—shoot me an email! 😊<br /><a
+                                href="mailto:sifuentesanita@gmail.com"
+                                >📩</a
+                            >
+                            sifuentesanita@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+    </body>
+</html>
