@@ -49,21 +49,17 @@ what happened if the file went over the token limit? it would cut off, the LLM w
 2) updating your system
  a new pokemon type has been discovered!
 
-When steel and dark type pokemon dropped during the second generation release i was extatic. my beautiful sneasel was added to the list of pokemon, i had to had her in my team! You might notice a patternt - i love ghost, poision and dark types.
+When steel and dark type pokemon dropped during the second generation release i was extatic. my beautiful sneasel was added to the list of pokemon, i had to had her in my team! ok, You might notice a patternt - i love ghost, poision and dark types.
 
 planning ahead will save you. it;s easy to organize everything if your information pool won't grow. just write things once and you are done, right?
 sadly i've never encountered anything like this before. so, we have to be flexible and be prepared for when new things come our way.
 
-
- what if i wanted to teach the LLM about eevee and their evolutions?  i would create a single file per pokemon that contained it's name, evolution, brief description, type, move list, etc. This would work much better than having a single file with ALL the information of ALL the eevee evolutions, even if it meant giving up updating a single entry and reducing workload with updates, it would be too long and the llm wouldn't process it.
+let's think of a concrete example:  what if i wanted to teach the LLM about eevee and their evolutions?  my strategy  would be to create a single file per pokemon that contained it's pokedex entry: name, evolution, brief description, type, move list, etc. This would work much better than having a single file with ALL the information of ALL the eevee evolutions, even if it meant giving up updating a single entry and reducing workload with updates. it would be too long and the llm wouldn't process it.
 
  I could also create a specific entry that explained the eevee evolutationay tree in case a user wanted to learn about this topic, that way the LLM would rather draw from this file instead of opening every single file on eevee, flareon, vaporeon, jolteon... etc
 
+so if we wanted to add Umbreon as a new eevee evolution our to do lsit would be the following: We would need to upate the 'U' names list, the eevee entry as it had a new evolution, the dark pokemon list, and of course, create a new entry for umbreon.
 
-in our example it would be easy to update, let's think of an eevee evolution, Umbreon. We would need to upate the 'U' names list, the eevee entry as it had a new evolution, the dark pokemon list, and create a new entry for umbreon.
-
-
-this might seem a bit of an ovrkill but in my case i couldnt control what files the LLM was pulling from. the technology is still evolving day to day, things will require a bit and trial and error. keep testing!
 
 
 
@@ -115,5 +111,6 @@ quick disclaimer this strategy wasn't bullet proof, in worked in initial testing
 
 conclusion
 
+working with new tools is always exciting, you are discovering things, experimenting and trying new things almost daily. it can a bit lonely if im honest, not having anyone else working on the documentation and not finding any llm training best practices at the time was rough. so i hope this poketips help future trainers.
 
-how do you feel?
+ the technology is still evolving day to day, things will require a bit of trial and error, let's keep testing together and find new strategies. maybe we can help each other become llm champions.
