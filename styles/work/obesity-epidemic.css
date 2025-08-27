@@ -1,19 +1,16 @@
 /*Obesity Epidemic colors + fonts */
 /*******************************************************************/
 
+/* Note: Wave decorations are now centralized in main.css
+   Use class names: .wave-decoration.obesity-dark-blue-wave
+   and .wave-decoration.bottom.obesity-dark-blue-wave */
+
 /*color definitions for this page*/
 .section-wrapper.dark-blue {
     background-color: #12173d;
 }
 .full-container.dark-blue {
     color: white;
-}
-.wave-decoration.dark-blue-wave {
-    min-height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%2312173d' /%3E%3C/svg%3E");
-}
-.wave-decoration.bottom.dark-blue-wave {
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10 V 20 H 0 Z' fill='%2312173d' transform='scale(1,-1) translate(0,-20)' /%3E%3C/svg%3E");
 }
 
 /*color palette*/
@@ -95,18 +92,6 @@ p.darker-grotesque {
 .project-hero.highlight-img-4 {
     min-height: 120vh;
     background-image: url("/assets/work/obesity-epidemic/sifuentes-obesity-epidemic-sketches.png");
-}
-
-/***add to main?***/
-.project-hero,
-.project-intro {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.section-wrapper.full-wrap {
-    min-height: 100vh;
 }
 
 @media (max-width: 700px) {
