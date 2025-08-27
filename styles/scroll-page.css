@@ -43,25 +43,6 @@
 
 /*scrolly definitions */
 
-.section-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8vh 2rem;
-    text-align: left;
-}
-
-.section-wrapper.full-wrap {
-    min-height: 100vh;
-}
-.section-wrapper.auto-height {
-    height: auto;
-}
-
-.section-wrapper.mini-height {
-    height: 20vh;
-}
-
 .project-hero,
 .project-intro {
     background-size: cover;
@@ -146,10 +127,6 @@ h2.main-subtitle {
         padding: 0;
         padding-left: clamp(1rem, 6vw, 2rem);
         padding-right: clamp(1rem, 6vw, 2rem);
-    }
-
-    .section-wrapper.full-wrap {
-        min-height: auto;
     }
 }
 
