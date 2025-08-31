@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>ana sifuentes website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles/main.css" />
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
+
+        <section class="section-container">
+            <div class="container blog-entry">
+                <div class="grid four">
+                    <!--title -->
+                    <div class="grid-item col-4-4">
+                        <h1>Llama Travel 1</h1>
+                        <p class="note">AI • Agents • LLM</p>
+
+                        <p>August 31</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <i
+                                >Understanding how agents work and how they
+                                could work for you!
+                            </i>
+                        </p>
+
+                        <p>
+                            <b>Agents</b>—the word is in vogue nowadays—in fact
+                            <b>OpenAI</b> declared 2025 was the year of
+                            <b>agents</b>.<br />
+                            You might be wondering what they are and how you can
+                            use them, but in fact, you might have already worked
+                            with one already!<br />
+                            When I hear the word <b>agent</b> I kind of think of
+                            spy movies—someone who is specialized in observing,
+                            processing and communicating information—but also
+                            someone who can make decisions on their own.
+                        </p>
+
+                        <p>
+                            What makes them different than existing <b>AI</b>?
+                            Well, unlike an <b>LLM</b>, an <b>agent</b> has the
+                            autonomy to make decisions and act upon them.<br />
+                            Think: <b>LLM</b> can help you build and discuss
+                            things as you 'chat' and you are actively engaging,
+                            while the <b>agent</b> will handle the tasks it has
+                            been given independently.<br />
+                            This <b>autonomy</b> gives it a lot of potential.
+                        </p>
+
+                        <p>
+                            There are simple <b>agents</b> that handle one task,
+                            like <b>scheduling a meeting</b>, and there are
+                            multi-agent flows where multiple agents work
+                            together; one main instruction tells the different
+                            parts what to do and what input and outcome they
+                            should expect. You can picture it as how
+                            <b>customer service</b> at a big online electronics
+                            shop would work.<br />
+                        </p>
+                        <p>
+                            Creating a good <b>agent</b> means thinking about
+                            the whole flow of information and giving clear
+                            instructions to each person in the team. It's just
+                            like running a smooth operations team.
+                        </p>
+
+                        <p>
+                            I feel like these are a lot of general concepts and
+                            a lot of technical terms. For me the best way to
+                            wrap my head around how <b>agents</b> would be by
+                            drawing a little diagram for a specific scenario...
+                            maybe a Travel Agency with a Llama mascot.
+                            <br /><br />
+                            Do you wanna see it?
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llm-champion/sifuentes-llm-champion-1.png"
+                        />
+                        <p class="note">On my way to catch some Pokémon.</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <b>
+                                Let’s imagine we are building an agent for a
+                                travel agency</b
+                            >, which we will call <b>Llama Travel</b>.
+                        </p>
+
+                        <p>
+                            <b>Llama Travel</b> is super successful! But
+                            unfortunately, their customer support team is having
+                            issues handling a high volume of tickets. Could an
+                            <b>agent</b> help them?
+                        </p>
+
+                        <p>Of course!</p>
+
+                        <p>
+                            So, <b>Llama Travel</b> wants users to first
+                            interact with the <b>agent</b> and only escalate
+                            tickets to a human it can’t solve by itself.
+                        </p>
+
+                        <p>
+                            We’re going to call their agent
+                            <b>Llamita</b>.<br />
+
+                            I would divide Llamita's whole flow into three big
+                            parts:
+                            <b>1) Assessing</b> <b>2) Handling</b>
+                            <b>3) Escalating</b>.
+                        </p>
+
+                        <p>
+                            For this blog post, we’ll focus specifically on the
+                            <b>first section</b> so we can be more thorough. In
+                            future posts, we can break down <b>Handling</b> and
+                            <b>Escalating</b>, sounds good?
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llm-champion/sifuentes-llm-champion-2.png"
+                        />
+
+                        <p class="footnote">
+                            <a
+                                href="https://www.youtube.com/watch?v=MCq94RixG2A&ab_channel=Mr.Pok%C3%A9dex"
+                                target="_blank"
+                                >Image credit: How to get Haunter in Pokemon
+                                Gold/Silver/Crystal [#093] by Mr. Pokédex</a
+                            >
+                        </p>
+                        <p class="note">
+                            Ok, you might notice a pattern — I love Ghost types.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>1) <b>Assessing</b></h4>
+                        <p>
+                            This part is crucial to make sure we start off on a
+                            good path.<br />
+                            Here we will greet the user and set expectations,
+                            and set the stage for the rest of the flow.<br />
+                            In our case, it would be composed of four parts:
+                        </p>
+                        <ol>
+                            <li>1.1 Welcome</li>
+                            <li>1.2 User's Input</li>
+                            <li>1.3 Classification</li>
+                            <li>1.4 Scoring</li>
+                        </ol>
+
+                        <p>Let's break them down:</p>
+
+                        <h4>1.1 <b>Welcome</b></h4>
+                        <p>
+                            We want to greet the user just like we would if we
+                            were a <b>Llama Travel</b> employee.<br />
+                            For this, we would refer to their
+                            <b>brand manual</b> and <b>TOV guidelines</b>.<br />
+                            <b>Llama Travel</b> is very friendly with their
+                            customers, but they also choose a more serious tone
+                            when needed. When we train the
+                            <b>welcome chat agent</b>, we should add these
+                            points in the instructions
+                        </p>
+                        <p>
+                            We also need to comply with <b>GDPR</b>, so we need
+                            to tell the user they’re interacting with
+                            <b>AI</b>.<br />
+                            Uff—how do we help the user trust that the
+                            <b>AI</b> can handle their request, if they are used
+                            to interacting directly with customer service? Well,
+                            we can set clear expectations... maybe something
+                            like:
+                        </p>
+                        >
+
+                        <blockquote>
+                            Hi there! This is <b>Llamita</b>, Llama Travel's AI
+                            assistant.<br />
+                            I can help you with <b>booking tickets</b>,
+                            reviewing your <b>reservation details</b> or making
+                            any changes.<br />
+                            How can I help?
+                        </blockquote>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h5>1.2 <b>Input</b></h5>
+                        <p>
+                            Next, the user will input their message—should the
+                            answers vary depending on the user?<br />
+                            Yes and no. All users should have access to the same
+                            service; however, if we have a
+                            <b>priority user</b> (a customer that pays for a
+                            higher tier of service), we should treat them
+                            according to what their package offers.
+                        </p>
+
+                        <p>
+                            Could there be a scenario where the user isn’t
+                            <b>logged in</b>? <b>Yes</b>—<br />
+                            Login could depend on where <b>Llamita</b> is placed
+                            in the customer flow. Depending on the
+                            <b>entry point</b>, we can display different
+                            information. Is the user coming from the
+                            <b>main page</b> as a guest who’s just browsing? No
+                            need to prompt them to register right away—let them
+                            build <b>trust</b> and rapport with the
+                            <b>agent</b>.<br />
+                            User accessing via their <b>account page</b>? The
+                            user should already be <b>logged in</b>.
+                        </p>
+
+                        <p>
+                            Once we know who the user is and how we can best
+                            <b>service</b> them, let’s look at their message for
+                            the next step.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h5>1.3 <b>Classification</b></h5>
+                        <p>Let’s say the user said:</p>
+                        <blockquote>
+                            Hi Llamita,<br />
+                            I want to change my flight, I’ve already tried
+                            yesterday but was told the system was down, can you
+                            fix it?
+                        </blockquote>
+                        <p>
+                            There are a few things we need to extract from this
+                            message:<br />
+                            What does the user want?<br />
+                            How are they feeling?<br />
+                            Have they tried this before?
+                        </p>
+
+                        <p>
+                            For us as humans, this is pretty easy to
+                            understand—they want to
+                            <b>change their plane tickets</b>. We don’t see any
+                            harsh words, so they’re not very angry, but since
+                            they’ve already tried before, they might be slightly
+                            frustrated.<br />
+                            Okay, but how do we train a computer to identify all
+                            those words and turn them into something it can
+                            understand?
+                        </p>
+
+                        <p>
+                            We’ll need to use
+                            <b>natural language processing</b>
+                            techniques—basically, turning words into numbers so
+                            the computer can understand them better.<br />
+                            What do we need then? We need to extract
+                            <b>intent</b> = what does the user want,
+                            <b>sentiment analysis</b> = how is the user feeling,
+                            <b>number of attempts</b> = has the user tried
+                            before?
+                        </p>
+
+                        <p>
+                            In the case of <b>Llamita</b>, you can have three
+                            agents to determine each of those things—Llamita,
+                            the orchestration agent, after delivering the
+                            greeting and receiving the message, will send it to
+                            three specialized agents: <b>intent</b>,
+                            <b>sentiment</b>, and <b>attempt</b>.
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Intent</b> will look for the key words. It
+                                can use an existing
+                                <b>product manual</b> created by the customer
+                                support team, or even reference the
+                                <b>existing ticket database</b>, to find similar
+                                cases and relate what the user has said to what
+                                the travel agency offers. <b>Intent</b> tells us
+                                the difference between the user wanting to
+                                change their plane tickets vs changing the
+                                actual plane model, for example.
+                            </li>
+                            <br /><br />
+                            <li>
+                                <b>Sentiment</b> will find the more emotionally
+                                charged words and identify any crucial
+                                details—Is the user writing in all caps? Is the
+                                user using profanity? It can flag any negative
+                                things we don’t want. <b>Sentiment</b> will
+                                evaluate the sentence as a whole and let us know
+                                what it detected; in this case, it could detect
+                                a neutral tone.
+                            </li>
+                            <br /><br />
+                            <li>
+                                <b>Attempts</b> can look both in the sentence
+                                and in the <b>database</b> to determine how many
+                                times the user has tried to solve this issue. If
+                                the user mentions it in the sentence, we can
+                                corroborate this information by scanning the
+                                user’s previous logs. Here, it will give us a
+                                number of attempts and let us know if those can
+                                be confirmed with hard data.
+                            </li>
+                        </ul>
+
+                        <p>
+                            A combination of these results should give us a
+                            <b>“score”</b>—let’s break it down in the next step!
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h5>1.4 <b>Scoring</b></h5>
+                        <p>
+                            After receiving the information from the specialized
+                            agents, <b>Llamita</b> can determine what
+                            <b>task</b> needs to be solved, how
+                            <b>urgent</b> the issue is, and how likely it is
+                            that we might need to <b>escalate</b> to a human.
+                        </p>
+
+                        <p>
+                            Hey, we could even have a specialized agent that
+                            calculates this <b>score</b>:
+                        </p>
+
+                        <ul>
+                            <li>
+                                One number for <b>escalation</b> = Do we need to
+                                involve humans? <b>1</b> is yes, <b>0</b> is no.
+                            </li>
+                            <br />
+                            <li>
+                                And one number for <b>urgency</b> = Does this
+                                need to be fixed now? <b>1</b> is yes,
+                                <b>0</b> is no.
+                            </li>
+                        </ul>
+
+                        <p>
+                            A combined higher number will increase the chances
+                            of <b>Llamita</b> needing to escalate to a human.<br />
+                            If <b>escalation = 0</b> and
+                            <b>urgency = 0</b>—Llamita can take this one!<br />
+                            If <b>escalation = 1</b> and
+                            <b>urgency = 1</b>—better tag in the support team.
+                        </p>
+
+                        <p>
+                            Let’s look at a few <b>scenarios</b> to see how this
+                            would work:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Scenario 1:</b> User is casually browsing for
+                                hotels, very happy about their upcoming holiday,
+                                and trying Llama Travel for the first time.
+                            </li>
+                            <br />
+                            <li>
+                                <b>Scenario 2:</b> User is very angry about
+                                their hotel booking being cancelled, threatening
+                                legal action, and is a <b>premium user</b> who
+                                expects this to be solved yesterday.
+                            </li>
+                            <br />
+                            <li>
+                                <b>Scenario 3:</b> User wants to update their
+                                contact details and submits a polite request
+                                during work hours.
+                            </li>
+                            <br />
+                            <li>
+                                <b>Scenario 4:</b> User requests a duplicate
+                                invoice for a trip completed last year, shows no
+                                signs of urgency, and uses formal language.
+                            </li>
+                        </ul>
+
+                        <p>
+                            So, I’m not going to give you the answers here. Try
+                            to solve these little support puzzles yourself, and
+                            let me know what <b>scores</b> you would give them!
+                        </p>
+                        <hr />
+                    </div>
+
+                    <div class="grid-item col-4-4"></div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            Building <b>agents</b> like <b>Llamita</b> isn’t
+                            about replacing humans—it’s really about helping
+                            small teams handle more info, and letting them focus
+                            on the important stuff (like spotting trends and
+                            supporting users better).
+                        </p>
+                        <p>
+                            For example, Llamita could have another specialized
+                            agent tracking if a service provider keeps getting
+                            negative reviews—this way, the support team can
+                            decide if they need to reach out or maybe stop
+                            recommending that provider on the site.
+                        </p>
+                        <p>
+                            But we can go deeper into that part of the flow next
+                            time—<b>stay tuned!</b><br />
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <!--closing -->
+                    <div class="grid-item col-4-4">
+                        <h3>That’s Enough About Me!</h3>
+                        <p>What do you think? What should I focus on next?</p>
+                        <p>
+                            Do you have support puzzle thoughts (or secret agent
+                            stories) of your own? Hit me up, I’d love to hear
+                            them!
+                        </p>
+
+                        <p>
+                            Let me know—shoot me an email! 😊<br /><a
+                                href="mailto:sifuentesanita@gmail.com"
+                                >📩</a
+                            >
+                            sifuentesanita@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+    </body>
+</html>
