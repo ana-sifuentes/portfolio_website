@@ -58,7 +58,7 @@
                     <div class="grid-item col-4-4">
                         <p>
                             <i
-                                >Understanding how agents work and how they
+                                >Understanding how AI agents work and how they
                                 could work for you!
                             </i>
                         </p>
@@ -117,9 +117,12 @@
 
                     <div class="grid-item col-4-4">
                         <img
-                            src="../assets/blog/llm-champion/sifuentes-llm-champion-1.png"
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-1.png"
                         />
-                        <p class="note">On my way to catch some Pokémon.</p>
+                        <p class="note">
+                            Llama Travel, your gate way to Latin America!
+                        </p>
+                        <p class="footnote">Quick drawing by me :)</p>
                     </div>
 
                     <div class="grid-item col-4-4">
@@ -165,24 +168,17 @@
 
                     <div class="grid-item col-4-4">
                         <img
-                            src="../assets/blog/llm-champion/sifuentes-llm-champion-2.png"
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-2.png"
                         />
 
-                        <p class="footnote">
-                            <a
-                                href="https://www.youtube.com/watch?v=MCq94RixG2A&ab_channel=Mr.Pok%C3%A9dex"
-                                target="_blank"
-                                >Image credit: How to get Haunter in Pokemon
-                                Gold/Silver/Crystal [#093] by Mr. Pokédex</a
-                            >
-                        </p>
                         <p class="note">
-                            Ok, you might notice a pattern — I love Ghost types.
+                            Here is how the first part of the flow would look
+                            like.
                         </p>
                     </div>
 
                     <div class="grid-item col-4-4">
-                        <h4>1) <b>Assessing</b></h4>
+                        <h3>1) <b>Assessing</b></h3>
                         <p>
                             This part is crucial to make sure we start off on a
                             good path.<br />
@@ -190,15 +186,15 @@
                             and set the stage for the rest of the flow.<br />
                             In our case, it would be composed of four parts:
                         </p>
-                        <ol>
-                            <li>1.1 Welcome</li>
-                            <li>1.2 User's Input</li>
-                            <li>1.3 Classification</li>
-                            <li>1.4 Scoring</li>
-                        </ol>
+                        <p>
+                            1.1 Welcome<br />
+                            1.2 Input<br />
+                            1.3 Classification<br />
+                            1.4 Scoring
+                        </p>
 
                         <p>Let's break them down:</p>
-
+                        <br /><br />
                         <h4>1.1 <b>Welcome</b></h4>
                         <p>
                             We want to greet the user just like we would if we
@@ -221,7 +217,6 @@
                             we can set clear expectations... maybe something
                             like:
                         </p>
-                        >
 
                         <blockquote>
                             Hi there! This is <b>Llamita</b>, Llama Travel's AI
@@ -234,7 +229,17 @@
                     </div>
 
                     <div class="grid-item col-4-4">
-                        <h5>1.2 <b>Input</b></h5>
+                        <img
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-3.png"
+                        />
+                        <p class="note">
+                            Llamita AI assitant welcomes the user with a
+                            friendly tone
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>1.2 <b>Input</b></h4>
                         <p>
                             Next, the user will input their message—should the
                             answers vary depending on the user?<br />
@@ -268,7 +273,14 @@
                     </div>
 
                     <div class="grid-item col-4-4">
-                        <h5>1.3 <b>Classification</b></h5>
+                        <img
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-4.png"
+                        />
+                        <p class="note">Our example user sends their request</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>1.3 <b>Classification</b></h4>
                         <p>Let’s say the user said:</p>
                         <blockquote>
                             Hi Llamita,<br />
@@ -276,6 +288,8 @@
                             yesterday but was told the system was down, can you
                             fix it?
                         </blockquote>
+
+                        <br />
                         <p>
                             There are a few things we need to extract from this
                             message:<br />
@@ -313,8 +327,9 @@
                             agents to determine each of those things—Llamita,
                             the orchestration agent, after delivering the
                             greeting and receiving the message, will send it to
-                            three specialized agents: <b>intent</b>,
-                            <b>sentiment</b>, and <b>attempt</b>.
+                            three specialized agents: Capybara (<b>intent</b>),
+                            Pink Dolphin (<b>sentiment</b>), and Hummingbird
+                            (<b>attempt</b>).
                         </p>
                         <ul>
                             <li>
@@ -360,7 +375,14 @@
                     </div>
 
                     <div class="grid-item col-4-4">
-                        <h5>1.4 <b>Scoring</b></h5>
+                        <img
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-5.png"
+                        />
+                        <p class="note">Our example user sends their request</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>1.4 <b>Scoring</b></h4>
                         <p>
                             After receiving the information from the specialized
                             agents, <b>Llamita</b> can determine what
@@ -435,7 +457,15 @@
                         <hr />
                     </div>
 
-                    <div class="grid-item col-4-4"></div>
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-1/sifuentes-llama-travel-6.png"
+                        />
+                        <p class="note">
+                            Example of how Llamita calls the other agents for
+                            help.
+                        </p>
+                    </div>
 
                     <div class="grid-item col-4-4">
                         <p>
