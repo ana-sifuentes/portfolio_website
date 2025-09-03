@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>ana sifuentes website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles/main.css" />
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
+
+        <section class="section-container">
+            <div class="container blog-entry">
+                <div class="grid four">
+                    <!--title -->
+                    <div class="grid-item col-4-4">
+                        <h1>Llama Travel 2</h1>
+                        <p class="note">AI • Agents • LLM</p>
+
+                        <p>September 02</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <i
+                                >What AI agents can solve and what they
+                                shouldn't.
+                            </i>
+                        </p>
+                        <p>
+                            We’re jumping right in, reader.
+                            <b>Llama Travel</b> needs us.
+                        </p>
+                        <p>
+                            We’re back at our travel agency, rolling out their
+                            first <b>AI agent</b> for customer support.
+                            Previously, we explored how the agent,
+                            <b>Llamita AI</b>, would greet new users and assess
+                            their needs and urgency, assisted by a few other
+                            animal agents.
+                        </p>
+                        <p>
+                            Now, we’re diving into the next critical steps:
+                            <b>handling the task</b> and deciding when to
+                            <b>escalate</b> the chat when needed.
+                        </p>
+                        <p>
+                            Grab your passport and pack your suitcase—and if you
+                            need a quick refresher on <b>LLMs</b> or
+                            <b>AI agent</b> basics, check out my earlier posts:
+                            <a href="/blog/llama-travel-1">Llama Travel 1</a>,
+                            <a href="/blog/llm-champion">LLM Champion</a>, and
+                            <a href="/blog/llm-master">LLM Master</a>.
+                        </p>
+                        <p>Ready for takeoff?</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-1.png"
+                        />
+                        <p class="note">
+                            Today Llamita is wearing a traditional chullo hat :)
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>2) Handling</h3>
+
+                        <p>
+                            In the last step, <b>Llamita</b> assessed the task
+                            and the urgency. In our example, the customer wanted
+                            to change their flight booking. It was their second
+                            attempt, so they might be a bit frustrated, even
+                            though their language was neutral.
+                        </p>
+
+                        <p>
+                            So, what's next? We need to decide whether
+                            <b>Llamita</b> can fix this or not.
+                        </p>
+
+                        <p>
+                            First, let's determine
+                            <b>what kinds of things an agent can solve</b>. This
+                            depends on their <b>training</b> and the
+                            <b>tools</b> and <b>databases</b> they have access
+                            to. Most <b>AI agents</b> can handle tasks like
+                            booking changes, updating customer details,
+                            processing refunds, answering FAQs, and accessing
+                            real-time data within their connected systems
+                            <b></b>.
+                        </p>
+
+                        <p>
+                            But what kinds of things are beyond
+                            <b>Llamita's</b> control? Anything related to
+                            <b>legal</b>, <b>security</b>, or
+                            <b>explicit content</b>. We can explicitly tell
+                            <b>Llamita</b> to avoid certain topics. There are
+                            situations where we definitely need a human to step
+                            in. This makes sure sensitive issues are never
+                            overlooked. We'll look at examples in the next blog
+                            post.
+                        </p>
+
+                        <p>
+                            Now let's focus on scenarios Llamita can solve. We
+                            will divide this into 3 sections: 2.1) Initial
+                            attempt, 2.2) Clarification attempt, and 2.3)
+                            Offboarding.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-2.png"
+                        />
+                        <p class="note">
+                            Here is the whole diagram flow, let's dive in!
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>2.1 Initial Attempt</h4>
+
+                        <p>
+                            The simplest scenario for the <b>AI agent</b> begins
+                            once the <b>task</b> and <b>urgency</b> are
+                            assessed. The agent must confirm the user's
+                            identity, get authorization before making any
+                            changes, and confirm once the action is complete.
+                        </p>
+
+                        <p>
+                            In our <b>flight rebooking</b> case,
+                            <b>Llamita</b> knows it can handle the situation and
+                            should avoid escalating, since the situation is not
+                            urgent. This was determined with help from other
+                            specialized agents. So, what does Llamita do next?
+                        </p>
+
+                        <p>
+                            Llamita calls in a specialized
+                            <b>database agent</b>—a <b>jaguar</b>—to retrieve
+                            details using the user's ID:
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-3.png"
+                        />
+                        <p class="note">
+                            Jaguar agent retrieves the user's details.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <ul>
+                            <li>User ID: <b>12345</b></li>
+                            <li>User Name: <b>Emilio Flores</b></li>
+                            <li>User Type: <b>Platinum Package</b></li>
+                            <li>Travel Insurance: <b>True</b></li>
+                            <li>
+                                Flight: <b>Frankfurt - Lima</b> for September 30
+                                at 9:30 AM
+                            </li>
+                            <li>Seat Selection: <b>True</b></li>
+                            <li>Seat: <b>First Class, Seat 2A</b></li>
+                            <li>Purchase Date: <b>August 30 at 12:15 PM</b></li>
+                        </ul>
+
+                        <p>
+                            With all info retrieved, <b>Llamita</b> confirms
+                            with the user which flight should be changed,
+                            clarifying in case there are multiple bookings or
+                            services.
+                        </p>
+
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Of course, is this the flight
+                                you wish to change? Flight:
+                                <b>Frankfurt - Lima</b> for September 30 at 9:30
+                                AM
+                            </i>
+                        </p>
+                        <p>
+                            <i>
+                                <b>User:</b> Yes, I need to book something for
+                                this week, my baby niece was born yesterday and
+                                I want to see my family. I need the earliest
+                                flight possible.
+                            </i>
+                        </p>
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Of course, give me one second to
+                                look for flights...</i
+                            >
+                        </p>
+
+                        <br /><br />
+                        <p>
+                            Today is September 3rd, 11:30 AM. Now Llamita calls
+                            another agent, a guinea pig, for
+                            <b>specialized flight search</b> in the system. By
+                            default, the flight search agent is trained to check
+                            nearby airports and optimize for fewest connections
+                            and minimal price difference, helping keep customer
+                            satisfaction high.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-4.png"
+                        />
+                        <p class="note">
+                            Guinea pig agent finds flight alternatives.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <br /><br />
+                        <p>
+                            <i
+                                ><b>Llamita:</b> We have three options for
+                                you:</i
+                            >
+                        </p>
+                        <ul>
+                            <li><i>A) Frankfurt - Lima | 05/09 at 9:30</i></li>
+                            <li><i>B) Frankfurt - Lima | 04/09 at 18:00</i></li>
+                            <li><i>C) Frankfurt - Lima | 03/09 at 21:00</i></li>
+                        </ul>
+
+                        <p>
+                            <i>
+                                Let me know which one you prefer or if you’d
+                                like to view more options from other dates or
+                                airports.</i
+                            >
+                        </p>
+
+                        <br /><br />
+                        <p>
+                            No changes are made without user authorization, and
+                            we always offer to keep searching in case the first
+                            results aren't quite right.
+                        </p>
+
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>User:</b> Good, I like option B since I need
+                                to pack. What is the price difference?
+                            </i>
+                        </p>
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Since you paid for travel
+                                insurance and are a platinum member, there is no
+                                fee for your flight change. If you accept,
+                                please click 'confirm flight change' below:
+                                <br />
+                                Confirm flight change <br />
+                                Continue looking for flights
+                            </i>
+                        </p>
+                        <br /><br />
+                        <p>
+                            Ideally, the user confirms, successful teamwork from
+                            Llamita and the agent team!
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-5.png"
+                        />
+
+                        <p class="note">Two new agents join the team!</p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>2.2 Clarification Attempt</h4>
+
+                        <p>
+                            But what if <b>Llamita’s</b> process was not what
+                            the user intended? Sometimes, an
+                            <b>AI agent</b> might misinterpret the user's
+                            request, or the user might not clearly state what
+                            they want. For example, asking to
+                            <b>cancel the trip</b> and get a full refund instead
+                            of rebooking. How does Llamita handle this?
+                        </p>
+
+                        <p>
+                            Let’s rewind, after Llamita presents rebooking
+                            options, the user says:
+                        </p>
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>User:</b> No, I don’t want to rebook my
+                                flight actually, it’s better to cancel it. I
+                                want my money back so I can buy my niece a huge
+                                gift.
+                            </i>
+                        </p>
+                        <br /><br />
+                        <p>
+                            Llamita now needs to re-identify the user’s
+                            <b>intent</b>. This clarification is triggered when
+                            the user declines the options provided. At this
+                            stage, <b>intent, attempt,</b> and
+                            <b>sentiment agents</b> work together to pick up on
+                            this change. These agents continuously monitor
+                            conversation flow and sentiment, updating records
+                            and letting Llamita know the user's intent has
+                            shifted.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-6.png"
+                        />
+
+                        <p class="note">
+                            Sentiment, Attempt and Intent help process the new
+                            request.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <p>
+                            <i>
+                                <b>Llamita:</b> I understand, just to confirm,
+                                you would like to cancel your flight: Frankfurt
+                                – Lima for September 30 at 9:30 AM and request a
+                                full refund?
+                            </i>
+                        </p>
+                        <p>
+                            <i
+                                ><b>User:</b> Yes, can I get all my money
+                                back?</i
+                            >
+                        </p>
+                        <br /><br />
+                        <p>
+                            Because Llamita already has the user’s profile
+                            information and they meet the requirements,
+                            <b>travel insurance</b> and
+                            <b>platinum membership</b>, they can process the
+                            full refund:
+                        </p>
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Of course, since you paid for
+                                travel insurance and are a platinum member, you
+                                will receive your full refund. Can you please
+                                confirm I can go ahead with the cancellation by
+                                clicking “cancel flight” below?</i
+                            >
+                        </p>
+                        <br /><br />
+                        <p>
+                            In this scenario, the user gets their refund and the
+                            process is completed! But what if the user’s request
+                            can’t be fulfilled. Let’s say there’s no travel
+                            insurance and no premium membership?
+                        </p>
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>Llamita:</b> I’m sorry, unfortunately your
+                                purchase is not valid for refund and
+                                cancellation. Since you didn’t purchase travel
+                                insurance and your membership doesn’t include
+                                cancellation protection, neither I nor our
+                                customer team can process your full refund
+                                request.
+                            </i>
+                        </p>
+                        <br /><br />
+
+                        <p>
+                            From the user’s perspective, the issue is unresolved
+                            but from Llamita’s perspective, the correct answer
+                            has been given. This is called a
+                            <b>false negative scenario</b>, where the user’s
+                            needs can’t be met, but the response is transparent
+                            and accurate. Llamita can still offer options to
+                            reassure or help the user, and avoid escalation
+                            where possible:
+                        </p>
+                        <ul>
+                            <li>Learn more about platinum membership</li>
+                            <li>Set flights to Lima alerts</li>
+                            <li>Exit chat</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-7.png"
+                        />
+
+                        <p class="note">
+                            If we cannot solve the issue, we can offer
+                            alternatives.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <p>
+                            If the user accepts that a full refund isn’t
+                            possible, the conversation ends smoothly. Often,
+                            though, users may insist on escalation to a human
+                            agent, even after being told no. Llamita follows its
+                            training to clarify the policy, explain why
+                            conditions aren’t met, and only escalates if
+                            absolutely necessary. Edge cases, such as difficult
+                            timing questions or unusual circumstances, trigger
+                            human collaboration when Llamita can’t find a
+                            matching solution in previous cases or training data
+                            <b></b>.
+                        </p>
+
+                        <p>Examples of edge cases might include:</p>
+                        <ul>
+                            <li>
+                                The user purchased their flight on the same day
+                                their membership expired, but in a different
+                                time zone
+                            </li>
+                            <li>
+                                Partial refund eligibility due to overlapping
+                                promotions
+                            </li>
+                            <li>
+                                Multiple joint bookings with shared insurance
+                            </li>
+                            <li>
+                                System errors leading to duplicate charges or
+                                reservations
+                            </li>
+                            <li>
+                                Ambiguous cancellation timing related to airline
+                                strikes or force majeure events
+                            </li>
+                        </ul>
+
+                        <p>
+                            We’ll explore the full process for handling edge
+                            cases in the next blog. For now, Llamita is able to
+                            resolve or clearly clarify both straightforward and
+                            ambiguous user scenarios!
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-8.png"
+                        />
+
+                        <p class="note">
+                            Asking for feedback is essential for improving.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h4>2.3 Offboarding</h4>
+
+                        <p>
+                            Well done, <b>Llamita</b>! Now, it’s time to let the
+                            user go. The <b>offboarding</b> process means
+                            informing the user about next steps, confirming they
+                            don’t have further questions, and thanking them for
+                            their time and for choosing <b>Llama Travel</b>.
+                            Like any good customer support team, we also ask for
+                            feedback helping us continually improve. Here’s how
+                            a successful offboarding looks in the conversation:
+                        </p>
+
+                        <br /><br />
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Great! Your cancellation and
+                                full refund request has been sent. Usually, this
+                                takes 1 business day to process, and funds might
+                                take up to 3 business days to appear in your
+                                account. You will receive confirmation of both
+                                processes via email.
+                            </i>
+                        </p>
+
+                        <p>
+                            <i><b>User:</b> Thanks, Llamita, that’s great. </i>
+                        </p>
+
+                        <p>
+                            <i>
+                                <b>Llamita:</b> I’m happy I could help. Is there
+                                anything else I can do for you today?
+                            </i>
+                        </p>
+
+                        <p>
+                            <i><b>User:</b> No, that’s it. </i>
+                        </p>
+
+                        <p>
+                            <i>
+                                <b>Llamita:</b> Perfect! Thank you for choosing
+                                <b>Llama Travel</b>—we hope you have a lovely
+                                day.
+                            </i>
+                        </p>
+                        <br /><br />
+
+                        <p>
+                            At this point, a quick survey can be offered where
+                            the user rates the chat session (for example, “Was
+                            this chat useful?” with a thumbs up or thumbs down).
+                            If more feedback is needed, the survey can be
+                            extended to gather detailed comments.
+                        </p>
+
+                        <p>
+                            Behind the scenes, <b>Llamita</b> calls on other
+                            specialized agents to fulfill the user’s request,
+                            including:
+                        </p>
+                        <ul>
+                            <li>
+                                The <b>cancellation agent</b>, who processes the
+                                cancellation and updates account details
+                            </li>
+                            <li>
+                                The <b>payments agent</b>, who processes refunds
+                                with banks
+                            </li>
+                            <li>
+                                The <b>notification agent</b>, who sends email
+                                confirmations and status updates
+                            </li>
+                            <li>
+                                The <b>records agent</b>, who updates data for
+                                reporting and compliance
+                            </li>
+                            <li>
+                                The <b>feedback agent</b>, who collects and
+                                analyzes user feedback for process improvement
+                            </li>
+                            <li>
+                                The <b>security agent</b>, who ensures sensitive
+                                account data and permissions are handled
+                                properly and securely throughout offboarding
+                            </li>
+                            <li>
+                                The <b>compliance agent</b>, who monitors GDPR
+                                or data retention requirements are followed
+                                during the process
+                            </li>
+                            <li>
+                                The <b>audit agent</b>, who logs interactions
+                                and outcomes for quality control and future
+                                training
+                            </li>
+                        </ul>
+
+                        <p>
+                            All of these background activities help ensure the
+                            user’s offboarding is smooth, secure, and leaves
+                            them with a positive impression of
+                            <b>Llama Travel</b> .
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <img
+                            src="../assets/blog/llama-travel-2/sifuentes-llama-travel-9.png"
+                        />
+
+                        <p class="note">
+                            Llamita and the whole team of agents working
+                            together seamlessly!
+                        </p>
+
+                        <p class="footnote">
+                            Sorry I couldn't draw more animals :v
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <p>
+                            How are you feeling after all that agent work?
+                            Hopefully the fun little <b>animals</b> help
+                            understand these new concepts.
+                        </p>
+                        <p>
+                            <b> Automation</b> has a lot to offer. By automating
+                            routine travel tasks like rebookings, refunds, and
+                            customer updates <b>Llamita</b>’s support team gains
+                            the freedom to look for insights and deliver
+                            standout <b> service where it counts</b>.
+                        </p>
+
+                        <p>
+                            Agents help keep an eye on <b>all the details</b>,
+                            for example, Llamita’s agent network could include a
+                            specialized feedback watcher tracking trends in
+                            customer satisfaction or identifying if specific
+                            routes or services are causing issues. With those
+                            insights, the <b>human team</b> can step in, adjust
+                            recommendations, or even start new partnerships to
+                            improve the experience.
+                        </p>
+                        <p>
+                            This blending of automation and human insight is
+                            just the start; there’s lots more to explore in
+                            agent handoffs, real-time analytics, and
+                            personalizing travel at scale.
+                        </p>
+                        <p>
+                            Are you ready for the grand finale? Part 3 coming
+                            next week!
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <!--closing -->
+                    <div class="grid-item col-4-4">
+                        <h3>That’s Enough About Me!</h3>
+                        <p>What do you think? What should I focus on next?</p>
+                        <p>
+                            Do you like the animal drawings? I enjoy making
+                            them! Hopefully they help make abstract concepts
+                            more approachable.
+                        </p>
+
+                        <p>
+                            Let me know—shoot me an email! 😊<br /><a
+                                href="mailto:sifuentesanita@gmail.com"
+                                >📩</a
+                            >
+                            sifuentesanita@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+    </body>
+</html>
