@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { background: #f9f9f9; padding: 30px; border-radius: 10px; }
+        h1 { color: #333; text-align: center; }
+        textarea { width: 100%; height: 150px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; padding: 20px; background: white; border-radius: 5px; border: 1px solid #ddd; }
+        .sentiment { font-size: 1.2em; font-weight: bold; }
+        .positive { color: #28a745; }
+        .negative { color: #dc3545; }
+        .neutral { color: #6c757d; }
+        .loading { display: none; color: #007bff; }
+        .error { color: #dc3545; }
+        .scores { margin-top: 10px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤗 AI Sentiment Analyzer</h1>
+        <p>Enter some text below to analyze its sentiment using Hugging Face transformers:</p>
+
+        <form id="sentimentForm">
+            <textarea name="text" id="textInput" placeholder="Type your text here... (e.g., 'I love this product!' or 'This is terrible')" required></textarea>
+            <br><br>
+            <button type="submit">Analyze Sentiment</button>
+            <div class="loading" id="loading">Analyzing...</div>
+        </form>
+
+        <div id="result" class="result" style="display: none;">
+            <h3>Results:</h3>
+            <div id="resultContent"></div>
+        </div>
+
+        <div style="margin-top: 30px; font-size: 0.9em; color: #666;">
+            <h4>API Endpoints:</h4>
+            <ul>
+                <li><strong>POST /api/analyze</strong> - Analyze single text: <code>{"text": "your text"}</code></li>
+                <li><strong>POST /api/batch</strong> - Analyze multiple texts: <code>{"texts": ["text1", "text2"]}</code></li>
+                <li><strong>GET /model-info</strong> - Get model information</li>
+                <li><strong>GET /health</strong> - Health check</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sentimentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const textInput = document.getElementById('textInput');
+            const loading = document.getElementById('loading');
+            const result = document.getElementById('result');
+            const resultContent = document.getElementById('resultContent');
+
+            if (!textInput.value.trim()) {
+                alert('Please enter some text to analyze');
+                return;
+            }
+
+            // Show loading
+            loading.style.display = 'block';
+            result.style.display = 'none';
+
+            // Send request
+            fetch('/analyze', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'text=' + encodeURIComponent(textInput.value)
+            })
+            .then(response => response.json())
+            .then(data => {
+                loading.style.display = 'none';
+
+                if (data.error) {
+                    resultContent.innerHTML = '<div class="error">Error: ' + data.error + '</div>';
+                } else {
+                    const sentimentClass = data.dominant_sentiment.toLowerCase();
+                    const confidence = Math.round(data.confidence * 100);
+
+                    let scoresHtml = '<div class="scores"><strong>All scores:</strong><br>';
+                    for (const [label, score] of Object.entries(data.all_scores)) {
+                        scoresHtml += label + ': ' + Math.round(score * 100) + '% ';
+                    }
+                    scoresHtml += '</div>';
+
+                    resultContent.innerHTML =
+                        '<div class="sentiment ' + sentimentClass + '">Sentiment: ' + data.dominant_sentiment + '</div>' +
+                        '<div>Confidence: ' + confidence + '%</div>' +
+                        scoresHtml +
+                        '<div style="margin-top: 10px; font-size: 0.9em; color: #666;">Text: "' + data.text + '"</div>';
+                }
+
+                result.style.display = 'block';
+            })
+            .catch(error => {
+                loading.style.display = 'none';
+                resultContent.innerHTML = '<div class="error">Error: ' + error.message + '</div>';
+                result.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

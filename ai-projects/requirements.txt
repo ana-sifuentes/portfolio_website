@@ -1,0 +1,47 @@
+# Core AI/ML Libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.14.0
+accelerate>=0.20.0
+tokenizers>=0.13.0
+
+# Hugging Face Hub
+huggingface_hub>=0.16.0
+
+# Web Framework for Hosting
+flask>=2.3.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Data Science & Visualization
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Image Processing (if working with vision models)
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Audio Processing (if working with audio models)
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Utility Libraries
+requests>=2.31.0
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# Development Tools
+jupyter>=1.0.0
+ipython>=8.14.0
+pytest>=7.4.0
+
+# Optional: For advanced model deployment
+gradio>=3.40.0
+streamlit>=1.25.0
+
+# Optional: For cloud deployment
+boto3>=1.28.0  # AWS
+google-cloud-storage>=2.10.0  # Google Cloud

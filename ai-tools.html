@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>AI Tools - ana sifuentes</title>
+        <meta name="description" content="Explore AI-powered sentiment analysis and text processing tools built with Hugging Face transformers" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="AI Tools - ana sifuentes" />
+        <meta property="og:description" content="Explore AI-powered sentiment analysis and text processing tools" />
+        <meta property="og:image" content="assets/ai-tools-preview.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://anasifuentes.com/ai-tools.html" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!--Stylesheets -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+        <style>
+            /* AI Tools Specific Styles */
+            .ai-container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 2rem;
+                background: var(--white);
+            }
+
+            .ai-header {
+                text-align: center;
+                margin-bottom: 3rem;
+                background: linear-gradient(135deg, var(--light-lilac), var(--white));
+                padding: 3rem 2rem;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(50, 12, 24, 0.1);
+            }
+
+            .ai-title {
+                font-family: "Caveat", cursive;
+                font-size: 3.5em;
+                font-weight: 700;
+                color: var(--dark-purple);
+                margin-bottom: 1rem;
+                background: linear-gradient(45deg, var(--dark-purple), var(--dark-gray));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .ai-subtitle {
+                font-family: "Rubik", sans-serif;
+                font-size: 1.2em;
+                color: var(--dark-gray);
+                line-height: 1.6;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .tool-card {
+                background: var(--white);
+                border-radius: 15px;
+                padding: 2.5rem;
+                margin: 2rem 0;
+                box-shadow: 0 8px 25px rgba(50, 12, 24, 0.12);
+                border: 2px solid var(--light-lilac);
+                transition: all 0.3s ease;
+            }
+
+            .tool-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(50, 12, 24, 0.2);
+                border-color: var(--dark-purple);
+            }
+
+            .tool-title {
+                font-family: "Fredoka", sans-serif;
+                font-size: 2em;
+                font-weight: 600;
+                color: var(--dark-purple);
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .tool-description {
+                color: var(--dark-gray);
+                line-height: 1.7;
+                margin-bottom: 2rem;
+                font-size: 1.1em;
+            }
+
+            .input-section {
+                margin-bottom: 2rem;
+            }
+
+            .input-label {
+                font-family: "Fredoka", sans-serif;
+                font-weight: 500;
+                color: var(--dark-purple);
+                margin-bottom: 0.5rem;
+                display: block;
+                font-size: 1.1em;
+            }
+
+            .text-input {
+                width: 100%;
+                min-height: 120px;
+                padding: 1rem;
+                border: 2px solid var(--light-lilac);
+                border-radius: 12px;
+                font-family: "Rubik", sans-serif;
+                font-size: 1em;
+                line-height: 1.5;
+                resize: vertical;
+                transition: border-color 0.3s ease;
+                background: var(--white);
+            }
+
+            .text-input:focus {
+                outline: none;
+                border-color: var(--dark-purple);
+                box-shadow: 0 0 0 3px rgba(50, 12, 24, 0.1);
+            }
+
+            .analyze-btn {
+                background: linear-gradient(135deg, var(--dark-purple), var(--dark-gray));
+                color: var(--white);
+                border: none;
+                padding: 1rem 2rem;
+                font-family: "Fredoka", sans-serif;
+                font-weight: 600;
+                font-size: 1.1em;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(50, 12, 24, 0.3);
+                min-width: 150px;
+            }
+
+            .analyze-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(50, 12, 24, 0.4);
+            }
+
+            .analyze-btn:disabled {
+                background: var(--light-gray);
+                cursor: not-allowed;
+                transform: none;
+                box-shadow: none;
+            }
+
+            .result-section {
+                margin-top: 2rem;
+                padding: 2rem;
+                background: linear-gradient(135deg, var(--light-lilac), rgba(247, 238, 252, 0.5));
+                border-radius: 12px;
+                border-left: 5px solid var(--dark-purple);
+                display: none;
+            }
+
+            .result-section.show {
+                display: block;
+                animation: fadeInUp 0.5s ease;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .sentiment-result {
+                font-size: 1.3em;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                font-family: "Fredoka", sans-serif;
+            }
+
+            .positive { color: #27ae60; }
+            .negative { color: #e74c3c; }
+            .neutral { color: #f39c12; }
+
+            .confidence-bar {
+                background: var(--light-gray);
+                border-radius: 10px;
+                overflow: hidden;
+                height: 10px;
+                margin: 1rem 0;
+            }
+
+            .confidence-fill {
+                height: 100%;
+                border-radius: 10px;
+                transition: width 0.8s ease;
+            }
+
+            .confidence-fill.positive { background: #27ae60; }
+            .confidence-fill.negative { background: #e74c3c; }
+            .confidence-fill.neutral { background: #f39c12; }
+
+            .detailed-scores {
+                margin-top: 1.5rem;
+                font-size: 0.95em;
+                color: var(--dark-gray);
+            }
+
+            .score-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0.5rem 0;
+                padding: 0.5rem;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 8px;
+            }
+
+            .loading {
+                display: none;
+                text-align: center;
+                color: var(--dark-purple);
+                font-style: italic;
+            }
+
+            .error {
+                color: #e74c3c;
+                background: rgba(231, 76, 60, 0.1);
+                padding: 1rem;
+                border-radius: 8px;
+                border-left: 4px solid #e74c3c;
+                margin-top: 1rem;
+            }
+
+            .api-info {
+                background: var(--light-lilac);
+                border-radius: 12px;
+                padding: 2rem;
+                margin-top: 3rem;
+                border: 2px dashed var(--dark-purple);
+            }
+
+            .api-title {
+                font-family: "Fredoka", sans-serif;
+                font-size: 1.4em;
+                font-weight: 600;
+                color: var(--dark-purple);
+                margin-bottom: 1rem;
+            }
+
+            .api-endpoint {
+                background: var(--dark-black);
+                color: var(--white);
+                padding: 1rem;
+                border-radius: 8px;
+                font-family: 'Courier New', monospace;
+                font-size: 0.9em;
+                margin: 0.5rem 0;
+                overflow-x: auto;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-bottom: 2rem;
+                color: var(--dark-purple);
+                text-decoration: none;
+                font-family: "Fredoka", sans-serif;
+                font-weight: 500;
+                padding: 0.5rem 1rem;
+                border: 2px solid var(--light-lilac);
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            .back-link:hover {
+                background: var(--light-lilac);
+                transform: translateX(-5px);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .ai-container {
+                    padding: 1rem;
+                }
+
+                .ai-title {
+                    font-size: 2.5em;
+                }
+
+                .tool-card {
+                    padding: 1.5rem;
+                }
+
+                .tool-title {
+                    font-size: 1.6em;
+                }
+
+                .api-endpoint {
+                    font-size: 0.8em;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="ai-container">
+            <!-- Back Navigation -->
+            <a href="index.html" class="back-link">← Back to Home</a>
+
+            <!-- Header Section -->
+            <div class="ai-header">
+                <h1 class="ai-title">🤖 AI Tools</h1>
+                <p class="ai-subtitle">
+                    Explore the power of artificial intelligence with interactive text analysis tools.
+                    Built with Hugging Face transformers and designed for real-world applications.
+                </p>
+            </div>
+
+            <!-- Sentiment Analysis Tool -->
+            <div class="tool-card">
+                <h2 class="tool-title">
+                    <span>🎭</span> Sentiment Analysis
+                </h2>
+                <p class="tool-description">
+                    Analyze the emotional tone of any text using state-of-the-art AI models.
+                    This tool can detect positive, negative, and neutral sentiments with confidence scores,
+                    perfect for social media monitoring, customer feedback analysis, or content research.
+                </p>
+
+                <div class="input-section">
+                    <label for="textInput" class="input-label">Enter your text:</label>
+                    <textarea
+                        id="textInput"
+                        class="text-input"
+                        placeholder="Type or paste your text here... (e.g., 'I absolutely love this new product!' or 'This service was disappointing')"
+                        rows="5"
+                    ></textarea>
+                </div>
+
+                <button onclick="analyzeSentiment()" class="analyze-btn" id="analyzeBtn">
+                    Analyze Sentiment
+                </button>
+
+                <div class="loading" id="loading">
+                    <p>🔄 Analyzing sentiment...</p>
+                </div>
+
+                <div class="result-section" id="resultSection">
+                    <div id="sentimentResult" class="sentiment-result"></div>
+                    <div class="confidence-bar">
+                        <div id="confidenceFill" class="confidence-fill"></div>
+                    </div>
+                    <div id="confidenceText" style="text-align: center; margin-top: 0.5rem; font-weight: 500;"></div>
+                    <div id="detailedScores" class="detailed-scores"></div>
+                </div>
+
+                <div id="errorMessage" class="error" style="display: none;"></div>
+            </div>
+
+            <!-- API Information -->
+            <div class="api-info">
+                <h3 class="api-title">🔧 Developer API</h3>
+                <p style="margin-bottom: 1rem; color: var(--dark-gray);">
+                    Want to integrate this AI power into your own applications? Use these API endpoints:
+                </p>
+
+                <strong>Single Text Analysis:</strong>
+                <div class="api-endpoint">POST /api/analyze<br>{"text": "your text here"}</div>
+
+                <strong>Batch Analysis:</strong>
+                <div class="api-endpoint">POST /api/batch<br>{"texts": ["text1", "text2", "text3"]}</div>
+
+                <strong>Model Information:</strong>
+                <div class="api-endpoint">GET /model-info</div>
+
+                <p style="margin-top: 1rem; font-size: 0.9em; color: var(--dark-gray);">
+                    <strong>Note:</strong> This demo uses a local AI model. For production use,
+                    consider hosting the Flask application on a cloud service like Heroku,
+                    Railway, or DigitalOcean.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            let isAnalyzing = false;
+
+            async function analyzeSentiment() {
+                const textInput = document.getElementById('textInput');
+                const analyzeBtn = document.getElementById('analyzeBtn');
+                const loading = document.getElementById('loading');
+                const resultSection = document.getElementById('resultSection');
+                const errorMessage = document.getElementById('errorMessage');
+
+                const text = textInput.value.trim();
+
+                if (!text) {
+                    showError('Please enter some text to analyze');
+                    return;
+                }
+
+                if (isAnalyzing) return;
+
+                // Reset UI
+                hideError();
+                resultSection.classList.remove('show');
+                loading.style.display = 'block';
+                analyzeBtn.disabled = true;
+                analyzeBtn.textContent = 'Analyzing...';
+                isAnalyzing = true;
+
+                try {
+                    // Try to connect to local Flask app first
+                    const response = await fetch('http://localhost:5001/api/analyze', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ text: text })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Server unavailable');
+                    }
+
+                    const data = await response.json();
+
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+
+                    displayResults(data);
+
+                } catch (error) {
+                    // Fallback to demo mode with mock results
+                    console.log('Using demo mode:', error.message);
+                    const mockResult = generateMockResult(text);
+
+                    // Simulate processing time
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+
+                    displayResults(mockResult);
+                    showDemoNotice();
+                }
+
+                // Reset button
+                loading.style.display = 'none';
+                analyzeBtn.disabled = false;
+                analyzeBtn.textContent = 'Analyze Sentiment';
+                isAnalyzing = false;
+            }
+
+            function displayResults(data) {
+                const resultSection = document.getElementById('resultSection');
+                const sentimentResult = document.getElementById('sentimentResult');
+                const confidenceFill = document.getElementById('confidenceFill');
+                const confidenceText = document.getElementById('confidenceText');
+                const detailedScores = document.getElementById('detailedScores');
+
+                // Display main result
+                const sentiment = data.dominant_sentiment.toLowerCase();
+                const confidence = Math.round(data.confidence * 100);
+
+                sentimentResult.textContent = `Sentiment: ${data.dominant_sentiment}`;
+                sentimentResult.className = `sentiment-result ${sentiment}`;
+
+                // Animate confidence bar
+                confidenceFill.className = `confidence-fill ${sentiment}`;
+                setTimeout(() => {
+                    confidenceFill.style.width = `${confidence}%`;
+                }, 100);
+
+                confidenceText.textContent = `Confidence: ${confidence}%`;
+
+                // Display detailed scores
+                let scoresHTML = '<strong>Detailed Analysis:</strong><br>';
+                for (const [label, score] of Object.entries(data.all_scores)) {
+                    const percentage = Math.round(score * 100);
+                    scoresHTML += `
+                        <div class="score-item">
+                            <span>${label.charAt(0).toUpperCase() + label.slice(1)}</span>
+                            <span>${percentage}%</span>
+                        </div>
+                    `;
+                }
+                detailedScores.innerHTML = scoresHTML;
+
+                // Show results
+                resultSection.classList.add('show');
+            }
+
+            function generateMockResult(text) {
+                // Simple mock sentiment analysis for demo
+                const positiveWords = ['love', 'great', 'amazing', 'fantastic', 'excellent', 'wonderful', 'good', 'best', 'happy', 'perfect'];
+                const negativeWords = ['hate', 'terrible', 'awful', 'worst', 'bad', 'horrible', 'disappointing', 'sad', 'angry'];
+
+                const lowerText = text.toLowerCase();
+                const positiveCount = positiveWords.filter(word => lowerText.includes(word)).length;
+                const negativeCount = negativeWords.filter(word => lowerText.includes(word)).length;
+
+                let dominant_sentiment, confidence, scores;
+
+                if (positiveCount > negativeCount) {
+                    dominant_sentiment = 'positive';
+                    confidence = 0.75 + (positiveCount * 0.1);
+                    scores = { negative: 0.1, neutral: 0.2, positive: confidence };
+                } else if (negativeCount > positiveCount) {
+                    dominant_sentiment = 'negative';
+                    confidence = 0.75 + (negativeCount * 0.1);
+                    scores = { negative: confidence, neutral: 0.2, positive: 0.1 };
+                } else {
+                    dominant_sentiment = 'neutral';
+                    confidence = 0.6;
+                    scores = { negative: 0.2, neutral: confidence, positive: 0.2 };
+                }
+
+                // Normalize scores
+                const total = Object.values(scores).reduce((a, b) => a + b, 0);
+                for (const key in scores) {
+                    scores[key] = scores[key] / total;
+                }
+
+                return {
+                    text: text,
+                    dominant_sentiment: dominant_sentiment,
+                    confidence: Math.min(confidence, 0.95),
+                    all_scores: scores
+                };
+            }
+
+            function showError(message) {
+                const errorMessage = document.getElementById('errorMessage');
+                errorMessage.textContent = message;
+                errorMessage.style.display = 'block';
+            }
+
+            function hideError() {
+                const errorMessage = document.getElementById('errorMessage');
+                errorMessage.style.display = 'none';
+            }
+
+            function showDemoNotice() {
+                const notice = document.createElement('div');
+                notice.style.cssText = `
+                    position: fixed; top: 20px; right: 20px;
+                    background: var(--dark-purple); color: var(--white);
+                    padding: 1rem; border-radius: 8px;
+                    font-size: 0.9em; max-width: 300px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    z-index: 1000;
+                `;
+                notice.innerHTML = '🤖 Demo Mode: Using local AI simulation since the Flask server isn\'t running.';
+                document.body.appendChild(notice);
+
+                setTimeout(() => {
+                    notice.style.opacity = '0';
+                    notice.style.transition = 'opacity 0.5s ease';
+                    setTimeout(() => notice.remove(), 500);
+                }, 4000);
+            }
+
+            // Allow Enter key to submit
+            document.getElementById('textInput').addEventListener('keydown', function(event) {
+                if (event.ctrlKey && event.key === 'Enter') {
+                    analyzeSentiment();
+                }
+            });
+
+            // Sample texts for quick testing
+            const sampleTexts = [
+                "I absolutely love this new product! It's incredible!",
+                "This was a terrible experience. Very disappointing.",
+                "It's okay, nothing special but not bad either.",
+                "The weather is nice today.",
+                "I'm so excited about this new opportunity!"
+            ];
+
+            // Add sample text buttons (optional)
+            window.addEventListener('load', function() {
+                const inputSection = document.querySelector('.input-section');
+                const samplesDiv = document.createElement('div');
+                samplesDiv.style.cssText = 'margin-top: 1rem; font-size: 0.9em;';
+                samplesDiv.innerHTML = `
+                    <p style="color: var(--dark-gray); margin-bottom: 0.5rem;">
+                        <strong>Try these samples:</strong>
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        ${sampleTexts.map((text, i) =>
+                            `<button onclick="document.getElementById('textInput').value='${text}'"
+                             style="padding: 0.3rem 0.6rem; background: var(--light-lilac);
+                                    border: 1px solid var(--dark-purple); border-radius: 6px;
+                                    font-size: 0.8em; cursor: pointer; color: var(--dark-purple);">
+                             Sample ${i + 1}
+                             </button>`
+                        ).join('')}
+                    </div>
+                `;
+                inputSection.appendChild(samplesDiv);
+            });
+        </script>
+    </body>
+</html>
