@@ -1,116 +1,12 @@
 
 
 
-LLM Champion
-Tips on improving your LLM's training, with pokemon again.
 
 
-Last week we talked about training an LLM and how to me it was similar to pokemon.
-well we are back in the safari zone again, my and all my pokemon and llm knowledge are going for the championship,
-what do i mean by this?
-1) i love analogies and pokemon
-2) we'll discuss best practices for llm documentation
 
-
-If you are completely new to LLMs and just need to understand how they work on a surface level, i recommend my blog post about llms or even my case study on how i implemented one. today's focus is nitty gritty details, in pokemon terms, we aren't playing just for fun, we are here for to win competitive tournaments. that involves looking at stats and calculating Effort Values (EVs).
-
-we are going very technical today, ready to start?
-
-
-first let's pretend we are training an LLM to talk about pokemon.
-
-how do we group pokemon? what information is relevant?
-how do we update it with new pokemon being discovered or even new pokemon types?
-how can we localize to include information from other regions?
-
-let's look at a few tips:
-
-
-1)organizing your data
-At least 150 or more to see...
-
-
-The smallest piece of information LLMs handle are called 'tokens', these can be characters, words or sentences. the way they are calcultated depends on the method the llm is using to process words and turn them into numbers that it can more easily understand. you will see tools like chatgpt or lovable having a limit of how many tokesn you can use unless you upgrade to a paid plan. LLMs can process a limited amount of information at a time so the best thing to do is to breakdown your information into smaller pieces.  if you want to learn more from this process,  i can recommend this artcle on medium ->
-
-now for documentation side we just need to focus on information being digestible for our llm.
-
-I had to be careful not to break down the data into a million pieces, the llm also has a limited number of files it could  pull information from. In our case it was asround 3 so I was very careful with my information achitechture. to make sure my organization worked ok,  a data engineer added a column that indicated the token amount of my file plus a visual indicator if we were going over the limit. this way i could quickly scan all the files as i scrolled through the corpus. ideally, i should stay around 1000 tokens.
-
-ok, now let's use an example to land these concepts in pokemon terms.  what if i wanted to have a single file that listed all the  pokemons names, (btw  the total discovered pokemons as of summer 2025 is 1,025.) should we go over the token limit?
-
-i would prefer to break them down into alphabetical entries, something like "pokemon names A" that way if we are looking for my boy Haunter,  we are gonna skip straight to H. Here is how I would write it :
-
-[English name] [Pokemon type] [Generation] [Evolutions Y/N]
-
-what other relevant information could we add? Maybe more details about evolutions or the pokemon's id number but since we want to keep our lists under the token limit we need to balance the amount of information. it's ok if a file ends up being smaller than others, we need to account for situations were we have more data in a category.
-
-what happened if the file went over the token limit? it would cut off, the LLM would only read up until the token limit so if crucial information was the
-
-2) updating your system
- a new pokemon type has been discovered!
-
-When steel and dark type pokemon dropped during the second generation release i was extatic. my beautiful sneasel was added to the list of pokemon, i had to had her in my team! ok, You might notice a patternt - i love ghost, poision and dark types.
-
-planning ahead will save you. it;s easy to organize everything if your information pool won't grow. just write things once and you are done, right?
-sadly i've never encountered anything like this before. so, we have to be flexible and be prepared for when new things come our way.
-
-let's think of a concrete example:  what if i wanted to teach the LLM about eevee and their evolutions?  my strategy  would be to create a single file per pokemon that contained it's pokedex entry: name, evolution, brief description, type, move list, etc. This would work much better than having a single file with ALL the information of ALL the eevee evolutions, even if it meant giving up updating a single entry and reducing workload with updates. it would be too long and the llm wouldn't process it.
-
- I could also create a specific entry that explained the eevee evolutationay tree in case a user wanted to learn about this topic, that way the LLM would rather draw from this file instead of opening every single file on eevee, flareon, vaporeon, jolteon... etc
-
-so if we wanted to add Umbreon as a new eevee evolution our to do lsit would be the following: We would need to upate the 'U' names list, the eevee entry as it had a new evolution, the dark pokemon list, and of course, create a new entry for umbreon.
+closing:
 
 
 
 
-3) translation + localization
-Pikachu, Pikachu, Pikachu
-
-
-growing up watching pokemon in spanish and playing the games in english it never ocurred to me pokemon had different names in other regions.
-Bulbasaur was the same guy on both sides of the border, bur accross the ocean, in Germany, he is known as Bisasam. I was schocked too, sometimes when me and my favorite engineer talk about pokemon we need to google who we are talking about.
-
-however, this is not the case for pikachu. pikachu is called pikachu here in europe, on the american continetn and even in it's natal japan.
-
-so what happens if we want to implement our LLM in other rgions?
-
-this puzzle took me a while to figure out-
-as i mentioned on my previous article (read it here) i wanted to avoid translating all the information into all the languages and then having to edit a cascade of files when we had to make edits - can you iamgine? the issues with version control? having to reach out to translators to edit all the relevant files in their language? the cost? the logisitcal nightmare that would land a critical hit?
-
-so how did i go about it? i tried a 2 part strategy,  lets use charmander as an example.
-
-on the documentation i would specify all the language variations, something like this:
-
-[EN] Charmander
-[JA] ヒトカゲ
-[FR] Salamèche
-[ES] Charmander
-[DE] Glumanda
-[IT] Charmander
-[KO] 파이리
-[ZH-M] 小火龍 / 小火龙
-[ZH-C] 小火龍
-[AR] تشارمندر
-[BG] Чармандър
-[HE] צ'רמנדר
-[HI] चारमैंडर
-[LT] Žavingasis
-[RU] Чармандер
-[TH] ฮิโตคาเงะ
-
-[Pokedex entry in english: descrtiptin, type, evolutions, move list, etc]
-
-
-on the pre-prompt i added the specification that the LLM should respond in the user's language and it should use the translation specified, thus avoiding we would get a literal translation of  Charmander - idk you could end up with a mexican charmander being called armando or somehting.
-
-with this strategy a german user who wanted to know when Glumanda learns Flammenwurf, the llm would pull the information in english (charmander learns Flamethrower at lvl 24) and deliver a correct answer in their language. Toll!
-
-quick disclaimer this strategy wasn't bullet proof, in worked in initial testing but we had to make the pre-prompt very robust and the documentation very streamlined. Again, more testing is needed but this strategy might put you on the right path, particurlary if you are low on resources and end up being the single llm pokemon trainer.
-
-
-
-conclusion
-
-working with new tools is always exciting, you are discovering things, experimenting and trying new things almost daily. it can a bit lonely if im honest, not having anyone else working on the documentation and not finding any llm training best practices at the time was rough. so i hope this poketips help future trainers.
-
- the technology is still evolving day to day, things will require a bit of trial and error, let's keep testing together and find new strategies. maybe we can help each other become llm champions.
+i recall being on the phone at 7am monterrey time answering calls from chicago customers (in the middle of winter ) complaining the store they went to pay their bill was closed. uff. i also had a situation where someone had to cancel their account because the owner of the account had passed away and they were still being charged. yikes.
