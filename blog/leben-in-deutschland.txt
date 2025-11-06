@@ -1,0 +1,5759 @@
+
+questions:
+    1:
+    question:
+        de: In Deutschland dürfen Menschen offen etwas [gegen][0] die [Regierung][1] sagen, weil…
+        en: "In Germany, people can openly [oppose][0] the [government][1] because…"
+        url: none
+    answers:
+        - de: hier Religionsfreiheit gilt.
+          en: there is freedom of religion.
+        - de: die Menschen Steuern zahlen.
+          en: people pay taxes.
+        - de: die Menschen das Wahlrecht haben
+          en: people have the right to elect.
+        - de: hier [Meinungsfreiheit][2] gilt.
+          en: there is [freedom of opinion][2].
+    correct_answer: 4
+    topic:
+      - Constitution
+
+    2:
+    question:
+        de: In Deutschland können [Eltern][0] bis zum 14. Lebensjahr ihres Kindes [entscheiden][1], ob es in der [Schule][2] am …
+        en: In Germany, [parents][0] of children under 14 can [decide][1] whether to attend in the [school][2]…
+        url: none
+    answers:
+        de: Geschichtsunterricht teilnimmt.
+        en: history lessons.
+        de: [Religionsunterricht][3] teilnimmt.
+        en: [religion lessons][3].
+        de: Politikunterricht teilnimmt.
+        en: policy lessons
+        de: Sprachunterricht teilnimmt.
+        en: language lessons.
+    correct_answer: 2
+    topic: Constitution
+
+
+    3:
+    question:
+        de: Deutschland ist ein [Rechtsstaat][0]. Was ist damit [gemeint][1]?
+        en: Germany is a [legal state][0]. It [means][1]…
+        url: none
+    answers:
+        de: [Alle][2] Einwohner / Einwohnerinnen und der Staat müssen sich an die [Gesetze halten][3].
+        en: [all][2] residents of the state [must respect the laws][3].
+        de: Der Staat muss sich nicht an die Gesetze halten.
+        en: the state does not have to respect the laws.
+        de: Nur Deutsche müssen die Gesetze befolgen.
+        en: only Germans must follow the laws
+        de: Die Gerichte machen die Gesetze.
+        en: court makes laws.
+    correct_answer: 1
+    topic: Constitution
+
+    4:
+    question:
+        de: Deutschland ist ein [Rechtsstaat][0]. Was ist damit [gemeint][1]?
+        en: Germany is a [legal state][0]. It [means][1]…
+        url: none
+    answers:
+        de: [Alle][2] Einwohner / Einwohnerinnen und der Staat müssen sich an die [Gesetze halten][3].
+        en: [all][2] residents of the state [must respect the laws][3].
+        de: Der Staat muss sich nicht an die Gesetze halten.
+        en: the state does not have to respect the laws.
+        de: Nur Deutsche müssen die Gesetze befolgen.
+        en: only Germans must follow the laws
+        de: Die Gerichte machen die Gesetze.
+        en: court makes laws.
+    correct_answer: 1
+    topic: Constitution
+
+
+
+    5:
+    question:
+        de: [Wahlen][0] in Deutschland [sind frei][1]. Was [bedeutet][2] das?
+        en: [Elections][0] in Germany [are free][1]. What does that [mean][2]?
+        url: none
+    answers:
+        de: Man darf Geld annehmen, wenn man dafür einen bestimmten Kandidaten / eine bestimmte Kandidatin wählt.
+        en: You are allowed to accept money if you vote for a specific candidate.
+        de: Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.
+        en: Only people who have never been to prison are allowed to vote.
+        de: Der [Wähler][3] darf bei der Wahl weder [beeinflusst][4] noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.
+        en: [Voters][3] may not be [influenced][4] or forced to vote in a particular way, and they may not suffer any disadvantages as a result of the election.
+        de: Alle wahlberechtigten Personen müssen wählen.
+        en: All eligible voters must vote.
+    correct_answer: 3
+    topic:
+
+
+
+
+    6:
+    question:
+        de: Wie [heißt][0] die deutsche [Verfassung][1]?
+        en: What is the [name][0] of the German [Constitution][1]?
+        url: none
+    answers:
+        de: Volksgesetz
+        en: Volksgesetz
+        de: Bundesgesetz
+        en: Bundesgesetz
+        de: Deutsches Gesetz
+        en: Deutsches Gesetz
+        de: Grundgesetz
+        en: Grundgesetz
+    correct_answer: 4
+    topic: Constitution
+
+
+
+    7:
+    question:
+        de: Welches [Recht][0] gehört zu den Grundrechten, die nach der deutschen [Verfassung][1] [garantiert][2] werden? Das Recht auf …
+        en: Which right belongs to the fundamental [rights][0] [guaranteed][2] by the German [Constitution][1]?
+        url: none
+    answers:
+        de: [Glaubens][3]- und [Gewissensfreiheit][4]
+        en: freedom of [belief][3] and [conscience][4]
+        de: Unterhaltung
+        en: entertainment
+        de: Arbeit
+        en: work
+        de: Wohnung
+        en: appartement
+    correct_answer: 1
+    topic: Constitution
+
+
+    8:
+    question:
+        de: Was [steht nicht][0] im [Grundgesetz][1] von Deutschland?
+        en: What is [not written][0] in the [Constitution][1]?
+        url: none
+    answers:
+        de: Die Würde des Menschen ist unantastbar.
+        en: human dignity is inviolable
+        de: [Alle][2] sollen [gleich][3] viel [Geld][4] [haben][5].
+        en: [everyone][2] should [have][5] the [same][3] amount of [money][4].
+        de: Jeder Mensch darf seine Meinung sagen.
+        en: everyone can express their opinion
+        de: Alle sind vor dem Gesetz gleich.
+        en: everyone is equal before the law
+    correct_answer: 1
+    topic: Constitution
+
+
+   9:
+    question:
+        de: Welches Grundrecht gilt in Deutschland [nur][0] fur [Ausländer / Ausländerinnen][1]? Das [Grundrecht][2] auf …
+        en: What [right][2] [only][0] [foreigners][1] have in Germany?
+        url: none
+    answers:
+        de: Schutz der Familie
+        en: protection of the family
+        de: Menschenwürde
+        en: human dignity
+        de: Asyl
+        en: assylum
+        de: Meinungsfreiheit
+        en: freedom of opinion
+    correct_answer: 3
+    topic: Constitution
+
+
+   10:
+    question:
+        de: Was ist mit dem deutschen [Grundgesetz][0] [vereinbar][1]?
+        en: What is [in line][1] with the [Constitution][0]?
+        url: none
+    answers:
+        de: die Prügelstrafe
+        en: caning
+        de: die Folter
+        en: torture
+        de: die Todesstrafe
+        en: the death penalty
+        de: die [Geldstrafe][2]
+        en: [money penalty][2]
+    correct_answer: 4
+    topic: Constitution
+
+
+
+   11:
+    question:
+        de: Wie wird die [Verfassung][0] der Bundesrepublik Deutschland [genannt][1]?
+        en: What is the [name][1] of the German [Constitution][0]?
+        url: none
+    answers:
+        de: Grundgesetz
+        en: Grundgesetz
+        de: Bundesverfassung
+        en: Bundesverfassung
+        de: Gesetzbuch
+        en: Gesetzbuch
+        de: Verfassungsvertrag
+        en: Verfassungsvertrag
+    correct_answer: 1
+    topic: Constitution
+
+
+
+   12:
+    question:
+        de: Eine Partei im Deutschen Bundestag will die [Pressefreiheit][0] [abschaffen][1]. Ist das [moglich][2]?
+        en: One party in the Bundestag wants to [cancel][1] the [freedom of the press][0]. It is [possible][2]?
+        url: none
+    answers:
+        de: Ja, wenn mehr als die Halfte der Abgeordneten im Bundestag dafur sind.
+        en: yes, if she gets more than half of the votes in the Bundestag
+        de: Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.
+        en: yes, if she gets two thirds of the votes
+        de: Nein, denn die [Pressefreiheit][3] ist ein [Grundrecht][4]. Sie kann nicht abgeschafft werden.
+        en: no, [freedom of the press][3] is a [fundamental right][4], it cannot be canceled
+        de: Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen.
+        en: no, only the Bundesrat can cancel press freedom
+    correct_answer: 3
+    topic: Constitution
+
+
+    13:
+    question:
+        de: Im [Parlament][0] [steht][1] der Begriff ["Opposition"][2] für
+        en: In [parliament][0], the term ["opposition"][2] [refers][1] to
+        url: none
+    answers:
+        de: die regierenden Parteien.
+        en: the governing parties.
+        de: die Fraktion mit den meisten Abgeordneten.
+        en: the parliamentary group with the most representatives.
+        de:	alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten.
+        en: all parties that reached the 5% hurdle in the last election.
+        de:	[alle Abgeordneten][3], die [nicht][4] zu der [Regierungspartei/den Regierungsparteien][5] [gehören][6].
+        en: [all representatives][3] who [do not][4] [belong][6] to the [governing party(ies)][5].
+    correct_answer: 4
+    topic: Constitution, Parliament
+
+
+
+
+
+    14:
+    question:
+        de: [Meinungsfreiheit][0] in Deutschland [heißt][1], dass ich …
+        en: [Freedom of opinion][0] in Germany [means][1] that I can…
+        url: none
+    answers:
+        de: Passanten auf der Straße beschimpfen darf
+        en: may insult passers-by on the street
+        de: meine [Meinung][2] in [Internet][3] äußern kann.
+        en: express your [opinion][2] in the [internet][3]
+        de: Nazi-, Hamas- oder Islamischer Staat-Symbole öffentlich tragen darf
+        en: may publicly wear Nazi, Hamas or Islamic State symbols
+        de: meine Meinung nur dann äußern darf, solange ich der Regierung nicht widerspreche
+        en: express your opinion, but do not contradict the government
+    correct_answer: 3
+    topic: Constitution
+
+
+
+    15:
+    question:
+        de: Was [verbietet][0] das deutsche [Grundgesetz][1]?
+        en: What the [Grundgesetz][1] [prohibits][0]?
+        url: none
+    answers:
+        de: Militärdienst
+        en: Military service
+        de: [Zwangsarbeit][2]
+        en: [Forced labor][2]
+        de: freie Berufswahl
+        en: Free choice of occupation
+        de: Arbeit im Ausland
+        en: Work abroad
+    correct_answer: 2
+    topic: Constitution
+
+
+
+    16:
+    question:
+        de: Wann ist die [Meinungsfreiheit[0] in Deutschland [eingeschränkt][1]?
+        en: When [freedom of opinion][0] is [limited][1] in Germany
+        url: none
+    answers:
+        de: bei der öffentlichen Verbreitung [falscher Behauptungen][2] über einzelne [Personen][3]
+        en: spread of [false claims][2] about a [person][3]
+        de: bei Meinungsäusserungen über die Bundesregierung
+        en: open statements about government
+        de: bei Diskussionen über Religionen
+        en: discussions about religion
+        de: bei Kritik am Staat
+        en: criticism of the state
+    correct_answer: 1
+    topic: Constitution
+
+
+
+    17:
+    question:
+        de: Die deutschen [Gesetze][0] [verbieten][1] …
+        en: German [laws][1] [prohibit][0]…
+        url: none
+    answers:
+        de: Meinungsfreiheit der Einwohner und Einwohnerinnen.
+        en: freedom of opinion of residents
+        de: Petitionen der Bürger und Bürgerinnen.
+        en: citizens’ petitions
+        de: Versammlungsfreiheit der Einwohner und Einwohnerinnen.
+        en: freedom of assembly
+        de: [Ungleichbehandlung][2] der Bürger und Bürgerinnen durch den Staat.
+        en: [unequal treatment][2] of citizens
+    correct_answer: 4
+    topic: Constitution
+
+
+    18:
+    question:
+        de: Welches [Grundrecht][0] ist in [Artikel 1][1] des [Grundgesetzes][2] der Bundesrepublik Deutschland [garantiert][3]?
+        en: What [fundamental right][0] is [guaranteed][3] in the [first article][1] of the [Grundgesetz][2]?
+        url: none
+    answers:
+        de: die [Unantastbarkeit][4] der [Menschenwürde][5]
+        en: the [inviolable right][4] to [human dignity][5]
+        de: das Recht auf Leben
+        en: the right to life
+        de: Religionsfreiheit
+        en: freedom of religion
+        de: Meinungsfreiheit
+        en: freedom of expression
+    correct_answer: 1
+    topic: Constitution
+
+
+    19:
+    question:
+        de: Was [versteht][0] man unter dem Recht der [„Freizügigkeit“][1] in Deutschland?
+        en: What is [meant][0] by the right to [free movement][1]?
+        url: none
+    answers:
+        de: Man darf sich seinen [Wohnort][2] selbst [aussuchen][3].
+        en: a person can [choose][3] their [place of residence][2]
+        de: Man kann seinen Beruf wechseln.
+        en: a person can change profession
+        de: Man darf sich für eine andere Religion entscheiden.
+        en: a person can change religion
+        de: Man darf sich in der Offentlichkeit nur leicht bekleidet bewegen.
+        en: one may only move lightly dressed in public.
+    correct_answer: 1
+    topic: Constitution
+
+
+    20:
+    question:
+        de: Eine Partei in Deutschland verfolgt das Ziel, eine [Diktatur][0] zu [errichten][1]. Sie ist dann …
+        en: One party is pursuing the goal of [achieving][1] [dictatorship][0]. It is…
+        url: none
+    answers:
+        de: tolerant
+        en: tolerant
+        de: rechtsstaatlich orientiert.
+        en: constitutionally oriented.
+        de: gesetzestreu
+        en: true to the law
+        de: [verfassungswidrig][2]
+        en: [unconstitutional][2]
+    correct_answer: 4
+    topic: Constitution
+
+
+
+    21:
+    question:
+        de: Welches ist das [Wappen][0] der Bundesrepublik [Deutschland][1]?
+        en: What is the [coat of arms][0] of the Federal Republic of [Germany][1]?
+        url: pending**
+    answers:
+        de: 1
+        en: 1
+        de: 2
+        en: 2
+        de: 3
+        en: 3
+        de: 4
+        en: 4
+    correct_answer: 1
+    topic: Constitution
+
+
+    22:
+    question:
+        de: Was für eine [Staatsform][0] hat [Deutschland][1]?
+        en: What kind of [state][0] is [Germany][1]?
+        url: none
+    answers:
+        de: Monarchie
+        en: Monarchie
+        de: Diktatur
+        en: Dictatorship
+        de: Republik
+        en: Republic
+        de: Fürstentum
+        en: Principality
+    correct_answer: 3
+    topic: Constitution
+
+
+
+
+23:
+    question:
+        de: In Deutschland sind die [meisten][0] [Erwebstätigen][1]...
+        en: In Germany [most][0] [employed people][1] are...
+        url: none
+    answers:
+        de: in kleinen Familieneunternehmen beschäftigt.
+        en: employed in small family businesses.
+        de: ehrenamtlich für ein Bundesland tätig
+        en: volunteered for a federal state.
+        de: selbständig mit einer eigenen Firma tätig.
+        en: self-employed with their own company.
+        de: bei einer [Firma][2] oder [Behörde][3] beschäftigt.
+        en: employed by a [company][2] or [government agency][3].
+    correct_answer:
+    topic: Employment
+
+
+
+
+24:
+    question:
+        de: [Wie viele][0] [Bundesländer][1] hat die Bundesrepublik Deutschland?
+        en: [How many][0] [federal states][1] does the Federal Republic of Germany have?
+        url: none
+    answers:
+        de: 14
+        en: 14
+        de: 15
+        en: 15
+        de: 16
+        en: 16
+        de: 17
+        en: 17
+    correct_answer: 3
+    topic: Geography
+
+
+
+
+25:
+    question:
+        de: Was ist [kein][0] [Bundesland][1] der Bundesrepublik Deutschland?
+        en: What is [not][0] [a federal state][1] of the Federal Republic of Germany?
+        url: none
+    answers:
+        de: Elsass-Lothringen
+        en: Alsace-Lorraine
+        de: Nordrhein-Westfalen
+        en: North Rhine-Westphalia
+        de: Mecklenburg-Vorpommern
+        en: Mecklenburg-Western Pomerania
+        de: Sachsen-Anhalt
+        en: Saxony-Anhalt
+    correct_answer: 1
+    topic: Geography
+
+
+
+
+26:
+    question:
+        de: [Deutschland ist][0]...
+        en: [Germany is][0]...
+        url: none
+    answers:
+        de: eine kommunistische Republik
+        en: a communist republic
+        de: ein [demokratischer][1] und [sozialer][2] [Bundesstaat][3]
+        en: a [democratic][1] and [social][2] [federal state][3]
+        de: eine kapitalistische und soziale Monarchie
+        en: a capitalist and social monarchy
+        de: ein sozialer und sozialistischer Bundesstaat
+        en: a socialist and social federal state
+    correct_answer: 2
+    topic: Constitution, country
+
+
+
+27:
+    question:
+        de: [Deutschland ist][0]...
+        en: [Germany is][0]...
+        url: none
+    answers:
+        de: ein sozialistischer Staat
+        en: a socialist state
+        de: ein [Bundesstaat][1]
+        en: a [federal state][1]
+        de: eine Diktatur
+        en: a dictatorship
+        de: eine Monarchie
+        en: a monarchy
+    correct_answer: 2
+    topic: Constitution, country
+
+
+28:
+    question:
+        de: [Wer][0] [wählt][1] in Deutschland die [Abgeordneten][2] zum Bundestag?
+        en: [Who][0] [elects][1] the [members of parliament][2] in Germany?
+        url: none
+    answers:
+        de: das Militär
+        en: the military
+        de: die Wirtschaft
+        en: the economy
+        de: das [wahlberechtigten Volk][3]
+        en: the [electorate][3]
+        de: die Verwaltung
+        en: the administration
+    correct_answer: 3
+    topic: Constitution, voting
+
+
+
+29:
+    question:
+        de: Welches [Tier][0] ist das [Wappentier][1] der Bundesrepublik [Deutschland][2]?
+        en: Which [animal][0] is the [emblem][1] of the Federal Republic of [Germany][2]?
+        url: none
+    answers:
+        de: Löwe
+        en: Lion
+        de: Adler
+        en: Eagle
+        de: Bär
+        en: Bear
+        de: Pferd
+        en: Horse
+    correct_answer: 2
+    topic: Constitution
+
+
+
+30:
+    question:
+        de: Was ist [kein][0] [Merkmal][1] unserer [Demokratie][2]?
+        en: What is [not][0] a [characteristic][1] of our [democracy][2]?
+        url: none
+    answers:
+        de: regelmäßige Wahlen
+        en: regular elections
+        de: [Pressezensur][3]
+        en: [press censorship][3]
+        de: Meinungsfreiheit
+        en: freedom of speech
+        de: verschiedene Parteien
+        en: diverse parties
+    correct_answer: 2
+    topic: Constitution
+
+
+
+
+31:
+    question:
+        de: Die [Zusammenarbeit][0] von [Parteien][1] zur [Bildung][2] einer [Regierung][3] nennt man in Deutschland...
+        en: The [cooperation][0] of [parties][1] in [forming][2] a [government][3] is called in Germany...
+        url: none
+    answers:
+        de: Einheit
+        en: Unity
+        de: Koalition
+        en: Coalition
+        de: Ministerium
+        en: Ministry
+        de: Fraktion
+        en: Faction
+    correct_answer: 2
+    topic: Constitution, goverment
+
+
+32:
+    question:
+        de: Was ist [keine][0] [staatliche Gewalt][1] in Deutschland?
+        en: What is [not][0] a [state power][1] in Germany?
+        url: none
+    answers:
+        de: Gesetzgebung
+        en: Legislation
+        de: Regierung
+        en: Government
+        de: [Presse][3]
+        en: [Press][3]
+        de: Rechtsprechung
+        en: Judiciary
+    correct_answer: 3
+    topic: Constitution
+
+
+
+33:
+    question:
+        de: Welche [Aussage][0] ist [rightig][1]? In Deutschland...
+        en: Which [statement][0] is [correct][1]? In Germany...
+        url: none
+    answers:
+        de: sind [Staat][2] und [Religionsgemeinschaften][3] voneinander [getrennt][4]
+        en: the [state][2] and [religious communities][3] are [separate][4]
+        de: bilden die Religionsgemeinschaften den Staat
+        en: religious communities form the state
+        de: ist der Staat abhängig von den Religionsgemeinschaften
+        en: the state is dependent on religious communities
+        de: bilden Staat und Religionsgemeinschaften eine Einheit
+        en: the state and religious communities form a unity
+    correct_answer: 1
+    topic: Constitution, State
+
+
+
+
+34:
+    question:
+        de: Was [ist][0] Deutschland [nicht][1]?
+        en: What [is][0] Germany [not][1]?
+        url: none
+    answers:
+        de: eine Demokratie
+        en: a democracy
+        de: ein Rechtsstaat
+        en: a constitutional state
+        de: eine [Monarchie][2]
+        en: a [monarchy][2]
+        de: ein Sozialstaat
+        en: a social state
+    correct_answer: 3
+    topic: Constitution, State
+
+
+
+35:
+    question:
+        de: [Womit][0] [finanziert][1] der deutsche Staat die [Sozialversicherung][2]?
+        en: [How are][0] [social security][2] funds [financed][1] in Germany?
+        url: none
+    answers:
+        de: Kirchensteuern
+        en: Church taxes
+        de: [Sozialabgaben][3]
+        en: [Social contributions][3]
+        de: Spendengeldern
+        en: Donations
+        de: Vereinsbeiträgen
+        en: Membership fees
+    correct_answer: 2
+    topic: State, Taxes, Social Security
+
+
+
+
+ 36:
+    question:
+        de: Welche [Maßnahme][0] [schafft][1] in Deutschland [soziale Sicherheit][2]?
+        en: What [measure][0] [creates][1] [social security][2] in Germany?
+        url: none
+    answers:
+        de: die [Krankenversicherung][3]
+        en: [health insurance][3]
+        de: die Autoversicherung
+        en: car insurance
+        de: die Gebäudevorsicherung
+        en: property insurance
+        de: die Haufpflichtversicherung
+        en: liability insurance
+    correct_answer:1
+    topic: State, Social Security
+
+
+37:
+    question:
+        de: Wie werden die [Regierungschefs / Regierungschefsinnen][0] der [meisten Bundesländer][1] in Deutschland [genannt][2]?
+        en: How are the [state leaders][0] in [most federal states][1] [called][2] in Germany?
+        url: none
+    answers:
+        de: Erster Minister / Erster Ministerin
+        en: State Premier / State Premier
+        de: Premierminister / Premierministerin
+        en: Prime Minister
+        de: Senator / Senatorin
+        en: Senator
+        de: Ministerpräsident / Ministerpräsidentin
+        en: Minister-President
+    correct_answer: 4
+    topic: Goverment
+
+
+38:
+    question:
+        de: Die [Bundesrepublik][0] Deutschland [ist][1] ein demokratischer und sozialer...
+        en: The [Federal Republic][0] of Germany[is][1] a democratic and social...
+        url: none
+    answers:
+        de: Staatenverbund
+        en: Union of States
+        de: [Bundesstaat][3]
+        en: [Federal State][3]
+        de: Staatenbund
+        en: Confederation of States
+        de: Zentralstaat
+        en: Centralized State
+    correct_answer: 2
+    topic: Constitution, Goverment
+
+
+
+
+
+39:
+    question:
+        de: Was [hat][0] [jedes][1] deutsche [Bundesland][2]?
+        en: What does [each][1] German [federal state][2] [have][0]?
+        url: none
+    answers:
+        de: einen eigenen Außenminister / eine eigene Außenministerin
+        en: a separate foreign minister
+        de: eine eigene Währung
+        en: a separate currency
+        de: einen eigene Armee
+        en: a separate army
+        de: einen [eigene][3] [Regierung][4]
+        en: a [separate][3] [government][4]
+    correct_answer:4
+    topic: Goverment, Federal States
+
+
+
+
+
+40:
+    question:
+        de: Mit welchen [Worten][0] [beginnt][1] die deutsche [Nationalhymne][2]?
+        en: With which [words][0] does the German [national anthem][2][begin][1]?
+        url: none
+    answers:
+        de: Völker, hört die Signale...
+        en: Peoples, hear the signals...
+        de: [Einigkeit][3] und [Recht][4] und [Freiheit][5]...
+        en: [Unity][3] and [justice][4] and [freedom][5]...
+        de: Freude schöner Götterfunken...
+        en: Joyful spirit of the gods...
+        de: Deutschland einig Vaterland...
+        en: Germany, united fatherland...
+    correct_answer: 2
+    topic: National anthem, Country
+
+
+
+
+
+41:
+    question:
+        de: Warum gibt es einer [Demokratie][0] [mehr][1] als [eine Partie][2]?
+        en: Why does a [democracy][0] have [more][1] than [one party][2]?
+        url: none
+    answers:
+        de: weil dadurch die [unterschiedlichen][3] [Meinungen][4] der [Bürger und Bürgerinnen][5] vertreten werden
+        en: because it represents the [different][3] [opinions][4] of [citizens][5]
+        de: damit Bestechung in der Politik begrenzt wird
+        en: so that bribery in politics is limited
+        de: um politische Demonstrationent zu verhindern
+        en: to prevent political demonstrations
+        de: um wirstchaflichen Weltbewerb anzuregen
+        en: to stimulate world economic competition
+    correct_answer: 1
+    topic: Goverment
+
+
+
+42:
+    question:
+        de: Wer [beschließt][0] in Deutschland ein [neues][1] [Gesetz][2]?
+        en: Who [decides][0] in Germany to pass a [new][1] [law][2]?
+        url: none
+    answers:
+        de: die Regierung
+        en: the government
+        de: das [Parlament][3]
+        en: the [parliament][3]
+        de: die Gerichte
+        en: the courts
+        de: die Polizei
+        en: the police
+    correct_answer: 2
+    topic: Goverment
+
+
+
+
+
+43:
+    question:
+        de: [Wann][0] kann in Deutschland eine [Partei][1] [verboten][2] werden?
+        en: [When][0] can a [party][1] be [banned][2] in Germany?
+        url: none
+    answers:
+        de: wenn ihr Wahlkampf zu teuer ist
+        en: when your campaign is too expensive
+        de: wenn sie [gegen][3] die [Verfassung][4] kämpft
+        en: when they fight [against][3] the [constitution][4]
+        de: wenn sie Kritik am Staatsoberhaupt äußert
+        en: when they express criticism of the head of state
+        de: wenn ihr Programm eine neue Richtung vorschlägt
+        en: when they propose a new direction
+    correct_answer: 2
+    topic: Goverment, Law
+
+
+
+
+44:
+    question:
+        de: [Wen][0] kann man als [Bürger /  Bürgerin][1] in Deutschland [nicht][2] [direkt wählen][3]?
+        en: [Who][0] [cannot][2] you [vote directly][3] for as a [citizen][1] in Germany?
+        url: none
+    answers:
+        de: Abgeordnete das EU-Parlaments
+        en: Members of the European Parliament
+        de: den [Bundespräsidenten][4] / die Bundespräsidentin
+        en: the [federal president][4]
+        de: Landtagsabgeordnete
+        en: members of the state parliament
+        de: Bundestagsabgeordnete
+        en: members of the federal parliament
+    correct_answer: 2
+    topic: Goverment
+
+
+
+45:
+    question:
+        de: Zu [welcher][0] [Versicherung[1] [gehört][2] die [Plegeversicherung][3]?
+        en: [Which][0] [insurance][1] company is [responsible][2] for the [nursing insurance][3]?
+        url: none
+    answers:
+        de: [Sozialversicherung][4]
+        en: [Social Insurance][4]
+        de: Unfalversicherung
+        en: Accident Insurance
+        de: Hausratversicherung
+        en: Home Insurance
+        de: Haftplicht- und Feuer- Versicherung
+        en: Liability and Fire Insurance
+    correct_answer: 1
+    topic: Sozial insurance
+
+
+
+
+46:
+    question:
+        de: Der deutsche [Staat][0] hat viele [Aufgaben][1]. Welche Aufgabe [gehört][2] dazu?
+        en: The German [state][0] has many [tasks][1]. What task does this [include][2]?
+        url: none
+    answers:
+        de: Er [baut][3] [Straßen][4] und [Schulen][5].
+        en: He [builds][3] [roads][4] and [schools][5].
+        de: Er verkauft Lebensmittel und Kleidung.
+        en: He sells food and clothing.
+        de: Er versorgt alle Einwohner und Einwoherinnen kostenlos mit Zeitungen.
+        en: He provides all residents and residents with free newspapers.
+        de: Er produziert Autos und Busse.
+        en: He produces cars and buses.
+    correct_answer: 1
+    topic: Goverment
+
+
+47:
+    question:
+        de: Der deutsche [Staat][0] hat viele [Aufgaben][1]. Welche Aufgabe [gehört][2] [nicht][3] dazu?
+        en: The German [state][0] has many [tasks][1]. What task does is [not][3] [include][2]?
+        url: none
+    answers:
+        de: Er [bezahlt][4] für [alle Staatsangehörigen][5] [Urlabsreisen][6].
+        en: He [pays][4] for [vacation][6] trips for [all nationals][5].
+        de: Er zahlt Kindergeld.
+        en: He pays for child support.
+        de: Er unterstüzt Museen.
+        en: He supports museums.
+        de: Er fördert Sportler und Sportlerinnen.
+        en: He supports athletes and athletes.
+    correct_answer: 1
+    topic: Goverment
+
+
+
+
+48:
+    question:
+        de: [Welches][0] [Organ][1] [gehört][2] [nicht][3] zu den [Verfassungsorganen][4] Deutschlands?
+        en: [Which][0] [organ][1] does [not][3] [belong][2] to the [constitutional organs][4] of Germany?
+        url: none
+    answers:
+        de: der Bundesrat
+        en: the Federal Council
+        de: der Bundespräsident / die Bundespräsidentin
+        en: the Federal President
+        de: die [Bürgerversammlung][5]
+        en: the [citizens' assembly][5]
+        de: die Regierung
+        en: the government
+    correct_answer: 3
+    topic: Goverment
+
+
+
+
+49:
+    question:
+        de: [Wer][0] [bestimmt][1] in Deutschland die [Schulpolitik][2]?
+        en: [Who][0] [determines][1] in Germany the [school policy][2]?
+        url: none
+    answers:
+        de: die Lehrer und Lehrerinnen
+        en: teachers
+        de: die [Bündesländer][3]
+        en: [federal states][3]
+        de: das Familienministerium
+        en: the Ministry of Family Affairs
+        de: die Universitäten
+        en: the universities
+    correct_answer:2
+    topic: Education, Goverment
+
+
+
+
+
+50:
+    question:
+        de: Die [Wirtschaftsform][0] in Deutschland [nennt][1] man...
+        en: The type of [economy][0] in Germany is [called][1]...
+        url: none
+    answers:
+        de: freie Zentralwirstchaft.
+        en: free central economy.
+        de: [soziale[2] [Marktwirtschaft][3].
+        en: [social][2] [market economy][3].
+        de: gelenkte Zentralwirstchaft
+        en: controlled central economy
+        de: Planwirstchaft.
+        en: planned economy
+    correct_answer: 2
+    topic: Economy
+
+
+
+
+
+
+51:
+    question:
+        de: Zu einem [demokratischen][0] [Rechsstaat][1] [gehört][2] es [nicht][3], dass...
+        en: It is [not][3] [part][2] of a [democratic][0] constitutional [state][1] that...
+        url: none
+    answers:
+        de: Menschen sich kitrisch über die Regierung äußern können.
+        en: People can express kitsch about the government.
+        de: Bürger friedlich demonstrieren gehen dürfen.
+        en: Citizens are allowed to demonstrate peacefully.
+        de: [Menschen][4] von einer [Privatpolizei][5] [ohne][6] [Grund][7] [verhaftet][8] werden.
+        en: [People][4]are [arrested][8] by [private police][5] for [no][6] [reason][7].
+        de: jemand ein Verbrechen begeht un deshalb verhaftet wird.
+        en: someone commits a crime and is arrested because of it.
+    correct_answer: 3
+    topic: Law, Goverment
+
+
+
+52:
+    question:
+        de: Was bedeutet ["Volkssouveränität"][0]? Alle [Staatsgewalt][1] [geht][2] vom...
+        en: What does [“popular sovereignty"][0] mean? All [state power][1] [comes][2] from...
+        url: none
+    answers:
+        de: [Volke][3] aus.
+        en: the [People][3].
+        de: Bundestag aus.
+        en: the Parliament.
+        de: preußischen König aus.
+        en: the Prusssian king.
+        de: Bundesverfassungsgericht aus.
+        en: the Federal Constitutional Court.
+    correct_answer: 1
+    topic: Goverment
+
+
+53:
+    question:
+        de: Was [bedeutet][0] ["Rechtsstaat"][1] in Deutschland?
+        en: What does ["rule of law"][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Der Staat hat Recht.
+        en: The state is right.
+        de: Es gibt nur rechte Parteien.
+        en: There are only right-wing parties.
+        de: Die Bürger und Bürgerinnen entscheiden über Gesetze.
+        en: Citizens decide on laws.
+        de: Der [Staat][2] [muss][3] die [Gesetze][4] [einhalten][5].
+        en: The [state][2] [must][3] [comply][5] with the [laws][4].
+    correct_answer: 4
+    topic: Goverment, Law
+
+
+
+
+54:
+    question:
+        de: Was ist [keine][0] [staatliche][1] [Gewalt][2] in Deutschland?
+        en: What is [not][0] a [state][1] [power][2] in Germany?
+        url: none
+    answers:
+        de: Legislative
+        en: Legislative
+        de: Judikative
+        en: Judiciary
+        de: Exekutive
+        en: Executive
+        de: Direktive
+        en: Directive
+    correct_answer: 4
+    topic: Goverment, Law
+
+
+
+55:
+    question:
+        de: Was [zeigt][0] dieses [Bild][1]?
+        en: What does this [picture][1] [show][0]?
+        url: pending**
+    answers:
+        de: den [Bundestagssitz][2] in Berlin
+        en: the [Bundestag headquarters][2] in Berlin
+        de: den Bundesverfassungsgericht in Karlsruhe
+        en: the Federal Constitutional Court in Karlsruhe
+        de: das Bundesratsgebäude in Berlin
+        en: the Federal Council building in Berlin
+        de: das Bundeskanzleramt in Berlin
+        en: the Federal Chancellery in Berlin
+    correct_answer: 1
+    topic: Goverment
+
+
+
+ 56:
+    question:
+        de: [Welches][0] [Amt][1] [gehört][2] in Deutschland zur [Gemeindeverwaltung][3]?
+        en: [Which][0] [office][1] [belongs][2] to the [municipal administration][3] in Germany?
+        url: none
+    answers:
+        de: Pfarramt
+        en: Parish office
+        de: [Ordunngsamt][4]
+        en: [Public Order Office][4]
+        de: Finanzamt
+        en: Tax office
+        de: Auswärtiges Amt
+        en: Foreign Office
+    correct_answer: 2
+    topic: Goverment
+
+
+
+57:
+    question:
+        de: [Wer][0] wird meistens zum [Präsidenten / zur Präsidentin][1] des Deutschen [Bundestages][2] [gewählt][3]?
+        en: [Who][0]is usually [elected][3] as [President][1] of the German [Federal Parliament][2]?
+        url: none
+    answers:
+        de: der / die älteste Abgeordnete im Parlament
+        en: the oldest member of Parliament
+        de: der Ministerpräsident / die Ministerpräsidentin des größten Bundeslandes
+        en: the Prime Minister of the largest federal state
+        de: ein ehemaliger Bundeskanzler / eine ehemalige Bundeskanzlerin
+        en: a former Federal Chancellor
+        de: ein [Abgeordneter][4] / eine Abgeordnete der [stärksten Fraktion][5]
+        en: a [representative][4] from the [strongest faction][5]
+    correct_answer: 4
+    topic: Goverment, Elections
+
+
+58:
+    question:
+        de: [Wer][0] [ernennt][1] in Deutschland [die Minister / die Ministerinnen][2] der [Bundesregierung][3]?
+        en: [Who][0] [appoints][1] the [federal government][3] [ministers][2] in Germany?
+        url: none
+    answers:
+        de: der Präsident / die Präsidentin des Bundesverfassungsgerichtes
+        en: the President of the Federal Constitutional Court
+        de: der [Bundespräsident][4] / die Bundespräsidentin
+        en: the [Federal President][4]
+        de: der Bundesratspräsident / die Bundesratspräsidentin
+        en: the President of the Federal Council
+        de: der Bundestagspräsident / die Bundestagspräsidentin
+        en: the President of the Bundestag
+    correct_answer: 2
+    topic: Goverment
+
+
+
+59:
+    question:
+        de: Vor [wie][0] [vielen][1] [Jahren][2] gab es [erstmals][3] eine [jüdische][4] [Gemeinde][5] auf dem Gebiet des heutigen Deutschlands?
+        en: [How][0] [many][1] [years][2] ago was there a [Jewish][4] [community][5] for the [first][3] time in what is now Germany?
+        url: none
+    answers:
+        de: vor etwa 300 Jahren
+        en: about 300 years ago
+        de:	vor etwa 700 Jahren
+        en: about 700 years ago
+        de:	vor etwa 1150 Jahren
+        en: about 1150 years ago
+        de:	vor etwa 1700 [Jahren][6]
+        en: about 1700 [years][6] ago
+    correct_answer: 4
+    topic: Population, Jewish community
+
+
+
+60:
+    question:
+        de: In Deutschland [gehören][0] der [Bundestag][1] unter [Bundesrat][2] zur...
+        en: In Germany, the [Bundestag][1] and the [Bundesrat][2] [are][0]...
+        url: none
+    answers:
+        de: Exekutive
+        en: Executive.
+        de: Legislative.
+        en: Legislative.
+        de: Direktive.
+        en: Directive.
+        de: Judikative
+        en: Judicial.
+    correct_answer: 2
+    topic: Goverment, Law
+
+
+
+61:
+    question:
+        de: Was [bedeutet][0] ["Volkssouveränität"][1]?
+        en: What does ["popular sovereignty"][1] [mean][0]?
+        url: none
+    answers:
+        de: Der König / die Königin herrscht über das Volk.
+        en: the king / the queen rules over the people.
+        de: Das Bundesverfassungsgericht steht über der Verfassung.
+        en: the federal constitutional court stands above the constitution.
+        de: Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.
+        en: The interest associations exercise sovereignty together with the government.
+        de: Die [Staatsgewalt][2] geht vom [Volke][3] aus.
+        en: The [state power][2] comes from the [people][3].
+    correct_answer: 4
+    topic: Goverment
+
+
+
+62:
+    question:
+        de: [Wenn][0] das [Parlament][1] eines deutschen [Bundeslandes][2] [gewählt][3] wird, nennt man das...
+        en: [When][0] the [parliament][1] of a German [federal state][2] is [elected][3], it is called...
+        url: none
+    answers:
+        de: Kommunalwahl
+        en: Municipal election
+        de: [Landtagswahl][4]
+        en: [State election][4]
+        de: Europawahl
+        en: European election
+        de: Bundestagswahl
+        en: Federal election
+    correct_answer: 2
+    topic: Goverment, Elections
+
+
+
+63:
+    question:
+        de: Was [gehört][0] in Deutschland [nicht][1] zur [Exekutive][2]?
+        en: What does [not][1] [belong][0] to the [executive][2] in Germany?
+        url: none
+    answers:
+        de: die Polizei
+        en: the police
+        de: die [Gerichte][3]
+        en: the [courts][3]
+        de: das Finanzarmt
+        en: the finance ministry
+        de: die Ministerien
+        en: the ministries
+    correct_answer: 2
+    topic: Goverment
+
+
+
+64:
+    question:
+        de: Die [Bundesrepublik][0] Deutschland ist [heute][1] [gegliedert][2] in...
+        en: The [federal republic][0] of Germany is [today][1] [divided][2] into...
+        url: none
+    answers:
+        de: vier Besatzungszonen
+        en: four federal states
+        de: zwei Oststaaten und zwei Weststaaten
+        en: two eastern states and two western states
+        de: 16 Kantone
+        en: 16 cantons
+        de: [Bund][3], [Länder][4] und [Kommunen][5]
+        en: [Federal][3], [state][4] and [municipalities][5]
+    correct_answer: 4
+    topic: country, Goverment
+
+
+65:
+    question:
+        de: Es [gehört][0] [nicht][1] zu den [Aufgaben][2] des Deutschen [Bundestages][3]...
+        en: It does [not][1] [belong][0] to the [tasks][2] of the German [Bundestag][3]...
+        url: none
+    answers:
+        de: Gesetze zu entwerfen
+        en: to draft laws.
+        de: die Bundesregierung zu kontrollieren.
+        en: to control the federal government.
+        de: den Bundeskanzler / die Bundeskanzlerin zu wählen.
+        en: to elect the Federal Chancellor.
+        de: das [Bundeskabinett][4] zu [bilden][5].
+        en: to [form][5] the [Federal Cabinet][4].
+    correct_answer: 4
+    topic: Goverment, Elections
+
+
+
+66:
+    question:
+        de: [Welche][0] [Städte][1] haben die [größten][2] [jüdischen][3] [Gemeinden][4] in Deutschland?
+        en: [Which][0] [cities][1] have the [largest][2] [Jewish][3] [communities][4] in Germany?
+        url: none
+    answers:
+        de: Berlin und München
+        en: Berlin and Munich
+        de: Hamburg und Essen
+        en: Hamburg and Essen
+        de: Nürnberg und Stuttgart
+        en: Nuremberg and Stuttgart
+        de: Worms und Speyer
+        en: Worms and Speyer
+    correct_answer: 1
+    topic: Society, Religion
+
+
+
+
+
+67:
+    question:
+        de: [Was][0] ist in Deutschland vor [allem][1] eine [Aufgabe][2] der [Bundesländer][3]?
+        en: [What][0] is in Germany [primarily][1] a [task][2] of the [federal states][3]?
+        url: none
+    answers:
+        de: Verteidigungspolitik
+        en: defense policy
+        de: Außenpolitik
+        en: foreign policy
+        de: Wirtschaftpolitik
+        en: economic policy
+        de: [Schulpolitik][4]
+        en: [educational policy][4]
+    correct_answer: 4
+    topic: Goverment, Education
+
+
+
+68:
+    question:
+        de: [Warum][0] [kontrolliert][1] der [Staat][2] in Deutschland das [Schulwesen][3]?
+        en: [Why][0] does the [state][2] [control][1] [education][3]in Germany?
+        url: none
+    answers:
+        de: weil es in Deutschland nur staatliche Schulen gibt.
+        en: because there are only state schools in Germany.
+        de: weil alle Schüler und Schülerinnen einen Schulabschluss haben müssen.
+        en: because all students must have a school leaving certificate.
+        de: weil es in den B undesländerm verschiedene Schulen gibt.
+        en: because there are different schools in the federal states.
+        de: weil es nach dem [Grundgesetz][4] seine [Aufgabe][5] ist.
+        en: because it is its [responsibility][5] according to the [Basic Law][4].
+    correct_answer: 4
+    topic: Goverment, Education
+
+
+69:
+    question:
+        de: Die [Bundesrepublik][0] Deutschland hat einen dreistufigen [Verwaltungsaufbau][1]. Wie heißt [unterste][2] [politische][3] [Stufe][4]?
+        en: The [Federal Republic][0] of Germany has a three-tiered [administrative structure][1]. What is the name of the [lowest][2] [political][3] [level][4]?
+        url: none
+    answers:
+        de: Stadträte
+        en: City Councils
+        de: Landräte
+        en: District Administrators
+        de: [Gemeinden][5]
+        en: [Municipalities][5]
+        de: Bezirksämter
+        en: District Offices
+    correct_answer: 3
+    topic: Goverment, States
+
+70:
+    question:
+        de: Was gehört zu den [Aufgaben][1] des deutschen [Bundespräsidenten][2] / der deutschen Bundespräsidentin?
+        en: What are the [duties][1] of the German [Federal President][2]?
+        url: pending**
+    answers:
+        de: Er / Sie führt die Regierungsgechäfte.
+        en: He/She runs the government.
+        de: Er / Sie kontrolliert die Regierungspartie.
+        en: He/She controls the government.
+        de: Er / Sie wählt die Minister / Ministerinnen aus.
+        en: He/She selects the ministers.
+        de: Er / Sie [schlägt][3] [den Kanzler / die Kanzlerin][4] zu [Wahl][5] vor.
+        en: He/She [proposes][3] the [chancellor][4] for [election][5].
+    correct_answer: 4
+    topic: Goverment
+
+
+
+71:
+    question:
+        de:[Wo][0] hält sich der deutsche [Bundeskanzler][1] / die deutsche Bundeskanzlerin am [häufigsten][2] auf? Am häufigsten ist er / sie...
+        en: [Where][0] does the [German Chancellor][1] spend most of his or her [time][2]? He or she is most often...
+        url: none
+    answers:
+        de: in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.
+        en: in Bonn because the Chancellery and the Bundestag are located there.
+        de: auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.
+        en: at Schloss Meseberg, the guest house of the Federal Government, to receive state guests.
+        de: auf Schloss Bellevue, dem Amtssitz des Bundespräsidenten / der Bundespräsidentin, um Staatsgäste zu empfangen.
+        en: at Schloss Bellevue, the office of the Federal President / Federal President, to receive state guests.
+        de: in [Berlin][3], weil sich dort das Bundeskanzleramt und der Bundestag befinden.
+        en: in [Berlin][3] because the Chancellery and the Bundestag are located there.
+    correct_answer:4
+    topic: Goverment
+
+
+
+72:
+    question:
+        de: [Wie][0] [heißt][1] der [jetzige][2] [Bundeskanzler][3] / die jetzige Bundeskanzlerin von Deutschland?
+        en: [How][0] is the [current][2] [Chancellor][3] / current Chancellor of Germany [called][1]?
+        url: none
+    answers:
+        de: Gerhard Schröder
+        en: Gerhard Schröder
+        de: Angela Merkel
+        en: Angela Merkel
+        de: Ursula von der Leyen
+        en: Ursula von der Leyen
+        de: Friedrich Merz
+        en: Friedrich Merz
+    correct_answer: 4
+    topic: Goverment
+
+
+73:
+    question:
+        de: Die [beiden][0] [größten][1] [Fraktionen][2] im Deutschen [Bundestag][3] heißen [zurzeit][4]...
+        en: The [two][0] [largest][1] [factions][2] in the German [Bundestag][3] are [currently][4]...
+        url: none
+    answers:
+        de: CDU/CSU und AfD
+        en: CDU/CSU and AfD
+        de: Die Linke und Bündnis 90/Die Grünen
+        en: The Left and Alliance 90/The Greens
+        de: Bündnis 90/Die Grünen und SPD.
+        en: Alliance 90/The Greens and SPD.
+        de: Die Linke und CDU/CSU.
+        en: The Left and CDU/CSU.
+    correct_answer: 1
+    topic: Goverment
+
+74:
+    question:
+        de: [Wie][0] [heißt][1] das [Parlament][2] für [ganz][3] Deutschland?
+        en: [How][0] is the [parliament][2] for the [whole][3] of Germany [called][1]?
+        url: none
+    answers:
+        de: Bundesversammlung
+        en: Federal Assembly
+        de: Volkskammer
+        en: People's Chamber
+        de: Bundestag
+        en: Bundestag
+        de: Bundesgerichtshof
+        en: Federal Court of Justice
+    correct_answer: 3
+    topic: Goverment
+
+
+75:
+    question:
+        de: Wie [heißt][0] Deutschlands [heutiges][1] [Staatsoberhaupt][2]?
+        en: What is the [name][0] of Germany's [current][1] [head of state][2]?
+        url: none
+    answers:
+        de: Frank-Walter Steinmeier
+        en: Frank-Walter Steinmeier
+        de: Bärbel Bas
+        en: Bärbel Bas
+        de: Bodo Ramelow
+        en: Bodo Ramelow
+        de: Joachim Gauck
+        en: Joachim Gauck
+    correct_answer: 1
+    topic: Goverment
+
+
+76:
+      question:
+        de: Was [bedeutet][0] die Abkürzung [CDU][1] in Deutschland?
+        en: What does the abbreviation [CDU][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Christiliche Deutsche Union
+        en: Christian German Union
+        de: Club Deutscher Unternehmer
+        en: Club of German Entrepreneurs
+        de: Christlicher Deutscher Umweltschutz
+        en: Christian German Environmental Protection
+        de: [Christlich][2] [Demokratische][3] Union
+        en: [Christian][2] [Democratic][3] Union
+    correct_answer: 4
+    topic: Goverment , Politics
+
+
+
+
+77:
+    question:
+        de: [Was][0] ist die [Bundeswehr][1]?
+        en: [What][0] is the [Bundeswehr][1]?
+        url: none
+    answers:
+        de: die deutsche Polizei
+        en: the German police
+        de: die deutscher Hafen
+        en: the German port
+        de: eine deutsche Bürgerinitiative
+        en: a German citizens' initiative
+        de: die deutsche [Armee][2]
+        en: the German [army][2]
+    correct_answer: 4
+    topic: Goverment, Military
+
+
+
+78:
+    question:
+        de: Was [bedeutet][0] die Abkürzung [SPD][1] in Deutschland?
+        en: What does the abbreviation [SPD][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Sozialistische Partei Deutschlands
+        en: Social Democratic Party of Germany
+        de: Sozialpolitische Partei Deutschlands
+        en: Social Political Party of Germany
+        de: [Sozialdemokratische][2] Partei Deutschlands
+        en: [Social Democratic][2] Party of Germany
+        de: Sozialgerechte Partei Deutschlands
+        en: Social Just Party of Germany
+    correct_answer: 3
+    topic: Goverment, Politics
+
+
+
+
+79:
+    question:
+        de: Was [bedeutet][0] die Abkürzung [FDP][1] in Deutschland?
+        en: What does the abbreviation [FDP][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Freie Demokratische Partei
+        en: Free Democratic Party
+        de: Freie Demokratische Partei
+        en: Free Democratic Party
+        de: Führende Demokratische Partei
+        en: Leading Democratic Party
+        de: [Freie][2] [Demokratische][3] Partei
+        en: [Free][2] [Democratic][3] Party
+    correct_answer: 4
+    topic: Goverment, Politics
+
+
+
+
+80:
+    question:
+        de: [Welches][0] [Gericht][1] in Deutschland ist [zuständig][2] für die [Auslegung][3]  des [Grundgesetzes][4]?
+        en: [Which][0] [court][1] in Germany is [responsible][2] for the [interpretation][3] of the [Basic Law][4]?
+        url: none
+    answers:
+        de: Oberlanddesgericht
+        en: Higher Regional Court
+        de: Amtsgericht
+        en: District Court
+        de: [Bundesverfassungsgericht][4]
+        en: [Federal Constitutional Court][4]
+        de: Verwaltungsgericht
+        en: Administrative Court
+    correct_answer: 3
+    topic: Goverment
+
+
+
+
+81:
+    question:
+        de: [Wer][0] [wählt][1] den [Bundeskanzler][2] / die Bundeskanzlerin in Deutschland?
+        en: [Who][0] [elects][1] the [Federal Chancellor][2] in Germany?
+        url: none
+    answers:
+        de: der Bundesrat
+        en: the Federal Council
+        de: die Bundesversammlung
+        en: the Federal Assembly
+        de: das Volk
+        en:the People
+        de: der Bundestag
+        en: the Bundestag
+    correct_answer: 4
+    topic: Goverment
+
+
+
+82:
+    question:
+        de: [Wer][0] [leitet][1] das deutsche [Bundeskabinett][2]?
+        en: [Who][0] [heads][1] the German [Federal Cabinet][2]?
+        url: none
+    answers:
+        de: der Bundestagpräsident / die Bundestagspräsidentin
+        en: the Chancellor
+        de: der Bundespräsident / die Bundespräsidentin
+        en: the Federal President
+        de: der Bundesratspräsident / die Bundesratspräsidentin
+        en: the President of the Federal Council
+        de: [der Bundeskanzler / die Bundeskanzlerin][3]
+        en: [the Federal Chancellor][3]
+    correct_answer: 4
+    topic: Goverment
+
+
+83:
+    question:
+        de: [Wer][0] [wählt][1] den deutschen [Bundeskanzler][2] / die deutsche Bundeskanzlerin?
+        en: [Who][0] [elects][1] the German [Federal Chancellor][2]?
+        url: none
+    answers:
+        de: das Volk
+        en: the people
+        de: die Bundesversammlung
+        en: the Federal Assembly
+        de: die Bundestag
+        en: the Bundestag
+        de: die Bundesregierung
+        en: the Federal Government
+    correct_answer: 3
+    topic: Goverment
+
+
+84:
+    question:
+        de: Welche [Hauptaufgabe][0] hat der deutsche [Bundespräsident][1] / die deutsche Bundespräsidentin? Er / Sie...
+        en: What is the [main task][0] of the German [Federal President][1]?
+        url: none
+    answers:
+        de: regiert das Land
+        en: governs the country
+        de: entwirft die Gesetze
+        en: drafts the laws
+        de: [repräsentiert][2] das [Land][3].
+        en: [represents][2] the [country][3].
+        de: überwacht die Eingaltung der Gesetze.
+        en: oversees the enforcement of laws
+    correct_answer: 3
+    topic: Goverment, Politics
+
+
+
+ 85:
+    question:
+        de: [Wer][0] [bildet][1] den deutschen [Bundesrat][2]?
+        en: [Who][0] [forms][1] the German [Federal Council][2]?
+        url: none
+    answers:
+        de: die Abgeordneten des Bundestages
+        en: the members of the Bundestag
+        de: die Minister und Ministerinnen der Bundesregierung
+        en: the ministers of the federal government
+        de: die [Regierungsvertreter][3] der [Bundesländer][4]
+        en: the [government representatives][3] of the [federal states][4]
+        de: die Parteimitglieder.
+        en: the party members.
+    correct_answer: 3
+    topic: Goverment
+
+
+
+
+86:
+    question:
+        de: [Wer][0] [wählt][1] in Deutschland den [Bundespräsidenten][2] / die Bundespräsidentin?
+        en: [Who][0] [elects][1] the German [Federal President][2]?
+        url: none
+    answers:
+        de: die [Bundesversammlung][3]
+        en: the [Federal Assembly][3]
+        de: der Bundesrat
+        en: the Federal Council
+        de: das Bundesparlament
+        en: the Federal Parliament
+        de: das Bundesverfassungsgericht
+        en: the Federal Constitutional Court
+    correct_answer: 1
+    topic: Goverment
+
+
+
+
+87:
+    question:
+        de: [Wer][0] ist das [Staatsoberhaupt][1] der [Bundesrepublik][2] Deutschland?
+        en: [Who][0] is the [head of state][1] of the [Federal Republic][2] of Germany?
+        url: none
+    answers:
+        de: des Bundeskanzler / die Bundeskanzlerin
+        en: the Federal Chancellor
+        de: [der Bundespräsident / die Bundespräsidentin][3]
+        en: [the Federal President][3]
+        de: der Bundesratspräsident / die Bundesratspräsidentin
+        en: the President of the Federal Council
+        de: der Bundestagspräsident / die Bundestagspräsidentin
+        en: the President of the Bundestag
+    correct_answer: 2
+    topic: Goverment
+
+
+
+
+
+88:
+    question:
+        de: Die [parlamentarische][0] [Opposition][1] im Deutschen [Bundestag][2]...
+        en: The [parliamentary][0] [opposition][1] in the German [Bundestag][2]...
+        url: none
+    answers:
+        de: [kontrolliert][3] die [Regierung][4]
+        en: [controls][3] the [government][4]
+        de: entscheidet, wer Bundesminister / Bundesministerin wird.
+        en: decides who will become Federal Minister.
+        de: bestimmt, wer im Bundesrat sitzt.
+        en: determines who sits on the Bundesrat.
+        de: schlägt die Regierungschefs / Regierungschefsinnen der Länder vor.
+        en: proposes the heads of government of the states.
+    correct_answer: 1
+    topic: Goverment, Politics
+
+
+
+
+89:
+    question:
+        de: Wie [nennt][0] man in Deutschland die [Vereinigung][1] von [Abgeordneten][2] einer Partei im [Parlament][3]?
+        en: How do you [call][0] a [union][1] of [representatives][2] of a party in the German [parliament][3]?
+        url: none
+    answers:
+        de: Verband
+        en: Association
+        de: Ältestenrat
+        en: Council of Elders
+        de: [Fraktion][4]
+        en: [Faction][4]
+        de: Opposition
+        en: Opposition
+    correct_answer: 3
+    topic: Goverment, Politics
+
+
+90:
+    question:
+        de: Die deutschen [Bundesländer][0] [wirken][1] an der [Gesetzgebung][2] des [Bundes][3] mit durch...
+        en: The German [federal states][0] [participate][1] in [federal][3] [legislation][2] through...
+        url: none
+    answers:
+        de: den [Bundesrat][4]
+        en: the [Federal Council][4]
+        de: die Bundesversammlung
+        en: the Federal Assembly
+        de: den Bundestag
+        en: the Bundestag
+        de: die Bundesregierung
+        en: the Federal Government
+    correct_answer: 1
+    topic: Goverment
+
+
+
+91:
+    question:
+        de: In Deutschland kann ein [Regierungswechsel][0] in [einem][1] [Bundesland][2] [Auswirkungen][3] auf die[Bundespolitik][4] haben. Das Regieren wird...
+        en: In Germany, a [change of government][0] in [one][1] [federal state][2] can have an [impact][3] on [federal politics][4]. The government will...
+        url: none
+    answers:
+        de: schwieriger, wenn sich dadurch die Mehrheit im Bundestag ändert.
+        en: more difficult if it changes the majority in the Bundestag.
+        de: leicheter, wenn dadurch neue Parteien in den Bundesrat kommen.
+        en: easier if it brings new parties into the Bundesrat.
+        de: [schwieriger][5], [wenn][6] dadurch die [Mehrheit][7] im [Bundesrat][8] [verändert][9] wird.
+        en: [more difficult][5] [if][6] it [changes][9] the [majority][7] in the [Bundesrat][8].
+        de: leichter, wenn es sich um ein reiches Bundesland handelt.
+        en: easier if it involves a wealthy federal state.
+    correct_answer: 3
+    topic: Goverment, Politics
+
+
+92:
+    question:
+        de: Was [bedeutet][0] die Abkürzung [CSU][1] in Deutschland?
+        en: What does the abbreviation [CSU][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Christlich Sichere Union
+        en:  Christian Safe Union
+        de: Christlich Süddeutsche Union
+        en: Christian South German Union
+        de: Christlich Sozialer Unternehmerverand
+        en: Christian Social Entrepreneurs Association
+        de: [Christlich][2] [Soziale][3] Union
+        en: [Christian][2] [Social][3] Union
+    correct_answer: 4
+    topic: Politics
+
+
+
+
+
+93:
+    question:
+        de: Je [mehr][0] ["Zweitstimmen"][1] eine [Partei][2] bei einer [Bundestagswahl][3] [bekommt][4], desto...
+        en: The [more][0] ["second votes"][1] a [party][2] [receives][4] in a [federal election][3], the...
+        url: none
+    answers:
+        de: weniger Erststimmen kann sie haben.
+        en: It can have fewer first-past-the-post votes.
+        de: mehr Direktkandidaten der Parteo ziehen ins Parlament ein.
+        en: More of the party's direct candidates enter parliament.
+        de: größer ist das Risiko, eine Koalition bilden zu müssen.
+        en: The risk of having to form a coalition is greater.
+        de: [mehr][5] [Sitze][6] [erhält][7] die Partei im [Parlament][8].
+        en: The party [receives][7] [more][5] [seats][6] in [parliament][8].
+    correct_answer: 4
+    topic: Politics , Goverment
+
+
+
+94:
+    question:
+        de: Ab welchem [Alter][0] darf man in Deutschland an der [Wahl][1] zum Deutschen [Bundestag][2] [teilnehmen][3]?
+        en: At what [age][0] can one [participate][3] in the [election][1] to the German [Bundestag][2] in Germany?
+        url: none
+    answers:
+        de: 16
+        en: 16
+        de: 18
+        en: 18
+        de: 21
+        en: 21
+        de: 23
+        en: 23
+    correct_answer:2
+    topic: Goverment, Elections
+
+
+95:
+    question:
+        de: Was [gilt][0] für die [meisten][1] [Kinder][2] in Deutschland?
+        en: What [applies][0] to [most][1] [children][2] in Germany?
+        url: none
+    answers:
+        de: Wahlpflicht
+        en: Compulsory voting
+        de: [Schulpflicht][3]
+        en: [compulsory schooling][3]
+        de: Schweigeflicht
+        en: Secrecy
+        de: Religionspflicht
+        en: Religious obligation
+    correct_answer: 2
+    topic: Education
+
+
+96:
+    question:
+        de: Wie kann [jemand][0], der den [Holocaust][1] [leugnet][2], [bestraft][3] werden?
+        en: How can [someone][0] who [denies][2] the [Holocaust][1] be [punished][3]?
+        url: none
+    answers:
+        de: Kürzung sozialer Leistungen
+        en: Reduction in social benefits
+        de: bis zu 100 Sozialstunden
+        en: Up to 100 hours of community service
+        de: gar nicht, Holocaustleugnung ist erlaubt
+        en: Not at all, Holocaust denial is permitted
+        de: mit [Freiheitsstrafe][4] bis zu fünf Jahren oder mit [Geldstrafe][5]
+        en: [Imprisonment][4] for up to five years or a [fine][5]
+    correct_answer: 4
+    topic: Religion, Law
+
+
+
+
+  97:
+    question:
+        de: Was bezahlt man in Deutschland automatisch, wenn man fest angestellt ist?
+        en: What do you automatically pay in Germany if you are permanently employed?
+        url: none
+    answers:
+        de: Sozialversicherung
+        en: Social insurance
+        de: Sozialhilfe
+        en: Social assistance
+        de: Kindergeld
+        en: Child benefit
+        de: Wohngeld
+        en: Housing benefit
+    correct_answer: 1
+    topic: Social Insurance, Employment
+
+
+
+ 98:
+    question:
+        de: Wenn [Abgeordenete][0] im Deutschen [Bundestag][1] ihre [Fraktion][2] [wechseln][3],...
+        en: When [members][0] of the German [Bundestag][1] [change][3] their [party][2],...
+        url: none
+    answers:
+        de: dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen.
+        en: they may no longer participate in parliamentary sessions.
+        de: [kann][4] die [Regierung][5] ihre [Mehrheit][6] [verlieren][7].
+        en: the [government][5] [may][4] [lose][7] its [majority][6].
+        de: muss der Bundespräsident / die Bundespräsidentin zuvor sein / ihr Einverständnis geben.
+        en: the Federal President must first give his/her consent.
+        de: dürfen die Wähler / Wählerinnen dieser Abgeordneten noch einmal wählen.
+        en: the voters of these representatives may vote again.
+    correct_answer:
+    topic: Politics, Goverment
+
+
+
+
+99:
+    question:
+        de: [Wer][0] [bezahlt][1] in Deutschland die [Sozialversicherung][2]?
+        en: [Who][0] [pays][1] for [social insurance][2] in Germany?
+        url: none
+    answers:
+        de: [Arbeitgeber / Arbeitgeberinnen][3] und [Arbeitnehmer / Arbeitnehmerinnen][4]
+        en: [Employers][3] and [employees][4]
+        de: nur Arbeitnehmer / Arbeitnehmerinnen
+        en: Employees only
+        de: alle Staatsangehörigen
+        en: All nationals
+        de: nur Arbeitgeber / Arbeitgeberinnen
+        en: Employers only
+    correct_answer: 1
+    topic: Social Insurance, Employment
+
+
+
+100:
+    question:
+        de: Was [gehört][0] [nicht][1] zur gesetzlichen [Sozialversicherung][2]?
+        en: What does [not][1] [belong][0] to the legal [social insurance][2]?
+        url: none
+    answers:
+        de: die [Lebensversicherung][3]
+        en: [life insurance][3]
+        de: die gesetzliche Rentenversicherung
+        en: pension insurance
+        de: die Arbeitslosenversicherung
+        en: unemployment insurance
+        de: die Pflegeversicherung
+        en: nursing insurance
+    correct_answer: 1
+    topic: Social Insurance
+
+
+
+
+
+
+101:
+    question:
+        de: [Gewerkschaften][0] sind [Interessenverbände][1] der...
+        en: [Trade unions][0] are [interest groups][1] of...
+        url: none
+    answers:
+        de: Jugendlichen
+        en: Young people
+        de: [Arbeitnehmer und Arbeitnehmerinnen ][2]
+        en: [Employees][2]
+        de: Rentner und Rentnerinnen
+        en: Pensioners
+        de: Arbeitgeber und Arbeitgeberinnen
+        en: Employers
+    correct_answer: 2
+    topic: Employment
+
+
+
+
+
+102:
+    question:
+        de: Womit kann man in der Bundesrepublik Deutschland [geehrt][0] werden, wenn man auf [politischem][1], [wirtschaftlichem][2] , [kulturellen][3], [geisttigem][4] oder [sozialem][5] Gebiet eine [besondere][6] [Leistung][7] erbracht hat? Mit dem...
+        en: What can one be [honored][0] with in the Federal Republic of Germany when one has achieved a [special][6] [achievement][7] in [politics][1], [economy][2], [culture][3], [spirituality][4] or [social affairs][5]? With the...
+        url: none
+    answers:
+        de: [Bundesverdienstkreuz][8]
+        en: [Order of Merit][8]
+        de: Bundesadler
+        en: Federal Eagle
+        de: Vaterländischen Verdienstorden
+        en: Patriotic Order of Merit
+        de: Ehrentitle "Held der Deutschen Demokratischen Republik"
+        en:  Honorary title "Hero of the German Democratic Republic"
+    correct_answer: 1
+    topic: Society, Goverment
+
+
+
+
+
+103:
+    question:
+        de: Was wird in Deutschland als ["Ampelkoalition"][0] [bezeichnet][1]? Die Zusammenarbeit...
+        en: What is [referred][1] to as a ["traffic light coalition"][0] in Germany? The cooperation...
+        url: none
+    answers:
+        de: der Budestagsfraktionen von CDU und CSU
+        en: the CDU and CSU parliamentary groups in the Bundestag
+        de: von [SPD][2], [FDP und Bündnis 90][3]/Die [Grünen][4] in einer Regierung
+        en: the [SPD][2], [FDP and Alliance 90][3]/The [Greens][4] in one government
+        de: von CSU, Die LINKE und Bündnis 90/Die Grünen in einer Regierung
+        en: the CSU, The Left Party, and Alliance 90/The Greens in one government
+        de: des Bundestagsfraktionen von CDU und SPD
+        en: the CDU and SPD parliamentary groups in the Bundestag
+    correct_answer: 2
+    topic: Politics
+
+
+ 104:
+    question:
+        de: Eine [Frau][0] in Deutschland [verliert][1] ihre [Arbeit][2]. Was darf [nicht][3] der [Grund][4] für diese Entlassung sein?
+        en: A [woman][0] in Germany [loses][1] her [job][2]. What [may not][3] be the [reason][4] for this dismissal?
+        url: none
+    answers:
+        de: Die Frau ist lange krank und arbeitsunfähig.
+        en: The woman has been ill for a long time and is unable to work.
+        de: Die Frau kam oft spät zur Arbeit.
+        en: The woman often arrived late for work.
+        de: Die Frau erledigt private Sachen während der Arbeitszeit.
+        en: The woman takes care of personal matters during working hours.
+        de: Die Frau [bekommt][5] ein [Kind][6] und irh [Chef][7] [weiß][8] das.
+        en: The woman is [having][5] a [child][6] and her [boss][7] [knows][8] about it.
+    correct_answer: 4
+    topic: Employment
+
+
+
+105:
+    question:
+        de: Was ist eine [Aufgabe][0] von [Wahlhelfen / Wahlhelferinnen][1] in Deutschland?
+        en: What is a [task][0] of [election helpers][1] in Germany?
+        url: none
+    answers:
+        de: Sie helfen alten Menschen bei der stimmabgabe in der Wahlkabine.
+        en: They help elderly people cast their votes in the voting booth.
+        de: Sie schreiben die Wahlbenachrichtigungen vor der Wahl.
+        en: They write the voting notifications before the election.
+        de: Sie geben Zwischenergerbnisse an die Medien weiter.
+        en: They communicate interim results to the media.
+        de: Sie [zählen][2] die [Stimmen][3] nach dem [Ende][4] der [Wahl][5].
+        en: They [count][2] the [votes][3] [after][4] the [election][5].
+    correct_answer: 4
+    topic: Elections
+
+
+
+
+106:
+    question:
+        de: In Deutschland helfen ehrenamtlichen [Wahlhelfen / Wahlhelferinnen][0] bei den Wahlen. Was ist eine[Aufgabe][1] von Wahlhelfern / Wahlhelferinnen?
+        en: In Germany, volunteers [election helpers][0] help with elections. What is the [role][1] of election helpers?
+        url: none
+    answers:
+        de: Sie helfen Kindern und alten Menschen beim Wählen.
+        en: They help children and the elderly vote.
+        de: Sie schreiben Karten und Breife mit der Angabe des Wahlokals.
+        en: They write cards and letters indicating the polling station.
+        de: Sie geben Zwischenergerbnisse an Journalisten weiter.
+        en: They relay interim results to journalist
+        de: Sie [zählen][2] die [Stimmen][3] nach dem [Ende][4] der [Wahl][5].
+        en: They [count][2] the [votes][3] [after][4] the [election][5].
+    correct_answer: 4
+    topic: Elections
+
+
+
+107:
+    question:
+        de: Für wie viele [Jahre][0] wird der [Bundestag][1] in Deutschland [gewählt][2]?
+        en: How many [years][0] is the German [Bundestag][1] [elected for][2]?
+        url: none
+    answers:
+        de: 2 Jahre
+        en: 2 years
+        de: [4 Jahre][3]
+        en: [4 years][3]
+        de: 6 Jahre
+        en: 6 years
+        de: 8 Jahre
+        en: 8 years
+    correct_answer: 2
+    topic: Elections
+
+
+
+
+108:
+    question:
+        de: Bei einer [Bundestagwahl][0] in Deutschland darf [jeder][1] [wählen][2], der...
+        en: In a [federal election][0] in Germany, [everyone][1] [can vote][2] who...
+        url: none
+    answers:
+        de: in der Bundesrepublik Deutschland wohnt und wählen möchte.
+        en: lives in the Federal Republic of Germany and wishes to vote.
+        de: [Bürger / Bürgerin][3] der Bundesrepublik Deutschland ist und mindestens [18 Jahre alt][4] ist.
+        en: is a [citizen][3] of the Federal Republic of Germany and is at least [18 years old][4].
+        de: seit mindestens 3 Jahren in der Bundesrepublik Deutschland lebt.
+        en: has lived in the Federal Republic of Germany for at least 3 years.
+        de: Bürger / Bürgerin der Bundesrepublik Deutschland ist und mindestens 21 Jahre alt ist.
+        en: is a citizen of the Federal Republic of Germany and is at least 21 years old.
+    correct_answer: 2
+    topic: Elections
+
+
+
+
+
+
+109:
+    question:
+        de: [Wie][0] [oft][1] gibt es normalerweise [Bundestagswahlen][2] in Deutschland?
+        en: [How][0] [often][1] are [federal elections][2] held in Germany?
+        url: none
+    answers:
+        de: alle drei Jahre
+        en: All three years
+        de: alle [vier Jahre]
+        en: All [four years]
+        de: alle fünf Jahre
+        en: All five years
+        de: alle sechs Jahre
+        en: All six years
+    correct_answer: 2
+    topic: Elections
+
+
+
+
+110:
+    question:
+        de: Für [wie][0] [viele][1] [Jahre][2] wird der [Bundestag][3] in Deutschland [gewählt][4]?
+        en: For [how][0] [many][1] [years][2] is the [Bundestag][3] in Germany [elected][4]?
+        url: none
+    answers:
+        de: 2 Jahre
+        en: 2 years
+        de: 3 Jahre
+        en: 3 years
+        de: [4 Jahre][5]
+        en: [4 years][5]
+        de: 5 Jahre
+        en: 5 years
+    correct_answer: 3
+    topic: Elections
+
+
+
+
+111:
+    question:
+        de: Welche [Handlung][0] mit [Bezug][1] auf den Staat [Israel][2] ist in Deutschland [verboten][3]?
+        en: Which [action][0] [related][1] to the state of [Israel][2] is [prohibited][3] in Germany?
+        url: none
+    answers:
+        de: die Politik Israels öffentlich kritisieren
+        en: publicly criticizing Israel's policies
+        de: das Aufhängen einer israelischen Flagge auf dem Privatgrundstück
+        en: hanging an Israeli flag on private property
+        de: eine Diskussion über die Politik Israels
+        en: a discussion about Israel's policies
+        de: der öffentliche [Aufruf][4] zur [Vemichtung][5] Israels
+        en: a public [call for][4] the [destruction][5] of Israel
+    correct_answer: 4
+    topic: Religion
+
+
+
+  112:
+    question:
+        de: Die [Wahlen][0] in Deutschland [sind][1]...
+        en: The [elections][0] in Germany [are][1]...
+        url: none
+    answers:
+        de: speziell
+        en: special
+        de: [geheim][2]
+        en: [secret][2]
+        de: berusbezogen
+        en: job-related
+        de: geschlechtsabhängig
+        en: gender dependent
+    correct_answer: 2
+    topic: Elections
+
+
+
+
+
+113:
+    question:
+        de: [Wahlen][0] in Deutschland [gewinnrt][1] die Partie, die
+        en: [Elections][0] in Germany [are won by][1] the party that
+        url: none
+    answers:
+        de: die [meinsten][2] [Stimmen][3] [bekommt][4]
+        en: [receives][4] the [most][2] [votes][3]
+        de: die meisten Männer mehrheitlich gewählt haben
+        en: the majority of men voted
+        de: die meisten Stimmen bei den Arbeiten / Arbeterinnen bekommen hat
+        en: received the most votes among working people
+        de: die meisten Erststimmen für ihren Kanzlerkandidaten / ihre Kanzlerkandidatin erhalten hat.
+        en: received the most first votes for their candidate for chancellor.
+    correct_answer: 1
+    topic: Elections, Politics
+
+
+
+
+114:
+    question:
+        de: An [demokratischen][0] [Wahlen][1] in Deutschland [teilzunehmen][2] ist...
+        en: [Participating][2] in [democratic][0] [elections][1] in Germany is...
+        url: none
+    answers:
+        de: eine Pflicht
+        en: a duty
+        de: [ein Recht][3]
+        en: [a right][3]
+        de: ein Zwang
+        en: a compulsion
+        de: eine Last
+        en: a burden
+    correct_answer: 2
+    topic: Elections, Politics
+
+
+
+115:
+    question:
+        de: Was [bedeutet][0] ["aktives Wahlrecht"][1] in Deutschland?
+        en: What does ["active voting right"][1] [mean][0] in Germany?
+        url: none
+    answers:
+        de: Man kann gewählt werden
+        en: You can be elected
+        de: Man muss wählen gehen
+        en: You must vote
+        de: Man [kann][2] [wählen][3]
+        en: You [can][2] [vote][3]
+        de: Man muss zur Auszählung der Stimmen gehen
+        en: You must go to the vote count
+    correct_answer:  3
+    topic: Elections, Politics
+
+
+116:
+    question:
+        de: Wenn Sie bei einer [Bundestagswahl][0] in Deutschland [wählen][1] [dürfen][2], heißt das...
+        en: When you are [allowed][2] to [vote][1] in a [Bundestag election][0] in Germany, it means...
+        url: none
+    answers:
+        de: aktive Wahlkampagne
+        en: active election campaign
+        de: aktives Wahlverfahren
+        en: active electoral process
+        de: aktiver Wahlkampf
+        en: active election campaign
+        de: [aktives][3] [Wahlrecht][4]
+        en: [active][3] [right to vote][4]
+    correct_answer: 4
+    topic: Elections, Politics
+
+
+
+
+117:
+    question:
+        de: Wie [viel][0] [Prozent][1] der [Zweitstimmen][2] müssen Parteien mindestens bekommen, um in den Deutschen [Bundestag][3] [gewählt][4] zu werden?
+        en:What [many][0] [percent][1] of the [second votes][2] must parties receive at least in order to be [elected][4] to the German [Bundestag][3]?
+        url: none
+    answers:
+        de: 3%
+        en: 3%
+        de: 4%
+        en: 4%
+        de: 5%
+        en: 5%
+        de: 6%
+        en: 6%
+    correct_answer: 3
+    topic: Elections, Politics
+
+
+
+
+
+
+118:
+    question:
+        de: [Wer][0] [darf][1] bei den rund 40 [jüdischen][2] [Makkabi-Sportvereinen][3] [Mitglied][4] werden?
+        en: [Who][0] [may][1] become a [member][4] of the approximately 40 [Jewish][2] [Maccabi sports clubs][3]?
+        url: none
+    answers:
+        de: nur Deutsche
+        en: only Germans
+        de: nur Israelis
+        en: only Israelis
+        de: nur religiöse Menschen
+        en: only religious people
+        de: [alle][5] [Menschen][6]
+        en: [all][5] [people][6]
+    correct_answer: 4
+    topic: Religion, Culture
+
+
+
+
+119:
+    question:
+        de: [Wahlen][0] in Deutschland [sind][1] [frei][2]. Was [bedeutet][3] das?
+        en: [Elections][0] in Germany [are][1] [free][2]. What does that [mean][3]?
+        url: none
+    answers:
+        de: Alle verurteilten Straftäter / Straftäterinnen dürfen nicht wählen.
+        en: All convicted criminals are not allowed to vote.
+        de: Wenn ich wählen gehen möchte, muss mein Arbeitgeber / meine Arbeitgeberin mir frei geben.
+        en: If I want to vote, my employer must give me time off.
+        de: [Jede][4] [Person][5] kann ohne Zwang [entscheiden][6], ob sie [wählen][7] [möchte][8]  und wen sie wählen möchte.
+        en: [Every][4] [person][5] can [decide][6] without coercion whether they [would like][8] to [vote][7] and for whom they would like to vote.
+        de: Ich kann frei entscheiden, wo ich wählen gehen möchte.
+        en: I can freely decide where I want to vote.
+    correct_answer: 3
+    topic: Elections
+
+
+
+
+120:
+    question:
+        de: Das [Wahlsystem][0] in Deutschland [ist][1] ein...
+        en: The [electoral system][0] in Germany [is][1]...
+        url: none
+    answers:
+        de: Zensuswahlrecht
+        en: Census-based voting
+        de: Dreiklassenwahlrecht
+        en: Three-class voting
+        de: [Mehrheits][2]- und [Verhältniswahlrecht][3]
+        en: [Majority][2] and [proportional representation][3]
+        de: allegemeines Männerwahlrecht
+        en: Universal male suffrage
+    correct_answer: 3
+    topic: Elections
+
+
+121:
+    question:
+        de: Eine [Partei][0] möchte in den Deutschen [Bundestag][1] Sie muss aber einen [Mindestanteil][2] an [Wählerstimmen][3] haben. Das heißt....
+        en: A [party][0] wants to be in the German [Bundestag][1] but it must have a [minimum share][2] of [voters][3]. That means...
+        url: none
+    answers:
+        de: [5%-Hürde][4]
+        en: [5% hurdle][4]
+        de: Zulassungsgrenze
+        en: Admission limit
+        de: Basiswert
+        en: underlying value
+        de: Richtlinie
+        en: Guideline
+    correct_answer: 1
+    topic: Elections. Politics, Goverment
+
+
+122:
+    question:
+        de: Welchem [Grundsatz][0] [unterliegen][1] [Wahlen][2] in Deutschland? Wahlen in Deutschland sind...
+        en: What [principle][0] [governs][1] [elections][2] in Germany? Elections in Germany are...
+        url: none
+    answers:
+        de: [frei][3], [gleich][4], [geheim][5]
+        en: [free][3], [equal][4], [secret][5]
+        de: offen, sicher, frei
+        en: open, secure, free
+        de: geschlossen, gleich. sicher
+        en: closed, equal, secure
+        de: sicher, offen, freiwilig
+        en: secure, open, voluntary
+    correct_answer: 1
+    topic: Elections
+
+
+
+123:
+    question:
+        de: [Was][0] [ist][1] in Deutschland die ["5%-Hürde"][2]?
+        en: [What][0] [is][1] the ["5%-hurdle"][2] in Germany?
+        url: none
+    answers:
+        de: Abstimmungsregelung im Bundestag für kleine Parteien
+        en: Voting rules in the Bundestag for small parties
+        de: Anwesenheitskontrolle im Bundestag für Abstimmungen
+        en: Attendance checks in the Bundestag for votes
+        de: [Mindestanteil][4] an [Wählerstimmen][5], um ins [Parlament][6] zu kommen
+        en: [Minimum percentage][4] of [votes][5] required to enter [Parliament][6]
+        de: Anwesenheitskontrolle im Bundesrat für Abstimmungen
+        en: Attendance checks in the Bundesrat for votes
+    correct_answer: 3
+    topic: Elections, Goverment, Politics
+
+
+
+
+
+124:
+    question:
+        de: Die [Bundestagswahl][0] in Deutschland ist die [Wahl][1]...
+        en: The [Bundestag election][0] in Germany is the [election][1]...
+        url: none
+    answers:
+        de: des Bundeskanzlers / der Bundeskanzlerin.
+        en: of the Chancellor
+        de: der Parlamente der Länder.
+        en: the parliaments of the states.
+        de: des [Parlaments][2] für [Deutschland][3].
+        en: of the [Parliament][2] for [Germany][3].
+        de: des Bundespräsidenten / der Bundespräsidentin.
+        en: of the Federal President.
+    correct_answer: 3
+    topic: Elections, Goverment
+
+
+
+
+125:
+    question:
+        de: In einer [Demokratie[[0] ist eine [Funktion][1] von [regelmäßigen][2] [Wahlen][3],...
+        en: In a [democracy][0], a [function][1] of [regular][2] [elections][3] is...
+        url: none
+    answers:
+        de: die Bürger und Bürgerinnen zu zwingen, ihre Stimme abzugeben.
+        en: to force citizens to vote.
+        de: nach dem [Willen][4] der [Wählermehrheit][5] den [Wechsel][6] der [Regierung][7] zu [ermöglichen][8]
+        en: according to the [will][4] of the [voter majority][5] to [enable] the [change][6] of the [government][7][8]
+        de: im Land bestehende Gesetze beizubehalten.
+        en: to maintain existing laws in the country.
+        de: den Armen mehr Macht zu geben.
+        en: to empower the poor.
+    correct_answer: 2
+    topic: Elections, Goverment
+
+
+
+
+126:
+    question:
+        de: Was [bekommen][0] [wahlberechtigte][1] [Bürger und Bürgerinnen][2] in Deutschland [vor][3] einer [Wahl][4]?
+        en: What do [eligible voting][1] [citizens][2] in Germany [get][0] [before][3] an [election][4]?
+        url: none
+    answers:
+        de: eine [Wahlbenachrichtigung][5] von der [Gemeinde][6]
+        en: an [election notification][5] from the [municipality][6]
+        de: eine Wahlerlaubnis vom Bundespräsidenten / von der Bundespräsidentin
+        en: an election permit from the Federal President
+        de: eine Benachrichtigung von der Bundesversammlung
+        en: a notification from the Federal Assembly
+        de: eine Benachrichtigung vom Pfarramt
+        en: a notification from the parish office
+    correct_answer: 1
+    topic: Elections, Government
+
+
+
+
+127:
+    question:
+        de: [Warum][0] gibt es die [5%-Hurde][1] im [Wahlgesetz][2] der Bundesrepublik Deutschland? Es gibt sie, weil...
+        en: [Why][0] does the [5% hurdle][1] exist in the [electoral law][2] of the Federal Republic of Germany? It exists because...
+        url: none
+    answers:
+        de: die Programme von vielen kleinen Parteien viele Gemeinsamkeiten haben.
+        en: the platforms of many small parties have a lot in common.
+        de: die Bürger und Bürgerinnen bei vielen kleinen Parteien die Orientierung verlieren können.
+        en: citizens can get disoriented with many small parties.
+        de: [viele][3] [kleine][4] Parteien die [Regierungsbildung][5] [erschweren][6].
+        en: [many][3] [small][4] parties make it [difficult][6] to [form a government][5].
+        de: die kleinen Parteien nicht so viel Geld haben, um die Politiker und Politikerinnen zu bezahlen.
+        en: the small parties don't have enough money to pay their politicians.
+    correct_answer: 3
+    topic: Goverment
+
+
+
+
+128:
+    question:
+        de: [Parlamentsmitglieder][0], die von den Bürgern und Bürgerinnen [gewählt][1] werden, [nennt][2] man...
+        en: [Members of parliament][0] who are [elected][1] by the citizens are [called][2]...
+        url: none
+    answers:
+        de: [Abgeordenete][3]
+        en: [Members of Parliament][3]
+        de: Kanzler / Kanzlerinnen
+        en: Chancellors
+        de: Botschafter / Botschafterinnen
+        en: Ambassadors
+        de: Ministerpräsident / Ministerpräsidentinnen
+        en: Prime Ministers
+    correct_answer: 1
+    topic: Government
+
+
+
+
+129:
+    question:
+        de: Vom [Volk][0] [gewählt][1] wird in Deutschland...
+        en: In Germany, the [people][0] [elect][1]...
+        url: none
+    answers:
+        de: der Bundeskanzler / die Bundeskanzlerin.
+        en: the Federal Chancellor.
+        de: der Ministerpräsident / die Ministerpräsidentin eines Bundeslandes.
+        en: the Minister-President of a federal state.
+        de: der [Bundestag][2].
+        en: the [Bundestag][2].
+        de: der Bundespräsident / die Bundespräsidentin.
+        en: the Federal President.
+    correct_answer: 3
+    topic: Goverment
+
+
+
+130:
+    question:
+        de: Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?
+        en: Which ballot would be valid in a Bundestag election?
+        url: pending**
+    answers:
+        de: 1
+        en: 1
+        de: 2
+        en: 2
+        de: 3
+        en: 3
+        de: 4
+        en: 4
+    correct_answer: 1
+    topic: Elections
+
+
+
+
+
+131:
+    question:
+        de: In Deutschland [ist][0] [ein Bürgermeister / eine Bürgermeisterin][1]...
+        en: In Germany, a [mayor][1] [is][0]...
+        url: none
+    answers:
+        de: der Leiter / die Leiterin einer Schule.
+        en: the head of a school.
+        de: der Chef / die Chefin einer Bank.
+        en: the head of a bank.
+        de: das [Oberhaupt][2] einer [Gemeinde][3].
+        en: the [head][2] of a [municipality][3].
+        de:	der / die Vorsitzende einer Partei.
+        en: the leader of a political party.
+    correct_answer: 3
+    topic: Government
+
+
+
+
+
+
+132:
+    question:
+        de: Viele Menschen in Deutschland [arbeiten][0] in ihrer [Freizeit ehrenamtlich][1]. Was bedeutet das?
+        en: Many people in Germany [work][0] [voluntarily][1]. What does this mean?
+        url: none
+    answers:
+        de: Sie arbeiten als Soldaten / Soldatinnen.
+        en: You work as a soldier.
+        de: Sie [arbeiten][2] [freiwillig][3] und [unbezahlt][4] in Vereinen und Verbänden.
+        en: You [work][2] [voluntarily][3] and [unpaid][4] in clubs and associations.
+        de: Sie arbeiten in der Bundesregierung.
+        en: You work for the federal government.
+        de: Sie arbeiten in einem Krankenhaus und verdienen dabei Geld.
+        en: You work in a hospital and earn money.
+    correct_answer: 2
+    topic: Employment
+
+
+
+
+133:
+    question:
+        de: Was ist bei [Bundestags- und Landtagswahlen][0] in Deutschland [erlaubt][1]?
+        en: What is [allowed][1] in [Bundestag and Landtag elections][0] in Germany?
+        url: none
+    answers:
+        de: Der Ehemann wählt für seine Frau mit.
+        en: The husband votes for his wife.
+        de: Man kann durch [Briefwahl][2] seine [Stimme][3] abgeben.
+        en: Voters can cast their [vote][3] by [mail][2].
+        de: Man kann am Wahltag telefonisch seine Stimme abgeben.
+        en: Voters can cast their vote by phone on election day.
+        de: Kinder ab dem Alter von 14 Jahren dürfen wählen.
+        en: Voters aged 14 and over can vote.
+    correct_answer: 2
+    topic: Elections
+
+
+134:
+    question:
+        de: Man will die [Buslinie][0] [abschaffen][1], mit der Sie immer zur Arbeit fahren. [Was][2] [können][3] [Sie][4] [machen][5], um die Buslinie zu erhlaten?
+        en: They want to [abolish][1] the [bus line][0] you always take to work. [What][2] [can][3] [you][4] [do][5] to keep it running?
+        url: none
+    answers:
+        de: Ich beteilige mich an einer [Bürgerinitiative][6] für die [Erhaltung][7] der [Buslinie][8] oder gründe selber eine Initiative.
+        en: I will participate in a [citizens' initiative][6] to [preserve][7] the [bus line][8] or start my own initiative.
+        de: Ich werde Mitglied in einem Sportverein und trainiere Radfahren.
+        en: I will join a sports club and train cycling.
+        de: Ich wende mich an das Finanzamt, weil ich als Steuerzahler / Steuerzahlerin ein Recht auf die Buslinie habe.
+        en: I will contact the tax office because, as a taxpayer, I have a right to the bus line.
+        de: Ich schreibe einen Brief an das Forstamt der Gemeinde.
+        en: I will write a letter to the local forestry office.
+    correct_answer:
+    topic:
+
+
+
+
+135:
+    question:
+        de: [Wen][0] [vertreten][1] die [Gewerkschaften][2] in Deutschland?
+        en: [Who][0] do the [trade unions][2] [represent][1] in Germany?
+        url: none
+    answers:
+        de: große Unternehmen
+        en: large companies
+        de: kleine Unternehmen
+        en: small companies
+        de: Selbständige
+        en: Self-employed
+        de: [Arbeitnehmer und Arbeitnehmerinnen][3]
+        en: [Employees][3]
+    correct_answer: 4
+    topic: Employment
+
+
+
+
+136:
+    question:
+        de: Sie [gehen][0] in Deutschland [zum][1] [Arbeitsgericht][2] bei...
+        en: You [go][0] [to][1] the [labor court][2] in Germany...
+        url: none
+    answers:
+        de: falscher Nebenkostenabrechnung
+        en: incorrect reimbursement of expenses
+        de: [ungerechtfertigter][3] [Kündigung][4] durch [Ihren Chef / Ihre Chefin][5].
+        en: [unjustified][3] [dismissal][4] by [your boss][5].
+        de: Problemen mit den Nachbarn / Nachbarinnen.
+        en: Problems with the neighbors.
+        de: Schwierigkeiten nach einem Verkehrsunfall.
+        en: Difficulties after a traffic accident.
+    correct_answer: 2
+    topic: Employment
+
+
+
+
+137:
+    question:
+        de: Welches [Gericht][0] ist in Deutschland bei [Konflikten][1] in der [Arbeitswelt][2] [zuständig][3]?
+        en: Which [court][0] is [responsible][3] for [labor][2] [disputes][1] in Germany?
+        url: none
+    answers:
+        de: das Familiengericht
+        en: The family court
+        de: das Strafgericht
+        en: The criminal court
+        de: das [Arbeitsgericht][4]
+        en: The [labor court][4]
+        de: das Amtsgericht
+        en: The administrative court
+    correct_answer: 3
+    topic: Law, Employment
+
+
+
+
+
+138:
+    question:
+        de: Was [kann][0] ich in Deutschland [machen][1], [wenn][2] mir mein Arbeitgeber/ meine Arbeitgeberin zu [Unrecht][3] [gekündigt][4] hat?
+        en: What [can][0] I [do][1] in Germany, [if][2] my employer [has] [unjustly][3] [terminated][4] me?
+        url: none
+    answers:
+        de: weiter arbeiten und freundlich zum Chef / zur Chefin sein
+        en: Continue working and be friendly to your boss
+        de: ein Mahnverfahren gegen den Arbeitgeber / die Arbeitgeberin führen
+        en: Initiate a dunning procedure against your employer
+        de: [Kündigungsschutzklage][5] [erheben][6]
+        en: [File][6] a [wrongful termination suit][5]
+        de: den Arbeitgeber / die Arbeitgeberin bei der Polizei anzeigen
+        en: Report your employer to the police
+    correct_answer: 3
+    topic: Employment, Law
+
+
+139:
+    question:
+        de: Wann kommt es in Deutschland zu einem [Prozess][0] vor [Gericht][1]? Wenn jemand...
+        en: When does a [trial][0] take place in [court][1] in Germany? If someone...
+        url: none
+    answers:
+        de: zu einer anderen Religion übertritt.
+        en: converts to another religion.
+        de: eine [Straftat][2] [begangen][3] hat und [angeklagt][4] wird.
+        en: has [committed][3] a [crime][2] and is [accused][4].
+        de: eine andere Meinung als die der Regierung vertritt.
+        en: holds an opinion different from that of the government.
+        de: sein Auto falsch geparkt hat und es abgeschleppt wird.
+        en: has parked his car illegally and it is towed.
+    correct_answer: 2
+    topic: Law
+
+
+140:
+    question:
+        de: Was [macht][0] [ein Schöffe / eine Schöffin][1] in Deutschland? Er / Sie...
+        en: What does a [lay judge][1] [do][0] in Germany? He/she...
+        url: none
+    answers:
+        de: [entscheidet][2] mit [Richtern / Richterinnen][3] über [Schuld][4] und [Strafe][5].
+        en: [decides][2] with [judges][3] on [guilt][4] and [punishment][5].
+        de: gibt Bürgern / Bürgerinnen rechtlichen Rat.
+        en: provides legal advice to citizens.
+        de: stellt Urkunden aus.
+        en: issues documents.
+        de: verteidigt den Angeklagten / die Angeklagte.
+        en: defends the accused.
+    correct_answer: 1
+    topic: Law
+
+
+141:
+    question:
+        de: [Wer][0] [berät][1] in Deutschland Personen bei [Rechtsfragen][2] und [vertritt][3] sie vor [Gericht][4]?
+        en: [Who][0] [advises][1] people in Germany on [legal issues][2] and [represents][3] them in [court][4]?
+        url: none
+    answers:
+        de: [ein Rechtsanwalt / eine Rechtsanwältin][5]
+        en: [a lawyer][5]
+        de: ein Richter / eine Richterin
+        en: a judge
+        de: ein Schöffe / eine Schöffin
+        en: a lay judge
+        de: ein Staatsanwalt / eine Staatsanwältin
+        en: a public prosecutor
+    correct_answer: 1
+    topic: Law, Courts
+
+
+
+
+142:
+    question:
+        de: Was ist die [Hauptaufgabe][0] [eines Richters / einer Richterin][1] in Deutschland? Ein Richter / eine Richterin ist ein...
+        en: What is the [main task][0] of [a judge][1] in Germany? A judge is...
+        url: none
+    answers:
+        de: vertritt Bürger und Bürgerinnen vor einem Gericht.
+        en: represents citizens in court.
+        de: [arbeitet][2] an einem [Gericht][3] und [spricht][4] [Urteile][5].
+        en: [works][2] in a [court][3] and [issues][4] [judgments][5].
+        de: ändert Gesetze.
+        en: changes laws.
+        de: betreut Jugendliche vor Gericht.
+        en: supervises minors in court.
+    correct_answer: 2
+    topic: Law, Courts
+
+
+
+
+143:
+    question:
+        de: [Ein Richter / eine Richterin][0] in Deutschland [gehört][1] zur...
+        en: [A judge][0] in Germany [belongs][1] to...
+        url: none
+    answers:
+        de: [Judikative][2]
+        en: [judiciary][2]
+        de: Exekutive
+        en: executive
+        de: Operative
+        en: operational
+        de: Legislativ
+        en: legislative
+    correct_answer: 1
+    topic: Law, Courts
+
+
+
+144:
+    question:
+        de: [Ein Richter / eine Richterin][0] in Deutschland [gehört][1] zur...
+        en: [A judge][0] in Germany [belongs][1] to...
+        url: none
+    answers:
+        de: vollziehenden Gewalt.
+        en: executive power.
+        de: [rechtsprechenden][2] [Gewalt][3].
+        en: [judicial][2] [power][3].
+        de: planenden Gewalt.
+        en: planning power.
+        de: gesetzgebenden Gewalt.
+        en: legislative power.
+    correct_answer: 2
+    topic: Law, Courts
+
+
+
+145:
+    question:
+        de: In Deutschland wird die Staatsgewalt geteilt. Für welche [Staatsgewalt ][0] [arbeitet][1] [ein Richter / eine Richterin][2]? Für die...
+        en: In Germany, government power is divided. For which [government power][0] [does][1] [a judge][2] work? For the...
+        url: none
+    answers:
+        de: [Judikative][3]
+        en: [judiciary][3]
+        de: Exekutive
+        en: executive
+        de: Presse
+        en: Press
+        de: Legislativ
+        en: legislative
+    correct_answer: 1
+     topic: Law, Courts
+
+
+
+
+146:
+    question:
+        de: Wie [nennt][0] man in Deutschland ein [Verfahren][1] vor einem [Gericht][2]?
+        en: What is [0] called a [proceeding][1] before a [court][2] in Germany?
+        url: none
+    answers:
+        de: Programm
+        en: Program
+        de: Prozedur
+        en: Procedure
+        de: Protokoll
+        en: Protocol
+        de: [Prozess][3]
+        en: [Process][3]
+    correct_answer: 4
+    topic: Law, Courts
+
+
+
+
+147:
+    question:
+        de: Was ist die [Arbeit][0] [eines Richters / einer Richterin][1] in Deutschland?
+        en: What is the [job][0] of a [judge][1] in Germany?
+        url: none
+    answers:
+        de: Deutschland regieren
+        en: Govern Germany
+        de: Recht sprechen
+        en: [Administer][2] [justice][3]
+        de: [Pläne][2] [erstellen][3]
+        en: Make plans
+        de: Gesetze erlassen
+        en: Enact laws
+    correct_answer: 2
+    topic: Law, Courts
+
+
+
+148:
+    question:
+        de: Was ist eine [Aufgabe][0] der [Polizei][1] in Deutschland?
+        en: What is a [task][0] of the [police][1] in Germany?
+        url: none
+    answers:
+        de: das Land zu verteidigen
+        en: protect the country
+        de: die Bürgerinnen und Bürger abzuhören
+        en: listen to citizens
+        de: die Gesetze zu beschließen
+        en: enact laws
+        de: die [Einhaltung][2] von [Gesetzen][3] zu überwachen
+        en: to monitor [compliance][2] with [laws][3]
+    correct_answer: 4
+    topic: Law, Police
+
+
+
+
+
+149:
+    question:
+        de: Was ist ein [Beispiel][0] für [antisemitisches][1] [Verhalten][2]?
+        en: What is an [example][0] of [antisemitic][1] [behavior][2]?
+        url: none
+    answers:
+        de: ein jüdisches Fest besuchen
+        en: a visit to a Jewish festival
+        de: die israelische Regierung kritisieren
+        en: criticizing the Israeli government
+        de: den [Holocaust][3] [leugnen][4]
+        en: [denying][4] the [Holocaust][3]
+        de: gegen Juden Fußball spielen
+        en: playing football against Jews
+    correct_answer: 3
+    topic: Religion
+
+
+
+
+
+150:
+    question:
+        de: [Ein Gerichtsschöffe / eine Gerichtsschöffin][0] in Deutschland ist...
+        en: A [lay judge][0] in Germany is...
+        url: none
+    answers:
+        de: der Stellvertreter / die Stellvertreterin des Stadtoberhaupts.
+        en: the deputy mayor.
+        de: ein [ehrenamtlicher Richter / eine ehrenamtliche Richterin][1].
+        en: a [lay judge][1].
+        de: ein Mitglied eines Gemeinderats.
+        en: a member of a municipal council.
+        de: eine Person, die Jura studiert hat.
+        en: a person who has studied law.
+    correct_answer: 2
+    topic: Law, Justice
+
+
+151:
+    question:
+        de: Wer [baute][0] die [Mauer][1] in [Berlin][2]?
+        en: Who [built][0] the [Berlin][2] [Wall][1]?
+        url: none
+    answers:
+        de: Großbritannien
+        en: Great Britain
+        de: die [DDR][3]
+        en: the [German Democratic Republic][3]
+        de: die Bundesrepublik Deutschland
+        en: the Federal Republic of Germany
+        de: die USA
+        en: the United States
+    correct_answer: 2
+    topic: History
+
+
+
+
+
+152:
+    question:
+        de: [Wann][0] waren die [Nationalsozialisten][1] mit Adolf Hitler in Deutschland an der [Macht][2]?
+        en: [When][0] did the ]National Socialists][1] with Adolf Hitler come to [power][2] in Germany?
+        url: none
+    answers:
+        de: 1918 bis 1923
+        en: 1918 to 1923
+        de: 1932 bis 1950
+        en: 1932 to 1950
+        de: 1933 bis 1945
+        en: 1933 to 1945
+        de: 1945 bis 1989
+        en: 1945 to 1989
+    correct_answer: 3
+    topic: History
+
+
+153:
+    question:
+        de: [Was][0] [war][1] am [8. Mai 1945][2]?
+        en: What happened on [May 8th, 1945][2]?
+        url: none
+    answers:
+        de: Tod Adolf Hitlers
+        en: Death of Adolf Hitler
+        de: Beginn des Berliner Mauerbaus
+        en: Start of the Berlin Wall construction
+        de: Wahl von Konrad Adenauer zum Bundeskanzler
+        en: Election of Konrad Adenauer as Federal Chancellor
+        de: [Ende][3] des [Zweiten Weltkriegs][4] in [Europa][5]
+        en: [End][3] of the [Second World War][4] in [Europe][5]
+    correct_answer: 4
+    topic: History
+
+
+
+ 154:
+    question:
+        de: [Wann][0] war der [Zweite Weltkrieg][1] zu [Ende][2]?
+        en: [When][0] was the [Second World War][1] [over][2]?
+        url: none
+    answers:
+        de: 1933
+        en: 1933
+        de: 1945
+        en: 1945
+        de: 1949
+        en: 1949
+        de: 1961
+        en: 1961
+    correct_answer: 2
+    topic: History
+
+
+
+
+155:
+    question:
+        de: [Wann][0] waren die [Nationalsozialisten][1] in Deutschland an der [Macht][2]?
+        en: [When][0] were the [National Socialists][1] in [power][2] in Germany?
+        url: none
+    answers:
+        de: 1888 bis 1918
+        en: 1888 to 1918
+        de: 1921 bis 1934
+        en: 1921 to 1934
+        de: 1933 bis 1945
+        en: 1933 to 1945
+        de: 1949 bis 1963
+        en: 1949 to 1963
+    correct_answer: 3
+    topic: History
+
+
+156:
+    question:
+        de: In welchem [Jahr][0] wurde [Hitler][1] [Reichskanzler][2]?
+        en: In what [year][0] did Hitler become [Reich Chancellor][2]?
+        url: none
+    answers:
+        de: 1923
+        en: 1923
+        de: 1927
+        en: 1927
+        de: 1933
+        en: 1933
+        de: 1936
+        en: 1936
+    correct_answer:3
+    topic: History
+
+
+
+157:
+    question:
+        de: Die [Nationalsozialisten][0] mit Adolf [Hitler][1] [errichteten][2] 1933 in Deutschland...
+        en: The [National Socialists][0] with Adolf [Hitler][1] [established][2] in Germany in 1933...
+        url: none
+    answers:
+        de: eine [Dikatatur][3]
+        en: a [dictatorship][3]
+        de: einen demokratischen Staat.
+        en: a democratic state.
+        de: eine Monarchie.
+        en: a monarchy.
+        de: ein Fürstentum.
+        en: a principality.
+    correct_answer: 1
+    topic: History
+
+
+
+158:
+    question:
+        de: Das ["Dritte Reich"][0] [war][1] eine...
+        en: The ["Third Reich"][0] [was][1] a...
+        url: none
+    answers:
+        de: [Dikatatur][2]
+        en: [Dictatorship][2]
+        de: Demokratie
+        en: Democracy
+        de: Monarchie
+        en: Monarchy
+        de: Räterepublik
+        en: Republic
+    correct_answer: 1
+    topic: History
+
+
+
+
+159:
+    question:
+        de: Was gab es in Deutschland [nicht][0] [während][1] der [Zeit][2] des [Nationalsozialismus][3]?
+        en: What was [not][0] in Germany [during][1] the [time][2] of [National Socialism][3]?
+        url: none
+    answers:
+        de: [freie][5] [Wahlen][6]
+        en: [free][5] [elections][6]
+        de: Pressezensur
+        en: press censorship
+        de: willkürliche Verhaftungen
+        en: arbitrary arrests
+        de: Verfolgung der Juden
+        en: persecution of Jews
+    correct_answer: 1
+    topic: History
+
+
+
+
+160:
+    question:
+        de: Welcher [Krieg][0] [dauerte][1] von [1939 bis 1945][2]?
+        en: Which [war][0] [lasted][1] from [1939 to 1945][2]?
+        url: none
+    answers:
+        de: der Erste Weltkrieg
+        en: the First World War
+        de: der [Zweite][3] [Weltkrieg][4]
+        en: the [Second][3] [World War][4]
+        de: der Vietnamkrieg
+        en: the Vietnam War
+        de: der Golfkrieg
+        en: the Gulf War
+    correct_answer: 2
+    topic: History
+
+
+
+
+161:
+    question:
+        de: Was [kennzeichnete][0] de [NS-Staat][1]? Eine [Politik][2]...
+        en: What [characterized][0] the [Nazi state][1]? A [policy][2] of...
+        url: none
+    answers:
+        de: des [staatlichen][3] [Rassismus][4]
+        en: of [state][3] [racism][4]
+        de: der Meinungsfreiheit
+        en: a policy of freedom of thought
+        de: der allgemeinen Religionsfreiheit
+        en: a policy of religious freedom
+        de: der Entwicklung der Demokratie
+        en: a policy of democratic development
+    correct_answer: 1
+    topic: History
+
+
+
+162:
+    question:
+        de: [Claus Schenk Graf von Stauffenberg][0] wurde [bekannt][1] durch...
+        en: [Claus Schenk Graf von Stauffenberg][0] was [known][1] for...
+        url: none
+    answers:
+        de: eine Goldmedaille bei den Olympischen Spielen 1936
+        en: a gold medal at the 1936 Olympics
+        de: den Bau des Reichstagsgebäudes.
+        en: the construction of the Reichstag building
+        de: den Aufbau der Wehrmacht.
+        en: the establishment of the Wehrmacht
+        de: das [Attentat][2] auf [Hitler][3] am [20. Juli 1944][4].
+        en: the [assassination attempt][2] on [Hitler][3] on [July 20, 1944][4].
+    correct_answer: 4
+    topic: History
+
+
+
+
+163:
+    question:
+        de: In welchem [Jahr][0] [zerstören][1] die [Nationalsozialisten][2] [Synagogen][3] und [jüdische Geschäfte][4] in Deutschland?
+        en: In which [year][0] did the [Nazis][2] [destroy][1] [synagogues][3] and [Jewish businesses][4] in Germany?
+        url: none
+    answers:
+        de: 1925
+        en: 1925
+        de: 1930
+        en: 1930
+        de: 1938
+        en: 1938
+        de: 1945
+        en: 1945
+    correct_answer: 3
+    topic: History
+
+
+164:
+    question:
+        de: [Was][0] [passierte][1] am [9. November 1938][2] in Deutschland?
+        en: [What][0] [happened][1] on [November 9, 1938][2] in Germany?
+        url: none
+    answers:
+        de: Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.
+        en: With the attack on Poland, World War II begins.
+        de: Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.
+        en: The Nazis lose an election and dissolve the Reichstag.
+        de: [Jüdische Geschäfte][3] und [Synagogen][4] werden durch [Nationalsozialisten][5] und ihre Anhänger [zerstört][6].
+        en: [Jewish businesses][3] and [synagogues][4] are [destroyed][6] by [National Socialists][5] and their followers.
+        de: Hitler wird Reichspräsident und lässt alle Parteien verbieten.
+        en: Hitler becomes Reich President and bans all parties.
+    correct_answer:
+    topic:
+
+
+165:
+    question:
+        de: Wie [hieß][0] der [erste][1] [Bundeskanzler][2] der Bundesrepublik Deutschland?
+        en: What was the [name][0] of the [first][1] [Chancellor][2] of the Federal Republic of Germany?
+        url: none
+    answers:
+        de: Konrad Adenauer
+        en:	Konrad Adenauer
+        de: Kurt Georg Kiesinger
+        en: Kurt Georg Kiesinger
+        de: Helmut Schmidt
+        en: Helmut Schmidt
+        de: Willy Brandt
+        en: Willy Brandt
+    correct_answer: 1
+    topic: History
+
+
+
+166:
+    question:
+        de: Bei welchen [Demonstrationen][0] in Deutschland [riefen][1] die [Menschen][2] ["Wir sind das Volk"][3]?
+        en: At which [demonstrations][0] in Germany did [people][2] [shout][1] ["We are the people"][3]?
+        url: none
+    answers:
+        de: beim Arbeiteraufstand 1953 in der DDR
+        en: during the 1953 workers' uprising in East Germany
+        de: bei den Demonstrationen 1968 in der Bundesrepublik Deutschland
+        en: during the 1968 demonstrations in West Germany
+        de: bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland
+        en: during the 1985 anti-nuclear power demonstrations in West Germany
+        de: bei den [Montagsdemonstrationen][4] [1989][5] in der [DDR][6]
+        en: during the [1989][5] [Monday demonstrations][4] in [East Germany][6]
+    correct_answer: 4
+    topic: History
+
+
+
+167:
+    question:
+        de: Welche [Länder][0] wurden [nach][1] dem [Zweiten][2] [Weltkrieg][3] in Deutschland als ["Allierte Besatzungsmächte"][4] bezeichnet?
+        en: Which [countries][0] were referred to as ["Allied Occupation Powers"][4] in Germany [after][1] the [Second][2] [World War][3]?
+        url: none
+    answers:
+        de: Sowjetunion, Großbritannien, Polen, Schweden
+        en: Soviet Union, United Kingdom, Poland, Sweden
+        de: Frankreich, Sowjetunion, Italien, Japan
+        en: France, Soviet Union, Italy, Japan
+        de: USA, Sowjetunion, Spanien, Portugal
+        en: USA, Soviet Union, Spain, Portugal
+        de: [USA][5], [Sowjetunion][6], [Großbritannien][7], [Frankreich][8]
+        en: [USA][5], [Sowjetunion][6], [Großbritannien][7], [Frankreich][8]
+    correct_answer: 4
+    topic: History
+
+
+
+
+168:
+    question:
+        de: Welches [Land][0] war [keine][1] ["Allierte Besatzungsmacht"][2] nach dem Zweiten Weltkrieg in Deutschland?
+        en: Which [country][0] was [not][1] an ["Allied Occupation Power"][2] after the Second World War in Germany?
+        url: none
+    answers:
+        de: USA
+        en: USA
+        de: Sowjetunion
+        en: Soviet Union
+        de: Frankreich
+        en: France
+        de: Japan
+        en: Japan
+    correct_answer: 4
+    topic:  History
+
+
+169:
+    question:
+        de: Wann wurde die [Bundesrepublik][0] Deutschland [gegründet][1]?
+        en: When was the [Federal Republic][0] of Germany [founded][2]?
+        url: none
+    answers:
+        de: 1939
+        en: 1939
+        de: 1945
+        en: 1945
+        de: 1949
+        en: 1949
+        de: 1951
+        en: 1951
+    correct_answer: 3
+    topic: History
+
+
+
+
+170:
+    question:
+        de:  Was [gab][0] es [während][1] der [Zeit][2] des [Nationalsozialismus][3] in Deutschland?
+        en: What [existed][0] in Germany [during][1] the [Nazi][3] [era][2]?
+        url: none
+    answers:
+        de: das [Verbot][4] von [Parteien][5]
+        en: the [ban][4] on [political parties][5]
+        de: das Recht zur freien Entfaltung der Persönlichkeit
+        en: the right to free development of personality
+        de: Pressefreiheit
+        en: freedom of the press
+        de: den Schutz der Menschenwürde
+        en: protection of human dignity
+    correct_answer: 1
+    topic: History
+
+
+
+
+
+171:
+    question:
+        de: [Soziale Marktwirtschaft][0] [bedeutet][1], die Wirtschaft...
+        en: [Social market economy][0] [means][1] the economy...
+        url: none
+    answers:
+        de: steuert sich allein nach Angebot und Nachfrage.
+        en: is solely determined by supply and demand.
+        de wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.
+        en: It is planned and controlled by the state; supply and demand are not taken into account.
+        de: richtet sich nach der Nachfrage im Ausland.
+        en: It is determined by foreign demand.
+        de: [Angebot][2]und [Nachfrage][3], aber der [Staat][4] [sorgt][5] für einen sozialen [Ausgleich][6].
+        en: [supply][2] and [demand][3], but the [state][4] [ensures][5] social [balance][6].
+    correct_answer:
+    topic: Economy
+
+
+
+172:
+    question:
+        de: In welcher [Besatzungszone][0] wurde die [DDR][1] [gegründet][2]? In der...
+        en: In which [occupation zone][0] was the [GDR][1] [founded][2]? In the...
+        url: none
+    answers:
+        de: amerikanischen Besatzungszone
+        en: american occupation zone
+        de: französischen Besatzungszone
+        en: french occupation zone
+        de: britischen Besatzungszone
+        en: british occupation zone
+        de: [sowjetischen][3] [Besatzungszone][4]
+        en: [soviet][3] [occupation zone][4]
+    correct_answer: 4
+    topic: History
+
+
+173:
+      question:
+        de: Die Bundesrepublik Deutschland ist ein [Gründungsmitglied][0]...
+        en: The Federal Republic of Germany is a [founding member][0] of...
+        url: none
+    answers:
+        de: des Nordatlantikpakts (NATO)
+        en: The North Atlantic Treaty Organization (NATO)
+        de: der Vereinten Nationen (VN).
+        en: the United Nations (UN)
+        de: der [Europäischen][1] [Union][2] (EU).
+        en: the [European][1] [Union][2] (EU)
+        de: des Warschauer Pakts.
+        en: the Warsaw Pact
+    correct_answer: 3
+    topic: History
+
+
+
+
+
+
+174:
+    question:
+        de: Wann wurde die [DDR][0] [gegründet][1]?
+        en: When was the [GDR][0] [founded][1]?
+        url: none
+    answers:
+        de: 1947
+        en: 1947
+        de: 1949
+        en: 1949
+        de: 1953
+        en: 1953
+        de: 1956
+        en: 1956
+    correct_answer: 2
+    topic: History
+
+
+
+175:
+    question:
+        de: [Wie][0] [viele][1] [Besatzungszonen][2] gab es in Deutschland nach dem Zweiten Weltkrieg?
+        en: [How][0] [many][1] [occupation zones][2] were there in Germany after the Second World War?
+        url: none
+    answers:
+        de: 3
+        en: 3
+        de: 4
+        en: 4
+        de: 5
+        en: 5
+        de: 6
+        en: 6
+    correct_answer: 2
+    topic: History
+
+
+
+ 176:
+    question:
+        de: Wie waren die [Besatzungszonen][0] Deutschlands nach 1945 [verteilt][1]?
+        en: How were the [occupation zones][0] of Germany after 1945 [distributed][1]?
+        url: none
+    answers:
+        de: 1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA
+        en: 1=United Kingdom, 2=Soviet Union, 3=France, 4=United States
+        de: 1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich
+        en: 1=Soviet Union, 2=United Kingdom, 3=United States, 4=France
+        de: 1=[Großbritannien][2], 2=[Sowjetunion][3], 3=[USA][4], 4=[Frankreich][5]
+        en: 1=[United Kingdom][2], 2=[Soviet Union][3], 3=[United States][4], 4=[France][5]
+        de: 1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich
+        en: 1=United Kingdom, 2=United States, 3=Soviet Union, 4=France
+    correct_answer: 3
+    topic: History
+
+
+
+
+177:
+    question:
+        de: Welche deutsche [Stadt][0] wurde nach dem [Zweiten][1] [Weltkrieg][2] in [vier][3] [Sektoren][4] [aufgeteilt][5]?
+        en: Which German [city][0] was [divided]5]5 into [four][3] [sectors][4] after the [Second][1] [World War][2]?
+        url: none
+    answers:
+        de: München
+        en: Munich
+        de: Berlin
+        en: Berlin
+        de: Dresden
+        en: Dresden
+        de: Frankfurt/Oder
+        en: Frankfurt/Other
+    correct_answer: 2
+    topic: History
+
+
+
+178:
+    question:
+        de: Vom Juni 1948 bis zum Mai 1949 wurden die Bürger und Bürgerinnen von West-Berlin durch eine [Luftbrücke][0] versorgt. Welcher [Umstand][1] war dafür [verantwortlich][2]?
+        en: From June 1948 to May 1949, the citizens of West Berlin were supplied by an [airlift][0]. What [circumstances][1] were [responsible][2] for this?
+        url: none
+    answers:
+        de: Für Frankreich war eine Versorgung der West-Berliner Bevölkerung mit dem Flugzeug kostengünstiger.
+        en: For France, the airlift was more cost-effective than ground transportation.
+        de: Die amerikanischen Soldaten / Soldatinnen hatten beim Landtransport Angst vor Überfällen
+        en: For the United States, the airlift was more cost-effective than ground transportation.
+        de: Für Großbritannien war die Versorgung über die Luftbrücke schneller.
+        en: For the United Kingdom, the airlift was faster than ground transportation.
+        de: Die [Sowjetunion][3] [unterbrach][4] den gesamten [Verkehr][5] auf dem [Landwege][6].
+        en: The [Soviet Union][3] [blocked][4] all [land][6] [transportation][5].
+    correct_answer:
+    topic:
+
+
+
+
+179:
+    question:
+        de: Wie [endete][0] der [Zweite][1] [Weltkrieg][2] in Europa [offiziell][3]?
+        en: How did the [Second][1] [World War][2] [end][0] in Europe [officially][3]?
+        url: none
+    answers:
+        de: mit dem Tod Adolf Hitlers
+        en: with the death of Adolf Hitler
+        de: durch die [bedingungslose][3] [Kapitulation][4] [Deutschlands][5]
+        en: through the [unconditional][3] [surrender][4] [of Germany][5]
+        de: mit dem Rückzug der Deutschen aus den besetzten Gebieten
+        en: with the withdrawal of Germans from occupied territories
+        de: durch eine Revolution in Deutschland
+        en: through a revolution in Germany
+    correct_answer:
+    topic:
+
+
+
+180:
+    question:
+        de: Der [erste][0] [Bundeskanzler][1] der Bundesrepublik Deutschland war...
+        en: The [first][0] [Chancellor][1] of the Federal Republic of Germany was...
+        url: none
+    answers:
+        de: Ludwig Erhard
+        en: Ludwig Erhard
+        de: Willy Brandt.
+        en: Willy Brandt.
+        de: Konrad Adenauer.
+        en: Konrad Adenauer.
+        de: Gerhard Schröder.
+        en: Gerhard Schröder.
+    correct_answer: 3
+    topic: History
+
+
+
+
+181:
+    question:
+        de: Was wollte [Willy Brandt][0] mit seinem [Kniefall][1] 1970 im [ehemaligen][2] [jüdischen][3] [Ghetto][4] in [Warschau][5] ausdrücken?
+        en: What did [Willy Brandt][0] want to express with his [knee-bend][1] in 1970 in the [former][2] [Jewish][3] [ghetto][4] in [Warsaw][5]?
+        url: pending**
+    answers:
+        de: Er hat sich den ehemaligen Alliierten unterworfen.
+        en: He submitted to the former Allies.
+        de: Er bat [Polen][6] und die [polnischen Juden][7] um [Vergebung][8].
+        en: He asked [Poland][6] and [Polish Jews][7] for [forgiveness][8].
+        de: Er zeigte seine Demut vor dem Warschauer Pakt.
+        en: He showed his humility before the Warsaw Pact.
+        de: Er sprach ein Gebet am Grab des Unbekannten Soldaten.
+        en: He said a prayer at the Tomb of the Unknown Soldier.
+    correct_answer: 2
+    topic: History, Religion
+
+
+
+
+185:
+    question:
+        de: Wie [heißt][0] das [jüdische][1] [Gebetshaus][2]?
+        en: What is the [name][0] of the [Jewish][1] [prayer hall][2]?
+        url: none
+    answers:
+        de: Basilika
+        en: Basilica
+        de: Moschee
+        en: Mosque
+        de: [Synagoge][3]
+        en: [Synagogue][3]
+        de: Kirche
+        en: Church
+    correct_answer: 3
+    topic: Religion
+
+
+
+183:
+    question:
+        de: [Wann][0] war in der Bundesrepublik Deutschland das ["Wirstchaftswunder"][1]?
+        en: [When][0] was the ["Wirtschaftswunder"][1] in the Federal Republic of Germany?
+        url: none
+    answers:
+        de: 40er Jahre
+        en: 40s
+        de: [50er Jahre][2]
+        en: [50s][2]
+        de: 70er Jahre
+        en: 70s
+        de: 80er Jahre
+        en: 80s
+    correct_answer: 2
+    topic: History
+
+
+
+
+
+184:
+    question:
+        de: Auf welcher [rechtlichen][0] [Grundlage][1] wurde der Staat [Israel][2] [gegründet][3]?
+        en: On what [legal][0] [basis][1] was the State of [Israel][2] [founded][3]?
+        url: none
+    answers:
+        de: eine [Resolution][4] der [Vereinten Nationen][5]
+        en: a [resolution][4] of the [United Nations][5]
+        de: ein Beschluss des Zionistenkongresses
+        en: a resolution of the Zionist Congress
+        de: ein Vorschlag der Bundesregierung
+        en: a proposal of the Federal Government
+        de: ein Vorschlag der UdSSR
+        en: a proposal of the USSR
+    correct_answer: 1
+    topic: History
+
+
+
+185:
+    question:
+        de: Wofür stand der Ausdruck ["Eiserner Vorhang"][0]? Für die [Abschottung][1]...
+        en: What did the expression ["Iron Curtain"][0] stand for? For the [separation][1]...
+        url: none
+    answers:
+        de: des [Warschauer Pakts][2] [gegen][3] den [Westen][4]
+        en: of the [Warsaw Pact][2] [against][3] the [West][4]
+        de: Norddeutschlands gegen Süddeutschland
+        en: of North Germany against South Germany
+        de: Nazi-Deutschlands gegen die Alliierten
+        en: of Nazi Germany against the Allies
+        de: Europas gegen die USA
+        en: of Europe against the USA
+    correct_answer: 1
+    topic: History
+
+
+186:
+    question:
+        de: Im Jahr 1953 gab es in der [DDR][0] einen [Aufstand][1], an den lange Zeit in der Bundesrepublik Deutschland ein [Feiertag][2] [erinnerte][3]. [Wann][4] war das?
+        en: In 1953, there was an [uprising][1] in [East Germany][0], which was commemorated for a long time as a [public holiday][2] in West Germany. [When][4] was that?
+        url: none
+    answers:
+        de: 1. Mai
+        en: May 1st
+        de: [17. Juni][5]
+        en: [June 17th][5]
+        de: 20. Juli
+        en: July 20th
+        de: 9. November
+        en: November 9th
+    correct_answer: 2
+    topic: History
+
+
+
+
+187:
+    question:
+        de: Welcher [deutsche][0] [Staat][1] hatte eine [schwarz-rot-goldene][2] [Flagge][3] mit Hammer, Zirkel und Ahrenkranz?
+        en: Which [German][0] [state][1] had a [black-red-gold][2] [flag][3] with a hammer, compass and wreath of ears of wheat?
+        url: pending**
+    answers:
+        de: Preußen
+        en: Prussia
+        de: Bundesrepublik Deutschland
+        en: Federal Republic of Germany
+        de: "Drittes Reich"
+        en: Third Reich
+        de: [DDR][4]
+        en: [GDR][4]
+    correct_answer: 4
+    topic: History
+
+
+
+
+188:
+    question:
+        de: In welchem [Jahr][0] wurde die [Mauer][1] in [Berlin][2] [gebaut][3]?
+        en: In which [year][0[ was the [Berlin][2] [Wall][1] [built][3]?
+        url: none
+    answers:
+        de: 1953
+        en: 1953
+        de: 1956
+        en: 1956
+        de: 1959
+        en: 1959
+        de: 1961
+        en: 1961
+    correct_answer:4
+    topic: History
+
+
+
+189:
+    question:
+        de: Wann [baute][0] die [DDR][1] die [Mauer][2] in [Berlin][3]?
+        en: When did the [GDR][1] [build][0] the [Wall][2] in [Berlin][3]?
+        url: none
+    answers:
+        de: 1919
+        en: 1919
+        de: 1933
+        en: 1933
+        de: 1961
+        en: 1961
+        de: 1990
+        en: 1990
+    correct_answer: 3
+    topic: History
+
+
+
+
+190:
+    question:
+        de: Was [bedeutet][0] die Abkürzung [DDR][1]?
+        en: What does the abbreviation [DDR][1] [mean][0]?
+        url: none
+    answers:
+        de: Dritter Deutscher Rundfunk
+        en: Third German Broadcasting Company
+        de: Die Deutsche Republik
+        en: The German Republic
+        de: Dritte Deutsche Republik
+        en: Third German Republic
+        de: [Deutsche][2] [Demokratische][3] [Republik][4]
+        en: [German][2] [Democratic][3] [Republic][4]
+    correct_answer: 4
+    topic: History
+
+
+
+191:
+    question:
+        de: [Wann][0] wurde die [Mauer][1] in [Berlin][2] für [alle][3] [geöffnet][4]?
+        en: [When][0] was the [Berlin][1] [Wall][2] [opened][4] for [all][3]?
+        url: none
+    answers:
+        de: 1987
+        en: 1987
+        de: 1989
+        en: 1989
+        de: 1992
+        en: 1992
+        de: 1995
+        en: 1995
+    correct_answer: 2
+    topic: History
+
+
+
+192:
+    question:
+        de: Welches [heutige][0] deutsche [Bundesland][1] gehörte früher zum [Gebiet][2] der [DDR][3]?
+        en: Which [present-day][0] German [state][1] was [part][2] of the territory of the [GDR][3]?
+        url: none
+    answers:
+        de: Brandenburg
+        en: Brandenburg
+        de: Bayern
+        en: Bavaria
+        de: Saarland
+        en: Saarland
+        de: Hessen
+        en: Hesse
+    correct_answer: 1
+    topic: History
+
+
+
+193:
+    question:
+        de: Von [1961 bis 1989][0] war [Berlin][1]...
+        en: From [1961 to 1989][0], [Berlin][1] was...
+        url: none
+    answers:
+        de: ohne Bürgermeister.
+        en: without a mayor.
+        de: ein eigener Staat.
+        en: an independent state.
+        de: durch eine [Mauer][2] [geteilt][3].
+        en: [divided][3] by a [wall][2].
+        de: nur mit dem Flugzeug erreichbar.
+        en: only reachable by air.
+    correct_answer: 3
+    topic: History
+
+
+
+194:
+    question:
+        de: Am [3. Oktober][0] [feiert][1] man in Deutschland den Tag der Deutschen...
+        en: On [October 3rd][0] it is [celebrated][1] in Germany the Day of German...
+        url: none
+    answers:
+        de: [Einheit][2]
+        en: [Unity][2]
+        de: Nation
+        en: Nation
+        de: Bundesländer
+        en: States
+        de: Städte
+        en: Cities
+    correct_answer: 1
+    topic: History, Society
+
+
+
+195:
+    question:
+        de: Welches [heutige][0] deutsche [Bundesland][1] gehörte früher zum [Gebiet][2] der [DDR][3]?
+        en: Which [present-day][0] German [state][1] was [part][2] of the territory of the [GDR][3]?
+        url: none
+    answers:
+        de: Hessen
+        en: Hesse
+        de: [Sachsen-Anhalt][4]
+        en: [Saxony-Anhalt][4]
+        de: Nordrhein-Westfalen
+        en: North Rhine-Westphalia
+        de: Saarland
+        en: Saarland
+    correct_answer: 2
+    topic: History
+
+
+
+196:
+    question:
+        de: Warum nennt man die Zeit im [Herbst 1989][0] in der [DDR][1] ["Die Wende"][2]? In dieser Zeit veränderte sich die DDR politisch...
+        en: Why is the time in [autumn 1989][0] in the [GDR][1] called ["The Turning Point"][2]? In this time the GDR changed politically...
+        url: none
+    answers:
+        de: von einer [Diktatur][3] zur [Demokratie][4].
+        en: from a [dictatorship][3] to [democracy][4].
+        de: von einer liberalen Marktwirtschaft zum Sozialismus.
+        en: from a liberal market economy to socialism.
+        de: von einer Monarchie zur Sozialdemokratie.
+        en: from a monarchy to social democracy.
+        de: von einem religiösen Staat zu einem kommunistischen Staat.
+        en: from a religious state to a communist state.
+    correct_answer: 1
+    topic: History
+
+
+
+197:
+    question:
+        de: Welches [heutige][0] deutsche [Bundesland][1] gehörte früher zum [Gebiet][2] der [DDR][3]?
+        en: Which [present-day][0] German [state][1] was [part][2] of the territory of the [GDR][3]?
+        url: none
+    answers:
+        de: Thüringen
+        en: Thuringia
+        de: Hessen
+        en: Hesse
+        de: Bayern
+        en: Bavaria
+        de: Bremen
+        en: Bremen
+    correct_answer: 1
+    topic: History, Geography
+
+
+
+198:
+    question:
+        de: Welches [heutige][0] deutsche [Bundesland][1] gehörte früher zum [Gebiet][2] der [DDR][3]?
+        en: Which [present-day][0] German [state][1] was [part][2] of the territory of the [GDR][3]?
+        url: none
+    answers:
+        de: Bayern
+        en: Bavaria
+        de: Niedersachsen
+        en: Lower Saxony
+        de: Sachsen
+        en: Saxony
+        de: Baden-Württemberg
+        en: Baden-Württemberg
+    correct_answer: 3
+    topic: History, Geography
+
+
+
+199:
+    question:
+        de: Mit der [Abkürzung][0] ["Stasi"][1] meinte man in der [DDR][2]...
+        en: With the [abbreviation][0] ["Stasi"][1], one meant in the [GDR][2]...
+        url: none
+    answers:
+        de: das Parlament.
+        en: the parliament
+        de: das [Ministerium][3] für [Staatssicherheit][4].
+        en: the [Ministry][3] of [State Security][4]
+        de: eine regierende Partei.
+        en: a ruling party
+        de: das Ministerium für Volksbildung.
+        en: the Ministry of Popular Education
+        en:
+    correct_answer: 2
+    topic: History
+
+
+
+200:
+    question:
+        de: Welches [heutige][0] deutsche [Bundesland][1] gehörte früher zum [Gebiet][2] der [DDR][3]?
+        en: Which [present-day][0] German [state][1] was [part][2] of the territory of the [GDR][3]?
+        url: none
+    answers:
+        de: Hessen
+        en: Hesse
+        de: Schleswig-Holstein
+        en: Schleswig-Holstein
+        de: [Mecklenburg-Vorpommern][4]
+        en: [Mecklenburg-Western Pomerania][4]
+        de: Saarland
+        en: Saarland
+    correct_answer: 3
+    topic: History, Geography
+
+
+
+
+
+201:
+    question:
+        de: Welche der folgenden Auflistungen enthält [nur][0] [Bundesländer][1], die zum Gebiet der früheren [DDR][2] [gehörten][3]?
+        en: Which of the following lists contains [only][0] [federal states][1] that [belonged][3] to the territory of the former [GDR][2]?
+        url: none
+    answers:
+        de: Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Brandenburg
+        en: Lower Saxony, North Rhine-Westphalia, Hesse, Schleswig-Holstein, Brandenburg
+        de: [Mecklenburg-Vorpommern][4], [Brandenburg][5], [Sachsen][6], [Sachsen-Anhalt][7], [Thüringen][8]
+        en: [Mecklenburg-Western Pomerania][4], [Brandenburg][5], [Saxony][6], [Saxony-Anhalt][7], [Thuringia][8]
+        de: Bayern, Baden-Württemberg, Rheinland-Pfalz, Thüringen, Sachsen
+        en: Bavaria, Baden-Württemberg, Rhineland-Palatinate, Thuringia, Saxony
+        de: Sachsen, Thüringen, Hessen, Niedersachen, Brandenburg
+        en: Saxony, Thuringia, Hesse, Lower Saxony, Brandenburg
+    correct_answer: 2
+    topic: History, Geography
+
+
+
+202:
+    question:
+        de: Zu wem [gehörte][0] die [DDR][1] im ["Kalten Krieg"][2]?
+        en: To whom did the [GDR][1] [belong][0] during the [Cold War][2]?
+        url: none
+    answers:
+        de: zu den Westmächten
+        en: to the Western Powers
+        de: zum [Warschauer][3] [Pakt][4]
+        en: to the [Warsaw][3] [Pact][4]
+        de: zur NATO
+        en: to NATO
+        de: zu den blockfreien Staaten
+        en: to the free states
+    correct_answer: 2
+    topic: History
+
+
+
+
+203:
+    question:
+        de: [Wie][0] [heiß][1] das [Wirtschaftssystem][2] der [DDR][3]?
+        en: [How][0] was the [GDR][3]'s [economic system][2] [called][1]?
+        url: none
+    answers:
+        de: Marktwirtschaft
+        en: Market Economy
+        de: [Planwirtschaft][4]
+        en: [Planned Economy][4]
+        de: Angebot und Nachfrage
+        en: Supply and Demand
+        de: Kapitalismus
+        en: Capitalism
+    correct_answer: 2
+    topic: History
+
+
+204:
+    question:
+        de: Wie wurden die [Bundesrepublik][0] Deutschland [und][1] die [DDR][2] zu [einem][3] [Staat][4]?
+        en: How were the [Federal Republic][0] of Germany and the [German Democratic Republic][2] united into [one][3] [state][4]?
+        url: none
+    answers:
+        de: Die Bundesrepublik hat die DDR besetzt.
+        en: The Federal Republic of Germany occupied the German Democratic Republic.
+        de: Die heutigen [fünf][5] [östlichen][6] [Bundesländer][7] sind der [Bundesrepublik][8] Deutschland [beigetreten][9].
+        en: The [five][5] former [eastern][6] [states][7] [joined][9] the [Federal Republic][8] of Germany.
+        de: Die westlichen Bundesländer sind der DDR beigetreten.
+        en: The western states joined the German Democratic Republic.
+        de: Die DDR hat die Bundesrepublik Deutschland besetzt.
+        en: The German Democratic Republic occupied the Federal Republic of Germany.
+    correct_answer: 2
+    topic: History
+
+
+205:
+    question:
+        de: Mit dem [Beitritt][0] der [DDR][1] zur [Bundesrepublik][2] Deutschland [gehören][3] die neuen Bundesländer [nun][4] auch...
+        en: With the [accession][0] of the [GDR][1] to the [Federal Republic][2] of Germany, the new federal states [now][4] also [belong][3]...
+        url: none
+    answers:
+        de: zur [Europäischen][5] [Union][6].
+        en: to the [European][5] [Union][6].
+        de: zum Warschauer Pakt.
+        en: to the Warsaw Pact.
+        de: zur OPEC.
+        en: to the Organization of the Petroleum Exporting Countries.
+        de: zur Europäischen Verteidigungsgemeinschaft.
+        en: to the European Defense Community.
+    correct_answer: 1
+    topic: History
+
+
+206:
+    question:
+        de: Woran [erinnern][0] die sogenannten [„Stolpersteine“][1] in Deutschland?
+        en: What do the so-called ["stumbling stones"][1] in Germany [remind][0] us of?
+        url: none
+    answers:
+        de: an berühmte deutsche Politikerinnen und Politiker
+        en: to famous German politicians
+        de: an die [Opfer][2] des [Nationalsozialismus][3]
+        en: to [victims][2] of [National Socialism][3]
+        de: an Verkehrstote
+        en: to road accident victims
+        de: an bekannte jüdische Musiker
+        en: to famous Jewish musicians
+    correct_answer: 2
+    topic: History
+
+
+207:
+    question:
+        de: In welchen[Militärbündnis][0] war die [DDR][1] [Mitglied][2]?
+        en: In which [military alliance][0] was the [GDR][1] a [member][2] ?
+        url: none
+    answers:
+        de: in der NATO
+        en: in the North Atlantic Treaty Organization
+        de: im Rheinbund
+        en: in the Rhine Pact
+        de: im Warschauer Pakt
+        en: in the Warsaw Pact
+        de: im Europabündnis
+        en: in the European Union
+    correct_answer: 3
+    topic: History
+
+
+208:
+    question:
+        de: Was war die ["Stasi"][0]?
+        en: What was the ["Stasi"][0]?
+        url: none
+    answers:
+        de: der Geheimdienst im "Dritten Reich"
+        en: the secret service of the Third Reich
+        de: eine berühmte deutsche Gedenkstätte
+        en: a famous German memorial
+        de: der [Geheimdienst][1] der [DDR][2]
+        en: the [secret service][1] of the [GDR][2]
+        de: ein deutscher Sportverein während des Zweiten Weltkrieges
+        en: a German sports club during World War II
+    correct_answer: 3
+    topic: History
+
+
+209:
+    question:
+        de: Welches war das [Wappen][0] der [Deutschen Demokratischen Republik][1]?
+        en: What was the [coat of arms][0] of the [German Democratic Republic][1]?
+        url: pending**
+    answers:
+        de: 1
+        en: 1
+        de: 2
+        en: 2
+        de: 3
+        en: 3
+        de: 4
+        en: 4
+    correct_answer: 4
+    topic: History
+
+
+210:
+    question:
+        de: Was [ereignete][0] sich am [17. Juni 1953][1] in der [DDR][2]?
+        en: What [happened][0] on [June 17, 1953][1] in the [GDR][2]?
+        url: none
+    answers:
+        de: der feierliche Beitritt zum Warschauer Pakt
+        en: the official accession to the Warsaw Pact
+        de: [landesweite][3] [Streiks][4] und ein [Volksaufstand][5]
+        en: [nationwide][3] [strikes][4] and a [popular uprising][5]
+        de: der 1. SED-Parteitag
+        en: the first SED Party Congress
+        de: der erste Besuch Fidel Castros
+        en: the first visit of Fidel Castro
+    correct_answer: 2
+    topic: History
+
+
+211:
+    question:
+        de: Welcher [Politiker][0] [steht][1] für die ["Ostverträge"][2]?
+        en: Which [politician][0] is [responsible][1] for the ["Eastern Treaties"][2]?
+        url: none
+    answers:
+        de: Helmut Kohl
+        en: Helmut Kohl
+        de: Willy Brandt
+        en: Willy Brandt
+        de: Michail Gorbatschow
+        en: Michail Gorbatschow
+        de: Ludwig Erhard
+        en: Ludwig Erhard
+    correct_answer: 2
+    topic: History
+
+
+212:
+    question:
+        de: Wie heißt [Deutschland][0] mit [vollem][1] [Namen][2]?
+        en: What is the [full][1] [name][2] of [Germany][0]?
+        url: none
+    answers:
+        de: Bundesstaat Deutschland
+        en: Federal State of Germany
+        de: Bundesländer Deutschland
+        en: Federal States of Germany
+        de: [Bundesrepublik][3] [Deutschland][4]
+        en: [Federal Republic][3] of [Germany][4]
+        de: Bundesbezirk Deutschland
+        en: Federal District of Germany
+    correct_answer:
+    topic: Geography
+
+213:
+    question:
+        de: [Wie][0] [viele][1] [Einwohner][2] hat Deutschland?
+        en: [How][0] [many][1] [inhabitants][2] does Germany have?
+        url: none
+    answers:
+        de: 70 Millionen
+        en: 70 million
+        de: 78 Millionen
+        en: 78 million
+        de: 84 [Millionen][3]
+        en: 84 [million][3]
+        de: 90 Millionen
+        en: 90 million
+    correct_answer: 3
+    topic: Geography, General
+
+
+214:
+    question:
+        de: [Welche][0] [Farben][1] hat die deutsche [Flagge][2]?
+        en: [What][0] [colors][1] does the German [flag][2] have?
+        url: none
+    answers:
+        de: [schwarz][3]-[rot][4]-[gold][5]
+        en: [black][3], [red][4], [gold][5]
+        de: rot-weiß-schwarz
+        en: red, white, black
+        de: schwarz-rot-grün
+        en: black, red, green
+        de: schwarz-gelb-rot
+        en: black, yellow, red
+    correct_answer: 1
+    topic: General, Geography
+
+
+215:
+    question:
+        de: Wer wird als "[Kanzler][0] der [Deutschen][1] [Einheit][2]" bezeichnet?
+        en: Who is referred to as "[Chancellor][0] of the [German][1] [Union][2]"?
+        url: none
+    answers:
+        de: Gerhard Schröder
+        en: Gerhard Schröder
+        de: Helmut Kohl
+        en:	Helmut Kohl
+        de: Konrad Adenauer
+        en: Konrad Adenauer
+        de: Helmut Schmidt
+        en: Helmut Schmidt
+    correct_answer: 2
+    topic: History
+
+
+216:
+    question:
+        de: Welches [Symbol][0] ist im [Plenarsaal][1] des Deutschen [Bundestages][2] zu sehen?
+        en: What [symbol][0] can be seen in the [plenary hall][1] of the German [Bundestag][2]?
+        url: pending**
+    answers:
+        de: der [Bundesadler][3].
+        en: the [federal eagle][3].
+        de: die Fahne der Stadt Berlin.
+        en: the flag of the city of Berlin
+        de: der Reichsadler.
+        en: the imperial eagle.
+        de: die Reichskrone.
+        en: the Imperial Crown.
+    correct_answer: 1
+    topic: General, Goverment
+
+
+217:
+    question:
+        de: In welchem [Zeitraum][0] gab es die [Deutsche Demokratische Republik][1] (DDR)?
+        en: In which [time period][0] was the [German Democratic Republic][1] (GDR) in existence?
+        url: none
+    answers:
+        de: 1919 bis 1927
+        en: 1919 to 1927
+        de: 1933 bis 1945
+        en: 1933 to 1945
+        de: 1945 bis 1961
+        en: 1945 to 1961
+        de: [1949 bis 1990][2]
+        en: [1949 to 1990][2]
+    correct_answer: 4
+    topic: History
+
+
+218:
+    question:
+        de: Wie [viele][0] [Bundesländer][1] kamen bei der [Wiedervereinigung][2] 1990 zur Bundesrepublik Deutschland [hinzu][3]?
+        en: How many [federal states][1] [joined][3] the Federal Republic of Germany during [reunification][2] in 1990?
+        url: none
+    answers:
+        de: 4
+        en: 4
+        de: 5
+        en: 5
+        de: 6
+        en: 6
+        de: 7
+        en: 7
+    correct_answer: 2
+    topic: History
+
+
+219:
+    question:
+        de: Die [Bundesrepublik][0] Deutschland [hat][1] die [Grenzen][2] von [heute][3] [seit][4]...
+        en: The Federal Republic of Germany [has][1] the [border][2] of [today][3] [since][4]...
+        url: none
+    answers:
+        de: 1933
+        en: 1933
+        de: 1949
+        en: 1949
+        de: 1971
+        en: 1971
+        de: 1990
+        en: 1990
+    correct_answer: 4
+    topic: History, Geography
+
+
+220:
+    question:
+        de: Der [27.Januar][0] ist in Deutschland ein offizieller [Gedenktag][1]. Woran [erinnert][2] dieser Tag?
+        en: The [27th of January][0] is a [public holiday][1] in Germany. What does it [commemorate][2]?
+        url: none
+    answers:
+        de: an das Ende des Zweiten Weltkrieges
+        en: The end of the Second World War
+        de: an die Verabschiedung des Grundgesetzes
+        en: The adoption of the Basic Law
+        de: an die Wiedervereinigung Deutschlands
+        en: German reunification
+        de: an die [Opfer][3] des [Nationalsozialismus][4] (Tag der [Befreiung][5] des [Vernichtungslagers][6] [Auschwitz][7])
+        en: to the [victims][3] of [National Socialism][4] (Day of the [Liberation][5] of the [extermination camp][6] [Auschwitz][7])
+    correct_answer: 4
+    topic: History
+
+
+221:
+    question:
+        de: Deutschland ist [Mitglied][0] des [Schengener Abkommens][1]. Was [bedeutet][2] das?
+        en: Germany is a [member][0] of the [Schengen Agreement][1]. What does this [mean][2]?
+        url: none
+    answers:
+        de: [Deutsche][3] können in viele Länder [Europas][4] [ohne][5] [Passkontrolle][6] [reisen][7].
+        en: [Germans][3] can [travel][7] to many countries [in Europe][4] [without][5] [passport control][6].
+        de: Alle Menschen können ohne Personenkontrolle in Deutschland einreisen.
+        en: All people can enter Germany without border control.
+        de: Deutsche können ohne Passkontrolle in jedes Land reisen.
+        en: Germans can travel to any country without passport control.
+        de: Deutsche können in jedem Land mit dem Euro bezahlen.
+        en: Germans can pay in euros in any country.
+    correct_answer:
+    topic: General
+
+
+222:
+    question:
+        de: Welches [Land][0] ist ein [Nachbarland][1] von Deutschland?
+        en: Which [country][0] is a [neighboring country][1] of Germany?
+        url: none
+    answers:
+        de: Ungarn
+        en: Hungary
+        de: Portugal
+        en: Portugal
+        de: Spanien
+        en: Spain
+        de: [Schweiz][2]
+        en: [Switzerland][2]
+    correct_answer: 4
+    topic: Geography
+
+
+223:
+    question:
+        de: Welches [Land][0] ist ein [Nachbarland][1] von Deutschland?
+        en: Which [country][0] is a [neighboring country][1] of Germany?
+        url: none
+    answers:
+        de: Rumänien
+        en: Romania
+        de: Bulgarien
+        en: Bulgaria
+        de: [Polen][2]
+        en: [Poland][2]
+        de: Griechenland
+        en: Greece
+    correct_answer: 3
+    topic: Geography
+
+
+224:
+    question:
+        de: Was [bedeutet][0] die Abkürzung [EU][1]?
+        en: What does the abbreviation [EU][1] [mean][0]?
+        url: none
+    answers:
+        de: Europäische Unternehmen
+        en: European Enterprise
+        de: [Europäische][2] [Union][3]
+        en: [European][2] [Union][3]
+        de: Einheitliche Union
+        en: United States
+        de: Euro Union
+        en: Euro Union
+    correct_answer: 2
+    topic: Geography, General
+
+
+225:
+    question:
+        de: In welchem [anderen][0] [Land][1] gibt es eine große [deutschsprachige][2] [Bevölkerung][3]?
+        en: In which [other][0] [country][1] is there a large [German-speaking][2] [population][3]?
+        url: none
+    answers:
+        de: Tschechien
+        en: Czechia
+        de: Norwegen
+        en: Norway
+        de: Spanien
+        en: Spain
+        de: [Österreich][4]
+        en: [Austria][4]
+    correct_answer: 4
+    topic: Geography, General
+
+
+226:
+    question:
+        de: Welche ist die [Flagge][0] der [Europäischen][1] [Union][2]?
+        en: Which is the [flag][0] of the [European][1] [Union][2]?
+        url: pending**
+    answers:
+        de: 1
+        en: 1
+        de: 2
+        en: 2
+        de: 3
+        en: 3
+        de: 4
+        en: 4
+    correct_answer: 2
+    topic: Geography, General
+
+
+227:
+    question:
+        de: Welches [Land][0] ist ein [Nachbarland][1] von Deutschland?
+        en: Which [country][0] is a [neighboring country][1] of Germany?
+        url: none
+    answers:
+        de: Finnland
+        en: Finland
+        de: [Dänemark][2]
+        en: [Denmark][2]
+        de: Norwegen
+        en: Norway
+        de: Schweden
+        en: Sweden
+    correct_answer: 2
+    topic: Geography
+
+
+228:
+    question:
+        de: Wie wird der [Beitritt][0] der [DDR][1] zur [Bundesrepublik][2] Deutschland im 1990 allgemein [genannt][3]?
+        en: What is the [accession][0] of the [GDR][1] to the [Federal Republic][2] of Germany in 1990 generally [called][3]?
+        url: none
+    answers:
+        de: NATO-Osterweiterung
+        en: NATO enlargement
+        de: EU-Osterweiterung
+        en: EU enlargement
+        de: [Deutsche][4] [Wiedervereinigung][5]
+        en: [German][4] [reunification][5]
+        de: Europäische Gemeinschaft
+        en: European Community
+    correct_answer: 3
+    topic: History
+
+
+229:
+    question:
+        de: Welches [Land][0] ist ein [Nachbarland][1] von Deutschland?
+        en: Which [country][0] is a [neighboring country][1] of Germany?
+        url: none
+    answers:
+        de: Spanien
+        en: Spain
+        de: Bulgarien
+        en: Bulgaria
+        de: Norwegen
+        en: Norway
+        de: [Luxemburg][2]
+        en: [Luxembourg][2]
+    correct_answer: 4
+    topic: Geography
+
+
+230:
+    question:
+        de: Das [Europäische][0] [Parlament][1] wird regelmäßig [gewählt][2], nämlich alle...
+        en: The [European][0] [Parliament][1] is [elected][2] regularly, namely every...
+        url: none
+    answers:
+        de: [5 Jahre][3].
+        en: [5 years][3].
+        de: 6 Jahre.
+        en: 6 years.
+        de: 7 Jahre.
+        en: 7 years.
+        de: 8 Jahre.
+        en: 8 years.
+    correct_answer: 1
+    topic: Goverment, General
+
+
+
+
+ 231:
+    question:
+        de: Was [bedeutet][0] der Begriff "[europäische][1] [Integration][2]"?
+        en: What does the term "[European][1] [integration][2]" [mean][0]?
+        url: none
+    answers:
+        de: Damit sind amerikanische Einwanderer in Europa gemeint.
+        en: This refers to American immigrants in Europe.
+        de: Der Begriff meint den Einwanderungsstopp nach Europa.
+        en: This term refers to the immigration ban to Europe.
+        de: Damit sind europäische Auswanderer in den USA gemeint.
+        en: This refers to European emigrants to the USA.
+        de: Der Begriff meint den [Zusammenschluss][3] europäischer [Staaten][4] zur [EU][5].
+        en: This term refers to the [union][3] of European [states][4] into the [EU][5].
+    correct_answer: 4
+    topic: General
+
+
+
+
+ 232:
+    question:
+        de: [Wer][0] wird bei der [Europawahl][1] [gewählt][2]?
+        en: [Who][0] is [elected][2] in the [European election][1]?
+        url: none
+    answers:
+        de: die Europäische Kommission
+        en: the European Commission
+        de: die Länder, die in die EU eintreten dürfen
+        en: the countries that can join the EU
+        de: die Abgeordneten des [Europäischen Parlaments][3]
+        en: the members of the [European Parliament][3]
+        de: die europäische Verfassung
+        en: the European Constitution
+    correct_answer: 3
+    topic: General, Goverment
+
+
+
+ 233:
+    question:
+        de: Welches [Land][0] ist ein [Nachbarland][1] von Deutschland?
+        en: Which [country][0] is a [neighboring country][1] of Germany?
+        url: none
+    answers:
+        de: Tschechien
+        en: Czechia
+        de: Bulgarien
+        en: Bulgaria
+        de: Griechenland
+        en: Greece
+        de: Portugal
+        en: Portugal
+    correct_answer: 1
+    topic: Geography
+
+
+
+ 234:
+    question:
+        de: [Wo][0] ist ein [Sitz][1] des [Europäischen Parlaments][2]?
+        en: [Where][0] is the [seat][1] of the [European Parliament][2]?
+        url: none
+    answers:
+        de: London
+        en: London
+        de: Paris
+        en: Paris
+        de: Berlin
+        en: Berlin
+        de: Straßburg
+        en: Strasbourg
+    correct_answer: 4
+    topic: General
+
+
+ 235:
+    question:
+        de: Der französische Staatspräsident François Mitterand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der [Toten ][0] beider [Weltkriege][1]. Welches [Ziel][2] der [Europäischen Union][3] wird bei diesem [Treffen][4] deutlich?
+        en: French President François Mitterrand and German Chancellor Helmut Kohl jointly commemorate the [dead][0] of both [World Wars][1] in Verdun. What [goal][2] of the [European][3] Union becomes clear at this [meeting][4]?
+        url: pending**
+    answers:
+        de: Freundschaft zwischen England und Deutschland
+        en: Friendship between England and Germany
+        de: Reisefreiheit in alle Länder der EU
+        en: Free movement within the EU
+        de: [Frieden][5] und [Sicherheit][6] in den Ländern der [EU][7]
+        en: [Peace][5] and [security][6] within the [EU][7]
+        de: einheitliche Feiertage in den Ländern der EU
+        en: Uniform holidays within the EU
+    correct_answer:
+    topic:
+
+
+
+ 236:
+    question:
+        de: [Wie][0] [viele][1] [Mitgliedstaaten][2] hat die [EU][3] heute?
+        en: [How][0] [many][1] [member states][2] does the [EU][3] have today?
+        url: none
+    answers:
+        de: 21
+        en: 21
+        de: 23
+        en: 23
+        de: 25
+        en: 25
+        de: 27
+        en: 27
+    correct_answer: 4
+    topic: General
+
+
+
+ 237:
+    question:
+        de: 2007 wurde das 50-jährige Jubiläum der ["Romischen Verträge"][0] gefeiert. Was war der [Inhalt][1] der Verträge?
+        en: 2007 was the 50th anniversary of the ["Roman Treaties"][0]. What was the [content][1] of the treaties?
+        url: none
+    answers:
+        de: Beitritt Deutschlands zur NATO
+        en: Germany's accession to NATO
+        de: [Gründung][2] der Europäischen [Wirtschaftsgemeinschaft][3] (EWG)
+        en: [Establishment][2] of the European [Economic Community][3] (EEC)
+        de: Verpflichtung Deutschlands zu Reparationsleistungen
+        en: Germany's obligation to reparations
+        de: Festlegung der Oder-Neiße-Linie als Ostgrenze
+        en: Establishment of the Oder-Neisse Line as the eastern border
+    correct_answer: 2
+    topic: General, History
+
+
+ 238:
+    question:
+        de: An welchem [Orten][0] [arbeitet][1] das [Europäische Parlament][2]?
+        en: At which [locations][0] does the [European Parliament][2] [work][1]?
+        url: none
+    answers:
+        de: Paris, London und Den Haag
+        en: Paris, London and The Hague
+        de: [Straßburg][3], [Luxemburg][4] und [Brüssel][5]
+        en: [Strasbourg][3], [Luxembourg][4] and [Brussels][5]
+        de: Rom, Bern und Wien
+        en: Rome, Bern and Vienna
+        de: Bonn, Zürich und Mailand
+        en: Bonn, Zurich and Milan
+    correct_answer: 2
+    topic: General, Europe
+
+
+
+ 239:
+    question:
+        de: Durch welche [Verträge][0] schloss sich die Bundesrepublik [Deutschland][1] mit [anderen Staaten][2] zur Europäischen [Wirstchaftsgemeinschaft][3] [zusammen][4]?
+        en: Through which [treaties][0] did the Federal Republic of [Germany][1] [join][4] with [other states][2] to form the European [Economic Community][3]?
+        url: none
+    answers:
+        de: durch die "Hamburger Verträge"
+        en: Through the "Hamburg Treaties"
+        de: durch die ["Römischen Verträge"][5]
+        en: Through the ["Rome Treaties"][5]
+        de: durch die "Pariser Verträge"
+        en: Through the "Paris Treaties"
+        de: durch die "Londoner Verträge"
+        en: Through the "London Treaties"
+    correct_answer: 2
+    topic: General, Europa
+
+
+
+ 240:
+    question:
+        de: [Seit][0] [wann][1] [bezahlt][2] man in Deutschland mit dem [Euro][3] in bar?
+        en: [Since][0] [when][1] do people [pay][2] in Germany with the [Euro][3]?
+        url: none
+    answers:
+        de: 1995
+        en: 1995
+        de: 1998
+        en: 1998
+        de: 2002
+        en: 2002
+        de: 2005
+        en: 2005
+    correct_answer: 3
+    topic: Europe, Economy
+
+
+ 241:
+    question:
+        de: Frau Seger [bekommt][0] ein [Kind][1]. Was muss sie tun, um [Eltengeld][2] zu [erhalten][3]?
+        en: Ms. Seger is [having][0] a [child][1]. What does she have to do to [receive][3] [parental allowance][2]?
+        url: none
+    answers:
+        de: Sie muss an ihre Krankenkasse schreiben.
+        en: She must write to her health insurance.
+        de: Sie muss einen [Antrag][4] bei der [Elterngeldstelle][5] [stellen][6].
+        en: She must [submit][6] an [application][4] to the [parental allowance office][5].
+        de: Sie muss nichts tun, denn sie bekommt automatisch Elterngeld.
+        en: She must do nothing, because she automatically receives parental allowance.
+        de: Sie muss das Arbeitsamt um Erlaubnis bitten.
+        en: She must ask the employment office for permission.
+    correct_answer: 2
+    topic: Social Insurances, Society
+
+
+ 242:
+    question:
+        de: [Wer][0] [entscheidet][1], ob ein [Kind][2] in Deutschland in den [Kindergarten][3] [geht][4]?
+        en: [Who][0] [decides][1] whether a [child][2] in Germany [goes][4] to [kindergarten][3]?
+        url: none
+    answers:
+        de: der Staat
+        en: the state
+        de: die Bundesländer
+        en: the federal states
+        de: die [Eltern][4] /die [Erziehungsberechtigten][5]
+        en: [parents][4] / [caregivers][5]
+        de: die Schulen
+        en: schools
+    correct_answer: 3
+    topic: Society, Family
+
+
+
+
+ 243:
+    question:
+        de:  Maik und Sybille wollen mit Freunden an ihrem deutschen Wohnort eine [Demonstration][0] auf der [Straße][1] [abhalten][2]. Was [müssen][3] sie [vorher][4] [tun][5]?
+        en: Maik and Sybille want to [hold][2] a [demonstration][0] on the [street][1] with friends in their German hometown. What [must][3] they [do][5] [beforehand][4]?
+        url: none
+    answers:
+        de: Sie müssen die [Demonstration][6] [anmelden][7].
+        en: You must [register][7] the [demonstration][6].
+        de: Sie müssen nichts tun. Man darf in Deutschland jederzeit überall demonstrieren.
+        en: You don't have to do anything. In Germany, you can demonstrate anywhere at any time.
+        de: Sie können gar nichts tun, denn Demonstrationen sind in Deutschland grundsätzlich verboten.
+        en: You can't do anything, because demonstrations are generally prohibited in Germany.
+        de: Maik und Sybille müssen einen neuen Verein gründen, weil nur Vereine demonstrieren dürfen
+        en: Maik and Sybille have to found a new association, because only associations are allowed to demonstrate.
+    correct_answer: 1
+    topic: Society
+
+
+ 244:
+    question:
+        de: Welchen [Schulabschluss][0] [braucht][1] man normalerweise, um an einer [Universität][2] in Deutschland ein Studium zu beginnen?
+        en: What [educational qualification][0] is typically [required][1] to start a [university][2] course in Germany?
+        url: none
+    answers:
+        de: das [Abitur][3]
+        en: the [high school diploma][3]
+        de: ein Diplom
+        en: a diploma
+        de: die Prokura
+        en: power of attorney
+        de: eine Gesellenprüfung
+        en: a journeyman's examination
+    correct_answer 1
+    topic: Society, Education
+
+
+ 245:
+    question:
+        de: Wer darf in Deutschland [nicht][0] als [Paar][1] [zusammenleben][2]?
+        en: Who is [not][0] allowed to [live together][2] as a [couple][2] in Germany?
+        url: none
+    answers:
+        de: Hans (20 Jahre) und Marie (19 Jahre)
+        en: Hans (20 years) and Marie (19 years)
+        de: Tom (20 Jahre) und Klaus (45 Jahre)
+        en: Tom (20 years) and Klaus (45 years)
+        de: Sofie (35 Jahre) und Lisa (40 Jahre)
+        en: Sofie (35 years) and Lisa (40 years)
+        de: Anne ([13 Jahre][3]) und Tim ([25 Jahre][4])
+        en: Anne ([13 years][3]) and Tim ([25 years][4])
+    correct_answer: 4
+    topic: Society
+
+
+ 246:
+    question:
+        de: Ab welchem [Alter][0] ist man in Deutschland [volljährig][1]?
+        en: At what [age][0] does one reach [legal age][1] in Germany?
+        url: none
+    answers:
+        de: 16
+        en: 16
+        de: 18
+        en: 18
+        de: 19
+        en: 19
+        de: 21
+        en: 21
+    correct_answer: 2
+    topic: Society
+
+
+ 247:
+    question:
+        de: Eine [Frau][0] ist [schwanger][1]. Sie ist kurz vor und nach der Geburt ihres Kindes vom Gezetz besonders [beschützt][2]. Wie [heißt][3] dieser Schutz?
+        en: A [woman][0] is [pregnant][1]. She is specially [protected][2] by law shortly before and after the birth of her child. What is this protection [called][3]?
+        url: none
+    answers:
+        de: Elternzeit
+        en: Parental leave
+        de: [Mutterschutz][4]
+        en: [Maternity protection][4]
+        de: Geburtsvorbereitung
+        en: Preparation for childbirth
+        de: Wochenbett
+        en: Hospital stay
+    correct_answer: 2
+    topic: Society, Family
+
+
+
+ 248:
+    question:
+        de: Die [Erziehung][0] der [Kinder][1] in Deutschland ist vor allem [Aufgabe][2]...
+        en: The [education][0] of [children][1] in Germany is primarily the [responsibility][2]...
+        url: none
+    answers:
+        de: des Staates.
+        en: the state.
+        de: der [Eltern][3].
+        en: the [parents][3].
+        de: der Großeltern.
+        en: grandparents.
+        de: der Schulen.
+        en: schools.
+    correct_answer: 2
+    topic: Family, Education, Society
+
+
+
+ 249:
+    question:
+        de: Wer ist in Deutschland [hauptsächlich][0] [verantwortlich][1] für die [Kindererziehung][2]?
+        en: Who is [primarily] [0] [responsible] [1] for [raising children] [2] in Germany?
+        url: none
+    answers:
+        de: der Staat
+        en: The state
+        de: die [Eltern][3]
+        en: The [parents][3]
+        de: die Verwandten
+        en: The grandparents
+        de: die Schulen
+        en: The schools
+    correct_answer: 2
+    topic: Family, Education, Society
+
+
+
+ 250:
+    question:
+        de: In Deutschland hat man die [besten][0] [Chancen][1] auf einen [gut bezahlten][2] [Arbeitsplatz][3], wenn man...
+        en: In Germany, the [best][0] [chances][1] of getting a [well-paid][2] [job][3] are when one...
+        url: none
+    answers:
+        de: katholisch ist.
+        en: is catholic.
+        de: gut [ausgebildet][4] ist.
+        en: is [well-educated][4].
+        de: eine Frau ist.
+        en: is a woman.
+        de: Mitglied einer Partei ist.
+        en: is a member of a party.
+    correct_answer: 2
+    topic: Society, Employment
+
+
+ 251:
+    question:
+        de: Wenn man in Deutschland ein [Kind][0] [schlägt][1],...
+        en: If someone [beats][1] a [child][0] in Germany...
+        url: none
+    answers:
+        de: geht das niemanden etwas an.
+        en: That's nobody's business.
+        de: geht das nur die Familie etwas an.
+        en: That's only the family's business.
+        de: kann man dafür nicht bestraft werden.
+        en: You can't be punished for that.
+        de: kann man [dafür][2] [bestraft][3] werden.
+        en: You can be [punished][3] [for that][2].
+    correct_answer: 4
+    topic: Family, Society
+
+
+
+ 252:
+    question:
+        de: In [Deutschland][0]...
+        en: In [Germany][0]...
+        url: none
+    answers:
+        de: darf man zur gleichen Zeit [nur][1] mit [einem Partner / einer Partnerin][2] [verheiratet][3] sein.
+        en: You can [only][1] be [married][3] to [one partner][2] at a time.
+        de: kann man mehrere Ehepartner / Ehepartnerinnen gleichzeitig haben.
+        en: You can have multiple spouses at the same time.
+        de: darf man nicht wieder heiraten, wenn man einmal verheiratet war.
+        en: You can't remarry if you've been married before.
+        de: darf eine Frau nicht wieder heiraten, wenn ihr Mann gestorben ist.
+        en: A woman can't remarry if her husband is dead.
+    correct_answer: 1
+    topic: Society, Family
+
+ 253:
+    question:
+        de: [Wo][0] müssen Sie sich [anmelden][1], wenn Sie in Deutschland [umziehen][2]?
+        en: [Where][0] do you need to [register][1] when you [move][2] to Germany?
+        url: none
+    answers:
+        de: beim [Einwohnermeldeamt][3]
+        en: at the [residents' registration office][3]
+        de: beim Standesamt
+        en: at the registry office
+        de: beim Ordnungsamt
+        en: at the public order office
+        de: beim Gewerbeamt
+        en: at the trade office
+    correct_answer: 1
+    topic: Society, Goverment
+
+
+ 254:
+    question:
+        de:  In Deutschland dürfen [Ehepaare][0] sich [scheiden][1] lassen. Meistens müssen sie dazu das ["Trennungsjahr"][2] einhalten. Was [bedeutet][3] das?
+        en: In Germany, [married couples][0] are allowed to [divorce][1]. In most cases, they must observe the [“year of separation”][2]. What does that [mean][3]?
+        url: none
+    answers:
+        de: Der Scheidungsprozess dauert ein Jahr
+        en: The divorce process takes one year.
+        de: Die Ehegatten sind ein Jahr verheiratet, dann ist die Scheidung möglich
+        en: The spouses are married for one year, then divorce is possible.
+        de: Das Besuchsrecht für die Kinder gilt ein Jahr
+        en: Visitation rights for the children apply for one year.
+        de: Die [Ehegatten][4] führen mindestens ein [Jahr][5] [getrennt][6] ihr eigenes Leben. Danach ist die [Scheidung][7] [möglich][8]
+        en:  The [spouses][4] live [separately][6] for at least one [year][5]. After that, [divorce][7] is [possible][8].
+    correct_answer: 4
+    topic: Family, Society
+
+
+
+ 255:
+    question:
+        de: Bei [Erziehungsproblemen][0] können [Eltern][1] in Deutschland [Hilfe][2] erhalten [vom][3]...
+        en: In Germany, [parents][1] can receive [help][2] for [child-rearing issues][0] [from][3]...
+        url: none
+    answers:
+        de: Ordnungsamt
+        en: Public Order Office
+        de: Schulamt
+        en: Education Authority
+        de: [Jugendamt][4]
+        en: [Youth Welfare Authority][4]
+        de: Gesundheitsamt
+        en: Health Authority
+    correct_answer: 3
+    topic: Family, Society
+
+
+
+ 256:
+    question:
+        de: Ein Ehepaar möchte in Deutschland ein [Restaurant][0] [eröffnen][1]. Was [braucht][2] es dazu [unbedingt][3]?
+        en: A married couple wants to [open][1] a [restaurant][0] in Germany. What is [absolutely][3] [necessary][2]?
+        url: none
+    answers:
+        de: eine Erlaubnis der Polizei
+        en: a police permit
+        de: eine Genehmigung einer Partei
+        en: a party approval
+        de: eine Genehmigung des Einwohnermeldeamts
+        en: a resident registration office approval
+        de: eine [Gaststättenerlaubnis][4] von der [zuständigen][5] [Behörde][6]
+        en: a [restaurant license][4] from the [competent][5] [authority][6]
+    correct_answer: 4
+    topic: Society, Employment
+
+
+
+
+ 257:
+    question:
+        de: Eine [erwachsene][0] Frau möchte in Deutschland das [Abitur][1] [nachholen][2]. Das kann sie an...
+        en: An [adult][0] woman would like to [obtain][2] her [high school diploma][1] in Germany. She can do this at...
+        url: none
+    answers:
+        de: einer Hochschule.
+        en: a university
+        de: einem [Abendgymnasium][3].
+        en: an [evening high school][3]
+        de: einer Hauptschule.
+        en: a primary school
+        de: einer Privatuniversität.
+        en: a private university
+    correct_answer: 2
+    topic: Society, Education
+
+
+
+
+ 258:
+    question:
+        de: Was [darf][0] das [Jugendamt][1] in Deutschland?
+        en: What can the [youth office][1] [do][0] in Germany?
+        url: none
+    answers:
+        de: Es entscheidet, welche Schule das Kind besucht.
+        en: It decides which school the child attends.
+        de: Es kann ein [Kind][2], das [geschlagen][3] wird oder [hungern][4] muss, aus der [Familie][5] [nehmen][6].
+        en: It can [remove][6] a [child][2] who is being [beaten][3] or [starved][4] from the [family][5].
+        de: Es bezahlt das Kindergeld an die Eltern.
+        en: It pays child benefit to the parents.
+        de: Es kontrolliert, ob das Kind einen Kindergarten besucht.
+        en: It checks whether the child attends kindergarten.
+    correct_answer: 2
+    topic: Society, Family
+
+
+
+ 259:
+    question:
+        de: Das [Berufsinformationszentrum][0] BIZ bei der [Bundesagentur][1] für Arbeit in Deutschland [hilft][2] bei der...
+        en: The [Career Information Center][0] BIZ at the [Federal Employment Agency][1] in Germany [helps][2] with...
+        url: none
+    answers:
+        de: Rentenberechnung
+        en: Pension calculation
+        de: [Lehrstellensuche][3]
+        en: [Apprenticeship search][3]
+        de: Steuererklärung
+        en: Tax return
+        de: Krankenversicherung
+        en: health insurance
+    correct_answer: 2
+    topic: Employment
+
+
+
+ 260:
+    question:
+        de: In Deutschland hat ein [Kind][0] in der [Schule][1]...
+        en: In Germany, a [child][0] in [school][1]...
+        url: none
+    answers:
+        de: Recht auf unbegrenzte Freizeit.
+        en: Right to unlimited free time.
+        de: Wahlfreiheit für alle Fächer.
+        en: Freedom of choice for all subjects.
+        de: [Anspruch][2] auf [Schulgeld][3].
+        en: [Entitlement][2] to [school fees][3].
+        de: Anwesenheitspflicht.
+        en: Compulsory attendance.
+    correct_answer: 3
+    topic: Education
+
+
+261:
+    question:
+        de: Ein [Mann][0] möchte mit [30 Jahren][1] in Deutschland sein [Abitur][2] [nachholen][3]. Wo kann das tun? An...
+        en: A [man][0] wants to [take][3] his [high school diploma][2] in Germany at the [age of 30][1]. Where can he do that? In...
+        url: none
+    answers:
+        de: einer Hochschule.
+        en: a university
+        de: einem [Abendgymnasium][4].
+        en: an [evening high school][4]
+        de: einer Hauptschule.
+        en: a primary school
+        de: einer Privatuniversität.
+        en: a private university
+    correct_answer: 2
+    topic: Society, Education:
+
+ 262:
+    question:
+        de: Was bedeutet in Deutschland der [Grundsatz][0] der [Gleichbehandlung][1]?
+        en: What does the [principle][0] of [equal treatment][1] mean in Germany?
+        url: none
+    answers:
+        de: [Niemand][2] darf z.B. wegen einer [Behinderung][3] [benachteiligt][4] werden.
+        en: [No one][2] may be [discriminated][4] against, for example, because of a [disability][3].
+        de: Man darf andere Personen benachteiligen, wenn ausreichende persönliche Gründe hierfür vorliegen.
+        en: One may discriminate against other people if there are sufficient personal reasons for doing so.
+        de: Niemand darf gegen Personen klagen, wenn sie benachteiligt wurden.
+        en: No one may complain about others being discriminated against.
+        de: Es ist für alle Gesetz, benachteiligten Gruppen jährlich Geld zu spenden.
+        en: It is for all laws to annually donate money to disadvantaged groups.
+    correct_answer: 1
+    topic: Society, Law
+
+
+ 263:
+    question:
+        de: In Deutschland sind Jugendliche ab 14 Jahren strafmündig. Das bedeutet: [Jugendliche][0], die 14 Jahre und älter sind und gegen [Strafgesetze][1] [verstößen][2]...
+        en: In Germany, young people aged 14 and over are criminally responsible. This means: young people aged 14 and over who [violate][2] [criminal law][1]...
+        url: none
+    answers:
+        de: werden [bestraft][3].
+        en: are [punished][3].
+        de: werden wie Erwachsene behandelt.
+        en: are treated like adults.
+        de: teilen die Strafe mit ihren Eltern.
+        en: share the punishment with their parents.
+        de: werden nicht bestraft.
+        en: are not punished.
+    correct_answer: 1
+    topic: Laws
+
+
+
+
+ 264:
+    question:
+        de: Zu welchem [Fest][0] tragen Menchen in Deutschland bunte [Kostüme][1] und [Masken][2]?
+        en: At what [festival][0] do people in Germany wear colorful [costumes][1] and [masks][2]?
+        url: none
+    answers:
+        de: am [Rosenmontag][3]
+        en: at [Rose Monday][3]
+        de: am Maifeiertag
+        en: at the May Day festival
+        de: beim Oktoberfest
+        en: at Oktoberfest
+        de: an Pfingsten
+        en: at Pentecost
+    correct_answer: 1
+    topic: Culture
+
+ 265:
+    question:
+        de: [Wohin][0] muss man in Deutschland [zuerst][1] [gehen][2], wenn man [heiraten][3] möchte?
+        en: [Where][0] do you [first][1] [go][2] in Germany when you want to [get married][3]?
+        url: none
+    answers:
+        de: zum Einwohnermeldeamt
+        en: to the registration office
+        de: zum Ordnungsamt
+        en: to the police station
+        de: zur Agentur für Arbeit
+        en: to the employment agency
+        de: zum [Standesamt][4]
+        en: to the [civil registry office][4]
+    correct_answer: 4
+    topic: Society, Family
+
+ 266:
+    question:
+        de: Wann [beginnt][0] die [gesetzliche][1] [Nachtruhe][2] in Deutschland?
+        en: When does the [legal][1] [night curfew][2] [begin][0] in Germany?
+        url: none
+    answers:
+        de: wenn die Sonne untergeht
+        en: when the sun sets
+        de: wenn die Nachbarn schlafen gehen
+        en: when the neighbors go to bed
+        de: um 0 Uhr, Mitternacht
+        en: at midnight
+        de: um [22 Uhr][3]
+        en: at [10 PM][3]
+    correct_answer: 4
+    topic: Society
+
+
+ 267:
+    question:
+        de: Eine junge [Frau][0] in Deutschland, 22 Jahre alt, [lebt][1] mit ihrem [Freund][2] [zusammen][3]. Die Eltern der Frau finden das nicht gut. weil ihnen der Freund nicht gefällt. Was [können][4] die [Eltern][5] [tun][6]?
+        en: A young [woman][0] in Germany, 22 years old, [lives][1] [with][3] her [boyfriend][2]. Her parents do not like it because they do not like her boyfriend. What [can][4] the [parents][5] [do][6]?
+        url: none
+    answers:
+        de: Sie [müssen][7] die [Entscheidung][8] der volljährigen Tochter [respektieren][9].
+        en: they [must][7] [respect][9] the [decision][8] of the adult daughter.
+        de: Sie haben das Recht, die Tochter in die elterliche Wohnung zurückzuholen.
+        en: they have the right to take the daughter back to the parental home.
+        de: Sie können zur Polizei gehen und die Tochter anzeigen.
+        en: they can go to the police and show the daughter.
+        de: Sie suchen einen anderen Mann für die Tochter.
+        en: they look for another man for the daughter.
+    correct_answer: 1
+    topic: Society, Family
+
+
+
+ 268:
+    question:
+        de: Eine junge Frau will den [Führerschein][0] machen. Sie hat Angst vor der [Prüfung][1], weil ihre [Muttersprache][2] [nicht][3] [Deutsch][4] ist. Was ist richtig?
+        en: A young woman wants to get her [driver's license][0]. She is afraid of the [test][1] because her [mother tongue][2] is [not][3] [German][4]. What is correct?
+        url: none
+    answers:
+        de: Sie muss mindestens zehn Jahre in Deutschland leben, bevor sie den Führerschein machen kann.
+        en: She must live in Germany for at least ten years before she can get her driver's license.
+        de: Wenn sie kein Deutsch kann, darf sie keinen Führerschein haben.
+        en: If she can't speak German, she can't get a driver's license.
+        de: Sie muss den Führerschein in dem Land machen, in dem man ihre Sprache spricht.
+        en: She must take the driving test in the country where she speaks her language.
+        de: Sie kann die [Theorie-Prüfung][5] vielleicht in ihrer Muttersprache machen. Es gibt [mehr][6] als zehn [Sprachen][7] zur [Auswahl][8].
+        en: She may be able to take the [theory exam][5] in her native language. There are [more][6] than ten [languages][7] to [choose][8].
+    correct_answer: 4
+    topic: Society, Transit
+
+
+
+ 269:
+    question:
+        de: In Deutschland haben [Kinder][0] ab dem Alter von [drei Jahren][1] bis zur [Erteinschulung][2] einen [Anspruch][3] auf...
+        en: In Germany, [children][0] from [three years][1] and older to until they [start school][2] [have a right][3] to...
+        url: none
+    answers:
+        de: monatliches Taschengeld.
+        en: monthly allowance.
+        de: einen Platz in einem Sportverein.
+        en: a place in a sports club.
+        de: einen [Kindergartenplatz][4].
+        en: a [kindergarten place][4].
+        de: einen Ferienpass.
+        en: a holiday pass.
+    correct_answer: 3
+    topic: Education
+
+
+
+ 270:
+    question:
+        de: Die [Volkshochschule][0] in Deutschland ist eine [Einrichtung][1]...
+        en: The [adult education center][0] in Germany is an [institution][1]...
+        url: none
+    answers:
+        de: für den Religionsunterricht.
+        en: for religious instruction.
+        de: nur für Jugendliche.
+        en: only for young people.
+        de: zur [Weiterbildung][2].
+        en: for [further education][2].
+        de: nur für Rentner und Rentnerinnen.
+        en: only for pensioners and pensioners.
+    correct_answer: 3
+    topic: Society, Education
+
+
+
+
+ 271:
+    question:
+        de: Was ist in Deutschland ein [Brauch][0] zu [Weihnachten][1]?
+        en: What is a [tradition][0] in Germany at [Christmas][1]?
+        url: none
+    answers:
+        de: bunte Eier verstecken
+        en: hide colored eggs
+        de: einen [Tannenbaum][2] [schmücken][3]
+        en: [decorate][3] a [Christmas tree][2]
+        de: sich mit Masken und Kostümen verkleiden
+        en: dress up in masks and costumes
+        de: Kürbisse vor die Tür stellen
+        en: put pumpkins on the doorstep
+    correct_answer: 2
+    topic: Culture
+
+
+
+
+ 272:
+    question:
+        de: Welche [Lebensform][0] ist in Deutschland [nicht][1] [erlaubt][2]?
+        en: Which [form of life][0] is [not][1] [allowed][2] in Germany?
+        url: none
+    answers:
+        de: Mann und Frau sind geschieden und leben mit neuen Partnern zusammen
+        en: The man and woman are divorced and live together with new partners.
+        de: Zwei Frauen leben zusammen.
+        en: Two women live together.
+        de: Ein alleinerziehender Vater lebt mit seinen zwei Kindern zusammen.
+        en: An unmarried father lives with his two children.
+        de: Ein [Mann][3] ist mit [zwei][4] [Frauen][5] zur [selben Zeit][6] [verheiratet][7].
+        en: A [man][3] is [married][7] to [two][4] [women][5] at the [same time][6].
+    correct_answer: 4
+    topic: Society, Family
+
+
+
+ 273:
+    question:
+        de: Bei [Erziehungsproblemen][0] gehen Sie in Deutschland...
+        en: When you have [problems with your children][0] in Germany...
+        url: none
+    answers:
+        de: zum Arzt / zur Ärztin.
+        en: to the doctor.
+        de: zum Gesundheitsamt.
+        en: to the health department.
+        de: zum Einwohnermeldeamt.
+        en: to the registration office.
+        de: zum [Jugendamt][1].
+        en: to the [youth office][1].
+    correct_answer: 4
+    topic: Society, Family
+
+
+
+ 274:
+    question:
+        de: Sie haben in Deutschland absichtlich einen [Brief][0] [geöffnet][1], der an eine [andere Person][2] [adressiert][3] ist. Was haben Sie [nicht][4] [beachtet][5]?
+        en: When you [open][1] a [letter][0] [addressed][3] to [someone else][2] in Germany, what did you [not][4] [consider][5]?
+        url: none
+    answers:
+        de: das Schweigerecht
+        en: the right to remain silent
+        de: das [Briefgeheimnis][6]
+        en: the [secrecy of correspondence][6]
+        de: die Schweigepflicht
+        en: the duty of confidentiality
+        de: die Meinungsfreiheit
+        en: freedom of expression
+    correct_answer: 2
+    topic: Society, Law
+
+275:
+    question:
+        de: Was [braucht][0] man in Deutschland für eine [Ehescheidung][1]?
+        en: What is [required][0] for a [divorce][1] in Germany?
+        url: none
+    answers:
+        de: die Einwilligung der Eltern
+        en: the consent of the parents
+        de: ein Attest eines Arztes / einer Ärztin
+        en: a medical certificate
+        de: die Einwilligung der Kinder
+        en: the consent of the children
+        de: die [Unterstützung][2] [eines Anwalts / einer Anwältin][3]
+        en: the [support][2] of a [lawyer][3]
+    correct_answer: 4
+    topic: Society, Family
+
+
+ 276:
+    question:
+        de: Was solten Sie tun, wenn Sie von [Ihrem Ansprechpartner / Ihrer Anspreachpartnerin][0] in einer deutschen [Behörde][1] [schlecht][2] [behandelt][3] werden?
+        en: What should you do if you are [treated][3] [badly][2] by [your contact person][0] in a German [authority][1]?
+        url: none
+    answers:
+        de: Ich kann nichts tun.
+        en: I can do nothing.
+        de: Ich muss mir diese Behandlung gefallen lassen.
+        en: I must accept this treatment.
+        de: Ich drohe der Person.
+        en: I threaten the person.
+        de: Ich kann mich [beim Behördenleiter / bei der Behördenleiterin][4] [beschweren][5].
+        en: I can [complain][5] to [the authority head][4].
+    correct_answer: 4
+    topic: Law
+
+
+ 277:
+    question:
+        de: Eine [Frau][0], die ein zweijähriges [Kind][1] [hat][2], bewirbt sich in Deutschland um eine Stelle. Was ist ein [Beispiel][3] für [Diskriminierung][4]? Sie [bekommt][5] die [Stelle][6] nur deshalb [nicht][7], weil sie...
+        en: A [woman][0] who [has][2] a two-year-old [child][1] applies for a job in Germany. What is an [example][3] of [discrimination][4]? She [doesn't][7] [get][5] the [job][6] only because...
+        url: none
+    answers:
+        de: kein Englisch spricht.
+        en: doesn't speak English.
+        de: zu hohe Gehaltsvorstellungen hat.
+        en: has unrealistic salary expectations.
+        de: keine Erfahrungen in diesem Beruf hat.
+        en: has no experience in this field.
+        de: [Mutter][8] [ist][9].
+        en: [is][9] a [mother][8].
+    correct_answer: 4
+    topic: Society, Law
+
+
+ 278:
+    question:
+        de: Ein [Mann][0] im [Rollstuhl][1] hat sich auf eine Stelle als Buchhalter beworben. Was ist ein [Beispiel][2] für [Diskriminierung][3]? Er [bekommt][4] die [Stelle][5] nur deshalb [nicht][6], weil er...
+        en: A [man][0] in a [wheelchair][1] applies for a job as an accountant. What is an [example][2] of [discrimination][3]? He [doesn't][6] [get][4] the [job][5] only because...
+        url: none
+    answers:
+        de: im [Rollstuhl sitzt][7].
+        en: is in a [wheelchair][7].
+        de: keine Erfahrung hat.
+        en: has no experience.
+        de: zu hohe Gehaltsvorstellungen hat.
+        en: has unrealistic salary expectations.
+        de: kein Englisch spricht.
+        en: doesn't speak English.
+    correct_answer: 1
+    topic: Society, Law
+
+
+ 279:
+    question:
+        de: In den meisten [Mietshäusern][0] in Deutschland gibt es eine ["Hausordnung"][1]. Was steht in einer solchem ' Hausordnung"? Sie [nennt][2]...
+        en: Most [apartment buildings][0] in Germany have [house rules][1]. What do these 'house rules' contain? They [mention][2]...
+        url: none
+    answers:
+        de: Regeln für die Benutzung öffentlicher Verkehrsmittel.
+        en: rules for using public transportation.
+        de: alle Mieter und Mieterinnen im Haus.
+        en: all tenants and residents in the building.
+        de: [Regeln][3], an die sich [alle Bewohner und Bewohnerinnen][4] [halten][5] [müssen][6].
+        en: [rules][3] that [all residents][4] [must][6] [follow][5].
+        de: die Adresse des nächsten Ordnungsamtes.
+        en: the address of the next police station.
+    correct_answer: 3
+    topic: Society, Law
+
+
+ 280:
+    question:
+        de: Wenn Sie sich in Deutschland [gegen][0] einen [falschen][1] [Steuerbescheid][2] wehren wollen, müssen Sie...
+        en: When you want to [fight][0] a [false][1] [tax bill][2] in Germany, you must...
+        url: none
+    answers:
+        de: nichts machen.
+        en: do nothing.
+        de: den Bescheid wegwerfen.
+        en: file a complaint.
+        de: [Einspruch][3] [einlegen][4].
+        en: [file][4] an [appeal][3].
+        de: warten, bis ein anderer Bescheid kommt.
+        en: wait for another decision.
+    correct_answer: 3
+    topic: Law, Taxes
+
+
+
+
+ 281:
+    question:
+        de: Zwei Freunden wollen in ein öffentliches Schwimmbad in Deutschland Beide haben eine [dunkle][0] [Hautfarbe][1] und werden deshalb [nicht][2] [hineingelassen][3]. Welches [Recht][4] wird in dieser Situation [verletzt][5]? Das Recht auf...
+        en: Two friends want to enter a public swimming pool in Germany. Both have [dark][0] [skin][1] and are therefore [not][2] [allowed][3] in. Which [right][4] is [violated][5] in this situation? The right to...
+        url: none
+    answers:
+        de: Meinungsfreiheit
+        en: Freedom of expression
+        de: [Gleichbehandlung][6]
+        en: [Equal treatment][6]
+        de: Versammlungsfreiheit
+        en: Freedom of assembly
+        de: Freizügigkeit
+        en: Freedom of movement
+    correct_answer: 2
+    topic: Law, Society
+
+
+ 282:
+    question:
+        de: Welches [Ehrenamt][0] müssen deutsche [Staatsbürger / Staatsbürgerinnen][1] [übernehmen][2], wenn sie dazu [aufgefordert][3] werden?
+        en: What [civic duty][0] must German [citizens][1] [take on][2] if they are [requested][3] to do so?
+        url: none
+    answers:
+        de: Vereinstrainer / Vereinstrainerin
+        en: Volunteer
+        de: [Wahlhelfer / Wahlhelferin][4]
+        en: [Voter assistance][4]
+        de: Bibliotheksaufsicht
+        en: Library supervision
+        de: Lehrer / Lehrerin
+        en: Teacher
+    correct_answer: 2
+    topic: Society, Law
+
+
+ 283:
+    question:
+        de: Was tun Sie, wenn Sie eine [falsche][0] [Rechnung][1] von einer deutschen [Behörde][2] [bekommen][3]?
+        en: What do you do if you [receive][3] a [wrong][0] [bill][1] from a German [authority][2]?
+        url: none
+    answers:
+        de: Ich lasse die Rechnung liegen.
+        en: I ignore the bill.
+        de: Ich [lege][4] [Widerspruch][5] bei der [Behörde][6] ein.
+        en: I [file][4] a [complaint][5] with the [authority][6].
+        de: Ich schicke die Rechnung an die Behörde zurück.
+        en: I send the bill back to the authority.
+        de: Ich gehe mit der Rechnung zum Finanzamt.
+        en: I go to the tax office with the bill.
+    correct_answer: 2
+    topic: Society, Law
+
+
+
+ 284:
+    question:
+        de: Was man für die [Arbeit][0] können muss, [ändert][1] sich in [Zukunft][2] sehr [schnell][3]. Was [kann][4] man [tun][5]?
+        de: What you need to be able to do for [work][0] will [change][1] very [quickly][3] in the [future][2]. What [can][4] you [do][5]?
+        url: none
+    answers:
+        de: Es ist egal, was man lernt.
+        en: It doesn't matter what you learn.
+        de: [Erwachsene][6] müssen auch nach der [Ausbildung][7] [immer weiter][8] [lernen][9].
+        en: [Adults][6] must continue [learning][9] [even after][8] their [initial training][7].
+        de: Kinder lernen in der Schule alles, was im Beruf wichtig ist. Nach der Schule muss man nicht weiter lernen.
+        en: Children learn everything important for their future careers at school. You don't need to continue learning after school.
+        de: Alle müssen früher aufhören zu arbeiten, weil sich alles ändert.
+        en: Everyone has to stop working earlier because everything is changing.
+    correct_answer: 2
+    topic: Education, Employment
+
+
+ 285:
+    question:
+        de: Frau Frost arbeitet als fest angestellte Mitarbeiterin in einem Büro. Was muss sie [nicht][0] von [ihrem][1] [Gehalt][2] [bezahlen][3]?
+        en: Ms. Frost works as a permanent employee in an office. What does she [not][0] have to [pay][3] from [her][1] [salary][2]?
+        url: none
+    answers:
+        de: Lohnsteuer
+        en: Income tax
+        de: Beiträge zur Arbeitslosenversicherung
+        en: Contributions to unemployment insurance
+        de: Beiträge zur Renten- und Krankenversicherung
+        en: Contributions to pension and health insurance
+        de: [Umsatzsteuer][4]
+        en: [Sales tax][4]
+    correct_answer: 4
+    topic: Employment
+
+
+ 286:
+    question:
+        de: Welche [Organisation][0] in einer [Firma][1] [hilft][2] den [Arbeitnehmerinnen und Arbeitnehmern][3] bei [Problemen][4] mit [der Arbeitgeberin/dem Arbeitgeber][5]?
+        en: Which [organization][0] in a [company][1] [helps][2] [employees][3] with [problems][4] with their [employer][5]?
+        url: none
+    answers:
+        de: der [Betriebsrat][6]
+        en: the [works council][6]
+        de: die Betriebsprüferin/der Betriebsprüfer
+        en: the auditor
+        de: die Betriebsgruppe
+        en: the works group
+        de: das Betriebsmanagement
+        en: the management team
+    correct_answer: 1
+    topic: Employment
+
+
+ 287:
+    question:
+        de: Sie möchten bei einer [Firma][0] in Deutschland ihr [Arbeitsverhältnis][1] [beenden][2]. Was müssen Sie [beachten][3]?
+        en: You wish to [terminate][2] your [employment][1] with a [company][0] in Germany. What do you need to [consider][3]?
+        url: none
+    answers:
+        de: die Gehaltszahlungen
+        en: the income tax
+        de: die Arbeitszeit
+        en: the working hours
+        de: die [Kündigungsfrist][4]
+        en: the [notice period][4]
+        de: die Versicherungspflicht
+        en: the insurance obligation
+    correct_answer: 3
+    topic: Employment
+
+
+ 288:
+    question:
+        de: Woraus [begründet][0] sich Deutschlands [besondere][1] [Verantwortung][2] für [Israel][3]?
+        en: What is the [basis][0] for Germany's [special][1] [responsibility][2] for [Israel][3]?
+        url: none
+    answers:
+        de: aus der Mitgliedschaft in der Europäischen Union (EU)
+        en: from membership in the European Union (EU)
+        de: aus den nationalsozialistischen Verbrechen gegen Juden
+        en: from the Nazi crimes against Jews
+        de: aus dem Grundgesetz der Bundesrepublik Deutschland
+        en: from the Basic Law of the Federal Republic of Germany
+        de: aus der christlichen Tradition
+        en: from the Christian tradition
+    correct_answer: 2
+    topic: History
+
+
+
+
+
+ 289:
+    question:
+        de: Ein Mann mit [dunkler][0] [Hautfarbe][1] bewirbt sich um eine Stelle als Kellner in einem Restaurant in Deutschland. Was ist ein [Beispiel][2] für [Diskriminierung][3]? Er [bekommt][4] die [Stelle][5] nur deshalb [nicht][6], weil …
+        en: A man with [dark][0] [skin color][1] applies for a job as a waiter in a restaurant in Germany. What is an [example][2] of [discrimination][3]? He does [not][6] [get][4] the [job][5] because …
+        url: none
+    answers:
+        de: seine Deutschkenntnisse zu gering sind.
+        en: his German skills are insufficient.
+        de: er zu hohe Gehaltsvorstellungen hat.
+        en: he has excessively high salary expectations.
+        de: er eine [dunkle Haut][7] [hat][8].
+        en: he [has][8] [dark skin][7].
+        de: er keine Erfahrungen im Beruf hat.
+        en: he has no professional experience.
+    correct_answer: 3
+    topic: Society
+
+
+
+
+
+ 290:
+    question:
+        de: Sie haben in Deutschland einen [Fernseher][0] [gekauft][1]. Zu Hause packen Sie den Fernseher aus, doch er funktioniert nicht. Der Fernseher ist [kaputt][2]. Was [können][3] Sie [machen][4]?
+        en: You [bought][1] a [TV][0] in Germany. At home you unpack the TV, but it doesn't work. The TV is [broken][2]. What [can][3] you [do][4]?
+        url: none
+    answers:
+        de: eine Anzeige schreiben
+        en: write an advertisement
+        de: den Fernseher [reklamieren][5]
+        en: [complain][5] about the TV
+        de: das Gerät ungefragt austauschen
+        en: replace the device without asking
+        de: die Garantie verlängern
+        en: extend the warranty
+    correct_answer: 2
+    topic: Law, Society
+
+
+
+
+
+ 291:
+    question:
+        de: Warum muss man in Deutschland bei der [Steuererklärung][0] [aufschreiben][1], ob man zu einer [Kirche][2] [gehört][3] oder nicht? Weil …
+        en: Why must you [write][1] on your [tax return][0] whether you [belong][3] to a [church][2] or not? Because …
+        url: none
+    answers:
+        de: es eine [Kirchensteuer][4] gibt, die an die [Einkommen- und Lohnsteuer][5] [geknüpft][6] ist.
+        en: there is a [church tax][4] that is [linked][6] to [income and wage tax][5].
+        de: das für die Statistik in Deutschland wichtig ist.
+        en: it is important for statistics in Germany.
+        de: man mehr Steuern zahlen muss, wenn man nicht zu einer Kirche gehört.
+        en: you have to pay more taxes if you do not belong to a church.
+        de: die Kirche für die Steuererklärung verantwortlich ist.
+        en: the church is responsible for the tax return.
+    correct_answer: 1
+    topic: Society, Taxes
+
+
+
+ 292:
+    question:
+        de: Die Menschen in Deutschland leben nach dem Grundsatz der [religiösen][0] [Toleranz][1]. Was [bedeutet][2] das?
+        en: In Germany, people live according to the principle of [religious][0] tolerance][01]. What does this [mean][2]?
+        url: none
+    answers:
+        de: Es dürfen keine Moscheen gebaut werden.
+        en: No mosques may be built.
+        de: Alle Menschen glauben an Gott.
+        en: All people believe in God.
+        de: [Jeder][3] kann [glauben][4], was er [möchte][5].
+        en: [Everyone][3] can [believe][4] what they [want][5].
+        de: Der Staat entscheidet, an welchen Gott die Menschen glauben.
+        en: The state decides which god people believe in.
+    correct_answer: 3
+    topic: Society, Religion
+
+
+
+
+
+
+ 293:
+    question:
+        de: Was ist in Deutschland ein [Brauch][0] zu [Ostern][1]?
+        en: What is a [tradition][0] in Germany at [Easter][1]?
+        url: none
+    answers:
+        de: Kürbisse vor die Tür stellen
+        en: Put pumpkins in front of the door
+        de: einen Tannenbaum schmücken
+        en: Decorate a Christmas tree
+        de:	[Eier][2] [bemalen][3]
+        en: [Paint][3] [eggs][2]
+        de: Raketen in die Luft schießen
+        en: Shoot rockets into the air
+    correct_answer: 3
+    topic: Culture
+
+
+
+
+
+ 294:
+    question:
+        de: [Pfingsten][0] ist ein …
+        en: [Pentecost][0] is a …
+        url: none
+    answers:
+        de: [christlicher][1] [Feiertag][2].
+        en: [Christian][1] [holiday][2].
+        de: deutscher Gedenktag.
+        en: German memorial day.
+        de: internationaler Trauertag.
+        en: International mourning day.
+        de: bayerischer Brauch.
+        en: Bavarian tradition.
+    correct_answer: 1
+    topic: Culture
+
+
+
+
+
+ 295:
+    question:
+        de: Welche [Religion][0] hat die [europäische][1] und [deutsche][2] [Kultur][3] [geprägt][4]?
+        en: Which [religion][0] has [shaped][4] [European][1] and [German][2] [culture][3]?
+        url: none
+    answers:
+        de: der Hinduismus
+        en: Hinduism
+        de: das [Christentum][5]
+        en: [Christianity][5]
+        de: der Buddhismus
+        en: Buddhism
+        de:	der Islam
+        en: Islam
+    correct_answer: 2
+    topic: Religion, Culture
+
+
+
+
+ 296:
+    question:
+        de: In Deutschland nennt man die letzten [vier][0] [Wochen][1] [vor][2] [Weihnachten][3] …
+        en: In Germany, the last [four][0] [weeks][1] [before][2] [Christmas][3] are called …
+        url: none
+    answers:
+        de: den Buß- und Bettag.
+        en: the Day of Repentance and Prayer.
+        de:	das Erntedankfest.
+        en: the Thanksgiving holiday.
+        de: die [Adventszeit][4].
+        en: the [Advent season][4].
+        de:	Allerheiligen.
+        en: All Saints' Day.
+    correct_answer: 3
+    topic: Culture
+
+
+
+ 297:
+    question:
+        de: Aus welchem [Land][0] sind die [meisten][1] [Migrantinnen und Migranten][2] nach Deutschland [gekommen][3]?
+        en: From which [country][0] do [most][1] [migrants][2] [come][3] to Germany?
+        url: none
+    answers:
+        de: Italien
+        en: Italy
+        de: Polen
+        en: Poland
+        de:	Marokko
+        en: Morocco
+        de:	[Türkei][4]
+        en: [Turkey][4]
+    correct_answer: 4
+    topic: Society
+
+
+ 298:
+    question:
+        de: In der [DDR][0] lebten vor allem [Migrantinnen und Migranten][1] aus …
+        en: In the [GDR][0], lived moslty [migrants][1] from…
+        url: none
+    answers:
+        de: [Vietnam][2], [Polen][3], [Mosambik][4].
+        en: [Vietnam][2], [Poland][3], [Mozambique][4].
+        de: Frankreich, Rumänien, Somalia.
+        en: France, Romania, Somalia.
+        de: Chile, Ungarn, Simbabwe.
+        en: Chile, Hungary, Zimbabwe.
+        de: Nordkorea, Mexiko, Ägypten.
+        en: North Korea, Mexico, Egypt.
+    correct_answer: 1
+    topic: History
+
+
+
+ 299:
+    question:
+        de: [Ausländische][0] [Arbeitnehmerinnen und Arbeitnehmer][1], die in den [50er und 60er Jahren][2] von der Bundesrepublik Deutschland angeworben wurden, [nannte][3] man …
+        en: [Foreign][0] [workers][1] who were recruited by the Federal Republic of Germany in the [1950s and 1960s][2] were [called][3] …
+        url: none
+    answers:
+        de:	Schwarzarbeiter / Schwarzarbeiterinnen.
+        en: Black workers
+        de:	[Gastarbeiter / Gastarbeiterinnen][4].
+        en: [Guest workers][4].
+        de:	Zeitarbeiter /Zeitarbeiterinnen.
+        en: Time workers
+        de:	Schichtarbeiter / Schichtarbeiterinnen.
+        en: Shift workers
+    correct_answer: 2
+    topic: History, Employment
+
+
+
+
+
+
+
+
+ 300:
+    question:
+        de: Aus welchem [Land][0] kamen die [ersten][1] [Gastarbeiterinnen und Gastarbeiter][2] in die Bundesrepublik Deutschland?
+        en: From which [country][0] did the [first][1] [guest workers][2] come to the Federal Republic of Germany?
+        url: none
+    answers:
+        de: Italien
+        en: Italy
+        de:	Spanien
+        en: Spain
+        de: Portugal
+        en: Portugal
+        de:	Türkei
+        en: Turkey
+    correct_answer: 1
+    topic: History, Employment
+
+
+
+
+
+
+
+
+
+
+ 300:
+    question:
+        de:
+        en:
+        url: none
+    answers:
+        de:
+        en:
+        de:
+        en:
+        de:
+        en:
+        de:
+        en:
+    correct_answer:
+    topic:
