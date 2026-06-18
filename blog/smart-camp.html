@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Title and Description -->
+        <title>ana sifuentes website</title>
+        <meta name="description" content="" />
+
+        <!--Setup--->
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+
+        <!--Social Media Sharing -->
+        <meta property="og:title" content="ana sifuentes " />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../styles/main.css" />
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div id="navbar-placeholder"></div>
+
+        <!--menu load -->
+        <div id="menu-placeholder"></div>
+
+        <section class="section-container">
+            <div class="container blog-entry">
+                <div class="grid four">
+                    <!--title -->
+                    <div class="grid-item col-4-4">
+                        <h1>Smart camp</h1>
+                        <p class="note">
+                            This is a guide, not a strict set of rules.
+                        </p>
+
+                        <p>
+                            <b>Track </b>to know how much you need. <br />
+                            <b> Exercise</b> to stay strong.<br />
+                            <b>Eat</b> according to your activity levels. <br />
+                            Create a <b>lifestyle</b> that works for you.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+                    <div class="grid-item col-4-4">
+                        <p>
+                            TLDR: <br />
+                            Walk every day, track your meals, drinks lots of
+                            water and cook without oil.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <div class="grid-item col-4-4">
+                        <h2>Tracking</h2>
+                        <p>
+                            If you have the data, you can make informed
+                            decisions. <br />
+                            To properly track, you will need the following:
+                        </p>
+
+                        <p>
+                            <b>Hardware:</b>
+                            <br />- Fitness tracker (ex: Fitbit, Apple Watch)<br />
+                            - Body weight scale<br />
+                            - Kitchen scale
+                        </p>
+                        <p>
+                            <b>Software:</b> <br />
+                            - Yazio <br />
+                            - Google/Apple Health <br />
+                            - Yomi (coming soon)
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>1) Calculate your range</h3>
+                        <p>
+                            Calculate your healthy weight range and aim to be in
+                            the middle of your BMI:
+                            <a
+                                href="https://www.calculator.net/ideal-weight-calculator.html"
+                                >https://www.calculator.net/ideal-weight-calculator.html</a
+                            >
+                        </p>
+                        <p>
+                            <i>
+                                My range is from 45.6 - 61.6 kg, the middle
+                                would be 53.6kg. I never want to go below 50kg
+                                but I want to be slightly under the middle. This
+                                way I can go feral on vacation.</i
+                            >
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>2) Find out your base budget</h3>
+                        <p>In Yazio:</p>
+                        <p>
+                            1. Go to Profile > Gear icon > My Goals <br />
+                            Set your goal weight and switch your activity level
+                            to Low.<br /><br />
+
+                            2. Connect your activity tracker <br />
+                            (double check info is not duplicating with Health
+                            connect)
+                        </p>
+
+                        <p>
+                            This will make Yazio calculate your calories for
+                            losing weight while having no activities. If you
+                            switch your goal to maintain weight it will give
+                            your BMR (base metabolic rate). Activities from your
+                            tracker are then accurately added on top and are not
+                            counted twice.
+                        </p>
+                        <p>
+                            <i>
+                                This number is stupid. For me to lose weight
+                                without moving it’s a stupid 1165 calories per
+                                day. Stay with me. It will make sense in the
+                                next step when I talk about exercise.</i
+                            >
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>3) Track your progress</h3>
+                        <p>
+                            Don't go crazy here. Track twice per week after you
+                            wake up and go to the bathroom. Remember things like
+                            sleep and stress can influence your weight. Focus on
+                            trends.
+                        </p>
+                        <p>
+                            <i
+                                >I call this a "blue sky" reading, if not
+                                everything comes out then it’s a "cloudy"
+                                reading. TMI but it does move the scale.</i
+                            >
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <div class="grid-item col-4-4">
+                        <h2>Exercise</h2>
+
+                        <p>
+                            Now that you've synced your fitness tracker and
+                            Yazio, your calorie budget will adjust depending on
+                            your daily activity levels. If you move a lot, you
+                            will need more calories. The opposite is true for a
+                            a relaxed day. <br />
+                            With this type of tracking you avoid stupid rules of
+                            having a set calorie limit.
+                        </p>
+
+                        <p>
+                            Sadly, you can't change your BMR too much. You can,
+                            however, add movement to your routine to increase
+                            your calorie budget.
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>1) Pick the right workout</h3>
+                        <p>Choose activities you like to do.</p>
+                        <p>
+                            Let's breakdown some examples ~40 minutes of x
+                            activity will burn for me: <br />
+                            - Walking ~220 cal <br />
+                            - Strength training ~120 cal <br />
+                            - Pilates ~160 cal<br />
+                            - Running ~400 cal<br />
+                            - Cycling ~220 cal <br />
+                            - Dancing ~250 cal
+                        </p>
+                        <p>
+                            <i>
+                                Strength training is good and helps develop
+                                muscles but it doesn't burn that many calories
+                                in comparison to cardio. Pilates is similar.
+                                <br />
+                                Running burns a lot but it is very tiring and
+                                I'm starving afterwards. It works only if I'm
+                                short on time.
+                                <br />
+                                Cycling depends on how fast you go but it's an
+                                efficent way to move around the city.
+                                <br />
+                                Dancing is pretty fun and burns good calories.
+                                <br />
+                                For me, walking is the best. Low-impact, no
+                                preparation needed. Just wake up and go.
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>2) Develop a sustainable routine</h3>
+
+                        <p>
+                            Any type of movement is going to burn calories. Most
+                            of us have sedentary jobs but our bodies as designed
+                            to move. Start the day with some gentle movement,
+                            take walking breaks and sprinkle some strength
+                            sessions. Sneak in activites as much as you can.
+                        </p>
+                        <p>
+                            <i>
+                                I like to start the day with a walk after
+                                breakfast. If it's cold or raining, dancing is a
+                                great second choice. While I work, I do a couple
+                                of treadmill walks. If I don't have meetings I
+                                go into the city to work from a coffee shop. In
+                                the evenings it's strength training or just
+                                another walk depending on how I'm feeling.
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>3) Example week</h3>
+                        <p>
+                            <b>I burn most of my calories walking around.</b>
+                            <br />
+                            This week starts with low energy and cold weather
+                            and switches to being very active with good weather.
+                            <br />
+                            <i
+                                >Daily steps means moving around outside of the
+                                listed activities.</i
+                            >
+                        </p>
+
+                        <ul>
+                            <li>
+                                Wednesday 6/10
+                                <ul>
+                                    <li>Dance - 33mins - 185 cal</li>
+                                    <li>Pilates - 40 mins - 105 cal</li>
+                                    <li>Daily steps - 78 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Thursday 6/11
+                                <ul>
+                                    <li>Dance - 29mins - 149 cal</li>
+                                    <li>Walking pad - 24mins - 26 cal</li>
+                                    <li>
+                                        Walk (go to coffee shop and back)- - 94
+                                        mins - 476 cal
+                                    </li>
+                                    <li>Daily steps - 160 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Friday 6/12
+                                <ul>
+                                    <li>Walking pad - 89mins - 202 cal</li>
+                                    <li>
+                                        Walk (go to coffee shop and back)- - 75
+                                        mins - 373 cal
+                                    </li>
+                                    <li>Daily steps - 208 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Saturday 6/13
+                                <ul>
+                                    <li>Walk (errands)- 20mins - 90 cal</li>
+                                    <li>Cycling - 157mins - 952 cal</li>
+                                    <li>Daily steps - 270 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Sunday 6/14
+                                <ul>
+                                    <li>Walk (errands)- 17mins - 89 cal</li>
+                                    <li>Cycling to city - 43mins - 213 cal</li>
+                                    <li>Walking in city - 55mins - 244 cal</li>
+                                    <li>Cycling home - 47mins - 266 cal</li>
+                                    <li>Daily steps - 340 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Monday 6/15
+                                <ul>
+                                    <li>Walk - 59mins - 301 cal</li>
+                                    <li>Walking pad - 10mins - 12 cal</li>
+                                    <li>
+                                        Walk (go to coffee shop and back)-
+                                        54mins - 262 cal
+                                    </li>
+                                    <li>Daily steps - 219 cal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Tuesday 6/16
+                                <ul>
+                                    <li>Walk - 44mins - 224 cal</li>
+                                    <li>Walking pad - 65mins - 78 cal</li>
+                                    <li>
+                                        Commute into city - 36mins - 194 cal
+                                    </li>
+                                    <li>Pilates - 60mins - 194 cal</li>
+                                    <li>Commute home - 40mins - 188 cal</li>
+                                    <li>Daily steps - 203 cal</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <div class="grid-item col-4-4">
+                        <h2>Food</h2>
+
+                        <p>
+                            There are no forbidden foods. However, while you can
+                            eat only one pizza per day and still lose weight,
+                            the best way is to eat mostly healthy meals and
+                            leave a bit of room for fun.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>1) Stock your pantry</h3>
+                        <p>Buy cheap, nutritious and quality ingredients.</p>
+                        <p>Suggestions:</p>
+                        <p>
+                            - Veggies:<br />
+                            Everything, have fun<br /><br />
+
+                            - Fruits: <br />Berries, Apples, whatever you want
+                            just watch high sugar ones like banana, mango and
+                            dates <br /><br />
+                            - Proteins: <br />
+                            Chicken, especially chicken breast, Lean ground
+                            Beef, Rump steak, Lentils + Chickpeas, Canned tuna,
+                            Canned Sardines, Frozen fish, Eggs, Skyr, Light
+                            feta, Exquiza cream cheese, Light mozzarella
+                            <br /><br />
+                            - Carbs:<br />
+                            Rice, Pasta, Bread, Potatoes, Corn - just portion
+                            according to your needs<br />
+                            <i
+                                >I aim to eat around ~180-200 calories worth of
+                                carbs per meal (50g rice, 50g pasta, 180g baked
+                                sweet potato)</i
+                            >
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>2) Eat balanced meals</h3>
+                        <p>
+                            Your meals should be a carb, a protein and veggies.
+                            This doesn’t have to be boring and you dont need 500
+                            different recipes. You just need a reliable formula:
+                            a good sauce, rice plus chicken and veggies. <br />
+                            Yomi for inspo coming soon.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>3) Track your food</h3>
+                        <p>
+                            Eat whatever you want, but track it. <br />
+                            Use the scale and input food into Yazio. If you are
+                            eating out, use the AI photo thingie. Not super
+                            precise but it gets the job done.
+                        </p>
+
+                        <p>
+                            <i>
+                                Your calories needs might be different than
+                                mine. You can use my numbers as a base and
+                                adjust depending on how many calories you
+                                need.</i
+                            >
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>4) Make small adjustments</h3>
+                        <p>
+                            You can make small edits on how you cook and eat
+                            that have a big impact:
+                        </p>
+                        <p>
+                            Cooking without oil will reduce calories by a lot.
+                            You can cook the meat in a sauce or bake it, if you
+                            pan fry just a bit of water always. <br /><br />
+                            Add veggies or eat fruits as dessert to fill up. If
+                            you just wanna snack forever and not really care,
+                            try berries. <br /><br />
+                            Dont drink your calories, opt for calorie free or
+                            water with fruits. (Try adding frozen berries)
+                            <br />
+                            <br />
+                            If you eat vegetarian, always supplement protein
+                            with high protein puddings (Lidl's milbona schoko
+                            pudding is my fav).
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>5) Share the main dish</h3>
+                        <p>
+                            What happens if you eat with a partner?
+                            <br />
+                            If you share meals with someone who has different
+                            calorie needs, you can cook the same dish and adjust
+                            in the carbs.
+                        </p>
+                        <p>
+                            <i>
+                                Big G needs a lot more food than me. Without
+                                movement my needs are ~600 calories lower.
+                                Nature is stupid and I can’t live off of bread.
+                                <br /><br />
+                                In practice: I usually eat 50g of oats and he
+                                does 100g. Same for rice or pasta. Plus he adds
+                                more cheese to things when needed.
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <div class="grid-item col-4-4">
+                        <h2>Lifestyle</h2>
+                        <p>Listen to your body and enjoy your life.</p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>1) Work with your body</h3>
+                        <p>
+                            Your period will change you. You can gain up to 2kg
+                            around it. For those days when you are extra tired
+                            and need to eat more, switch your goal to
+                            maintenance and aim to do lighter movement like yoga
+                            or shorter walks. No need to torture yourself. Take
+                            the ibupofren.
+                        </p>
+                        <p>
+                            <i
+                                >I also use this time to draw, read and do spa
+                                things. I'm not good at resting so now I have to
+                                try extra hard to be nice to my body.
+                            </i>
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>2) Understand your needs</h3>
+                        <p>
+                            Don't stay hungry but pay attention to what your
+                            body really needs. General hunger can mean you
+                            didn't drink enough water. Craving sweets is a call
+                            for energy, so opt for fruits. Next time you crave
+                            something, just do a quick search and try to opt for
+                            the healthier version. But if really you want a bit
+                            of cake, get the cake. <br /><br />
+                        </p>
+                        <p>
+                            <i
+                                >Other tips: if I know I ate enough I'll try
+                                some tea or a bit soda first. If I'm still
+                                hungry afterwards, it's time for a snack.
+                                <br /><br />
+                                Even when I'm cutting I don't restrict pastries.
+                                I just walk more. It balances out.</i
+                            >
+                        </p>
+                    </div>
+                    <div class="grid-item col-4-4">
+                        <h3>3) Plan but don’t sacrifice</h3>
+                        <p>
+                            It's okay to have large meals or go out with friends
+                            and have a drink, just track and plan your other
+                            meals around it.
+                        </p>
+                        <p>
+                            <i
+                                >If I'm eating pizza for dinner, I'll have skyr
+                                for breakfast and aim for a lighter chicken
+                                lunch. Add lots of walking and I can go feral.
+                                <br /><br />
+                                If I'm short on time and I know my day will have
+                                no healthy meals (when my parents visited) I
+                                would go for a run. Not my fav but works great
+                                while traveling.
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>4) Get your team onboard</h3>
+                        <p>
+                            If you eat with a partner or with friends- let them
+                            know you wanna opt for healthier meals. Together we
+                            can cook at home or go for picnics and choose
+                            healthier stuff.
+                        </p>
+                    </div>
+
+                    <div class="grid-item col-4-4">
+                        <h3>5) Put everything together</h3>
+                        <p>This what my routine looks like on a deficit day:</p>
+                        <p>
+                            - Wake up <br />
+                            - Breakfast
+                            <i
+                                >(Vainilla skyr 250g, 20g nuts, ~150-200g
+                                berries)</i
+                            ><br />
+                            - Walk 40-60 mins before work<br />
+                            - Work at standing desk<br />
+                            - Lunch
+                            <i
+                                >(50g rice, 50g red lentils, 1/2 can chickpeas,
+                                veggies, indian spices + protein shoko pudding) </i
+                            ><br />
+                            - Work at standing desk<br />
+                            - Go to coffee shop for work (walk to sbahn, walk in
+                            city - 30-40 mins walk) <br />
+                            - Snack <i>(vegan banana bread, iced americano) </i
+                            ><br />
+                            - Walk to pilates (20 mins) <br />
+                            - Pilates (60 mins) <br />
+                            - Commute back home (30-40 mins) <br />
+                            - Dinner
+                            <i
+                                >(3 home made tortillas, 165g chicken, gouda
+                                20g, mexican vegetable salsa + 35g chocolate)
+                            </i>
+                            <br />
+                            - Lounge then sleep
+                        </p>
+                        <p>
+                            Total calories spent: 2165 - (Base 1165 + Burned
+                            1081) <br />
+                            Calories eaten: 1801<br />
+                            Deficit: 364
+                        </p>
+                        <!--example week -->
+                    </div>
+
+                    <div class="grid-item col-4-4 line-divider"></div>
+
+                    <div class="grid-item col-4-4">
+                        <p>Girl, it's your body. Take care of it.</p>
+                        <p>
+                            <i>
+                                I say this to both you and me.<br />
+                                Push yourself when you can. <br />Eat when you
+                                are hungry.<br />
+                                Rest when you need to. <br />Love yourself
+                                fiercely.</i
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer load -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../code/menu-footer.js"></script>
+    </body>
+</html>
